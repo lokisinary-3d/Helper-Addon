@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geometry Node Editor &mdash; Blender Manual</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme_overrides.css?v=8da28a04" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/version_switch.css?v=74ca2809" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.blender.org/manual/en/latest/editors/geometry_node.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=715c20a1"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/js/version_switch.js?v=5cbd935e"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Blender Manual"
+          href="../_static/opensearch.xml"/>
+<link rel="alternate" hreflang="en" href="https://docs.blender.org/manual/en/latest/" />
+<link rel="alternate" hreflang="ar" href="https://docs.blender.org/manual/ar/latest/" />
+<link rel="alternate" hreflang="de" href="https://docs.blender.org/manual/de/latest/" />
+<link rel="alternate" hreflang="es" href="https://docs.blender.org/manual/es/latest/" />
+<link rel="alternate" hreflang="fi" href="https://docs.blender.org/manual/fi/latest/" />
+<link rel="alternate" hreflang="fr" href="https://docs.blender.org/manual/fr/latest/" />
+<link rel="alternate" hreflang="id" href="https://docs.blender.org/manual/id/latest/" />
+<link rel="alternate" hreflang="it" href="https://docs.blender.org/manual/it/latest/" />
+<link rel="alternate" hreflang="ja" href="https://docs.blender.org/manual/ja/latest/" />
+<link rel="alternate" hreflang="ko" href="https://docs.blender.org/manual/ko/latest/" />
+<link rel="alternate" hreflang="nb" href="https://docs.blender.org/manual/nb/latest/" />
+<link rel="alternate" hreflang="pt" href="https://docs.blender.org/manual/pt/latest/" />
+<link rel="alternate" hreflang="ru" href="https://docs.blender.org/manual/ru/latest/" />
+<link rel="alternate" hreflang="sk" href="https://docs.blender.org/manual/sk/latest/" />
+<link rel="alternate" hreflang="sl" href="https://docs.blender.org/manual/sl/latest/" />
+<link rel="alternate" hreflang="sr" href="https://docs.blender.org/manual/sr/latest/" />
+<link rel="alternate" hreflang="uk" href="https://docs.blender.org/manual/uk/latest/" />
+<link rel="alternate" hreflang="vi" href="https://docs.blender.org/manual/vi/latest/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://docs.blender.org/manual/zh-hans/latest/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://docs.blender.org/manual/zh-hant/latest/" />
+<link rel="alternate" hreflang="x-default" href="https://docs.blender.org/manual/en/latest/" />
+
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="next" title="Shader Editor" href="shader_editor.html" />
+    <link rel="prev" title="Group" href="texture_node/types/groups.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Blender 4.0 Manual
+              <img src="../_static/blender-logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/about/index.html">About Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/installing/index.html">Installing Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/configuration/index.html">Configuring Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/help.html">Help System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sections</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../interface/index.html">User Interface</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Editors</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="3dview/index.html">3D Viewport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="image/index.html">Image Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uv/index.html">UV Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="compositor.html">Compositor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="texture_node/index.html">Texture Nodes</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Geometry Node Editor</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#interface">Interface</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#header">Header</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sidebar">Sidebar</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#node">Node</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#tool">Tool</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#view">View</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#group">Group</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#properties">Properties</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#tool-context">Tool Context</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#types">Types</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modes">Modes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="shader_editor.html">Shader Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="video_sequencer/index.html">Video Sequencer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clip/index.html">Movie Clip Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dope_sheet/index.html">Dope Sheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="timeline.html">Timeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="graph_editor/index.html">Graph Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drivers_editor.html">Drivers Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nla/index.html">Nonlinear Animation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="text_editor.html">Text Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="python_console.html">Python Console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="info_editor.html">Info Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outliner/index.html">Outliner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="properties_editor.html">Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_browser.html">File Browser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="asset_browser.html">Asset Browser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="spreadsheet.html">Spreadsheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preferences/index.html">Preferences</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scene_layout/index.html">Scenes &amp; Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modeling/index.html">Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sculpt_paint/index.html">Sculpting &amp; Painting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../grease_pencil/index.html">Grease Pencil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../animation/index.html">Animation &amp; Rigging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../physics/index.html">Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../render/index.html">Rendering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../compositing/index.html">Compositing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../movie_clip/index.html">Motion Tracking &amp; Masking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../video_editing/index.html">Video Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../files/index.html">Assets, Files, &amp; Data System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addons/index.html">Add-ons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">Advanced</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary/index.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Manual Index</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get Involved</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/index.html">Contribute Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Blender 4.0 Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Editors</a></li>
+      <li class="breadcrumb-item active">Geometry Node Editor</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="geometry-node-editor">
+<span id="index-0"></span><h1>Geometry Node Editor<a class="headerlink" href="#geometry-node-editor" title="Link to this heading"></a></h1>
+<p>The Geometry Node editor is used to edit <a class="reference internal" href="../interface/controls/nodes/groups.html"><span class="doc">Node Groups</span></a>
+which are used by the <a class="reference internal" href="../modeling/modifiers/generate/geometry_nodes.html"><span class="doc">Geometry Node Modifier</span></a>.
+Such a node group can define many operations to modify an object’s geometry.</p>
+<p>A list of all <a class="reference internal" href="../modeling/geometry_nodes/index.html"><span class="doc">Geometry Nodes</span></a> is available in the modeling section.</p>
+<section id="interface">
+<h2>Interface<a class="headerlink" href="#interface" title="Link to this heading"></a></h2>
+<section id="header">
+<h3>Header<a class="headerlink" href="#header" title="Link to this heading"></a></h3>
+<dl class="simple" id="bpy-types-spacenodeeditor-geometry-nodes-type">
+<dt>Geometry Nodes Type</dt><dd><p>Geometry Nodes can have multiple contexts depending on the intended function of the node group.
+Changing the context adjusts the user interface to best fit the needs of the selected context.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Modifier<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Used to create node groups that will be used by the <a class="reference internal" href="../modeling/modifiers/generate/geometry_nodes.html"><span class="doc">Geometry Nodes Modifier</span></a>.</p>
+</dd>
+<dt class="field-even">Tool<span class="colon">:</span></dt>
+<dd class="field-even"><p>Used to create node groups that will be used to create <a class="reference internal" href="../modeling/geometry_nodes/tools.html"><span class="doc">Node-Based Tools</span></a>.</p>
+</dd>
+</dl>
+</dd>
+<dt>View</dt><dd><p>Standard view menu.</p>
+</dd>
+<dt>Select</dt><dd><p>Menu for <a class="reference internal" href="../interface/controls/nodes/selecting.html"><span class="doc">Selecting Nodes</span></a>.</p>
+</dd>
+<dt>Add</dt><dd><p>Menu for adding new <a class="reference internal" href="../modeling/geometry_nodes/index.html"><span class="doc">Geometry Nodes</span></a>.</p>
+</dd>
+<dt>Node</dt><dd><p>Menu for <a class="reference internal" href="../interface/controls/nodes/editing.html"><span class="doc">Editing Nodes</span></a>.</p>
+</dd>
+</dl>
+<hr class="docutils" />
+<dl class="simple">
+<dt>Geometry Node Group</dt><dd><p><a class="reference internal" href="../interface/controls/templates/data_block.html"><span class="doc">Data-Block Menu</span></a> for creating and selecting node groups.</p>
+</dd>
+<dt>Pin (pin icon)</dt><dd><p>The pin button will keep the current node group selection fixed,
+instead of using the <a class="reference internal" href="../modeling/modifiers/introduction.html#modifier-stack-active"><span class="std std-ref">Active Modifier</span></a>.
+When a node group is pinned, it will remain visible in the Geometry Node editor
+even when another object or modifier is selected elsewhere.</p>
+</dd>
+</dl>
+<hr class="docutils" />
+<dl class="simple">
+<dt>Parent Node Tree</dt><dd><p>Jumps up a node group level. See <a class="reference internal" href="../interface/controls/nodes/groups.html#bpy-ops-node-tree-path-parent"><span class="std std-ref">Edit Group</span></a> for details.</p>
+</dd>
+<dt>Snapping</dt><dd><p>Snapping options. See <a class="reference internal" href="../interface/controls/nodes/arranging.html"><span class="doc">Arranging Nodes</span></a> for details.</p>
+</dd>
+<dt>Overlays</dt><dd><p>See <a class="reference internal" href="../interface/controls/nodes/introduction.html#bpy-types-spacenodeoverlay-show-overlays"><span class="std std-ref">Overlays</span></a>.</p>
+</dd>
+</dl>
+</section>
+<section id="toolbar">
+<h3>Toolbar<a class="headerlink" href="#toolbar" title="Link to this heading"></a></h3>
+<dl class="simple">
+<dt>Select</dt><dd><p>See <a class="reference internal" href="../interface/controls/nodes/selecting.html"><span class="doc">Selecting Nodes</span></a>.</p>
+</dd>
+<dt>Annotate</dt><dd><p>See <a class="reference internal" href="../interface/annotate_tool.html"><span class="doc">Annotations</span></a>.</p>
+</dd>
+<dt>Links Cut</dt><dd><p>See <a class="reference internal" href="../interface/controls/nodes/editing.html#bpy-ops-node-links-cut"><span class="std std-ref">Cut Links</span></a>.</p>
+</dd>
+</dl>
+</section>
+<section id="sidebar">
+<h3>Sidebar<a class="headerlink" href="#sidebar" title="Link to this heading"></a></h3>
+<section id="node">
+<h4>Node<a class="headerlink" href="#node" title="Link to this heading"></a></h4>
+<p>This tab gives access to the active node’s properties.</p>
+</section>
+<section id="tool">
+<h4>Tool<a class="headerlink" href="#tool" title="Link to this heading"></a></h4>
+<p>This tab gives access to the active tool’s settings.</p>
+</section>
+<section id="view">
+<h4>View<a class="headerlink" href="#view" title="Link to this heading"></a></h4>
+<p>This tab allows managing annotations.</p>
+</section>
+<section id="group">
+<h4>Group<a class="headerlink" href="#group" title="Link to this heading"></a></h4>
+<p>This tab allows you to edit the current node group’s inputs and outputs.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>In the <a class="reference internal" href="../modeling/modifiers/generate/geometry_nodes.html"><span class="doc">Geometry Node Modifier</span></a>,
+you can specify values for the root node group’s inputs, as well as select destination
+<a class="reference internal" href="../modeling/geometry_nodes/attributes_reference.html"><span class="doc">Attributes</span></a> for its outputs.</p>
+</div>
+<section id="properties">
+<h5>Properties<a class="headerlink" href="#properties" title="Link to this heading"></a></h5>
+<dl class="simple" id="bpy-types-geometrynodetree-is-modifier">
+<dt>Modifier</dt><dd><p>The node group is used as a <a class="reference internal" href="../modeling/modifiers/generate/geometry_nodes.html"><span class="doc">Geometry Nodes Modifier</span></a>.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-geometrynodetree-is-tool">
+<dt>Tool</dt><dd><p>The node group is used as a <a class="reference internal" href="../modeling/geometry_nodes/tools.html"><span class="doc">Node-Based Tools</span></a>.</p>
+</dd>
+</dl>
+</section>
+</section>
+</section>
+</section>
+<section id="tool-context">
+<h2>Tool Context<a class="headerlink" href="#tool-context" title="Link to this heading"></a></h2>
+<p>These popover menus are displayed in the header when the tool context is enabled.
+These properties determine where the tool is available in the user interface.</p>
+<section id="types">
+<h3>Types<a class="headerlink" href="#types" title="Link to this heading"></a></h3>
+<p>The <a class="reference internal" href="../scene_layout/object/types.html"><span class="doc">Object Types</span></a> the tool supports.</p>
+<dl class="simple" id="bpy-types-geometrynodetree-is-type-mesh">
+<dt>Mesh</dt><dd><p>The node tree supports <a class="reference internal" href="../modeling/meshes/index.html"><span class="doc">Mesh Objects</span></a>.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-geometrynodetree-is-type-curve">
+<dt>Curves</dt><dd><p>The node tree supports <a class="reference internal" href="../modeling/curves/index.html"><span class="doc">Curve Objects</span></a>.</p>
+</dd>
+</dl>
+</section>
+<section id="modes">
+<h3>Modes<a class="headerlink" href="#modes" title="Link to this heading"></a></h3>
+<p>The <a class="reference internal" href="3dview/modes.html"><span class="doc">Object Modes</span></a> the tool supports.</p>
+<dl class="simple" id="bpy-types-geometrynodetree-is-mode-edit">
+<dt>Edit Mode</dt><dd><p>The node group is used in edit mode.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-geometrynodetree-is-mode-sculpt">
+<dt>Sculpt Mode</dt><dd><p>The node group is used in <a class="reference internal" href="../sculpt_paint/sculpting/index.html"><span class="doc">Sculpt Mode</span></a>.</p>
+</dd>
+</dl>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="texture_node/types/groups.html" class="btn btn-neutral float-left" title="Group" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="shader_editor.html" class="btn btn-neutral float-right" title="Shader Editor" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../copyright.html">Copyright</a> : This page is licensed under a CC-BY-SA 4.0 Int. License.
+      <span class="lastupdated">Last updated on 12/17/2023.
+      </span></p>
+  </div>
+
+  
+<div class="footer-contribute">
+   <ul>
+      <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/editors/geometry_node.rst"
+            class="fa fa-edit"> View Source</a>
+      </li>
+      <!-- <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/editors/geometry_node.rst"
+            class="fa fa-edit"> Edit Page</a>
+      </li> -->
+      <li>
+         <a href="https://projects.blender.org/blender/documentation/issues/new?template=.gitea/issue_template/bug.yaml&field:body=%2A%2APage+Information%2A%2A%0D%0AFile%3A+%60manual%2Feditors/geometry_node.rst%60%0D%0ABlender+Version%3A+%604.0%60%0D%0ADocumentation+Language%3A+%60en%60%0D%0A%5BPermanent+Link%5D%28https%3A%2F%2Fdocs.blender.org%2Fmanual%2Fen%2F4.0%2Feditors/geometry_node.html%29%0D%0A%0D%0A%2A%2AShort+description+of+error%2A%2A%0D%0A%5BPlease+fill+out+a+short+description+of+the+error+here%5D%0D%0A"
+            class="fa fa-bug"> Report issue on this page</a>
+      </li>
+      <ul>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="document versions">
+	<ul id="versionwrap" role="presentation">
+		<li role="presentation">
+			<span id="version-popover" class="version-btn" tabindex="0" role="button" aria-label="versions selector"
+				aria-haspopup="true" aria-controls="version-vsnlist" aria-disabled="true">
+				4.0
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Versions</div>
+				<ul id="version-vsnlist" class="version-list" role="menu" aria-labelledby="version-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<li role="presentation">
+			<span id="lang-popover" class="version-btn" tabindex="0" role="button" aria-label="language selector"
+				aria-haspopup="true" aria-controls="version-langlist">
+				 en 
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Languages</div>
+				<ul id="version-langlist" class="version-list" role="menu" aria-labelledby="lang-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<template id="version-entry">
+			<li tabindex="-1" role="presentation"><a tabindex="-1" role="menuitem"></a></li>
+			<li class="selected" tabindex="-1" role="presentation"><span tabindex="-1" aria-current="page"></spanp></li>
+		</template>
+	</ul>
+<template id="version-warning">
+	<div class="admonition warning">
+		<p class="first admonition-title">Note</p>
+		<p class="last">
+			You are not using the most up to date version of the documentation.
+			<a href="#"></a> is the newest version.
+		</p>
+	</div>
+</template>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1418081-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1418081-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

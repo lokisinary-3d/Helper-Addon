@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Copy Global Transform &mdash; Blender Manual</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme_overrides.css?v=8da28a04" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/version_switch.css?v=74ca2809" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.blender.org/manual/en/latest/addons/animation/copy_global_transform.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=715c20a1"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/version_switch.js?v=5cbd935e"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Blender Manual"
+          href="../../_static/opensearch.xml"/>
+<link rel="alternate" hreflang="en" href="https://docs.blender.org/manual/en/latest/" />
+<link rel="alternate" hreflang="ar" href="https://docs.blender.org/manual/ar/latest/" />
+<link rel="alternate" hreflang="de" href="https://docs.blender.org/manual/de/latest/" />
+<link rel="alternate" hreflang="es" href="https://docs.blender.org/manual/es/latest/" />
+<link rel="alternate" hreflang="fi" href="https://docs.blender.org/manual/fi/latest/" />
+<link rel="alternate" hreflang="fr" href="https://docs.blender.org/manual/fr/latest/" />
+<link rel="alternate" hreflang="id" href="https://docs.blender.org/manual/id/latest/" />
+<link rel="alternate" hreflang="it" href="https://docs.blender.org/manual/it/latest/" />
+<link rel="alternate" hreflang="ja" href="https://docs.blender.org/manual/ja/latest/" />
+<link rel="alternate" hreflang="ko" href="https://docs.blender.org/manual/ko/latest/" />
+<link rel="alternate" hreflang="nb" href="https://docs.blender.org/manual/nb/latest/" />
+<link rel="alternate" hreflang="pt" href="https://docs.blender.org/manual/pt/latest/" />
+<link rel="alternate" hreflang="ru" href="https://docs.blender.org/manual/ru/latest/" />
+<link rel="alternate" hreflang="sk" href="https://docs.blender.org/manual/sk/latest/" />
+<link rel="alternate" hreflang="sl" href="https://docs.blender.org/manual/sl/latest/" />
+<link rel="alternate" hreflang="sr" href="https://docs.blender.org/manual/sr/latest/" />
+<link rel="alternate" hreflang="uk" href="https://docs.blender.org/manual/uk/latest/" />
+<link rel="alternate" hreflang="vi" href="https://docs.blender.org/manual/vi/latest/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://docs.blender.org/manual/zh-hans/latest/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://docs.blender.org/manual/zh-hant/latest/" />
+<link rel="alternate" hreflang="x-default" href="https://docs.blender.org/manual/en/latest/" />
+
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="Corrective Shape Keys" href="corrective_shape_keys.html" />
+    <link rel="prev" title="Bone Selection Sets" href="bone_selection_sets.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Blender 4.0 Manual
+              <img src="../../_static/blender-logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/about/index.html">About Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installing/index.html">Installing Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/configuration/index.html">Configuring Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/help.html">Help System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sections</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../interface/index.html">User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../editors/index.html">Editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scene_layout/index.html">Scenes &amp; Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modeling/index.html">Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sculpt_paint/index.html">Sculpting &amp; Painting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../grease_pencil/index.html">Grease Pencil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../animation/index.html">Animation &amp; Rigging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../physics/index.html">Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../render/index.html">Rendering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../compositing/index.html">Compositing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../movie_clip/index.html">Motion Tracking &amp; Masking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../video_editing/index.html">Video Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../files/index.html">Assets, Files, &amp; Data System</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Add-ons</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#add-ons-category-listings">Add-ons Category Listings</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../3d_view/index.html">3D View</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../add_curve/index.html">Add Curve</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../add_mesh/index.html">Add Mesh</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">Animation</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="animall.html">Animall</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bone_selection_sets.html">Bone Selection Sets</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Copy Global Transform</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#activation">Activation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#interface">Interface</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#mirror-options">Mirror Options</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#limitations">Limitations</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="corrective_shape_keys.html">Corrective Shape Keys</a></li>
+<li class="toctree-l4"><a class="reference internal" href="turnaround_camera.html">Turnaround Camera</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../baking/index.html">Baking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../camera/index.html">Camera</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../development/index.html">Development</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../import_export/index.html">Import-Export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../interface/index.html">Interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lighting/index.html">Lighting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../materials/index.html">Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mesh/index.html">Mesh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../node/index.html">Node</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../object/index.html">Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../paint/index.html">Paint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../render/index.html">Render</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rigging/index.html">Rigging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sequencer/index.html">Sequencer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../system/index.html">System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../uv/index.html">UV</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video_tools/index.html">Video Tools</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/index.html">Advanced</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Manual Index</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get Involved</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribute Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Blender 4.0 Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Add-ons</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Animation</a></li>
+      <li class="breadcrumb-item active">Copy Global Transform</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="copy-global-transform">
+<h1>Copy Global Transform<a class="headerlink" href="#copy-global-transform" title="Link to this heading"></a></h1>
+<p>Copy and paste object and bone transforms with ease.</p>
+<p>When copying, the global (<a class="reference internal" href="../../glossary/index.html#term-World-Space"><span class="xref std std-term">World Space</span></a>) transform is placed on the
+clipboard. This can then be pasted onto any object or bone, at the current frame
+or at another one.</p>
+<p>Since the transform is placed on the clipboard as text, you can even copy-paste
+it into an instant messenger and send it to someone else.</p>
+<section id="activation">
+<h2>Activation<a class="headerlink" href="#activation" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Open Blender and go to Preferences then the Add-ons tab.</p></li>
+<li><p>Click Animation then Copy Global Transform to enable the add-on.</p></li>
+</ul>
+</section>
+<section id="interface">
+<h2>Interface<a class="headerlink" href="#interface" title="Link to this heading"></a></h2>
+<p>Located in <span class="menuselection">3D Viewport ‣ N-panel ‣ Animation tab</span>.</p>
+<figure class="align-right">
+<img alt="../../_images/addons_animation_copy-global-transform.png" src="../../_images/addons_animation_copy-global-transform.png" />
+</figure>
+</section>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt>Copy</dt><dd><p>Inspects the active Object (in Object mode) or Bone (in Pose mode) and places
+its current global transform onto the clipboard as a matrix.</p>
+</dd>
+<dt>Paste</dt><dd><p>Takes the copied global transform and applies it to the active Object or
+Bone. This is done by <strong>adjusting its location, rotation, and scale properties</strong>.</p>
+</dd>
+<dt>Mirrored</dt><dd><p>Same as ‘Paste’ above, but then mirrored relative to some other object or
+bone. This can be useful, for example, to copy the foot position of one foot
+to the other. See <a class="reference internal" href="#copy-global-transform-mirror-options"><span class="std std-ref">Mirror Options</span></a> below.</p>
+</dd>
+<dt>Paste to Selected Keys</dt><dd><p>Paste as described above and additionally use auto-keying to update one or
+more frames. The key selection is used to tell Blender <em>which frames</em> this
+should happen on; it does not influence which parts of the transform are
+keyed. <em>What</em> is keyed is determined by the active keying set.</p>
+</dd>
+<dt>Paste and Bake</dt><dd><p>Almost the same as <em>Paste to Selected Keys</em>. Instead of only pasting on the
+selected keys, <em>Paste and Bake</em> will paste &amp; auto-key on every frame between
+the first and last selected keys.</p>
+</dd>
+</dl>
+</section>
+<section id="mirror-options">
+<span id="copy-global-transform-mirror-options"></span><h2>Mirror Options<a class="headerlink" href="#mirror-options" title="Link to this heading"></a></h2>
+<p>The copied transform can be mirrored relative to an object or a <a class="reference internal" href="../../glossary/index.html#term-Bone"><span class="xref std std-term">Bone</span></a>.
+This requires choosing that object or bone first.</p>
+<dl class="simple">
+<dt>Armature + Bone</dt><dd><p>Choosing an <a class="reference internal" href="../../glossary/index.html#term-Armature"><span class="xref std std-term">Armature</span></a> object as mirror object will show the bone
+selector. You can use that to pick the bone to use as mirror. This will
+always use the named bone on that specific armature object.</p>
+</dd>
+<dt>Bone Only</dt><dd><p>When you choose <em>no mirror object</em> at all, you can still choose a <em>bone
+name</em>. This is used for mirroring against a bone in the <em>active armature</em>.
+This can be useful to mirror bone transforms relative to the ‘chest’ bone
+of the active character.</p>
+</dd>
+<dt>Object Only</dt><dd><p>This will just mirror relative to the chosen object.</p>
+</dd>
+</dl>
+<p>After pasting with ‘Paste Mirrored’, the mirror axes can be chosen in the
+<a class="reference internal" href="../../interface/undo_redo.html#bpy-ops-screen-redo-last"><span class="std std-ref">redo panel</span></a>.</p>
+</section>
+<section id="limitations">
+<h2>Limitations<a class="headerlink" href="#limitations" title="Link to this heading"></a></h2>
+<p>Pasting a transform adjusts the Object/Bone’s location, rotation, and
+scale. This means that when copying a skewed transform, this skew is lost.</p>
+<p>If there are constraints on the Object/Bone, the resulting visual transformation
+may not be the same as the pasted one. To give a concrete example: if you have a
+constraint that adds a rotation, it will always add that rotation on top of the
+pasted transform.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="../../animation/armatures/posing/editing/pose_library.html"><span class="doc">Pose Library</span></a> for a way to manage
+and share entire poses.</p>
+</div>
+<div class="refbox admonition" id="id1">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Category<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Animation</p>
+</dd>
+<dt class="field-even">Description<span class="colon">:</span></dt>
+<dd class="field-even"><p>Simple add-on for copying world-space transforms.</p>
+</dd>
+<dt class="field-odd">Location<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">3D Viewport ‣ N-panel ‣ Animation tab</span></p>
+</dd>
+<dt class="field-even">File<span class="colon">:</span></dt>
+<dd class="field-even"><p>copy_global_transform.py</p>
+</dd>
+<dt class="field-odd">Author<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Sybren A. Stüvel</p>
+</dd>
+<dt class="field-even">Maintainer<span class="colon">:</span></dt>
+<dd class="field-even"><p>Sybren A. Stüvel</p>
+</dd>
+<dt class="field-odd">License<span class="colon">:</span></dt>
+<dd class="field-odd"><p>GPL 2+</p>
+</dd>
+<dt class="field-even">Support Level<span class="colon">:</span></dt>
+<dd class="field-even"><p>Official</p>
+</dd>
+<dt class="field-odd">Note<span class="colon">:</span></dt>
+<dd class="field-odd"><p>This add-on is bundled with Blender.</p>
+</dd>
+</dl>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="bone_selection_sets.html" class="btn btn-neutral float-left" title="Bone Selection Sets" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="corrective_shape_keys.html" class="btn btn-neutral float-right" title="Corrective Shape Keys" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../copyright.html">Copyright</a> : This page is licensed under a CC-BY-SA 4.0 Int. License.
+      <span class="lastupdated">Last updated on 12/17/2023.
+      </span></p>
+  </div>
+
+  
+<div class="footer-contribute">
+   <ul>
+      <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/addons/animation/copy_global_transform.rst"
+            class="fa fa-edit"> View Source</a>
+      </li>
+      <!-- <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/addons/animation/copy_global_transform.rst"
+            class="fa fa-edit"> Edit Page</a>
+      </li> -->
+      <li>
+         <a href="https://projects.blender.org/blender/documentation/issues/new?template=.gitea/issue_template/bug.yaml&field:body=%2A%2APage+Information%2A%2A%0D%0AFile%3A+%60manual%2Faddons/animation/copy_global_transform.rst%60%0D%0ABlender+Version%3A+%604.0%60%0D%0ADocumentation+Language%3A+%60en%60%0D%0A%5BPermanent+Link%5D%28https%3A%2F%2Fdocs.blender.org%2Fmanual%2Fen%2F4.0%2Faddons/animation/copy_global_transform.html%29%0D%0A%0D%0A%2A%2AShort+description+of+error%2A%2A%0D%0A%5BPlease+fill+out+a+short+description+of+the+error+here%5D%0D%0A"
+            class="fa fa-bug"> Report issue on this page</a>
+      </li>
+      <ul>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="document versions">
+	<ul id="versionwrap" role="presentation">
+		<li role="presentation">
+			<span id="version-popover" class="version-btn" tabindex="0" role="button" aria-label="versions selector"
+				aria-haspopup="true" aria-controls="version-vsnlist" aria-disabled="true">
+				4.0
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Versions</div>
+				<ul id="version-vsnlist" class="version-list" role="menu" aria-labelledby="version-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<li role="presentation">
+			<span id="lang-popover" class="version-btn" tabindex="0" role="button" aria-label="language selector"
+				aria-haspopup="true" aria-controls="version-langlist">
+				 en 
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Languages</div>
+				<ul id="version-langlist" class="version-list" role="menu" aria-labelledby="lang-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<template id="version-entry">
+			<li tabindex="-1" role="presentation"><a tabindex="-1" role="menuitem"></a></li>
+			<li class="selected" tabindex="-1" role="presentation"><span tabindex="-1" aria-current="page"></spanp></li>
+		</template>
+	</ul>
+<template id="version-warning">
+	<div class="admonition warning">
+		<p class="first admonition-title">Note</p>
+		<p class="last">
+			You are not using the most up to date version of the documentation.
+			<a href="#"></a> is the newest version.
+		</p>
+	</div>
+</template>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1418081-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1418081-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

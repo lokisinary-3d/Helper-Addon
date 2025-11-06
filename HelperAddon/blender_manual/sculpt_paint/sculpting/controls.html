@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Controls &mdash; Blender Manual</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme_overrides.css?v=8da28a04" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/version_switch.css?v=74ca2809" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/controls.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=715c20a1"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/version_switch.js?v=5cbd935e"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Blender Manual"
+          href="../../_static/opensearch.xml"/>
+<link rel="alternate" hreflang="en" href="https://docs.blender.org/manual/en/latest/" />
+<link rel="alternate" hreflang="ar" href="https://docs.blender.org/manual/ar/latest/" />
+<link rel="alternate" hreflang="de" href="https://docs.blender.org/manual/de/latest/" />
+<link rel="alternate" hreflang="es" href="https://docs.blender.org/manual/es/latest/" />
+<link rel="alternate" hreflang="fi" href="https://docs.blender.org/manual/fi/latest/" />
+<link rel="alternate" hreflang="fr" href="https://docs.blender.org/manual/fr/latest/" />
+<link rel="alternate" hreflang="id" href="https://docs.blender.org/manual/id/latest/" />
+<link rel="alternate" hreflang="it" href="https://docs.blender.org/manual/it/latest/" />
+<link rel="alternate" hreflang="ja" href="https://docs.blender.org/manual/ja/latest/" />
+<link rel="alternate" hreflang="ko" href="https://docs.blender.org/manual/ko/latest/" />
+<link rel="alternate" hreflang="nb" href="https://docs.blender.org/manual/nb/latest/" />
+<link rel="alternate" hreflang="pt" href="https://docs.blender.org/manual/pt/latest/" />
+<link rel="alternate" hreflang="ru" href="https://docs.blender.org/manual/ru/latest/" />
+<link rel="alternate" hreflang="sk" href="https://docs.blender.org/manual/sk/latest/" />
+<link rel="alternate" hreflang="sl" href="https://docs.blender.org/manual/sl/latest/" />
+<link rel="alternate" hreflang="sr" href="https://docs.blender.org/manual/sr/latest/" />
+<link rel="alternate" hreflang="uk" href="https://docs.blender.org/manual/uk/latest/" />
+<link rel="alternate" hreflang="vi" href="https://docs.blender.org/manual/vi/latest/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://docs.blender.org/manual/zh-hans/latest/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://docs.blender.org/manual/zh-hant/latest/" />
+<link rel="alternate" hreflang="x-default" href="https://docs.blender.org/manual/en/latest/" />
+
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="Editing" href="editing/index.html" />
+    <link rel="prev" title="Options" href="tool_settings/options.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Blender 4.0 Manual
+              <img src="../../_static/blender-logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/about/index.html">About Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installing/index.html">Installing Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/configuration/index.html">Configuring Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/help.html">Help System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sections</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../interface/index.html">User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../editors/index.html">Editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scene_layout/index.html">Scenes &amp; Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modeling/index.html">Modeling</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Sculpting &amp; Painting</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../brush/index.html">Brush</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../selection_visibility.html">Selection &amp; Visibility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../navigation.html">Navigation</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#modes">Modes</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">Sculpting</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="introduction/index.html">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="toolbar.html">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tools/index.html">Tools</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tool_settings/index.html">Tool Settings</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Controls</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#auto-masking">Auto-Masking</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="editing/index.html">Editing</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../texture_paint/index.html">Texture Paint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../vertex_paint/index.html">Vertex Paint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../weight_paint/index.html">Weight Paint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../curves_sculpting/index.html">Curves Sculpting</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../grease_pencil/index.html">Grease Pencil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../animation/index.html">Animation &amp; Rigging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../physics/index.html">Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../render/index.html">Rendering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../compositing/index.html">Compositing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../movie_clip/index.html">Motion Tracking &amp; Masking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../video_editing/index.html">Video Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../files/index.html">Assets, Files, &amp; Data System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../addons/index.html">Add-ons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/index.html">Advanced</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Manual Index</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get Involved</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribute Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Blender 4.0 Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Sculpting &amp; Painting</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Sculpting</a></li>
+      <li class="breadcrumb-item active">Controls</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="controls">
+<h1>Controls<a class="headerlink" href="#controls" title="Link to this heading"></a></h1>
+<section id="auto-masking">
+<h2>Auto-Masking<a class="headerlink" href="#auto-masking" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id1">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Mode<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Sculpt Mode</p>
+</dd>
+<dt class="field-even">Tool<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Header ‣ Auto-Masking</span></p>
+</dd>
+<dt class="field-odd">Shortcut<span class="colon">:</span></dt>
+<dd class="field-odd"><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">A</kbd></kbd></p>
+</dd>
+</dl>
+</div>
+<p>These properties automatically mask geometry based on geometric features of the mesh.
+It’s an quick alternative to frequent manual masking.
+These masks are initialized on every new stroke or tool usage. They are also never visible as an overlay.</p>
+<p>Note, these properties are applied across all sculpt brushes, however, they can also be configured
+per brush in the <a class="reference internal" href="../brush/brush_settings.html#sculpt-tool-settings-brush-settings-advanced"><span class="std std-ref">Advanced Brush Settings</span></a>.</p>
+<p>These properties can be accessed via a <a class="reference internal" href="../../interface/controls/buttons/menus.html#bpy-types-uipiemenu"><span class="std std-ref">Pie Menus</span></a> by pressing <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">A</kbd></kbd>.</p>
+<p>All auto-masking modes can be combined, which makes the generated auto-mask more specific.
+For example it’s possible to auto-mask a specific face set,
+while excluding disconnected topology and face set boundaries,
+and only affect faces that are oriented towards the view via View Normal.</p>
+<dl id="bpy-types-sculpt-use-automasking-topology">
+<dt>Topology</dt><dd><p>Only vertices that are topologically connected to where you started
+the stroke/tool on are affected. So loose geometry islands will be auto-masked.</p>
+<p>Additionally for the <a class="reference internal" href="tools/grab.html"><span class="doc">Grab</span></a> and
+<a class="reference internal" href="tools/thumb.html"><span class="doc">Thumb</span></a> brushes, anything that
+is not connected within the brush radius will be auto-masked.
+So even if geometry is connected somewhere,
+it is considered separate if the connection is not within the radius.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-sculpt-use-automasking-face-sets">
+<dt>Face Sets</dt><dd><p>Only vertices that are part of the same face set that you started the stroke/tool on are affected.</p>
+</dd>
+</dl>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If no topology or face set is visible under the cursor at the start of the stroke,
+the previously auto-masked area will be targeted.
+This is especially useful with the “Projected” falloff shape in the
+<a class="reference internal" href="../brush/falloff.html"><span class="doc">Falloff Settings</span></a>.</p>
+</div>
+<dl id="bpy-types-sculpt-use-automasking-boundary-edges">
+<dt>Mesh Boundary</dt><dd><p>Vertices that are part of open boundary edges are not affected.
+This also includes boundary edges to hidden faces.</p>
+<dl class="simple">
+<dt>Propagation Steps</dt><dd><p>Increases the soft gradient towards the auto-masked boundary edges.
+Each step iterates the distance one edge further.
+This setting is used for both Mesh Boundary and Face Sets Boundary.
+It is also currently stored per brush.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-sculpt-use-automasking-boundary-face-sets">
+<dt>Face Sets Boundary</dt><dd><p>Vertices that are part of a boundary between face sets are not affected.
+This also includes boundary edges to hidden faces.
+Propagation Steps are shared with Mesh Boundary auto-masking.</p>
+</dd>
+</dl>
+<dl id="bpy-types-sculpt-use-automasking-cavity">
+<dt>Cavity</dt><dd><p>Vertices that are the peaks of the surface curvature are not affected.
+While this auto-mask is primarily meant for painting,
+it can also be used for regular sculpting.</p>
+<dl class="simple">
+<dt>Factor</dt><dd><p>The overall contrast of how strong the cavity is applied. The value of 0.5 is the default,
+but better results can also be achieved on 0.2 if a Custom Curve is used as well.</p>
+</dd>
+<dt>Blur</dt><dd><p>The number of times the cavity mask is blurred. A value of 0 will give the pure cavity auto-mask.
+Anything higher than 6 will likely have a less visible effect and decrease performance.
+Even though the value is capped to 10, it can be increased up to 25 if typing in the value.</p>
+</dd>
+<dt>Custom Curve</dt><dd><p>Use a custom curve to fine tweak the cavity auto-mask.
+This is very useful if only small crevices or flat surfaces should be affected.
+Or for example if the contrast should be increased/decreased in a specific way.</p>
+</dd>
+<dt>Create Mask</dt><dd><p>This will execute the <a class="reference internal" href="editing/mask.html#bpy-ops-sculpt-dirty-mask"><span class="std std-ref">Mask From Cavity</span></a> operator with the current auto-masking settings.
+This is very useful to visualize the current auto-mask, or to edit the mask further manually.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-sculpt-use-automasking-cavity-inverted">
+<dt>Cavity (Inverted)</dt><dd><p>This is the same as “Cavity”, but inverted.
+This means the valleys/crevices of the surface curvature will not be affected.
+It cannot be used at the same time as Cavity and shares all of its settings.
+Enable this to quickly invert the cavity auto-mask.</p>
+</dd>
+</dl>
+<dl id="bpy-types-sculpt-use-automasking-view-normal">
+<dt>View Normal</dt><dd><p>Only vertices with a <a class="reference internal" href="../../glossary/index.html#term-Normal"><span class="xref std std-term">Normal</span></a> that face the viewer are affected.
+This is similar to the “Front Faces Only” toggle in the
+<a class="reference internal" href="tool_settings/brush_settings.html"><span class="doc">Brush Setting</span></a>, to only affect visible geometry.
+The advantage of this auto-mask is that it has more options and works on sculpt mode as a whole.</p>
+<dl class="simple">
+<dt>Occlusion</dt><dd><p>Change the View Normal behavior to only affect vertices that are not occluded by other faces.
+This setting is incompatible with the other Limit and Falloff sliders.
+It also causes a much slower performance.</p>
+</dd>
+<dt>Limit</dt><dd><p>Determines the range of angles that will be affected. 90 degrees encompasses all that is visible.</p>
+</dd>
+<dt>Falloff</dt><dd><p>Extends the angular range of the Limit slider with a soft falloff gradient.
+This falloff will visually extend the limit range further.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<span id="bpy-types-sculpt-automasking-start-normal-limit"></span><span id="bpy-types-sculpt-automasking-start-normal-falloff"></span><dl class="simple" id="bpy-types-sculpt-use-automasking-start-normal">
+<dt>Area Normal</dt><dd><p>Very similar to the View Normal, but uses the Normal of the surface that you started the stroke/tool on.
+This way any direction can be chosen for what vertices will be affected.
+It has the same Limit and Falloff sliders as the View Normal auto-mask.</p>
+</dd>
+</dl>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="tool_settings/options.html" class="btn btn-neutral float-left" title="Options" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="editing/index.html" class="btn btn-neutral float-right" title="Editing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../copyright.html">Copyright</a> : This page is licensed under a CC-BY-SA 4.0 Int. License.
+      <span class="lastupdated">Last updated on 12/17/2023.
+      </span></p>
+  </div>
+
+  
+<div class="footer-contribute">
+   <ul>
+      <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/sculpt_paint/sculpting/controls.rst"
+            class="fa fa-edit"> View Source</a>
+      </li>
+      <!-- <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/sculpt_paint/sculpting/controls.rst"
+            class="fa fa-edit"> Edit Page</a>
+      </li> -->
+      <li>
+         <a href="https://projects.blender.org/blender/documentation/issues/new?template=.gitea/issue_template/bug.yaml&field:body=%2A%2APage+Information%2A%2A%0D%0AFile%3A+%60manual%2Fsculpt_paint/sculpting/controls.rst%60%0D%0ABlender+Version%3A+%604.0%60%0D%0ADocumentation+Language%3A+%60en%60%0D%0A%5BPermanent+Link%5D%28https%3A%2F%2Fdocs.blender.org%2Fmanual%2Fen%2F4.0%2Fsculpt_paint/sculpting/controls.html%29%0D%0A%0D%0A%2A%2AShort+description+of+error%2A%2A%0D%0A%5BPlease+fill+out+a+short+description+of+the+error+here%5D%0D%0A"
+            class="fa fa-bug"> Report issue on this page</a>
+      </li>
+      <ul>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="document versions">
+	<ul id="versionwrap" role="presentation">
+		<li role="presentation">
+			<span id="version-popover" class="version-btn" tabindex="0" role="button" aria-label="versions selector"
+				aria-haspopup="true" aria-controls="version-vsnlist" aria-disabled="true">
+				4.0
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Versions</div>
+				<ul id="version-vsnlist" class="version-list" role="menu" aria-labelledby="version-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<li role="presentation">
+			<span id="lang-popover" class="version-btn" tabindex="0" role="button" aria-label="language selector"
+				aria-haspopup="true" aria-controls="version-langlist">
+				 en 
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Languages</div>
+				<ul id="version-langlist" class="version-list" role="menu" aria-labelledby="lang-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<template id="version-entry">
+			<li tabindex="-1" role="presentation"><a tabindex="-1" role="menuitem"></a></li>
+			<li class="selected" tabindex="-1" role="presentation"><span tabindex="-1" aria-current="page"></spanp></li>
+		</template>
+	</ul>
+<template id="version-warning">
+	<div class="admonition warning">
+		<p class="first admonition-title">Note</p>
+		<p class="last">
+			You are not using the most up to date version of the documentation.
+			<a href="#"></a> is the newest version.
+		</p>
+	</div>
+</template>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1418081-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1418081-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

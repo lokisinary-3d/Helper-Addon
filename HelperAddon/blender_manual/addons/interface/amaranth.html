@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amaranth Toolset &mdash; Blender Manual</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme_overrides.css?v=8da28a04" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/version_switch.css?v=74ca2809" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.blender.org/manual/en/latest/addons/interface/amaranth.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=715c20a1"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/version_switch.js?v=5cbd935e"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Blender Manual"
+          href="../../_static/opensearch.xml"/>
+<link rel="alternate" hreflang="en" href="https://docs.blender.org/manual/en/latest/" />
+<link rel="alternate" hreflang="ar" href="https://docs.blender.org/manual/ar/latest/" />
+<link rel="alternate" hreflang="de" href="https://docs.blender.org/manual/de/latest/" />
+<link rel="alternate" hreflang="es" href="https://docs.blender.org/manual/es/latest/" />
+<link rel="alternate" hreflang="fi" href="https://docs.blender.org/manual/fi/latest/" />
+<link rel="alternate" hreflang="fr" href="https://docs.blender.org/manual/fr/latest/" />
+<link rel="alternate" hreflang="id" href="https://docs.blender.org/manual/id/latest/" />
+<link rel="alternate" hreflang="it" href="https://docs.blender.org/manual/it/latest/" />
+<link rel="alternate" hreflang="ja" href="https://docs.blender.org/manual/ja/latest/" />
+<link rel="alternate" hreflang="ko" href="https://docs.blender.org/manual/ko/latest/" />
+<link rel="alternate" hreflang="nb" href="https://docs.blender.org/manual/nb/latest/" />
+<link rel="alternate" hreflang="pt" href="https://docs.blender.org/manual/pt/latest/" />
+<link rel="alternate" hreflang="ru" href="https://docs.blender.org/manual/ru/latest/" />
+<link rel="alternate" hreflang="sk" href="https://docs.blender.org/manual/sk/latest/" />
+<link rel="alternate" hreflang="sl" href="https://docs.blender.org/manual/sl/latest/" />
+<link rel="alternate" hreflang="sr" href="https://docs.blender.org/manual/sr/latest/" />
+<link rel="alternate" hreflang="uk" href="https://docs.blender.org/manual/uk/latest/" />
+<link rel="alternate" hreflang="vi" href="https://docs.blender.org/manual/vi/latest/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://docs.blender.org/manual/zh-hans/latest/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://docs.blender.org/manual/zh-hant/latest/" />
+<link rel="alternate" hreflang="x-default" href="https://docs.blender.org/manual/en/latest/" />
+
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="Copy Attributes Menu" href="copy_attributes.html" />
+    <link rel="prev" title="3D Viewport Pie Menus" href="viewport_pies.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Blender 4.0 Manual
+              <img src="../../_static/blender-logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/about/index.html">About Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installing/index.html">Installing Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/configuration/index.html">Configuring Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/help.html">Help System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sections</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../interface/index.html">User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../editors/index.html">Editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scene_layout/index.html">Scenes &amp; Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modeling/index.html">Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sculpt_paint/index.html">Sculpting &amp; Painting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../grease_pencil/index.html">Grease Pencil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../animation/index.html">Animation &amp; Rigging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../physics/index.html">Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../render/index.html">Rendering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../compositing/index.html">Compositing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../movie_clip/index.html">Motion Tracking &amp; Masking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../video_editing/index.html">Video Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../files/index.html">Assets, Files, &amp; Data System</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Add-ons</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#add-ons-category-listings">Add-ons Category Listings</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../3d_view/index.html">3D View</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../add_curve/index.html">Add Curve</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../add_mesh/index.html">Add Mesh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../animation/index.html">Animation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../baking/index.html">Baking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../camera/index.html">Camera</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../development/index.html">Development</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../import_export/index.html">Import-Export</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">Interface</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="viewport_pies.html">3D Viewport Pie Menus</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Amaranth Toolset</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#activation">Activation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#d-view">3D View</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#set-camera-bounds-as-render-border">Set Camera Bounds as Render Border</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#select-meshlights">Select Meshlights</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#adjust-passepartout">Adjust Passepartout</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#scene-cameras-and-meshlights-count">Scene, Cameras, and Meshlights Count</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#wireframe-toggle">Wireframe Toggle</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#render">Render</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#ui-final-resolution">UI: Final Resolution</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#cycles-set-samples-per">Cycles: Set Samples Per</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#object-id-for-collection-instances">Object ID for Collection Instances</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#nodes-editor">Nodes Editor</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#display-image-node-in-image-editor">Display Image Node in Image Editor</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#node-templates-vignette">Node Templates: Vignette</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#nodes-xyz-sliders-for-normal-node">Nodes: XYZ Sliders for Normal Node</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#object-material-indices-panel">Object / Material Indices Panel</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#shaders-extra-info">Shaders Extra Info</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#nodes-stats">Nodes Stats</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#nodes-simplify-panel">Nodes Simplify Panel</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#animation">Animation</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#jump-n-frames">Jump N Frames</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#current-frame-slider">Current Frame Slider</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#bone-motion-paths-match-frame-range-clear-all-paths">Bone Motion Paths: Match Frame Range + Clear All Paths</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#scene">Scene</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#save-reload-file">Save &amp; Reload File</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#refresh-scene">Refresh Scene</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#debug">Debug</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#list-missing-images">List Missing Images</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#list-missing-node-links">List Missing Node Links</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#list-empty-material-slots">List Empty Material Slots</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#list-cycles-material-using-x-shader">List Cycles Material using X shader</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#lighter-s-corner">Lighter’s Corner</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#file-browser">File Browser</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#go-to-current-blend-s-folder">Go to Current Blend’s Folder</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#libraries-bookmark">Libraries Bookmark</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#timeline">Timeline</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#timeline-extra-info">Timeline Extra Info</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#modeling">Modeling</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#symmetry-tools">Symmetry Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#miscellaneous">Miscellaneous</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#color-management-presets">Color Management Presets</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#instancing-show-path-of-libraries">Instancing: Show Path of Libraries</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#sequencer-display-image-file-name">Sequencer: Display Image File Name</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="copy_attributes.html">Copy Attributes Menu</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collection_manager.html">Collection Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="brush_menus.html">Dynamic Brush Menus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="context_menu.html">Dynamic Context Menu</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modifier_tools.html">Modifier Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../lighting/index.html">Lighting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../materials/index.html">Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mesh/index.html">Mesh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../node/index.html">Node</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../object/index.html">Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../paint/index.html">Paint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../render/index.html">Render</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rigging/index.html">Rigging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sequencer/index.html">Sequencer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../system/index.html">System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../uv/index.html">UV</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video_tools/index.html">Video Tools</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/index.html">Advanced</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Manual Index</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get Involved</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribute Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Blender 4.0 Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Add-ons</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Interface</a></li>
+      <li class="breadcrumb-item active">Amaranth Toolset</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="amaranth-toolset">
+<h1>Amaranth Toolset<a class="headerlink" href="#amaranth-toolset" title="Link to this heading"></a></h1>
+<p>A collection of tools and settings to improve productivity.</p>
+<section id="activation">
+<h2>Activation<a class="headerlink" href="#activation" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Open Blender and go to Edit menu, Preferences, then Add-ons.</p></li>
+<li><p>Search for Amaranth, and activate the add-on.</p></li>
+</ul>
+</section>
+<section id="d-view">
+<h2>3D View<a class="headerlink" href="#d-view" title="Link to this heading"></a></h2>
+<section id="set-camera-bounds-as-render-border">
+<h3>Set Camera Bounds as Render Border<a class="headerlink" href="#set-camera-bounds-as-render-border" title="Link to this heading"></a></h3>
+<p>When in camera view, we can now set the border-render to be the same size of the camera,
+so we don’t render outside the view. Makes faster render preview.</p>
+<p>Usage: Context menus (<kbd class="kbd docutils literal notranslate">RMB</kbd>) when in Camera View.</p>
+</section>
+<section id="select-meshlights">
+<h3>Select Meshlights<a class="headerlink" href="#select-meshlights" title="Link to this heading"></a></h3>
+<p>Select all the meshes that emit light.</p>
+<p>Usage: On the header of the 3D View, top of the select menu.</p>
+</section>
+<section id="adjust-passepartout">
+<h3>Adjust Passepartout<a class="headerlink" href="#adjust-passepartout" title="Link to this heading"></a></h3>
+<p>The passepartout value of local Cameras is now available via the context menu,
+while in Camera view.</p>
+<p>Usage: Context menus (<kbd class="kbd docutils literal notranslate">RMB</kbd>) when in Camera View.</p>
+</section>
+<section id="scene-cameras-and-meshlights-count">
+<h3>Scene, Cameras, and Meshlights Count<a class="headerlink" href="#scene-cameras-and-meshlights-count" title="Link to this heading"></a></h3>
+<p>Add the number of scenes, cameras, and light emitting meshes to the stats in the Status Bar.</p>
+<p>Disabled by default as there has been reports of very minor slowdown on scenes with many hi-poly objects.
+Never experienced myself but just in case.</p>
+<p>Usage: Once enabled in the add-on preferences, it will appear in the Status Bar.</p>
+</section>
+<section id="wireframe-toggle">
+<h3>Wireframe Toggle<a class="headerlink" href="#wireframe-toggle" title="Link to this heading"></a></h3>
+<p>Enable or disable wireframe display on mesh objects.
+It even works on linked objects/scenes too, where this option is not accessible.</p>
+<p>“Display” will enable the wireframe, while “Clear” will disable it.</p>
+<p>Both using the following settings:</p>
+<dl class="simple">
+<dt>Draw All Edges</dt><dd><p>Display edges even on coplanar faces</p>
+</dd>
+<dt>Subdvision Optimal Display</dt><dd><p>Enable/Disable the “Optimal Display” option on Subdvision modifiers</p>
+</dd>
+<dt>Only Selected Objects</dt><dd><p>Only apply to the selected objects, otherwise apply to all.</p>
+</dd>
+<dt>All Scenes</dt><dd><p>Display wireframe on all the objects in all scenes.
+Handy when working with linked scenes, where it’s impossible to access the Wireframe option from the UI.</p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="render">
+<h2>Render<a class="headerlink" href="#render" title="Link to this heading"></a></h2>
+<section id="ui-final-resolution">
+<h3>UI: Final Resolution<a class="headerlink" href="#ui-final-resolution" title="Link to this heading"></a></h3>
+<p>Display a <strong>Final Resolution</strong> label with the size in pixels of your render.
+It also displays the final size for border renders.</p>
+<p>Usage: Find it in the ‘Format’ panel, Render properties.</p>
+</section>
+<section id="cycles-set-samples-per">
+<h3>Cycles: Set Samples Per<a class="headerlink" href="#cycles-set-samples-per" title="Link to this heading"></a></h3>
+<p>A quick way to see and set the number of render samples on each Scene or ViewLayer.</p>
+<p>Usage: Find it in the Sampling panel, on Render properties.</p>
+</section>
+<section id="object-id-for-collection-instances">
+<h3>Object ID for Collection Instances<a class="headerlink" href="#object-id-for-collection-instances" title="Link to this heading"></a></h3>
+<p>Override the Pass Index for all objects in the Collection.</p>
+<p>In order for the Pass Index to be loaded on computers without Amaranth installed,
+it will automatically create a text file (called AmaranthStartup.py) and save it inside the .blend,
+this will auto-run on startup and set the Pass Index. Remember to have auto-run Python scripts on your Preferences.</p>
+<p>Usage: Select an Instanced Collection and set a Pass Index (other than zero) and press “Apply Object ID to Duplis”
+in the Relations panel in Object Properties.</p>
+</section>
+</section>
+<section id="nodes-editor">
+<h2>Nodes Editor<a class="headerlink" href="#nodes-editor" title="Link to this heading"></a></h2>
+<section id="display-image-node-in-image-editor">
+<h3>Display Image Node in Image Editor<a class="headerlink" href="#display-image-node-in-image-editor" title="Link to this heading"></a></h3>
+<p>A quick way to view an image assigned to an Image node.</p>
+<p>Usage: Double-click an Image Node in the Nodes Editor (Compositor or Cycles),
+there must be at least 1 image editor available.</p>
+</section>
+<section id="node-templates-vignette">
+<h3>Node Templates: Vignette<a class="headerlink" href="#node-templates-vignette" title="Link to this heading"></a></h3>
+<p>Add a set of nodes to create a vignette effect attached to the selected node.</p>
+<dl class="simple">
+<dt>Vignette</dt><dd><p>Adjust the size and position of the vignette with the Ellipse Mask’s X/Y and width, height values.</p>
+</dd>
+</dl>
+<p>Usage: Find the templates in the Compositor’s header, “Template” drop-down. Or hit <kbd class="kbd docutils literal notranslate">W</kbd>.</p>
+</section>
+<section id="nodes-xyz-sliders-for-normal-node">
+<h3>Nodes: XYZ Sliders for Normal Node<a class="headerlink" href="#nodes-xyz-sliders-for-normal-node" title="Link to this heading"></a></h3>
+<p>Tweak the Normal node more accurately by using these sliders.</p>
+<p>Usage: Find it in the Properties panel, when selecting a Normal node.</p>
+</section>
+<section id="object-material-indices-panel">
+<h3>Object / Material Indices Panel<a class="headerlink" href="#object-material-indices-panel" title="Link to this heading"></a></h3>
+<p>When working with ID Masks in the Nodes Editor,
+it’s hard to follow track of which Objects/Materials have which Pass Index.</p>
+<p>This adds a panel on the sidebar when an ID Mask node is selected.
+The active object is highlighted between [square brackets]</p>
+<p>Usage: On the Nodes Editor’s sidebar, when an ID Mask node is selected.</p>
+</section>
+<section id="shaders-extra-info">
+<h3>Shaders Extra Info<a class="headerlink" href="#shaders-extra-info" title="Link to this heading"></a></h3>
+<p>Display the name and type of the current object. It works on Materials and Lights.</p>
+<p>Usage: Find it in the Node Editor’s header.</p>
+</section>
+<section id="nodes-stats">
+<h3>Nodes Stats<a class="headerlink" href="#nodes-stats" title="Link to this heading"></a></h3>
+<p>Display the number of selected and total nodes on the compositor.</p>
+<p>Usage: Find it in the Compositing Nodes Editor.</p>
+</section>
+<section id="nodes-simplify-panel">
+<h3>Nodes Simplify Panel<a class="headerlink" href="#nodes-simplify-panel" title="Link to this heading"></a></h3>
+<p>Disable/Enable certain nodes at a time. Useful to quickly “simplify” compositing.</p>
+<p>This feature is a work in progress, the main issue now is when switching many different kinds one after the other.</p>
+<p>Experimental feature.</p>
+<p>Usage: Find it in the Nodes Editor sidebar (<kbd class="kbd docutils literal notranslate">N</kbd>).</p>
+</section>
+</section>
+<section id="animation">
+<h2>Animation<a class="headerlink" href="#animation" title="Link to this heading"></a></h2>
+<section id="jump-n-frames">
+<h3>Jump N Frames<a class="headerlink" href="#jump-n-frames" title="Link to this heading"></a></h3>
+<p>Press <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">Up</kbd></kbd> or <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">Down</kbd></kbd> to jump forward/backwards a custom number of frames.</p>
+<p>Useful for example when animating at 12 frames per second, to be able to jump every 1 second with a shortcut.
+Make sure to save the preferences so this value is stored and used in the future.</p>
+<p>Usage: Find it in Preferences, Animation section, Timeline panel.</p>
+</section>
+<section id="current-frame-slider">
+<h3>Current Frame Slider<a class="headerlink" href="#current-frame-slider" title="Link to this heading"></a></h3>
+<p>Currently the only way to change the current frame is to have a Timeline editor open,
+but sometimes you don’t have one, or you’re fullscreen.
+This feature adds the <cite>Current Frame</cite> slider to the context menu.</p>
+<p>Usage: Find it in the <kbd class="kbd docutils literal notranslate">RMB</kbd> (context or <kbd class="kbd docutils literal notranslate">W</kbd>
+in right-click select keymap) menu in Object mode or Pose mode,
+click-drag sideways or click in the middle to set the frame manually.</p>
+</section>
+<section id="bone-motion-paths-match-frame-range-clear-all-paths">
+<h3>Bone Motion Paths: Match Frame Range + Clear All Paths<a class="headerlink" href="#bone-motion-paths-match-frame-range-clear-all-paths" title="Link to this heading"></a></h3>
+<dl class="simple">
+<dt>Clear All Paths</dt><dd><p>Simple operator to loop through all bones and clear their paths, useful when having hidden bones
+(otherwise you have to go through each one of them and clear manually)</p>
+</dd>
+<dt>Match Current Frame Range</dt><dd><p>Set the current frame range as motion path range.</p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="scene">
+<h2>Scene<a class="headerlink" href="#scene" title="Link to this heading"></a></h2>
+<section id="save-reload-file">
+<h3>Save &amp; Reload File<a class="headerlink" href="#save-reload-file" title="Link to this heading"></a></h3>
+<p>When working with linked libraries, very often you need to save and load again to see the changes.</p>
+<p>Note: Since this feature is meant to speed-up the save/reload process, there is no prompt on save.</p>
+<p>Usage: Press <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">W</kbd></kbd> or find it at the bottom of the File menu</p>
+</section>
+<section id="refresh-scene">
+<h3>Refresh Scene<a class="headerlink" href="#refresh-scene" title="Link to this heading"></a></h3>
+<p>Refresh the current scene, useful when working with libraries or drivers.</p>
+<p>Usage: Press <kbd class="kbd docutils literal notranslate">F5</kbd> or find it in the context menu <kbd class="kbd docutils literal notranslate">W</kbd></p>
+</section>
+</section>
+<section id="debug">
+<h2>Debug<a class="headerlink" href="#debug" title="Link to this heading"></a></h2>
+<section id="list-missing-images">
+<h3>List Missing Images<a class="headerlink" href="#list-missing-images" title="Link to this heading"></a></h3>
+<p>Display a list of missing images (that is, images that can’t be found) Under a collapsible list.</p>
+<p>Display the image name and its path, if the image is coming from a linked .blend, display the path to it.</p>
+<p>Clicking on the .blend library path (Blender icon) will open the file in a new Blender instance.</p>
+<p>Usage: Find it in the Scene Debug panel, under Scene Properties.</p>
+</section>
+<section id="list-missing-node-links">
+<h3>List Missing Node Links<a class="headerlink" href="#list-missing-node-links" title="Link to this heading"></a></h3>
+<p>Operator to look for empty image nodes, or missing images in nodes.</p>
+<p>The “List Missing Node Links” button will print:
+* Node Groups that were linked but are now “Missing Datablock”
+* Image Nodes pointing to a non-existent image
+* Image Nodes that don’t have any output connected</p>
+<p>Additionally, it will print in the terminal a list of all the Materials that meet any of the missing cases above,
+the object they belong to, and their path (if they’re coming from a Library).</p>
+<p>Usage: Find it in the Scene Debug panel, on Scene Properties.</p>
+</section>
+<section id="list-empty-material-slots">
+<h3>List Empty Material Slots<a class="headerlink" href="#list-empty-material-slots" title="Link to this heading"></a></h3>
+<p>Having empty material slots with no material assigned to it is rare, but can happen.
+Sometimes because the material was linked and the link got lost.</p>
+<p>The “List Empty Material Slots” button will print a list of all the objects that have empty material slots.</p>
+<p>If the objects are linked, it will show a list of the libraries paths,
+click on them to open a new Blender instance with that library.</p>
+<p>Usage: Find it in the Scene Debug panel, on Scene Properties.</p>
+</section>
+<section id="list-cycles-material-using-x-shader">
+<h3>List Cycles Material using X shader<a class="headerlink" href="#list-cycles-material-using-x-shader" title="Link to this heading"></a></h3>
+<p>Where X is any shader type you want. It will display (and print on console) a list of all the materials containing
+the shader you specified above.</p>
+<p>Good for finding out if there’s any meshlight (Emission) material hidden somewhere,
+or if there are many glossy shaders making things noisy.</p>
+</section>
+<section id="lighter-s-corner">
+<h3>Lighter’s Corner<a class="headerlink" href="#lighter-s-corner" title="Link to this heading"></a></h3>
+<p>A list of all the lights in the scene, including meshlights (meshes that have a Material with Emission shader).</p>
+<p>From this list it is possible to adjust Ray Visibility (Camera, Diffuse, Glossy, Shadow) and renderability.</p>
+<p>Usage: Find it in the Lighter’s Corner panel, on Scene Properties.</p>
+</section>
+</section>
+<section id="file-browser">
+<h2>File Browser<a class="headerlink" href="#file-browser" title="Link to this heading"></a></h2>
+<section id="go-to-current-blend-s-folder">
+<h3>Go to Current Blend’s Folder<a class="headerlink" href="#go-to-current-blend-s-folder" title="Link to this heading"></a></h3>
+<p>A quick way to go to the currently open blend’s directory.</p>
+</section>
+<section id="libraries-bookmark">
+<h3>Libraries Bookmark<a class="headerlink" href="#libraries-bookmark" title="Link to this heading"></a></h3>
+<p>The “Libraries” panel in the File Browser displays the path to all the libraries linked to that .blend.
+That way you can quickly go to the folders related to the file.</p>
+<p>Usage: Find it in the <strong>Libraries</strong> panel in File Browser. Click on any path to go to that directory.</p>
+</section>
+</section>
+<section id="timeline">
+<h2>Timeline<a class="headerlink" href="#timeline" title="Link to this heading"></a></h2>
+<section id="timeline-extra-info">
+<h3>Timeline Extra Info<a class="headerlink" href="#timeline-extra-info" title="Link to this heading"></a></h3>
+<p>Display amount of frames left until Frame End, very handy especially when rendering an animation or OpenGL preview.</p>
+<p>Display current/end time in <a class="reference external" href="https://en.wikipedia.org/wiki/SMPTE_timecode">SMPTE</a>.</p>
+<p>Usage: Find it in the Timeline Editor’s header.</p>
+</section>
+</section>
+<section id="modeling">
+<h2>Modeling<a class="headerlink" href="#modeling" title="Link to this heading"></a></h2>
+<section id="symmetry-tools">
+<h3>Symmetry Tools<a class="headerlink" href="#symmetry-tools" title="Link to this heading"></a></h3>
+<p>Two operators to help making a mesh symmetric.</p>
+<dl class="simple">
+<dt>Find Asymmetric</dt><dd><p>Selects vertices whose position doesn’t match the opposite side.</p>
+</dd>
+<dt>Make Symmetric</dt><dd><p>Move selected vertices to match the position of those on the other side.</p>
+</dd>
+</dl>
+<p>Usage: Search (<kbd class="kbd docutils literal notranslate">Spacebar</kbd>) for <strong>Find Asymmetric</strong>, and <strong>Make Symmetric</strong> operators.</p>
+</section>
+</section>
+<section id="miscellaneous">
+<h2>Miscellaneous<a class="headerlink" href="#miscellaneous" title="Link to this heading"></a></h2>
+<section id="color-management-presets">
+<h3>Color Management Presets<a class="headerlink" href="#color-management-presets" title="Link to this heading"></a></h3>
+<p>Save your Color Management options as presets, for easy re-use.</p>
+<p>Store most options in the Color Management panel, such as the look and color settings.
+Storing curve points is not supported yet.</p>
+<p>Usage: Find the presets selector on the top of the <strong>Color Management</strong> panel under Render Properties.</p>
+</section>
+<section id="instancing-show-path-of-libraries">
+<h3>Instancing: Show Path of Libraries<a class="headerlink" href="#instancing-show-path-of-libraries" title="Link to this heading"></a></h3>
+<p>Display the library path of a linked Collection Instance.
+Click on the path to open that .blend file in a new Blender instance.</p>
+<p>Usage: Find it in the <strong>Instancing</strong> panel, when a Collection Instance (linked) is active.</p>
+</section>
+<section id="sequencer-display-image-file-name">
+<h3>Sequencer: Display Image File Name<a class="headerlink" href="#sequencer-display-image-file-name" title="Link to this heading"></a></h3>
+<p>When seeking through an image sequence, display the active strips’
+file name for the current frame, and its playhead (in square brackets).</p>
+<p>Usage: Find it in the sequencer header.</p>
+<div class="refbox admonition" id="id1">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Category<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Interface</p>
+</dd>
+<dt class="field-even">Description<span class="colon">:</span></dt>
+<dd class="field-even"><p>A collection of tools and settings to improve productivity.</p>
+</dd>
+<dt class="field-odd">Location<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Everywhere</p>
+</dd>
+<dt class="field-even">File<span class="colon">:</span></dt>
+<dd class="field-even"><p>amaranth folder</p>
+</dd>
+<dt class="field-odd">Author<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Pablo Vazquez (pablovazquez)</p>
+</dd>
+<dt class="field-even">Maintainer<span class="colon">:</span></dt>
+<dd class="field-even"><p>Pablo Vazquez (pablovazquez)</p>
+</dd>
+<dt class="field-odd">License<span class="colon">:</span></dt>
+<dd class="field-odd"><p>GPL</p>
+</dd>
+<dt class="field-even">Support Level<span class="colon">:</span></dt>
+<dd class="field-even"><p>Community</p>
+</dd>
+<dt class="field-odd">Note<span class="colon">:</span></dt>
+<dd class="field-odd"><p>This add-on is bundled with Blender.</p>
+</dd>
+</dl>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="viewport_pies.html" class="btn btn-neutral float-left" title="3D Viewport Pie Menus" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="copy_attributes.html" class="btn btn-neutral float-right" title="Copy Attributes Menu" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../copyright.html">Copyright</a> : This page is licensed under a CC-BY-SA 4.0 Int. License.
+      <span class="lastupdated">Last updated on 12/17/2023.
+      </span></p>
+  </div>
+
+  
+<div class="footer-contribute">
+   <ul>
+      <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/addons/interface/amaranth.rst"
+            class="fa fa-edit"> View Source</a>
+      </li>
+      <!-- <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/addons/interface/amaranth.rst"
+            class="fa fa-edit"> Edit Page</a>
+      </li> -->
+      <li>
+         <a href="https://projects.blender.org/blender/documentation/issues/new?template=.gitea/issue_template/bug.yaml&field:body=%2A%2APage+Information%2A%2A%0D%0AFile%3A+%60manual%2Faddons/interface/amaranth.rst%60%0D%0ABlender+Version%3A+%604.0%60%0D%0ADocumentation+Language%3A+%60en%60%0D%0A%5BPermanent+Link%5D%28https%3A%2F%2Fdocs.blender.org%2Fmanual%2Fen%2F4.0%2Faddons/interface/amaranth.html%29%0D%0A%0D%0A%2A%2AShort+description+of+error%2A%2A%0D%0A%5BPlease+fill+out+a+short+description+of+the+error+here%5D%0D%0A"
+            class="fa fa-bug"> Report issue on this page</a>
+      </li>
+      <ul>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="document versions">
+	<ul id="versionwrap" role="presentation">
+		<li role="presentation">
+			<span id="version-popover" class="version-btn" tabindex="0" role="button" aria-label="versions selector"
+				aria-haspopup="true" aria-controls="version-vsnlist" aria-disabled="true">
+				4.0
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Versions</div>
+				<ul id="version-vsnlist" class="version-list" role="menu" aria-labelledby="version-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<li role="presentation">
+			<span id="lang-popover" class="version-btn" tabindex="0" role="button" aria-label="language selector"
+				aria-haspopup="true" aria-controls="version-langlist">
+				 en 
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Languages</div>
+				<ul id="version-langlist" class="version-list" role="menu" aria-labelledby="lang-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<template id="version-entry">
+			<li tabindex="-1" role="presentation"><a tabindex="-1" role="menuitem"></a></li>
+			<li class="selected" tabindex="-1" role="presentation"><span tabindex="-1" aria-current="page"></spanp></li>
+		</template>
+	</ul>
+<template id="version-warning">
+	<div class="admonition warning">
+		<p class="first admonition-title">Note</p>
+		<p class="last">
+			You are not using the most up to date version of the documentation.
+			<a href="#"></a> is the newest version.
+		</p>
+	</div>
+</template>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1418081-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1418081-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

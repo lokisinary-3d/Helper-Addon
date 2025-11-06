@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editing &mdash; Blender Manual</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=8da28a04" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/version_switch.css?v=74ca2809" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.blender.org/manual/en/latest/editors/graph_editor/fcurves/editing.html" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=715c20a1"></script>
+        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../_static/js/version_switch.js?v=5cbd935e"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Blender Manual"
+          href="../../../_static/opensearch.xml"/>
+<link rel="alternate" hreflang="en" href="https://docs.blender.org/manual/en/latest/" />
+<link rel="alternate" hreflang="ar" href="https://docs.blender.org/manual/ar/latest/" />
+<link rel="alternate" hreflang="de" href="https://docs.blender.org/manual/de/latest/" />
+<link rel="alternate" hreflang="es" href="https://docs.blender.org/manual/es/latest/" />
+<link rel="alternate" hreflang="fi" href="https://docs.blender.org/manual/fi/latest/" />
+<link rel="alternate" hreflang="fr" href="https://docs.blender.org/manual/fr/latest/" />
+<link rel="alternate" hreflang="id" href="https://docs.blender.org/manual/id/latest/" />
+<link rel="alternate" hreflang="it" href="https://docs.blender.org/manual/it/latest/" />
+<link rel="alternate" hreflang="ja" href="https://docs.blender.org/manual/ja/latest/" />
+<link rel="alternate" hreflang="ko" href="https://docs.blender.org/manual/ko/latest/" />
+<link rel="alternate" hreflang="nb" href="https://docs.blender.org/manual/nb/latest/" />
+<link rel="alternate" hreflang="pt" href="https://docs.blender.org/manual/pt/latest/" />
+<link rel="alternate" hreflang="ru" href="https://docs.blender.org/manual/ru/latest/" />
+<link rel="alternate" hreflang="sk" href="https://docs.blender.org/manual/sk/latest/" />
+<link rel="alternate" hreflang="sl" href="https://docs.blender.org/manual/sl/latest/" />
+<link rel="alternate" hreflang="sr" href="https://docs.blender.org/manual/sr/latest/" />
+<link rel="alternate" hreflang="uk" href="https://docs.blender.org/manual/uk/latest/" />
+<link rel="alternate" hreflang="vi" href="https://docs.blender.org/manual/vi/latest/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://docs.blender.org/manual/zh-hans/latest/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://docs.blender.org/manual/zh-hant/latest/" />
+<link rel="alternate" hreflang="x-default" href="https://docs.blender.org/manual/en/latest/" />
+
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="next" title="Properties" href="properties.html" />
+    <link rel="prev" title="Introduction" href="introduction.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Blender 4.0 Manual
+              <img src="../../../_static/blender-logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/about/index.html">About Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/installing/index.html">Installing Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/configuration/index.html">Configuring Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/help.html">Help System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sections</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../interface/index.html">User Interface</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Editors</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../3dview/index.html">3D Viewport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../image/index.html">Image Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../uv/index.html">UV Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../compositor.html">Compositor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../texture_node/index.html">Texture Nodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../geometry_node.html">Geometry Node Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../shader_editor.html">Shader Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../video_sequencer/index.html">Video Sequencer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../clip/index.html">Movie Clip Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../dope_sheet/index.html">Dope Sheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../timeline.html">Timeline</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Graph Editor</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../channels/index.html">Channels</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">F-Curves</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Editing</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#transform">Transform</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#snap">Snap</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#mirror">Mirror</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#jump-to-selected">Jump to Selected</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#insert">Insert</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#copy-paste">Copy/Paste</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#duplicate">Duplicate</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#delete">Delete</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#handle-type">Handle Type</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#interpolation-mode">Interpolation Mode</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#easing-type">Easing Type</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#density">Density</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#decimate">Decimate</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#bake-keyframes">Bake Keyframes</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#clean-keyframes">Clean Keyframes</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#blend">Blend</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#breakdown">Breakdown</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#blend-to-neighbor">Blend to Neighbor</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#blend-to-default-value">Blend to Default Value</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#ease">Ease</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#blend-offset">Blend Offset</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#blend-to-ease">Blend to Ease</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#match-slope">Match Slope</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#shear-keys">Shear Keys</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#scale-average">Scale Average</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#push-pull">Push Pull</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#time-offset">Time Offset</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#smooth">Smooth</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#smooth-legacy">Smooth (Legacy)</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#smooth-gaussian">Smooth (Gaussian)</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#butterworth-smooth">Butterworth Smooth</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="properties.html">Properties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modifiers.html">F-Curve Modifiers</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../drivers_editor.html">Drivers Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../nla/index.html">Nonlinear Animation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../text_editor.html">Text Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_console.html">Python Console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../info_editor.html">Info Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../outliner/index.html">Outliner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../properties_editor.html">Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../file_browser.html">File Browser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../asset_browser.html">Asset Browser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../spreadsheet.html">Spreadsheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../preferences/index.html">Preferences</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../scene_layout/index.html">Scenes &amp; Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../modeling/index.html">Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sculpt_paint/index.html">Sculpting &amp; Painting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../grease_pencil/index.html">Grease Pencil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../animation/index.html">Animation &amp; Rigging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../physics/index.html">Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../render/index.html">Rendering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../compositing/index.html">Compositing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../movie_clip/index.html">Motion Tracking &amp; Masking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../video_editing/index.html">Video Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../files/index.html">Assets, Files, &amp; Data System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../addons/index.html">Add-ons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../advanced/index.html">Advanced</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../troubleshooting/index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../glossary/index.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../genindex.html">Manual Index</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get Involved</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../contribute/index.html">Contribute Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Blender 4.0 Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Editors</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Graph Editor</a></li>
+          <li class="breadcrumb-item"><a href="index.html">F-Curves</a></li>
+      <li class="breadcrumb-item active">Editing</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="editing">
+<h1>Editing<a class="headerlink" href="#editing" title="Link to this heading"></a></h1>
+<section id="transform">
+<h2>Transform<a class="headerlink" href="#transform" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id1">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Mode<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Edit Mode</p>
+</dd>
+<dt class="field-even">Menu<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Key ‣ Transform</span></p>
+</dd>
+</dl>
+</div>
+<p>An F-Curve can be edited by transforming the locations of the keyframes.</p>
+<dl class="simple">
+<dt>Move, Rotate, Scale</dt><dd><p>Like other elements in Blender, keyframes can be
+moved, rotated, or scaled as described in
+<a class="reference internal" href="../../../scene_layout/object/editing/transform/introduction.html"><span class="doc">Basic Transformations</span></a>.</p>
+</dd>
+<dt>Extend</dt><dd><p>Moves keyframes relative to the current frame.
+If the mouse is to the left of the Playhead,
+this operator only affects the selected keyframes that are to the left of the Playhead.
+On the contrary, if the mouse is to the right of the Playhead,
+this operator only affects the selected keyframes that are to the right of the Playhead.</p>
+</dd>
+</dl>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>For precise control of the keyframe position and value,
+you can set values in the <em>Active Keyframe</em> of the Sidebar region.</p>
+</div>
+</section>
+<section id="snap">
+<span id="bpy-ops-graph-snap"></span><h2>Snap<a class="headerlink" href="#snap" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id2">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Snap</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">S</kbd></kbd></p>
+</dd>
+</dl>
+</div>
+<p>Keyframes can be snapped to different properties by using the <em>Snap Keys</em> tool.</p>
+<dl>
+<dt>Selection to Current Frame</dt><dd><p>Snap the selected keyframes to the current frame.</p>
+</dd>
+<dt>Selection to Cursor Value</dt><dd><p>Snap the selected keyframes to the <em>2D Cursor</em>.</p>
+</dd>
+<dt>Selection to Nearest Frame</dt><dd><p>Snap the selected keyframes to their nearest frame individually.</p>
+</dd>
+<dt>Selection to Nearest Second</dt><dd><p>Snap the selected keyframes to their nearest second individually, based on the <em>FPS</em> of the scene.</p>
+</dd>
+<dt>Selection to Nearest Marker</dt><dd><p>Snap the selected keyframes to their nearest marker individually.</p>
+</dd>
+<dt>Flatten Handles</dt><dd><p>Flatten the <em>Bézier</em> handles for the selected keyframes.</p>
+<table class="docutils align-default" id="id30">
+<caption><span class="caption-text">Flatten Handles snapping example.</span><a class="headerlink" href="#id30" title="Link to this table"></a></caption>
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id31">
+<img alt="../../../_images/editors_graph-editor_fcurves_editing_flatten-handles-1.png" src="../../../_images/editors_graph-editor_fcurves_editing_flatten-handles-1.png" />
+<figcaption>
+<p><span class="caption-text">Before Flatten Handles.</span><a class="headerlink" href="#id31" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+<td><figure class="align-default" id="id32">
+<img alt="../../../_images/editors_graph-editor_fcurves_editing_flatten-handles-2.png" src="../../../_images/editors_graph-editor_fcurves_editing_flatten-handles-2.png" />
+<figcaption>
+<p><span class="caption-text">After Flatten Handles.</span><a class="headerlink" href="#id32" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</dd>
+</dl>
+<dl id="bpy-ops-graph-equalize-handles">
+<dt>Equalize Handles</dt><dd><p>Ensure selected keyframes’ handles have equal length.</p>
+<dl class="simple">
+<dt>Side</dt><dd><p>Side of the keyframes’ Bézier handles to affect</p>
+<dl class="field-list simple">
+<dt class="field-odd">Left<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Equalize selected keyframes’ left handles.</p>
+</dd>
+<dt class="field-even">Right<span class="colon">:</span></dt>
+<dd class="field-even"><p>Equalize selected keyframes’ right handles.</p>
+</dd>
+<dt class="field-odd">Both<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Equalize both of a keyframe’s handles.</p>
+</dd>
+</dl>
+</dd>
+<dt>Handle Length</dt><dd><p>Length to make selected keyframes’ Bézier handles.</p>
+</dd>
+<dt>Flatten</dt><dd><p>Make the values of the selected keyframes’ handles the same as their respective keyframes.</p>
+</dd>
+</dl>
+</dd>
+<dt>Cursor to Selected <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">G</kbd></kbd></dt><dd><p>Places the cursor at the midpoint between selected keyframes.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-ops-graph-snap-cursor-value">
+<dt>Cursor Value to Selection</dt><dd><p>Places the cursor value on the average value of selected keyframes.</p>
+</dd>
+</dl>
+</section>
+<section id="mirror">
+<span id="bpy-ops-graph-mirror"></span><h2>Mirror<a class="headerlink" href="#mirror" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id3">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Mirror</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">M</kbd></kbd></p>
+</dd>
+</dl>
+</div>
+<p>Selected keyframes can be mirrored over different properties using the <em>Mirror Keys</em> tool.</p>
+<dl class="simple">
+<dt>By Times over Current Frame</dt><dd><p>Mirror horizontally over the current frame.</p>
+</dd>
+<dt>By Values over Cursor Value</dt><dd><p>Mirror vertically over the 2D cursor.</p>
+</dd>
+<dt>By Times over Time 0</dt><dd><p>Mirror horizontally over frame 0.</p>
+</dd>
+<dt>By Values over Value 0</dt><dd><p>Mirror vertically over value 0.</p>
+</dd>
+<dt>By Times over First Selected Marker</dt><dd><p>Mirror horizontally over the first selected marker.</p>
+</dd>
+</dl>
+</section>
+<section id="jump-to-selected">
+<span id="bpy-ops-graph-frame-jump"></span><h2>Jump to Selected<a class="headerlink" href="#jump-to-selected" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id4">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Jump to Selected</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">G</kbd></kbd></p>
+</dd>
+</dl>
+</div>
+<p>Places the 2D cursor at the center of the selected keyframes.</p>
+</section>
+<section id="insert">
+<span id="bpy-ops-graph-keyframe-insert"></span><h2>Insert<a class="headerlink" href="#insert" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id5">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Insert</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd docutils literal notranslate">I</kbd></p>
+</dd>
+</dl>
+</div>
+<p>Inserts a keyframe to the active F-Curve at the mouse position.
+The newly added keyframes will be selected, making it easier to quickly tweak the newly added keyframes.
+All previously selected keyframes are kept selected by using <kbd class="kbd docutils literal notranslate">I</kbd>.</p>
+<dl class="simple">
+<dt>Type</dt><dd><dl class="field-list simple">
+<dt class="field-odd">All Channels<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Insert a keyframe on all visible and editable F-Curves using each curve’s current value.</p>
+</dd>
+<dt class="field-even">Only Selected Channels<span class="colon">:</span></dt>
+<dd class="field-even"><p>Insert a keyframe on selected F-Curves using each curve’s current value.</p>
+</dd>
+<dt class="field-odd">Only Active F-Curve<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Insert a keyframe on the active F-Curve using the curve’s current value.</p>
+</dd>
+<dt class="field-even">Active Channels at Cursor<span class="colon">:</span></dt>
+<dd class="field-even"><p>Insert a keyframe for the active F-Curve at the cursor point.</p>
+</dd>
+<dt class="field-odd">Selected Channels at Cursor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Insert a keyframe for selected F-Curves at the cursor point.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+<section id="copy-paste">
+<span id="bpy-ops-graph-paste"></span><span id="bpy-ops-graph-copy"></span><h2>Copy/Paste<a class="headerlink" href="#copy-paste" title="Link to this heading"></a></h2>
+<div class="admonition-reference admonition">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Copy</span>, <span class="menuselection">Key ‣ Paste</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">C</kbd></kbd>, <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">V</kbd></kbd></p>
+</dd>
+</dl>
+</div>
+<p>Use <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">C</kbd></kbd> to copy selected keyframes and <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">V</kbd></kbd> to paste the previously copied keyframes.
+During the paste action, the <a class="reference internal" href="../../../interface/undo_redo.html#bpy-ops-screen-redo-last"><span class="std std-ref">Adjust Last Operation</span></a> panel provides some options in
+how the paste is applied.</p>
+<dl class="simple">
+<dt>Frame Offset</dt><dd><dl class="field-list simple">
+<dt class="field-odd">No Offset<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Pastes the keyframes in the location they were copied from.</p>
+</dd>
+<dt class="field-even">Frame Relative<span class="colon">:</span></dt>
+<dd class="field-even"><p>Pastes the keyframe relative to the current frame based on the locations of
+the keyframes relative to the current frame when they were copied.</p>
+</dd>
+<dt class="field-odd">Frame Start<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Pastes the keyframes with the first keyframe of the copied set placed at the current frame.</p>
+</dd>
+<dt class="field-even">Frame End<span class="colon">:</span></dt>
+<dd class="field-even"><p>Pastes the keyframes with the last keyframe of the copied set placed at the current frame.</p>
+</dd>
+</dl>
+</dd>
+<dt>Value Offset</dt><dd><dl class="field-list simple">
+<dt class="field-odd">No Offset<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Pastes the keyframes with the value they were copied from.</p>
+</dd>
+<dt class="field-even">Cursor Value<span class="colon">:</span></dt>
+<dd class="field-even"><p>Paste the keyframes at the 2D cursor as a starting point.</p>
+</dd>
+<dt class="field-odd">Current Frame Value<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Paste keyframes relative to the value of the curve under the cursor.</p>
+</dd>
+<dt class="field-even">Right Key<span class="colon">:</span></dt>
+<dd class="field-even"><p>Paste keyframes such that the last frame matches the key value right of the cursor.</p>
+</dd>
+<dt class="field-odd">Left Key<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Paste keyframes such that the first key matches the key value left of the cursor.</p>
+</dd>
+</dl>
+</dd>
+<dt>Type</dt><dd><dl class="field-list simple">
+<dt class="field-odd">Mix<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Integrates the pasted keyframes in with existing keyframes only overwriting keyframes that share a frame.</p>
+</dd>
+<dt class="field-even">Overwrite All<span class="colon">:</span></dt>
+<dd class="field-even"><p>Removes all previous keyframes and replaces them with the pasted keyframes.</p>
+</dd>
+<dt class="field-odd">Overwrite Range<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Overwrite keys in pasted range.</p>
+</dd>
+<dt class="field-even">Overwrite Entire Range<span class="colon">:</span></dt>
+<dd class="field-even"><p>Overwrite keys in pasted range, using the range of all copied keys.</p>
+</dd>
+</dl>
+</dd>
+<dt>Flipped</dt><dd><p>Paste keyframes from mirrored bones if they exist.</p>
+</dd>
+</dl>
+</section>
+<section id="duplicate">
+<span id="bpy-ops-graph-duplicate-move"></span><h2>Duplicate<a class="headerlink" href="#duplicate" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id6">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Duplicate</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">D</kbd></kbd></p>
+</dd>
+</dl>
+</div>
+<p>Duplicates the selected keyframes. You can reposition them by moving the mouse.</p>
+</section>
+<section id="delete">
+<span id="bpy-ops-graph-delete"></span><h2>Delete<a class="headerlink" href="#delete" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id7">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Delete</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd docutils literal notranslate">X</kbd>, <kbd class="kbd docutils literal notranslate">Delete</kbd></p>
+</dd>
+</dl>
+</div>
+<p>Pressing <kbd class="kbd docutils literal notranslate">X</kbd> or <kbd class="kbd docutils literal notranslate">Delete</kbd> opens a pop-up menu from where you can delete the selected keyframes.</p>
+</section>
+<section id="handle-type">
+<span id="bpy-ops-graph-handle-type"></span><h2>Handle Type<a class="headerlink" href="#handle-type" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id8">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Handle Type</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd docutils literal notranslate">V</kbd></p>
+</dd>
+</dl>
+</div>
+<p>Sets the <a class="reference internal" href="properties.html#editors-graph-fcurves-settings-handles"><span class="std std-ref">handle type</span></a> of the selected keyframes.</p>
+</section>
+<section id="interpolation-mode">
+<span id="bpy-ops-graph-interpolation-type"></span><h2>Interpolation Mode<a class="headerlink" href="#interpolation-mode" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id9">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Interpolation Mode</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd docutils literal notranslate">T</kbd></p>
+</dd>
+</dl>
+</div>
+<p>Sets the <a class="reference internal" href="properties.html#editors-graph-fcurves-settings-interpolation"><span class="std std-ref">interpolation mode</span></a> between the selected keyframes.</p>
+</section>
+<section id="easing-type">
+<span id="bpy-ops-graph-easing-type"></span><h2>Easing Type<a class="headerlink" href="#easing-type" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id10">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Easing Type</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">E</kbd></kbd></p>
+</dd>
+</dl>
+</div>
+<p>Sets the <a class="reference internal" href="properties.html#editors-graph-fcurves-settings-easing"><span class="std std-ref">easing mode</span></a> of the selected keyframes.</p>
+</section>
+<section id="density">
+<h2>Density<a class="headerlink" href="#density" title="Link to this heading"></a></h2>
+<section id="decimate">
+<span id="bpy-ops-graph-decimate"></span><h3>Decimate<a class="headerlink" href="#decimate" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id11">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Density ‣ Decimate (Ratio)</span></p>
+</dd>
+<dt class="field-even">Menu<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Key ‣ Density ‣ Decimate (Allowed Change)</span></p>
+</dd>
+</dl>
+</div>
+<p>The <em>Decimate</em> tool simplifies an F-Curve by removing
+keyframes that influence the curve shape the least.</p>
+<dl class="simple">
+<dt>Mode</dt><dd><p>Controls which method is used pick the number of keyframes to use.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Ratio<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Deletes a defined percentage of keyframes,
+the amount of keyframes to delete is define by the <em>Remove</em> property.</p>
+</dd>
+<dt class="field-even">Error Margin<span class="colon">:</span></dt>
+<dd class="field-even"><p>Deletes keyframes which only allowing the F-Curve to change by a defined amount.
+The amount of change is controlled by the <em>Max Error Margin</em>
+which controls how much the new decimated curve is allowed to deviate from the original.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+<section id="bake-keyframes">
+<span id="bpy-ops-graph-bake-keys"></span><h3>Bake Keyframes<a class="headerlink" href="#bake-keyframes" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id12">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Density ‣ Bake Keyframes</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">O</kbd></kbd></p>
+</dd>
+</dl>
+</div>
+<p>Baking a set of keyframes replaces interpolated values with a new keyframe for each frame.</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id33">
+<img alt="../../../_images/editors_graph-editor_fcurves_editing_sample.png" src="../../../_images/editors_graph-editor_fcurves_editing_sample.png" />
+<figcaption>
+<p><span class="caption-text">F-Curve before baking.</span><a class="headerlink" href="#id33" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+<td><figure class="align-default" id="id34">
+<img alt="../../../_images/editors_graph-editor_fcurves_editing_sample2.png" src="../../../_images/editors_graph-editor_fcurves_editing_sample2.png" />
+<figcaption>
+<p><span class="caption-text">F-Curve after baking.</span><a class="headerlink" href="#id34" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="clean-keyframes">
+<span id="bpy-ops-graph-clean"></span><h3>Clean Keyframes<a class="headerlink" href="#clean-keyframes" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id13">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Density ‣ Clean Keyframes</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd docutils literal notranslate">X</kbd></p>
+</dd>
+</dl>
+</div>
+<p>Removes redundant keys within the selection of keyframes.
+<em>Clean Keyframes</em> resets the keyframe tangents on selected keyframes
+to their auto-clamped shape, if they have been modified.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The modified curve left after the <em>Clean</em> tool is run is not the same as the original,
+so this tool is better used before doing custom editing of F-Curves and after initial keyframe insertion,
+to get rid of any unwanted keyframes inserted while doing mass keyframe insertion
+(by selecting all bones and pressing <kbd class="kbd docutils literal notranslate">I</kbd> for instance).</p>
+</div>
+<dl class="simple">
+<dt>Channels</dt><dd><p>Operate on selected channels and cleans them regardless of keyframe selection.
+Deletes the channel itself if it is only left with
+a single keyframe containing the default property value and
+it’s not being used by any generative F-Curve modifiers or drivers.</p>
+</dd>
+</dl>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id35">
+<img alt="../../../_images/editors_graph-editor_fcurves_editing_clean1.png" src="../../../_images/editors_graph-editor_fcurves_editing_clean1.png" />
+<figcaption>
+<p><span class="caption-text">F-Curve before cleaning.</span><a class="headerlink" href="#id35" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+<td><figure class="align-default" id="id36">
+<img alt="../../../_images/editors_graph-editor_fcurves_editing_clean2.png" src="../../../_images/editors_graph-editor_fcurves_editing_clean2.png" />
+<figcaption>
+<p><span class="caption-text">F-Curve after cleaning.</span><a class="headerlink" href="#id36" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="blend">
+<h2>Blend<a class="headerlink" href="#blend" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id14">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Blend</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">D</kbd></kbd></p>
+</dd>
+</dl>
+</div>
+<section id="breakdown">
+<span id="bpy-ops-graph-breakdown"></span><h3>Breakdown<a class="headerlink" href="#breakdown" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id15">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Blend ‣ Breakdown</span></p>
+</dd>
+</dl>
+</div>
+<p>Moves the selected keyframes to an in between position relative to the adjacent keyframes.
+To use this operator, drag the mouse left or right to adjust the operator’s <em>Factor</em> property.</p>
+<dl class="simple">
+<dt>Factor</dt><dd><p>The amount to favor either the left or the right key. Values less than 0.5 favor the left keyframe,
+values greater than 0.5 favor the right keyframe, a value of 0.5 results in no change.</p>
+</dd>
+</dl>
+</section>
+<section id="blend-to-neighbor">
+<span id="bpy-ops-graph-blend-to-neighbor"></span><h3>Blend to Neighbor<a class="headerlink" href="#blend-to-neighbor" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id16">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Blend ‣ Blend to Neighbor</span></p>
+</dd>
+</dl>
+</div>
+<p>Transitions the current keyframe with the neighboring keyframes in the timeline.
+In order for this operator to work, there must be a keyframe before and after the current frame.
+To use this operator, drag the mouse left or right to adjust the operator’s <em>Blend</em> property.</p>
+<dl class="simple">
+<dt>Blend</dt><dd><p>The amount to favor either the left or the right key. Values less than 0.5 favor the left keyframe,
+values greater than 0.5 favor the right keyframe, a value of 0.5 results in no change.</p>
+</dd>
+</dl>
+</section>
+<section id="blend-to-default-value">
+<span id="bpy-ops-graph-blend-to-default"></span><h3>Blend to Default Value<a class="headerlink" href="#blend-to-default-value" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id17">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Blend ‣ Blend to Default Value</span></p>
+</dd>
+</dl>
+</div>
+<p>Transitions the current keyframe towards the property’s default value.
+To use this operator, drag the mouse left or right to adjust the operator’s <em>Blend</em> property.</p>
+<dl class="simple">
+<dt>Blend</dt><dd><p>The amount to favor either the current key or the default value.
+A value of 0 represents the current key, a value of 1 represents the default value.</p>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>The <a class="reference internal" href="../../../interface/controls/buttons/menus.html#bpy-ops-ui-reset-default-button"><span class="std std-ref">Reset to Default</span></a> operator resets
+any property to its default value without the need of keyframing.</p>
+</div>
+</section>
+<section id="ease">
+<span id="bpy-ops-graph-ease"></span><h3>Ease<a class="headerlink" href="#ease" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id18">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Blend ‣ Ease</span></p>
+</dd>
+</dl>
+</div>
+<p>Aligns selected keyframes to follow an exponential path between the first and last keyframes.
+To use this operator, drag the mouse left or right to adjust the operator’s <em>Blend</em> property.</p>
+<dl class="simple">
+<dt>Blend</dt><dd><p>Changes the concavity of the curve. Values less than 0.5 cause keyframes to concave up,
+values greater than 0.5 cause keyframes to concave down, a value of 0.5 results in a straight line.</p>
+</dd>
+</dl>
+</section>
+<section id="blend-offset">
+<span id="bpy-ops-graph-blend-offset"></span><h3>Blend Offset<a class="headerlink" href="#blend-offset" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id19">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Blend ‣ Blend Offset</span></p>
+</dd>
+</dl>
+</div>
+<p>Move the selected keyframes as a block so the first/last key align with the key before/after the selection.
+Does nothing when there is no key before/after the current selection.</p>
+<dl class="simple">
+<dt>Offset Factor</dt><dd><p>At -1 the first key of the selection is aligned with the key just before the selection.
+At 1 the last key is aligned with the key after the selection.</p>
+</dd>
+</dl>
+</section>
+<section id="blend-to-ease">
+<span id="bpy-ops-graph-blend-to-ease"></span><h3>Blend to Ease<a class="headerlink" href="#blend-to-ease" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id20">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Blend ‣ Blend to Ease</span></p>
+</dd>
+</dl>
+</div>
+<p>Blend the selected keys from their current position to either an ease in or an ease out curve.</p>
+<dl class="simple">
+<dt>Blend</dt><dd><p>At -1 the keys will start slowly and then accelerate to the end.
+At 1 the keys will rise quickly and then taper off.</p>
+</dd>
+</dl>
+</section>
+<section id="match-slope">
+<span id="bpy-ops-graph-match-slope"></span><h3>Match Slope<a class="headerlink" href="#match-slope" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id21">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Blend ‣ Match Slope</span></p>
+</dd>
+</dl>
+</div>
+<p>Blend the selected keys to a straight line formed by the two keys just outside the current selection.
+The factor determines if the two keys left or right of the selection are used. If there are not
+two keys in the given direction the operator will throw a warning and not change the keys.</p>
+<dl class="simple">
+<dt>Factor</dt><dd><p>Determines which slope to blend towards. At -1 will blend to the left slope, at 1 to the right.</p>
+</dd>
+</dl>
+</section>
+<section id="shear-keys">
+<span id="bpy-ops-graph-shear"></span><h3>Shear Keys<a class="headerlink" href="#shear-keys" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id22">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Blend ‣ Shear Keys</span></p>
+</dd>
+</dl>
+</div>
+<p>Shear the keys based on the position of the keyframe selection ends.
+Pressing <kbd class="kbd docutils literal notranslate">D</kbd> while the modal operator is active will toggle the anchor key
+between the start and end of the selection.</p>
+<dl class="simple">
+<dt>Shear Factor</dt><dd><p>How much to shear and if it shears up or down. Negative values shear down, positive shear up.</p>
+</dd>
+<dt>Direction</dt><dd><p><cite>From Left</cite> or <cite>From Right</cite> determine the anchor key from which to shear.</p>
+</dd>
+</dl>
+</section>
+<section id="scale-average">
+<span id="bpy-ops-graph-scale-average"></span><h3>Scale Average<a class="headerlink" href="#scale-average" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id23">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Blend ‣ Scale Average</span></p>
+</dd>
+</dl>
+</div>
+<p>Scale the selected key segments to their average value. This differs from the regular scaling by being per segment.
+That means selected keyframes on two different F-Curves will scale to different points.</p>
+<dl class="simple">
+<dt>Factor</dt><dd><p>The scale factor applied to the F-Curve segments.</p>
+</dd>
+</dl>
+</section>
+<section id="push-pull">
+<span id="bpy-ops-graph-push-pull"></span><h3>Push Pull<a class="headerlink" href="#push-pull" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id24">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Blend ‣ Push Pull</span></p>
+</dd>
+</dl>
+</div>
+<p>Scale the keys from an imaginary line that runs from the start to the end of the selected segment.</p>
+<dl class="simple">
+<dt>Factor</dt><dd><p>How far to push or pull the keys.</p>
+</dd>
+</dl>
+</section>
+<section id="time-offset">
+<span id="bpy-ops-graph-time-offset"></span><h3>Time Offset<a class="headerlink" href="#time-offset" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id25">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Blend ‣ Time Offset</span></p>
+</dd>
+</dl>
+</div>
+<p>This operator shifts the value of the keys in time, while keeping the actual key positions in the same place.
+It supports wrapping, so when offsetting beyond the range of the F-Curve it will take values from the other end, but offset in y-value so there is no jump.
+This works best with dense key data. Gaps in the keyframe data might cause data to get lost if it is shifted into the gaps.</p>
+<dl class="simple">
+<dt>Frame Offset</dt><dd><p>How far in frames to offset the animation.</p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="smooth">
+<h2>Smooth<a class="headerlink" href="#smooth" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id26">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Smooth</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">S</kbd></kbd></p>
+</dd>
+</dl>
+</div>
+<section id="smooth-legacy">
+<span id="bpy-ops-graph-smooth"></span><h3>Smooth (Legacy)<a class="headerlink" href="#smooth-legacy" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id27">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Smooth ‣ Smooth (Legacy)</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">O</kbd></kbd></p>
+</dd>
+</dl>
+</div>
+<p>There is also an option to smooth the selected curves, but beware: its algorithm seems to be
+to divide by two the distance between each keyframe and the average linear value of the curve,
+without any setting, which gives quite a strong smoothing! Note that the first and last keys
+seem to be never modified by this tool.</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id37">
+<img alt="../../../_images/editors_graph-editor_fcurves_editing_clean1.png" src="../../../_images/editors_graph-editor_fcurves_editing_clean1.png" />
+<figcaption>
+<p><span class="caption-text">F-Curve before smoothing.</span><a class="headerlink" href="#id37" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+<td><figure class="align-default" id="id38">
+<img alt="../../../_images/editors_graph-editor_fcurves_editing_smooth.png" src="../../../_images/editors_graph-editor_fcurves_editing_smooth.png" />
+<figcaption>
+<p><span class="caption-text">F-Curve after smoothing.</span><a class="headerlink" href="#id38" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="smooth-gaussian">
+<span id="bpy-ops-graph-gaussian-smooth"></span><h3>Smooth (Gaussian)<a class="headerlink" href="#smooth-gaussian" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id28">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Smooth ‣ Smooth (Gaussian)</span></p>
+</dd>
+</dl>
+</div>
+<p>Smooths the selected keyframes using a Gaussian kernel. It can handle gaps in the keyframe data.
+The operator is modal with a blend factor, making it possible to tweak the strength of the filter.</p>
+<dl class="simple">
+<dt>Factor</dt><dd><p>A blend factor from original to filtered curve.</p>
+</dd>
+<dt>Sigma</dt><dd><p>The shape of the gaussian distribution. Lower values mean a sharper curve, giving keys that are close to each
+other more weight. A high value behaves like a simple average filter.</p>
+</dd>
+<dt>Filter Width</dt><dd><p>A wider filter looks at more keyframes, producing a smoother result.
+At a size of 1 the filter only looks at the keyframes to the immediate left and right for a weighted average.</p>
+</dd>
+</dl>
+<figure class="align-default" id="id39">
+<img alt="../../../_images/editors_graph-editor_gaussian_smooth.jpg" src="../../../_images/editors_graph-editor_gaussian_smooth.jpg" />
+<figcaption>
+<p><span class="caption-text">F-Curve after applying the Gaussian Smooth with the original curve overlayed.</span><a class="headerlink" href="#id39" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="butterworth-smooth">
+<h3>Butterworth Smooth<a class="headerlink" href="#butterworth-smooth" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id29">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Key ‣ Smooth ‣ Butterworth Smooth</span></p>
+</dd>
+</dl>
+</div>
+<p>Smooth the selected keyframes using a Butterworth filter. This filter is ideal for
+smoothing large amounts of data because it preserves the peaks of the animation.
+The downside is that it can introduce a ripple effect when the key values change rapidly.</p>
+<dl class="simple">
+<dt>Frequency Cutoff</dt><dd><p>The lower the value the smoother the curve. There is an implicit maximum at which
+the value no longer changes the curve which is at half the sample rate. The sample
+rate in this case is the scene frame rate multiplied by the <cite>Samples per Frame</cite> of this operator.</p>
+</dd>
+<dt>Filter order</dt><dd><p>Higher values mean the frequency cutoff is steeper.</p>
+</dd>
+<dt>Samples per Frame</dt><dd><p>Before the filter is applied, the curve is resampled at this interval to avoid errors when there
+are uneven spaces between frames. If keys are on subframes, e.g. a 60fps file in a 30fps scene,
+increase this value to 2.</p>
+</dd>
+<dt>Blend</dt><dd><p>A 0-1 value to blend from original curve to filtered curve.</p>
+</dd>
+<dt>Blend In/Out</dt><dd><p>The number of frames at the start and end for which to blend between the filtered and unfiltered curve.
+This can help reducing jumps in the animation at the selection border. At value 1 it only locks the first and
+last frame of the selection to the original position.</p>
+</dd>
+</dl>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="introduction.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="properties.html" class="btn btn-neutral float-right" title="Properties" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../../copyright.html">Copyright</a> : This page is licensed under a CC-BY-SA 4.0 Int. License.
+      <span class="lastupdated">Last updated on 12/17/2023.
+      </span></p>
+  </div>
+
+  
+<div class="footer-contribute">
+   <ul>
+      <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/editors/graph_editor/fcurves/editing.rst"
+            class="fa fa-edit"> View Source</a>
+      </li>
+      <!-- <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/editors/graph_editor/fcurves/editing.rst"
+            class="fa fa-edit"> Edit Page</a>
+      </li> -->
+      <li>
+         <a href="https://projects.blender.org/blender/documentation/issues/new?template=.gitea/issue_template/bug.yaml&field:body=%2A%2APage+Information%2A%2A%0D%0AFile%3A+%60manual%2Feditors/graph_editor/fcurves/editing.rst%60%0D%0ABlender+Version%3A+%604.0%60%0D%0ADocumentation+Language%3A+%60en%60%0D%0A%5BPermanent+Link%5D%28https%3A%2F%2Fdocs.blender.org%2Fmanual%2Fen%2F4.0%2Feditors/graph_editor/fcurves/editing.html%29%0D%0A%0D%0A%2A%2AShort+description+of+error%2A%2A%0D%0A%5BPlease+fill+out+a+short+description+of+the+error+here%5D%0D%0A"
+            class="fa fa-bug"> Report issue on this page</a>
+      </li>
+      <ul>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="document versions">
+	<ul id="versionwrap" role="presentation">
+		<li role="presentation">
+			<span id="version-popover" class="version-btn" tabindex="0" role="button" aria-label="versions selector"
+				aria-haspopup="true" aria-controls="version-vsnlist" aria-disabled="true">
+				4.0
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Versions</div>
+				<ul id="version-vsnlist" class="version-list" role="menu" aria-labelledby="version-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<li role="presentation">
+			<span id="lang-popover" class="version-btn" tabindex="0" role="button" aria-label="language selector"
+				aria-haspopup="true" aria-controls="version-langlist">
+				 en 
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Languages</div>
+				<ul id="version-langlist" class="version-list" role="menu" aria-labelledby="lang-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<template id="version-entry">
+			<li tabindex="-1" role="presentation"><a tabindex="-1" role="menuitem"></a></li>
+			<li class="selected" tabindex="-1" role="presentation"><span tabindex="-1" aria-current="page"></spanp></li>
+		</template>
+	</ul>
+<template id="version-warning">
+	<div class="admonition warning">
+		<p class="first admonition-title">Note</p>
+		<p class="last">
+			You are not using the most up to date version of the documentation.
+			<a href="#"></a> is the newest version.
+		</p>
+	</div>
+</template>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1418081-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1418081-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

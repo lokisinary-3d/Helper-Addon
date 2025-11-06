@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editing &mdash; Blender Manual</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme_overrides.css?v=8da28a04" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/version_switch.css?v=74ca2809" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.blender.org/manual/en/latest/editors/nla/editing.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=715c20a1"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/version_switch.js?v=5cbd935e"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Blender Manual"
+          href="../../_static/opensearch.xml"/>
+<link rel="alternate" hreflang="en" href="https://docs.blender.org/manual/en/latest/" />
+<link rel="alternate" hreflang="ar" href="https://docs.blender.org/manual/ar/latest/" />
+<link rel="alternate" hreflang="de" href="https://docs.blender.org/manual/de/latest/" />
+<link rel="alternate" hreflang="es" href="https://docs.blender.org/manual/es/latest/" />
+<link rel="alternate" hreflang="fi" href="https://docs.blender.org/manual/fi/latest/" />
+<link rel="alternate" hreflang="fr" href="https://docs.blender.org/manual/fr/latest/" />
+<link rel="alternate" hreflang="id" href="https://docs.blender.org/manual/id/latest/" />
+<link rel="alternate" hreflang="it" href="https://docs.blender.org/manual/it/latest/" />
+<link rel="alternate" hreflang="ja" href="https://docs.blender.org/manual/ja/latest/" />
+<link rel="alternate" hreflang="ko" href="https://docs.blender.org/manual/ko/latest/" />
+<link rel="alternate" hreflang="nb" href="https://docs.blender.org/manual/nb/latest/" />
+<link rel="alternate" hreflang="pt" href="https://docs.blender.org/manual/pt/latest/" />
+<link rel="alternate" hreflang="ru" href="https://docs.blender.org/manual/ru/latest/" />
+<link rel="alternate" hreflang="sk" href="https://docs.blender.org/manual/sk/latest/" />
+<link rel="alternate" hreflang="sl" href="https://docs.blender.org/manual/sl/latest/" />
+<link rel="alternate" hreflang="sr" href="https://docs.blender.org/manual/sr/latest/" />
+<link rel="alternate" hreflang="uk" href="https://docs.blender.org/manual/uk/latest/" />
+<link rel="alternate" hreflang="vi" href="https://docs.blender.org/manual/vi/latest/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://docs.blender.org/manual/zh-hans/latest/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://docs.blender.org/manual/zh-hant/latest/" />
+<link rel="alternate" hreflang="x-default" href="https://docs.blender.org/manual/en/latest/" />
+
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="Sidebar" href="sidebar.html" />
+    <link rel="prev" title="Strips" href="strips.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Blender 4.0 Manual
+              <img src="../../_static/blender-logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/about/index.html">About Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installing/index.html">Installing Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/configuration/index.html">Configuring Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/help.html">Help System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sections</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../interface/index.html">User Interface</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Editors</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../3dview/index.html">3D Viewport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../image/index.html">Image Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../uv/index.html">UV Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../compositor.html">Compositor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../texture_node/index.html">Texture Nodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../geometry_node.html">Geometry Node Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shader_editor.html">Shader Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../video_sequencer/index.html">Video Sequencer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../clip/index.html">Movie Clip Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dope_sheet/index.html">Dope Sheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../timeline.html">Timeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../graph_editor/index.html">Graph Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../drivers_editor.html">Drivers Editor</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Nonlinear Animation</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tracks.html">Tracks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="strips.html">Strips</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Editing</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#transform">Transform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#snap">Snap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bake-action">Bake Action</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#duplicate">Duplicate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#linked-duplicate">Linked Duplicate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#split-strips">Split Strips</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#delete-strips">Delete Strips</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#delete-tracks">Delete Tracks</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#toggle-muting">Toggle Muting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#apply-scale">Apply Scale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#clear-scale">Clear Scale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sync-action-length">Sync Action Length</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#make-single-user">Make Single User</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#swap-strips">Swap Strips</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#move-strips-up">Move Strips Up</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#move-strips-down">Move Strips Down</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#track-ordering">Track Ordering</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#remove-empty-animation-data">Remove Empty Animation Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#start-editing-stashed-action">Start Editing Stashed Action</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#start-tweaking-strips-actions-full-stack">Start Tweaking Strips Actions (Full Stack)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#start-tweaking-strips-actions-lower-stack">Start Tweaking Strips Actions (Lower Stack)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sidebar.html">Sidebar</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../text_editor.html">Text Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../python_console.html">Python Console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../info_editor.html">Info Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../outliner/index.html">Outliner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../properties_editor.html">Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../file_browser.html">File Browser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../asset_browser.html">Asset Browser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../spreadsheet.html">Spreadsheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../preferences/index.html">Preferences</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../scene_layout/index.html">Scenes &amp; Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modeling/index.html">Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sculpt_paint/index.html">Sculpting &amp; Painting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../grease_pencil/index.html">Grease Pencil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../animation/index.html">Animation &amp; Rigging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../physics/index.html">Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../render/index.html">Rendering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../compositing/index.html">Compositing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../movie_clip/index.html">Motion Tracking &amp; Masking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../video_editing/index.html">Video Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../files/index.html">Assets, Files, &amp; Data System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../addons/index.html">Add-ons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/index.html">Advanced</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Manual Index</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get Involved</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribute Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Blender 4.0 Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Editors</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Nonlinear Animation</a></li>
+      <li class="breadcrumb-item active">Editing</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="editing">
+<h1>Editing<a class="headerlink" href="#editing" title="Link to this heading"></a></h1>
+<section id="transform">
+<h2>Transform<a class="headerlink" href="#transform" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt>Move</dt><dd><p>Move the selected NLA-strips in time or to different NLA-track.</p>
+</dd>
+<dt>Extend <kbd class="kbd docutils literal notranslate">E</kbd></dt><dd><p>Extend the selected NLA-strips.</p>
+</dd>
+<dt>Scale <kbd class="kbd docutils literal notranslate">S</kbd></dt><dd><p>Scale the selected NLA-strips.</p>
+</dd>
+</dl>
+</section>
+<section id="snap">
+<span id="bpy-ops-nla-snap"></span><h2>Snap<a class="headerlink" href="#snap" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt>Selection to Current Frame</dt><dd><p>Move the start of selected NLA-strips to the current frame.</p>
+</dd>
+<dt>Selection to Nearest Frame</dt><dd><p>Move the start of the selected NLA-strips to the nearest frame.</p>
+</dd>
+<dt>Selection to Nearest Second</dt><dd><p>Move the start of the selected NLA-strips to the nearest second.</p>
+</dd>
+<dt>Selection to Nearest Marker</dt><dd><p>Move the start of the selected NLA-strips to the nearest marker.</p>
+</dd>
+</dl>
+</section>
+<section id="bake-action">
+<span id="bpy-ops-nla-bake"></span><h2>Bake Action<a class="headerlink" href="#bake-action" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id1">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Nonlinear Animation</p>
+</dd>
+<dt class="field-even">Menu<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Edit ‣ Bake Action</span></p>
+</dd>
+</dl>
+</div>
+<div class="refbox admonition" id="id2">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>3D Viewport</p>
+</dd>
+<dt class="field-even">Mode<span class="colon">:</span></dt>
+<dd class="field-even"><p>Object and Pose Modes</p>
+</dd>
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Header ‣ Object Animation ‣ Bake Action…</span></p>
+</dd>
+</dl>
+</div>
+<p>The final motion of objects or bones depends not only on the keyframed animation,
+but also on any active F-Curve modifiers, drivers, and constraints.
+On each frame of all the scene’s frames, the <em>Bake Action</em> operator computes
+the final animation of the selected objects or bones with all those
+modifiers, drivers, and constraints applied, and keyframes the result.</p>
+<p>This can be useful for adding deviation to a cyclic action like a <a class="reference internal" href="../../glossary/index.html#term-Walk-Cycle"><span class="xref std std-term">Walk Cycle</span></a>,
+or to create a keyframe animation created from drivers or constraints.</p>
+</section>
+<section id="duplicate">
+<span id="bpy-ops-nla-duplicate"></span><h2>Duplicate<a class="headerlink" href="#duplicate" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id3">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Edit ‣ Duplicate</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">D</kbd></kbd></p>
+</dd>
+</dl>
+</div>
+<p>Creates a new instance of the selected strips with a copy of the action.</p>
+</section>
+<section id="linked-duplicate">
+<span id="bpy-ops-nla-duplicate-linked-move"></span><h2>Linked Duplicate<a class="headerlink" href="#linked-duplicate" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id4">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Edit ‣ Linked Duplicate</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">D</kbd></kbd></p>
+</dd>
+</dl>
+</div>
+<p>The contents of one Action strip can be instanced multiple times. To instance another strip,
+select a strip, go to <span class="menuselection">Edit ‣ Linked Duplicate</span>.
+It will uses the same action as the selected strips.</p>
+<p>Now, when any strip is tweaked, the others will change too.
+If a strip other than the original is tweaked, the original will turn to red.</p>
+<figure class="align-default" id="id20">
+<img alt="../../_images/editors_nla_editing_linked-strip-edit.png" src="../../_images/editors_nla_editing_linked-strip-edit.png" />
+<figcaption>
+<p><span class="caption-text">Linked duplicated strip being edited.</span><a class="headerlink" href="#id20" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="split-strips">
+<span id="bpy-ops-nla-split"></span><h2>Split Strips<a class="headerlink" href="#split-strips" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id5">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Edit ‣ Split Strips</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd docutils literal notranslate">Y</kbd></p>
+</dd>
+</dl>
+</div>
+<p>NLA-Split the selected strips into two NLA-strips. The split happens at the current frame.</p>
+</section>
+<section id="delete-strips">
+<span id="bpy-ops-nla-delete"></span><h2>Delete Strips<a class="headerlink" href="#delete-strips" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id6">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Edit ‣ Delete Strips</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd docutils literal notranslate">X</kbd></p>
+</dd>
+</dl>
+</div>
+<p>Delete selected NLA-Strips.</p>
+</section>
+<section id="delete-tracks">
+<span id="bpy-ops-nla-tracks-delete"></span><h2>Delete Tracks<a class="headerlink" href="#delete-tracks" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id7">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Edit ‣ Delete Tracks</span></p>
+</dd>
+</dl>
+</div>
+<p>Delete the selected NLA track and all strips that it contains.</p>
+</section>
+<section id="toggle-muting">
+<span id="bpy-ops-nla-mute-toggle"></span><h2>Toggle Muting<a class="headerlink" href="#toggle-muting" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id8">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Edit ‣ Toggle Muting</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd docutils literal notranslate">H</kbd></p>
+</dd>
+</dl>
+</div>
+<p>Mute or unmute the selected NLA-strips. Muted NLA-strips will not influence the animation.</p>
+</section>
+<section id="apply-scale">
+<span id="bpy-ops-nla-apply-scale"></span><h2>Apply Scale<a class="headerlink" href="#apply-scale" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id9">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Edit ‣ Apply Scale</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">A</kbd></kbd></p>
+</dd>
+</dl>
+</div>
+<p>Apply the scale of the selected NLA-strips to their referenced Actions.</p>
+</section>
+<section id="clear-scale">
+<span id="bpy-ops-nla-clear-scale"></span><h2>Clear Scale<a class="headerlink" href="#clear-scale" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id10">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Edit ‣ Clear Scale</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">S</kbd></kbd></p>
+</dd>
+</dl>
+</div>
+<p>Reset the scaling of the selected NLA-strips.</p>
+</section>
+<section id="sync-action-length">
+<span id="bpy-ops-nla-action-sync-length"></span><h2>Sync Action Length<a class="headerlink" href="#sync-action-length" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id11">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Edit ‣ Sync Action Length</span></p>
+</dd>
+</dl>
+</div>
+<p>Synchronize the length of the action to the length used in the NLA-strip.</p>
+</section>
+<section id="make-single-user">
+<span id="bpy-ops-nla-make-single-user"></span><h2>Make Single User<a class="headerlink" href="#make-single-user" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id12">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Edit ‣ Make Single User</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd docutils literal notranslate">U</kbd></p>
+</dd>
+</dl>
+</div>
+<p>This tool ensures that none of the selected strips use an action which is also used by any other strips.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This does not recursively go inside meta strips.</p>
+</div>
+</section>
+<section id="swap-strips">
+<span id="bpy-ops-nla-swap"></span><h2>Swap Strips<a class="headerlink" href="#swap-strips" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id13">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Edit ‣ Swap Strips</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">F</kbd></kbd></p>
+</dd>
+</dl>
+</div>
+<p>Swap the order of the selected NLA-strips in their NLA-track.</p>
+</section>
+<section id="move-strips-up">
+<span id="bpy-ops-nla-move-up"></span><h2>Move Strips Up<a class="headerlink" href="#move-strips-up" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id14">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Edit ‣ Swap Strips</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd docutils literal notranslate">PageUp</kbd></p>
+</dd>
+</dl>
+</div>
+<p>Move selected NLA-strips up a track if there is room.</p>
+</section>
+<section id="move-strips-down">
+<span id="bpy-ops-nla-move-down"></span><h2>Move Strips Down<a class="headerlink" href="#move-strips-down" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id15">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Edit ‣ Swap Strips</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd docutils literal notranslate">PageDown</kbd></p>
+</dd>
+</dl>
+</div>
+<p>Move selected NLA-strips down a track if there is room.</p>
+</section>
+<section id="track-ordering">
+<h2>Track Ordering<a class="headerlink" href="#track-ordering" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt>To Top</dt><dd><p>Move selected track to the top of the tracks.</p>
+</dd>
+<dt>Up</dt><dd><p>Move selected track one track up.</p>
+</dd>
+<dt>Down</dt><dd><p>Move selected track one track down.</p>
+</dd>
+<dt>To Bottom</dt><dd><p>Move selected tracks to the bottom of the tracks.</p>
+</dd>
+</dl>
+</section>
+<section id="remove-empty-animation-data">
+<span id="bpy-ops-anim-channels-clean-empty"></span><h2>Remove Empty Animation Data<a class="headerlink" href="#remove-empty-animation-data" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id16">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Edit ‣ Remove Empty Animation Data</span></p>
+</dd>
+</dl>
+</div>
+<p>This operator removes AnimData data-blocks (restricted to only those
+which are visible in the animation editor where it is run from) which are “empty”
+(i.e. that is, have no active action, drivers, and NLA tracks or strips).</p>
+<p>It is sometimes possible to end up with a lot of data-blocks which have old and
+unused Animation Data containers still attached.
+This most commonly happens when doing motion graphics work
+(i.e. when some linked-in objects may have previously been used to develop a set of reusable assets),
+and is particularly distracting in the NLA Editor.</p>
+</section>
+<section id="start-editing-stashed-action">
+<span id="bpy-ops-nla-tweakmode-enter"></span><h2>Start Editing Stashed Action<a class="headerlink" href="#start-editing-stashed-action" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id17">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Edit ‣ Start Editing Stashed Action</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">Tab</kbd></kbd></p>
+</dd>
+</dl>
+</div>
+<p>It will enter and exit Tweak Mode as usual, but will also make sure that the action can be edited in isolation
+(by flagging the NLA track that the action strip comes from as being “solo”).
+This is useful for editing stashed actions, without the rest of the NLA Stack interfering.</p>
+<p>When you finished editing the strip, simply go to <span class="menuselection">Edit ‣ Stop Editing Stashed Action</span>
+or press <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">Tab</kbd></kbd>.</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id21">
+<a class="reference internal image-reference" href="../../_images/editors_nla_editing_nla-mode.png"><img alt="../../_images/editors_nla_editing_nla-mode.png" src="../../_images/editors_nla_editing_nla-mode.png" style="width: 320px;" /></a>
+<figcaption>
+<p><span class="caption-text">Strip in NLA mode.</span><a class="headerlink" href="#id21" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+<td><figure class="align-default" id="id22">
+<a class="reference internal image-reference" href="../../_images/editors_nla_editing_edit-mode.png"><img alt="../../_images/editors_nla_editing_edit-mode.png" src="../../_images/editors_nla_editing_edit-mode.png" style="width: 320px;" /></a>
+<figcaption>
+<p><span class="caption-text">Strip in Tweak mode.</span><a class="headerlink" href="#id22" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="start-tweaking-strips-actions-full-stack">
+<h2>Start Tweaking Strips Actions (Full Stack)<a class="headerlink" href="#start-tweaking-strips-actions-full-stack" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id18">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Edit ‣ Start Tweaking Strips Actions (Full Stack)</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd docutils literal notranslate">Tab</kbd></p>
+</dd>
+</dl>
+</div>
+<p>Allows you to edit the contents of the strip without disabling all the tracks above the tweaked strip.
+This allows keyframing to work as expected, and preserves the pose that you visually keyed.</p>
+<p>When you finished editing the strip, simply go to <span class="menuselection">Edit ‣ Stop Tweaking Strips Actions</span>
+or press <kbd class="kbd docutils literal notranslate">Tab</kbd>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For transitions above the tweaked strip, keyframe remapping will fail
+for channel values that are affected by the transition.
+A work around is to tweak the active strip without evaluating the upper NLA stack.</p>
+</div>
+</section>
+<section id="start-tweaking-strips-actions-lower-stack">
+<h2>Start Tweaking Strips Actions (Lower Stack)<a class="headerlink" href="#start-tweaking-strips-actions-lower-stack" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id19">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Edit ‣ Start Tweaking Strips Actions (Lower Stack)</span></p>
+</dd>
+</dl>
+</div>
+<p>The contents of Action strips can be edited, but you must be in <em>Tweak Mode</em> to do so.
+The keyframes of the action can then be edited in the Dope Sheet.</p>
+<p>When you finished editing the strip, simply go to <span class="menuselection">Edit ‣ Stop Tweaking Strips Actions</span></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="strips.html" class="btn btn-neutral float-left" title="Strips" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="sidebar.html" class="btn btn-neutral float-right" title="Sidebar" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../copyright.html">Copyright</a> : This page is licensed under a CC-BY-SA 4.0 Int. License.
+      <span class="lastupdated">Last updated on 12/17/2023.
+      </span></p>
+  </div>
+
+  
+<div class="footer-contribute">
+   <ul>
+      <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/editors/nla/editing.rst"
+            class="fa fa-edit"> View Source</a>
+      </li>
+      <!-- <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/editors/nla/editing.rst"
+            class="fa fa-edit"> Edit Page</a>
+      </li> -->
+      <li>
+         <a href="https://projects.blender.org/blender/documentation/issues/new?template=.gitea/issue_template/bug.yaml&field:body=%2A%2APage+Information%2A%2A%0D%0AFile%3A+%60manual%2Feditors/nla/editing.rst%60%0D%0ABlender+Version%3A+%604.0%60%0D%0ADocumentation+Language%3A+%60en%60%0D%0A%5BPermanent+Link%5D%28https%3A%2F%2Fdocs.blender.org%2Fmanual%2Fen%2F4.0%2Feditors/nla/editing.html%29%0D%0A%0D%0A%2A%2AShort+description+of+error%2A%2A%0D%0A%5BPlease+fill+out+a+short+description+of+the+error+here%5D%0D%0A"
+            class="fa fa-bug"> Report issue on this page</a>
+      </li>
+      <ul>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="document versions">
+	<ul id="versionwrap" role="presentation">
+		<li role="presentation">
+			<span id="version-popover" class="version-btn" tabindex="0" role="button" aria-label="versions selector"
+				aria-haspopup="true" aria-controls="version-vsnlist" aria-disabled="true">
+				4.0
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Versions</div>
+				<ul id="version-vsnlist" class="version-list" role="menu" aria-labelledby="version-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<li role="presentation">
+			<span id="lang-popover" class="version-btn" tabindex="0" role="button" aria-label="language selector"
+				aria-haspopup="true" aria-controls="version-langlist">
+				 en 
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Languages</div>
+				<ul id="version-langlist" class="version-list" role="menu" aria-labelledby="lang-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<template id="version-entry">
+			<li tabindex="-1" role="presentation"><a tabindex="-1" role="menuitem"></a></li>
+			<li class="selected" tabindex="-1" role="presentation"><span tabindex="-1" aria-current="page"></spanp></li>
+		</template>
+	</ul>
+<template id="version-warning">
+	<div class="admonition warning">
+		<p class="first admonition-title">Note</p>
+		<p class="last">
+			You are not using the most up to date version of the documentation.
+			<a href="#"></a> is the newest version.
+		</p>
+	</div>
+</template>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1418081-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1418081-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

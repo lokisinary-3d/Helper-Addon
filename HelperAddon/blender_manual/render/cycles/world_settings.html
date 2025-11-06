@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World Settings &mdash; Blender Manual</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme_overrides.css?v=8da28a04" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/version_switch.css?v=74ca2809" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.blender.org/manual/en/latest/render/cycles/world_settings.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=715c20a1"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../../_static/js/version_switch.js?v=5cbd935e"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Blender Manual"
+          href="../../_static/opensearch.xml"/>
+<link rel="alternate" hreflang="en" href="https://docs.blender.org/manual/en/latest/" />
+<link rel="alternate" hreflang="ar" href="https://docs.blender.org/manual/ar/latest/" />
+<link rel="alternate" hreflang="de" href="https://docs.blender.org/manual/de/latest/" />
+<link rel="alternate" hreflang="es" href="https://docs.blender.org/manual/es/latest/" />
+<link rel="alternate" hreflang="fi" href="https://docs.blender.org/manual/fi/latest/" />
+<link rel="alternate" hreflang="fr" href="https://docs.blender.org/manual/fr/latest/" />
+<link rel="alternate" hreflang="id" href="https://docs.blender.org/manual/id/latest/" />
+<link rel="alternate" hreflang="it" href="https://docs.blender.org/manual/it/latest/" />
+<link rel="alternate" hreflang="ja" href="https://docs.blender.org/manual/ja/latest/" />
+<link rel="alternate" hreflang="ko" href="https://docs.blender.org/manual/ko/latest/" />
+<link rel="alternate" hreflang="nb" href="https://docs.blender.org/manual/nb/latest/" />
+<link rel="alternate" hreflang="pt" href="https://docs.blender.org/manual/pt/latest/" />
+<link rel="alternate" hreflang="ru" href="https://docs.blender.org/manual/ru/latest/" />
+<link rel="alternate" hreflang="sk" href="https://docs.blender.org/manual/sk/latest/" />
+<link rel="alternate" hreflang="sl" href="https://docs.blender.org/manual/sl/latest/" />
+<link rel="alternate" hreflang="sr" href="https://docs.blender.org/manual/sr/latest/" />
+<link rel="alternate" hreflang="uk" href="https://docs.blender.org/manual/uk/latest/" />
+<link rel="alternate" hreflang="vi" href="https://docs.blender.org/manual/vi/latest/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://docs.blender.org/manual/zh-hans/latest/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://docs.blender.org/manual/zh-hant/latest/" />
+<link rel="alternate" hreflang="x-default" href="https://docs.blender.org/manual/en/latest/" />
+
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="Object Settings" href="object_settings/index.html" />
+    <link rel="prev" title="Performance" href="render_settings/performance.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Blender 4.0 Manual
+              <img src="../../_static/blender-logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/about/index.html">About Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installing/index.html">Installing Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/configuration/index.html">Configuring Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/help.html">Help System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sections</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../interface/index.html">User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../editors/index.html">Editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scene_layout/index.html">Scenes &amp; Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modeling/index.html">Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sculpt_paint/index.html">Sculpting &amp; Painting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../grease_pencil/index.html">Grease Pencil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../animation/index.html">Animation &amp; Rigging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../physics/index.html">Physics</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Rendering</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../eevee/index.html">EEVEE</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Cycles</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="render_settings/index.html">Render Settings</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">World Settings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#mist-pass">Mist Pass</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ray-visibility">Ray Visibility</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#tricks">Tricks</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#settings">Settings</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#surface">Surface</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#volume">Volume</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#light-group">Light Group</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="object_settings/index.html">Object Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="material_settings.html">Material Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="light_settings.html">Light Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gpu_rendering.html">GPU Rendering</a></li>
+<li class="toctree-l3"><a class="reference internal" href="features.html">Experimental Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="baking.html">Render Baking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="optimizations/index.html">Optimizing Renders</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../workbench/index.html">Workbench</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cameras.html">Cameras</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lights/index.html">Lights</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../materials/index.html">Materials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shader_nodes/index.html">Shader Nodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../color_management.html">Color Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../freestyle/index.html">Freestyle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../layers/index.html">Layers &amp; Passes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../output/index.html">Render Output</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../compositing/index.html">Compositing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../movie_clip/index.html">Motion Tracking &amp; Masking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../video_editing/index.html">Video Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../files/index.html">Assets, Files, &amp; Data System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../addons/index.html">Add-ons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/index.html">Advanced</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Manual Index</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get Involved</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribute Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Blender 4.0 Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Rendering</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Cycles</a></li>
+      <li class="breadcrumb-item active">World Settings</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="world-settings">
+<span id="bpy-types-worldlighting"></span><span id="bpy-types-cyclesworldsettings"></span><h1>World Settings<a class="headerlink" href="#world-settings" title="Link to this heading"></a></h1>
+<section id="mist-pass">
+<span id="bpy-types-worldmistsettings"></span><h2>Mist Pass<a class="headerlink" href="#mist-pass" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id1">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Panel<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">World ‣ Mist Pass</span></p>
+</dd>
+</dl>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The mist pass must be enabled in the View Layer tab
+of the <a class="reference internal" href="../../editors/properties_editor.html"><span class="doc">Properties Editor</span></a>
+before the settings below are available in the World tab.</p>
+</div>
+<p>Mist can greatly enhance the illusion of depth in your rendering. To create mist,
+Blender generates a render layer with a depth map ranging between 0.0 and 1.0
+that can be used in the Compositor to generate a mist effect.</p>
+<dl class="simple" id="bpy-types-worldmistsettings-start">
+<dt>Start</dt><dd><p>The distance from the camera at which the mist starts to fade in.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-worldmistsettings-depth">
+<dt>Depth</dt><dd><p>The distance from <em>Start</em> of the mist, that it fades in over.
+Objects further from the camera than <em>Start + Depth</em> are completely hidden by the mist.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-worldmistsettings-falloff">
+<dt>Falloff</dt><dd><p>The curve function that controls the rate of change of the mist’s strength further and further into the distance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Quadratic<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Uses the same calculation as light falloff (<span class="math notranslate nohighlight">\(1\over{x^2}\)</span>) and provides the smoothest
+transition from transparent (0.0) to opaque (1.0).</p>
+</dd>
+<dt class="field-even">Linear<span class="colon">:</span></dt>
+<dd class="field-even"><p>Has a steeper start than quadratic (<span class="math notranslate nohighlight">\(1\over{x}\)</span>).</p>
+</dd>
+<dt class="field-odd">Inverse Quadratic<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Has the steepest start (<span class="math notranslate nohighlight">\(1\over{\sqrt{x}}\)</span>) and approaches 1.0 faster than the other two functions.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>A visualization can be activated in the <span class="menuselection">Camera ‣ Viewport Display</span> panel.</p>
+</div>
+<figure class="align-default" id="id4">
+<img alt="../../_images/render_cycles_world-settings_mist-example1-BI.jpg" src="../../_images/render_cycles_world-settings_mist-example1-BI.jpg" />
+<figcaption>
+<p><span class="caption-text">Mist example
+(<a class="reference external" href="https://archive.blender.org/wiki/index.php/File:25-Manual-World-Mist-Example1.blend">blend-file</a>).</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="ray-visibility">
+<span id="bpy-types-cyclesvisibilitysettings-camera"></span><h2>Ray Visibility<a class="headerlink" href="#ray-visibility" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id2">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Panel<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">World ‣ Ray Visibility</span></p>
+</dd>
+</dl>
+</div>
+<p>As with other objects,
+<em>Ray Visibility</em> allows you to control which other shaders can “see” the environment.</p>
+<section id="tricks">
+<h3>Tricks<a class="headerlink" href="#tricks" title="Link to this heading"></a></h3>
+<p>Sometimes it may be useful to have a different background that is directly visible versus one
+that is indirectly lighting the objects. A simple solution to this is to add a Mix node,
+with the <em>Blend Factor</em> set to <em>Is Camera Ray</em>. The first input color is then the indirect color,
+and the second the directly visible color. This is useful when using a high-res image for
+the background and a low-res image for the actual lighting.</p>
+<p>Similarly, adding the <em>Is Camera</em> and <em>Is Glossy</em> rays will mean that the high-res image
+will also be visible in reflections.</p>
+<figure class="align-default" id="id5">
+<img alt="../../_images/render_cycles_world-settings_tricks.png" src="../../_images/render_cycles_world-settings_tricks.png" />
+<figcaption>
+<p><span class="caption-text">Nodes for the trick above.</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="settings">
+<span id="render-cycles-integrator-world-settings"></span><h2>Settings<a class="headerlink" href="#settings" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id3">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Panel<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">World ‣ Settings</span></p>
+</dd>
+</dl>
+</div>
+<section id="surface">
+<h3>Surface<a class="headerlink" href="#surface" title="Link to this heading"></a></h3>
+<dl id="bpy-types-cyclesworldsettings-sampling-method">
+<dt>Sampling</dt><dd><p>Controls the sampling method for the world material. Selecting Auto or Manual enables
+<em>Multiple Importance Sampling</em> while None disables it. <em>Multiple Importance Sampling</em>
+is a method to sample the background texture such that lighter parts are favored,
+creating an importance map. It will produce less noise in the render in trade of artifacts (<a class="reference internal" href="../../glossary/index.html#term-Fireflies"><span class="xref std std-term">Fireflies</span></a>).
+Enable this when using an image texture with small area lights (like the sun),
+otherwise noise can take a long time to converge.</p>
+<p>Below is a comparison between <em>Multiple Importance Sample</em> off and on.
+Both images are rendered for 25 seconds (Off: 1,500 samples, On: 1,000 samples).</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id6">
+<img alt="../../_images/render_cycles_world-settings_mis-off.jpg" src="../../_images/render_cycles_world-settings_mis-off.jpg" />
+<figcaption>
+<p><span class="caption-text">Multiple Importance Sample off.</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+<td><figure class="align-default" id="id7">
+<img alt="../../_images/render_cycles_world-settings_mis-on.jpg" src="../../_images/render_cycles_world-settings_mis-on.jpg" />
+<figcaption>
+<p><span class="caption-text">Multiple Importance Sample on.</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-cyclesworldsettings-sample-map-resolution">
+<dt>Map Resolution</dt><dd><p>Sets the resolution of the importance map.
+A higher resolution will better detect small features in the map and give more accurate sampling
+but conversely will take up more memory and render slightly slower.
+Higher values also may produce less noise when using high-res images.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-cyclesworldsettings-max-bounces">
+<dt>Max Bounces</dt><dd><p>Maximal number of bounces the background light will contribute to the render.</p>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>See <a class="reference internal" href="optimizations/reducing_noise.html"><span class="doc">Reducing Noise</span></a>
+for more information on how to reduce noise.</p>
+</div>
+<dl class="simple" id="bpy-types-cyclesworldsettings-is-caustics-light">
+<dt>Shadow Caustics</dt><dd><p>Mark the World Shader as a refractive caustic caster. This setting can be used in conjunction with the
+<a class="reference internal" href="object_settings/object_data.html#bpy-types-cyclesobjectsettings-is-caustics-caster"><span class="std std-ref">Cast and Receive caustics object settings</span></a>
+to selectively speed up refractive caustic rendering of select objects.</p>
+</dd>
+</dl>
+</section>
+<section id="volume">
+<h3>Volume<a class="headerlink" href="#volume" title="Link to this heading"></a></h3>
+<dl class="simple" id="bpy-types-cyclesworldsettings-volume-sampling">
+<dt>Sampling Method</dt><dd><dl class="field-list simple">
+<dt class="field-odd">Distance<span class="colon">:</span></dt>
+<dd class="field-odd"><p>For dense volumes lit from far away <em>Distance</em> sampling is more efficient in most cases.
+Usually this shouldn’t be used for World volumes.</p>
+</dd>
+<dt class="field-even">Equiangular<span class="colon">:</span></dt>
+<dd class="field-even"><p>If you have got a light inside or near the volume then <em>equiangular</em> sampling is better.</p>
+</dd>
+<dt class="field-odd">Multiple Importance<span class="colon">:</span></dt>
+<dd class="field-odd"><p>If you have a combination of both, then the multiple importance sampling will be better.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-cyclesworldsettings-volume-interpolation">
+<dt>Interpolation</dt><dd><p>Interpolation method to use for the volume.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Linear<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Simple interpolation which gives good results for thin volumes.</p>
+</dd>
+<dt class="field-even">Cubic<span class="colon">:</span></dt>
+<dd class="field-even"><p>Smoothed high-quality interpolation needed for more dense volumes, but slower.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-cyclesworldsettings-homogeneous-volume">
+<dt>Homogeneous</dt><dd><p>Assume volume has the same density everywhere (not using any textures), for faster rendering.
+Usually this is automatically determined by the renderer.
+This settings provides a manual control for cases where it is not detected.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-cyclesworldsettings-volume-step-size">
+<dt>Step Size</dt><dd><p>Distance between volume shader samples for world volume shaders.
+See <a class="reference internal" href="render_settings/volumes.html"><span class="doc">Volume Render Settings</span></a> for more information.</p>
+</dd>
+</dl>
+</section>
+<section id="light-group">
+<h3>Light Group<a class="headerlink" href="#light-group" title="Link to this heading"></a></h3>
+<dl id="bpy-types-world-lightgroup">
+<dt>Light Group <span class="guilabel">Cycles only</span></dt><dd><p>Select the <a class="reference internal" href="../layers/passes.html#bpy-types-viewlayer-active-lightgroup-index"><span class="std std-ref">Light Group</span></a> to add the
+current <em>World Surface Shader</em> too.</p>
+<dl class="simple">
+<dt>Add Light Group</dt><dd><p>If the name input into the <em>Light Group</em> field does not align with an existing
+Light Group, then pressing this button will create a <em>Light Group</em> with that name
+and assign this <em>World Shader</em> to it.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="render_settings/performance.html" class="btn btn-neutral float-left" title="Performance" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="object_settings/index.html" class="btn btn-neutral float-right" title="Object Settings" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../copyright.html">Copyright</a> : This page is licensed under a CC-BY-SA 4.0 Int. License.
+      <span class="lastupdated">Last updated on 12/17/2023.
+      </span></p>
+  </div>
+
+  
+<div class="footer-contribute">
+   <ul>
+      <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/render/cycles/world_settings.rst"
+            class="fa fa-edit"> View Source</a>
+      </li>
+      <!-- <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/render/cycles/world_settings.rst"
+            class="fa fa-edit"> Edit Page</a>
+      </li> -->
+      <li>
+         <a href="https://projects.blender.org/blender/documentation/issues/new?template=.gitea/issue_template/bug.yaml&field:body=%2A%2APage+Information%2A%2A%0D%0AFile%3A+%60manual%2Frender/cycles/world_settings.rst%60%0D%0ABlender+Version%3A+%604.0%60%0D%0ADocumentation+Language%3A+%60en%60%0D%0A%5BPermanent+Link%5D%28https%3A%2F%2Fdocs.blender.org%2Fmanual%2Fen%2F4.0%2Frender/cycles/world_settings.html%29%0D%0A%0D%0A%2A%2AShort+description+of+error%2A%2A%0D%0A%5BPlease+fill+out+a+short+description+of+the+error+here%5D%0D%0A"
+            class="fa fa-bug"> Report issue on this page</a>
+      </li>
+      <ul>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="document versions">
+	<ul id="versionwrap" role="presentation">
+		<li role="presentation">
+			<span id="version-popover" class="version-btn" tabindex="0" role="button" aria-label="versions selector"
+				aria-haspopup="true" aria-controls="version-vsnlist" aria-disabled="true">
+				4.0
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Versions</div>
+				<ul id="version-vsnlist" class="version-list" role="menu" aria-labelledby="version-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<li role="presentation">
+			<span id="lang-popover" class="version-btn" tabindex="0" role="button" aria-label="language selector"
+				aria-haspopup="true" aria-controls="version-langlist">
+				 en 
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Languages</div>
+				<ul id="version-langlist" class="version-list" role="menu" aria-labelledby="lang-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<template id="version-entry">
+			<li tabindex="-1" role="presentation"><a tabindex="-1" role="menuitem"></a></li>
+			<li class="selected" tabindex="-1" role="presentation"><span tabindex="-1" aria-current="page"></spanp></li>
+		</template>
+	</ul>
+<template id="version-warning">
+	<div class="admonition warning">
+		<p class="first admonition-title">Note</p>
+		<p class="last">
+			You are not using the most up to date version of the documentation.
+			<a href="#"></a> is the newest version.
+		</p>
+	</div>
+</template>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1418081-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1418081-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viewport Overlays &mdash; Blender Manual</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=8da28a04" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/version_switch.css?v=74ca2809" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.blender.org/manual/en/latest/editors/3dview/display/overlays.html" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=715c20a1"></script>
+        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../_static/js/version_switch.js?v=5cbd935e"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Blender Manual"
+          href="../../../_static/opensearch.xml"/>
+<link rel="alternate" hreflang="en" href="https://docs.blender.org/manual/en/latest/" />
+<link rel="alternate" hreflang="ar" href="https://docs.blender.org/manual/ar/latest/" />
+<link rel="alternate" hreflang="de" href="https://docs.blender.org/manual/de/latest/" />
+<link rel="alternate" hreflang="es" href="https://docs.blender.org/manual/es/latest/" />
+<link rel="alternate" hreflang="fi" href="https://docs.blender.org/manual/fi/latest/" />
+<link rel="alternate" hreflang="fr" href="https://docs.blender.org/manual/fr/latest/" />
+<link rel="alternate" hreflang="id" href="https://docs.blender.org/manual/id/latest/" />
+<link rel="alternate" hreflang="it" href="https://docs.blender.org/manual/it/latest/" />
+<link rel="alternate" hreflang="ja" href="https://docs.blender.org/manual/ja/latest/" />
+<link rel="alternate" hreflang="ko" href="https://docs.blender.org/manual/ko/latest/" />
+<link rel="alternate" hreflang="nb" href="https://docs.blender.org/manual/nb/latest/" />
+<link rel="alternate" hreflang="pt" href="https://docs.blender.org/manual/pt/latest/" />
+<link rel="alternate" hreflang="ru" href="https://docs.blender.org/manual/ru/latest/" />
+<link rel="alternate" hreflang="sk" href="https://docs.blender.org/manual/sk/latest/" />
+<link rel="alternate" hreflang="sl" href="https://docs.blender.org/manual/sl/latest/" />
+<link rel="alternate" hreflang="sr" href="https://docs.blender.org/manual/sr/latest/" />
+<link rel="alternate" hreflang="uk" href="https://docs.blender.org/manual/uk/latest/" />
+<link rel="alternate" hreflang="vi" href="https://docs.blender.org/manual/vi/latest/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://docs.blender.org/manual/zh-hans/latest/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://docs.blender.org/manual/zh-hant/latest/" />
+<link rel="alternate" hreflang="x-default" href="https://docs.blender.org/manual/en/latest/" />
+
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="next" title="Viewport Shading" href="shading.html" />
+    <link rel="prev" title="Viewport Gizmos" href="gizmo.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Blender 4.0 Manual
+              <img src="../../../_static/blender-logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/about/index.html">About Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/installing/index.html">Installing Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/configuration/index.html">Configuring Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/help.html">Help System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sections</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../interface/index.html">User Interface</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Editors</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">3D Viewport</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../startup_scene.html">Startup Scene</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../modes.html">Object Modes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../navigate/index.html">Navigating</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3d_cursor.html">3D Cursor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../selecting.html">Selecting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../controls/index.html">Controls</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">Display</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="visibility.html">Object Type Visibility</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gizmo.html">Viewport Gizmos</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Viewport Overlays</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#general">General</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#guides">Guides</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#objects">Objects</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#geometry">Geometry</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#motion-tracking">Motion Tracking</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#mesh-edit-mode-overlays">Mesh Edit Mode Overlays</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#shading">Shading</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#mesh-analysis">Mesh Analysis</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#measurement">Measurement</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#normals">Normals</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#developer">Developer</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#freestyle">Freestyle</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#sculpt-mode-overlays">Sculpt Mode Overlays</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#vertex-paint-overlays">Vertex Paint Overlays</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#weight-paint-overlays">Weight Paint Overlays</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#texture-paint-overlays">Texture Paint Overlays</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#pose-mode-overlays">Pose Mode Overlays</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#grease-pencil">Grease Pencil</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="shading.html">Viewport Shading</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../toolbar/index.html">Toolbar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sidebar.html">Sidebar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../viewport_render.html">Viewport Render</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../image/index.html">Image Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../uv/index.html">UV Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../compositor.html">Compositor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../texture_node/index.html">Texture Nodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../geometry_node.html">Geometry Node Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../shader_editor.html">Shader Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../video_sequencer/index.html">Video Sequencer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../clip/index.html">Movie Clip Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../dope_sheet/index.html">Dope Sheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../timeline.html">Timeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../graph_editor/index.html">Graph Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../drivers_editor.html">Drivers Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../nla/index.html">Nonlinear Animation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../text_editor.html">Text Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_console.html">Python Console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../info_editor.html">Info Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../outliner/index.html">Outliner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../properties_editor.html">Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../file_browser.html">File Browser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../asset_browser.html">Asset Browser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../spreadsheet.html">Spreadsheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../preferences/index.html">Preferences</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../scene_layout/index.html">Scenes &amp; Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../modeling/index.html">Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sculpt_paint/index.html">Sculpting &amp; Painting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../grease_pencil/index.html">Grease Pencil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../animation/index.html">Animation &amp; Rigging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../physics/index.html">Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../render/index.html">Rendering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../compositing/index.html">Compositing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../movie_clip/index.html">Motion Tracking &amp; Masking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../video_editing/index.html">Video Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../files/index.html">Assets, Files, &amp; Data System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../addons/index.html">Add-ons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../advanced/index.html">Advanced</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../troubleshooting/index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../glossary/index.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../genindex.html">Manual Index</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get Involved</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../contribute/index.html">Contribute Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Blender 4.0 Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Editors</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">3D Viewport</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Display</a></li>
+      <li class="breadcrumb-item active">Viewport Overlays</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <span class="target" id="bpy-types-view3doverlay"></span><section id="viewport-overlays">
+<h1>Viewport Overlays<a class="headerlink" href="#viewport-overlays" title="Link to this heading"></a></h1>
+<div class="refbox admonition" id="id1">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Mode<span class="colon">:</span></dt>
+<dd class="field-odd"><p>All Modes</p>
+</dd>
+<dt class="field-even">Header<span class="colon">:</span></dt>
+<dd class="field-even"><p><img alt="overlays-icon" src="../../../_images/editors_3dview_display_overlays.png" /> <span class="menuselection">Overlays</span></p>
+</dd>
+</dl>
+</div>
+<p>Clicking the icon toggles all overlays in the 3D Viewport.
+The drop-down button displays a popover with more detailed settings,
+which are described below.</p>
+<p>Next to the Viewport Overlays popover could be a second popover.
+The availability of these options depend on the mode the 3D Viewport is in or what type of object is selected.
+These settings are described later on in this page.</p>
+<section id="general">
+<h2>General<a class="headerlink" href="#general" title="Link to this heading"></a></h2>
+<p>The following options are always present, independent of the current mode.
+Some of the overlays can be customized in the
+<a class="reference internal" href="../../preferences/viewport.html"><span class="doc">Viewport Preferences</span></a>.</p>
+<section id="guides">
+<h3>Guides<a class="headerlink" href="#guides" title="Link to this heading"></a></h3>
+<dl class="simple">
+<dt>Grid</dt><dd><p>Show grid in orthographic side view.</p>
+</dd>
+<dt>Floor</dt><dd><p>Show the ground plane in perspective view.</p>
+</dd>
+<dt>Axis</dt><dd><p>Show the X, Y and/or Z axis lines.</p>
+</dd>
+<dt>Scale</dt><dd><p>The distance between lines in the grid/floor.</p>
+</dd>
+<dt>Subdivision</dt><dd><p>The number of subdivisions between grid lines.</p>
+</dd>
+<dt>Text Info</dt><dd><p>Show various bits of information in the top left corner of the viewport.</p>
+<ul class="simple">
+<li><p><strong>View Perspective</strong> –
+Name of the <a class="reference internal" href="../navigate/projections.html"><span class="doc">View Perspective</span></a>,
+such as “Top Orthographic” or “User Perspective.”</p></li>
+<li><p><strong>Playback Frame Rate (FPS)</strong> –
+Displays the Frames Per Second at which the animation is playing.
+By default, Blender goes through every single frame, which may result in an FPS that’s lower than
+intended (and the animation playing slower than realtime); the FPS turns red in this case.
+You can change this behavior in the Playback popover of the <a class="reference internal" href="../../timeline.html"><span class="doc">Timeline</span></a>.</p></li>
+<li><p><strong>Object Info</strong> –
+Shows the current frame in parentheses, followed by the names of the selected
+<a class="reference internal" href="../../../scene_layout/collections/index.html"><span class="doc">Collection</span></a> and the <a class="reference internal" href="../../../scene_layout/object/selecting.html#object-active"><span class="std std-ref">active object</span></a>.
+When applicable, also shows the selected <a class="reference internal" href="../../../animation/shape_keys/introduction.html"><span class="doc">Shape Key</span></a>
+and (in angle brackets) the <a class="reference internal" href="../../../animation/markers.html"><span class="doc">Marker</span></a> on the current frame.
+If the object has a keyframe on the current frame, the Object Info is displayed in yellow.</p></li>
+<li><p><strong>Grid Resolution</strong> –
+When the view is aligned to a world axis (see <a class="reference internal" href="../navigate/viewpoint.html"><span class="doc">Viewpoint</span></a>),
+the Text Info additionally shows the smallest distance between two parallel grid lines.</p></li>
+</ul>
+</dd>
+<dt>Statistics</dt><dd><p>Show information about the amount of objects and geometry.
+Note that the counters depend on the current selection.
+For example, selecting a mesh gives info on the number of vertices, edges, and faces,
+while selecting a light shows the number of lights in the scene.</p>
+<ul class="simple">
+<li><p><strong>Objects</strong> – Number of the selected objects and the total count.</p></li>
+<li><p><strong>Geometry</strong> – Displays information about the current scene depending on the mode and object type.
+This can be the number of vertices, faces, triangles, or bones.</p></li>
+</ul>
+</dd>
+<dt>HDRI Preview</dt><dd><p>Show two spheres, one glossy and one diffuse, to preview the HDRI that’s being used for world lighting.
+While HDRIs can be used in both the <em>Material Preview</em> and <em>Rendered</em>
+<a class="reference internal" href="shading.html"><span class="doc">shading modes</span></a>, the HDRI Preview overlay
+is only available in the former.</p>
+</dd>
+<dt>3D Cursor</dt><dd><p>Show the <a class="reference internal" href="../3d_cursor.html"><span class="doc">3D Cursor</span></a>.</p>
+</dd>
+<dt>Annotations</dt><dd><p>Show <a class="reference internal" href="../../../interface/annotate_tool.html"><span class="doc">annotations</span></a>.</p>
+</dd>
+</dl>
+</section>
+<section id="objects">
+<h3>Objects<a class="headerlink" href="#objects" title="Link to this heading"></a></h3>
+<dl class="simple">
+<dt>Extras</dt><dd><p>Show objects that don’t have geometry (such as empties, cameras and lights).</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-view3doverlay-show-light-colors">
+<dt>Light Colors</dt><dd><p>Shades the outline of light objects to the color the light produces.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-view3doverlay-show-relationship-lines">
+<dt>Relationship Lines</dt><dd><p>Show dashed lines indicating parent or constraint relationships.</p>
+</dd>
+<dt>Outline Selected</dt><dd><p>Show an outline around selected objects.</p>
+</dd>
+<dt>Bones</dt><dd><p>Show Bones.</p>
+</dd>
+<dt>Motion Paths</dt><dd><p>Show the <a class="reference internal" href="../../../animation/motion_paths.html"><span class="doc">motion path</span></a> overlay.</p>
+</dd>
+<dt>Origin</dt><dd><p>Show the <a class="reference internal" href="../../../scene_layout/object/origin.html"><span class="doc">origins</span></a> of the selected objects.</p>
+</dd>
+<dt>Origin (All)</dt><dd><p>Show the origins of all objects.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-view3doverlay-bone-wire-alpha">
+<dt>Bone Wireframe Opacity</dt><dd><p>The maximum opacity used for bones drawn in the <em>Wireframe</em>
+<a class="reference internal" href="shading.html"><span class="doc">shading mode</span></a> (or in <em>Solid</em> shading mode with X-Ray active).
+This is helpful when it is necessary to reduce clutter and focus on the mesh rather than bones.</p>
+</dd>
+</dl>
+</section>
+<section id="geometry">
+<h3>Geometry<a class="headerlink" href="#geometry" title="Link to this heading"></a></h3>
+<span id="bpy-types-view3doverlay-wireframe-threshold"></span><dl id="bpy-types-view3doverlay-show-wireframes">
+<dt>Wireframe</dt><dd><p>Display mesh edges. Similar to <a class="reference internal" href="shading.html#dview-shading-rendered"><span class="std std-ref">Wireframe Shading</span></a>,
+but displays edges on top of existing shading.
+The value slider adjusts which edges to display:
+lower values hide edges on surfaces that are almost flat, while a value of 1 shows all edges.</p>
+<dl class="simple" id="bpy-types-view3doverlay-wireframe-opacity">
+<dt>Opacity</dt><dd><p>The opacity of the displayed edges, from 0 (invisible) to 1 (fully opaque).</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<span id="bpy-types-view3doverlay-fade-inactive-alpha"></span><dl class="simple" id="bpy-types-view3doverlay-show-fade-inactive">
+<dt>Fade Inactive Geometry</dt><dd><p>In modes other than Object Mode, fade out objects that you’re not working on.
+The slider controls how much they’re faded out.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-view3doverlay-show-face-orientation">
+<dt>Face Orientation</dt><dd><p>Show faces whose normal is pointing towards the camera in blue,
+and faces whose normal is pointing away from the camera in red.
+This lets you quickly check for faces that are oriented incorrectly:
+the outside surface of an object should typically be all blue.</p>
+</dd>
+</dl>
+</section>
+<section id="motion-tracking">
+<span id="bpy-types-spaceview3d-show-reconstruction"></span><h3>Motion Tracking<a class="headerlink" href="#motion-tracking" title="Link to this heading"></a></h3>
+<p>Show the <a class="reference internal" href="../../../movie_clip/tracking/introduction.html"><span class="doc">motion tracking</span></a> overlay.</p>
+<dl class="simple">
+<dt>Camera Path</dt><dd><p>Show the reconstructed camera path.</p>
+</dd>
+<dt>Marker Names</dt><dd><p>Show the names for reconstructed track objects.</p>
+</dd>
+<dt>Tracks</dt><dd><p>Change the display of the reconstructed tracks:
+plain axes, arrows and so on.</p>
+</dd>
+<dt>Size</dt><dd><p>Change the display size of the reconstructed tracks.</p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="mesh-edit-mode-overlays">
+<span id="dview-overlay-mesh-edit-mode"></span><h2>Mesh Edit Mode Overlays<a class="headerlink" href="#mesh-edit-mode-overlays" title="Link to this heading"></a></h2>
+<p>The following options are available when in Mesh Edit Mode.</p>
+<dl>
+<dt>Edges</dt><dd><p>Highlight selected and partially selected edges.
+Only affects vertex and face selection modes, as edges are always highlighted in edge selection mode.</p>
+</dd>
+<dt>Faces</dt><dd><p>Highlight selected faces. Affects all selection modes.</p>
+</dd>
+<dt>Center</dt><dd><p>Show face center points in solid shading modes. (They’re always shown in wireframe shading mode.)</p>
+<p>Only affects face selection mode.</p>
+</dd>
+<dt>Creases</dt><dd><p>Display edges marked with a crease
+for the <a class="reference internal" href="../../../modeling/modifiers/generate/subdivision_surface.html"><span class="doc">Subdivision Surface Modifier</span></a>.</p>
+</dd>
+<dt>Sharp</dt><dd><p>Display sharp edges, used with the <a class="reference internal" href="../../../modeling/modifiers/generate/edge_split.html"><span class="doc">Edge Split modifier</span></a>.</p>
+</dd>
+<dt>Bevel</dt><dd><p>Display weights created for the <a class="reference internal" href="../../../modeling/modifiers/generate/bevel.html"><span class="doc">Bevel Modifier</span></a>.</p>
+</dd>
+<dt>Seams</dt><dd><p>Display the <a class="reference internal" href="../../../modeling/meshes/uv/unwrapping/seams.html"><span class="doc">UV unwrapping seams</span></a>.</p>
+</dd>
+</dl>
+<section id="shading">
+<h3>Shading<a class="headerlink" href="#shading" title="Link to this heading"></a></h3>
+<dl id="bpy-types-view3doverlay-show-retopology">
+<dt>Retopology</dt><dd><p>Hide the solid mesh and offset the overlay towards the view.
+Selection is occluded by inactive geometry, unless X-Ray is enabled</p>
+<dl class="simple" id="bpy-types-view3doverlay-retopology-offset">
+<dt>Offset</dt><dd><p>Amount to offset edit mesh in front of other geometry.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl id="bpy-types-view3doverlay-show-weight">
+<dt>Vertex Groups Weights</dt><dd><p>Display weights in Edit Mode.</p>
+<dl class="simple" id="bpy-types-toolsettings-vertex-group-user">
+<dt>Zero Weights</dt><dd><p>Display unreferenced and zero-weighted areas in black.
+This helps to identify areas with very low weights that have been painted onto.</p>
+<dl class="field-list simple">
+<dt class="field-odd">None<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Vertices are displayed in the usual way.</p>
+</dd>
+<dt class="field-even">Active<span class="colon">:</span></dt>
+<dd class="field-even"><p>Vertices are shown in black if they have no weight in the active vertex group.</p>
+</dd>
+<dt class="field-odd">All<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Vertices are shown in black if they have no weight in any vertex group.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+<section id="mesh-analysis">
+<h3>Mesh Analysis<a class="headerlink" href="#mesh-analysis" title="Link to this heading"></a></h3>
+<p>Show the <a class="reference internal" href="../../../modeling/meshes/mesh_analysis.html#modeling-mesh-analysis"><span class="std std-ref">Mesh Analysis</span></a> overlay.</p>
+</section>
+<section id="measurement">
+<h3>Measurement<a class="headerlink" href="#measurement" title="Link to this heading"></a></h3>
+<p>Show numerical measures of the selected elements.
+The <a class="reference internal" href="../../../scene_layout/scene/properties.html#bpy-types-unitsettings"><span class="std std-ref">Units</span></a> can be set in the Scene properties.</p>
+<dl class="simple">
+<dt>Edge Length</dt><dd><p>Show the length of selected edges.</p>
+</dd>
+<dt>Edge Angle</dt><dd><p>Show the angle of selected edges between two faces.</p>
+</dd>
+<dt>Face Area</dt><dd><p>Show the area of selected faces.</p>
+</dd>
+<dt>Face Angle</dt><dd><p>Show the angle of selected face corners.</p>
+</dd>
+</dl>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Geometry connected to the selection is shown while transforming,
+allowing you to move a vertex and see the connected edge lengths for example.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These values respect the <a class="reference internal" href="../../../modeling/meshes/editing/mesh/transform/basic.html#modeling-mesh-transform-panel"><span class="std std-ref">Transform Space</span></a>
+in the Sidebar. Use <em>Global</em> if you want the object’s scale to be applied to the measurements.</p>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>The <a class="reference internal" href="../toolbar/measure.html"><span class="doc">Measure</span></a> tool for measuring
+arbitrary distances and angles.</p>
+</div>
+</section>
+<section id="normals">
+<span id="mesh-display-normals"></span><h3>Normals<a class="headerlink" href="#normals" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Display vertex normals</p></li>
+<li><p>Display face normals at vertices (split normals)</p></li>
+<li><p>Display face normals</p></li>
+</ul>
+<dl>
+<dt>Size</dt><dd><p>The size to show the selected normals.</p>
+<dl class="simple" id="bpy-types-view3doverlay-use-normals-constant-screen-size">
+<dt>Constant Screen Size Normals</dt><dd><p>Keep the size of normals constant in relation to the zoom level.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+<section id="developer">
+<h3>Developer<a class="headerlink" href="#developer" title="Link to this heading"></a></h3>
+<p>These overlays are only available if <em>Developer Extras</em> is enabled
+in the <a class="reference internal" href="../../preferences/interface.html"><span class="doc">Interface Preferences</span></a>.</p>
+<dl class="simple">
+<dt>Indices</dt><dd><p>Display the indices of selected vertices, edges, and faces.</p>
+</dd>
+</dl>
+</section>
+<section id="freestyle">
+<h3>Freestyle<a class="headerlink" href="#freestyle" title="Link to this heading"></a></h3>
+<p>These settings apply to the <a class="reference internal" href="../../../render/freestyle/introduction.html"><span class="doc">Freestyle</span></a>
+line art renderer.</p>
+<dl class="simple">
+<dt>Edge Marks</dt><dd><p>Display Freestyle edge marks.</p>
+</dd>
+<dt>Face Marks</dt><dd><p>Display Freestyle face marks.</p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="sculpt-mode-overlays">
+<h2>Sculpt Mode Overlays<a class="headerlink" href="#sculpt-mode-overlays" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt>Mask</dt><dd><p>Show <a class="reference internal" href="../../../sculpt_paint/sculpting/editing/mask.html#sculpt-mask-menu"><span class="std std-ref">Masks</span></a> as overlays on an object. The opacity of the overlay can be adjusted.</p>
+</dd>
+<dt>Face Sets</dt><dd><p>Show <a class="reference internal" href="../../../sculpt_paint/sculpting/editing/face_sets.html#sculpting-editing-facesets"><span class="std std-ref">Face Sets</span></a> as overlays on an object.
+The opacity of the overlay can be adjusted.</p>
+</dd>
+</dl>
+</section>
+<section id="vertex-paint-overlays">
+<h2>Vertex Paint Overlays<a class="headerlink" href="#vertex-paint-overlays" title="Link to this heading"></a></h2>
+<dl class="simple" id="bpy-types-view3doverlay-vertex-paint-mode-opacity">
+<dt>Stencil Mask Opacity</dt><dd><p>Does nothing. (Stencil masks are only available for texture painting.)</p>
+</dd>
+<dt>Show Wire</dt><dd><p>Display mesh edges in white (unlike the <em>Wireframe</em> overlay which shows them in black).</p>
+</dd>
+</dl>
+</section>
+<section id="weight-paint-overlays">
+<h2>Weight Paint Overlays<a class="headerlink" href="#weight-paint-overlays" title="Link to this heading"></a></h2>
+<dl>
+<dt>Opacity</dt><dd><p>The opacity of the overlay.</p>
+</dd>
+<dt>Zero Weights</dt><dd><p>Display unreferenced and zero-weighted areas in black.
+This helps to identify areas with very low weights that have been painted onto.</p>
+<dl class="field-list simple">
+<dt class="field-odd">None<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Vertices are displayed in the usual way.</p>
+</dd>
+<dt class="field-even">Active<span class="colon">:</span></dt>
+<dd class="field-even"><p>Vertices are shown in black if they have no weight in the active vertex group.</p>
+</dd>
+<dt class="field-odd">All<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Vertices are shown in black if they have no weight in any vertex group.</p>
+</dd>
+</dl>
+</dd>
+<dt>Show Weight Contours</dt><dd><p>Show contour lines formed by points with the same interpolated weight.</p>
+<p>This visualizes weight variations too small to be seen from colors and can be useful for judging
+the smoothness and consistency of gradients, e.g. when using smoothing tools and brushes.</p>
+</dd>
+<dt>Show Wire</dt><dd><p>Display mesh edges in white (unlike the <em>Wireframe</em> overlay which shows them in black).</p>
+</dd>
+</dl>
+</section>
+<section id="texture-paint-overlays">
+<h2>Texture Paint Overlays<a class="headerlink" href="#texture-paint-overlays" title="Link to this heading"></a></h2>
+<dl class="simple" id="bpy-types-view3doverlay-texture-paint-mode-opacity">
+<dt>Stencil Mask Opacity</dt><dd><p>Opacity of the <a class="reference internal" href="../../../sculpt_paint/texture_paint/tool_settings/mask.html"><span class="doc">stencil mask</span></a> overlay.</p>
+</dd>
+</dl>
+</section>
+<section id="pose-mode-overlays">
+<h2>Pose Mode Overlays<a class="headerlink" href="#pose-mode-overlays" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt>Fade Geometry</dt><dd><p>Show the bones on top and face other geometry to the back.
+The opacity can be controlled with the slider.
+Only available in Pose Mode.</p>
+</dd>
+</dl>
+</section>
+<section id="grease-pencil">
+<span id="dview-overlay-grease-pencil"></span><h2>Grease Pencil<a class="headerlink" href="#grease-pencil" title="Link to this heading"></a></h2>
+<p>These overlays are available when a <a class="reference internal" href="../../../grease_pencil/index.html"><span class="doc">Grease Pencil</span></a> object is selected.</p>
+<dl>
+<dt>Onion Skin</dt><dd><p>Show ghosts of the keyframes before and after the current frame.
+If <a class="reference internal" href="../../../grease_pencil/multiframe.html"><span class="doc">Multiframe</span></a> is enabled,
+ghosts of the selected keyframes are shown instead.
+See <a class="reference internal" href="../../../grease_pencil/properties/onion_skinning.html"><span class="doc">Onion Skinning</span></a>.</p>
+</dd>
+<dt>Canvas</dt><dd><p>Display a grid over the Grease Pencil drawing plane.
+The opacity of the grid can be controlled with the slider.
+When using the <em>Canvas X-Ray</em> option, objects are drawn behind the canvas grid.</p>
+</dd>
+<dt>Fade Inactive Layers</dt><dd><p>Decrease the opacity of all the layers in the object other than the active one.
+The opacity factor can be controlled with the slider.</p>
+</dd>
+<dt>Fade Inactive Objects</dt><dd><p>Cover all of the viewport except the active Grease Pencil object with a full color layer to improve visibility
+while drawing over complex scenes.</p>
+<dl class="simple">
+<dt>Fade Grease Pencil Objects</dt><dd><p>Include or exclude Grease Pencil objects.</p>
+</dd>
+</dl>
+</dd>
+<dt>Edit Lines</dt><dd><p>Show edit lines in Edit Mode.</p>
+</dd>
+<dt>Only in Multiframe</dt><dd><p>When Multiframe is enabled and keyframes other than the current frame are selected,
+strokes on those keyframes are displayed as just their edit lines – the strokes themselves are hidden.
+Note that this does not affect Onion Skinning.</p>
+</dd>
+<dt>Stroke Direction</dt><dd><p>Toggle the display of the selected strokes’ start points (green) and end points (red) to visualize their direction.</p>
+</dd>
+<dt>Material Name</dt><dd><p>Show material name next to the selected strokes.</p>
+</dd>
+<dt>Vertex Opacity</dt><dd><p>Opacity for vertices (points) and edit lines in Edit and Sculpt Mode.</p>
+</dd>
+<dt>Vertex Paint Opacity</dt><dd><p>The opacity of the vertex color overlay in Vertex Paint Mode and Draw Mode.
+Note that in Draw Mode, vertex paint is only visible in the <em>Material Preview</em>
+and <em>Rendered</em> shading modes by default. To see it in <em>Solid</em> mode, you either
+need to use Vertex Paint Mode, or set the <a class="reference internal" href="../../../render/workbench/color.html"><span class="doc">Color</span></a>
+shading setting to <em>Attribute</em>.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-view3doverlay-display-handle">
+<dt>Handles</dt><dd><p>When <a class="reference internal" href="../../../grease_pencil/modes/edit/curve_editing.html"><span class="doc">Curve Editing</span></a> is active,
+this option controls how curves are displayed in the 3D Viewport.</p>
+<dl class="field-list simple">
+<dt class="field-odd">None<span class="colon">:</span></dt>
+<dd class="field-odd"><p>No handles are displayed, only the control points.</p>
+</dd>
+<dt class="field-even">Selected<span class="colon">:</span></dt>
+<dd class="field-even"><p>Only handles for selected control points are displayed.</p>
+</dd>
+<dt class="field-odd">All<span class="colon">:</span></dt>
+<dd class="field-odd"><p>All the handles are displayed.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="gizmo.html" class="btn btn-neutral float-left" title="Viewport Gizmos" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="shading.html" class="btn btn-neutral float-right" title="Viewport Shading" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../../copyright.html">Copyright</a> : This page is licensed under a CC-BY-SA 4.0 Int. License.
+      <span class="lastupdated">Last updated on 12/17/2023.
+      </span></p>
+  </div>
+
+  
+<div class="footer-contribute">
+   <ul>
+      <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/editors/3dview/display/overlays.rst"
+            class="fa fa-edit"> View Source</a>
+      </li>
+      <!-- <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/editors/3dview/display/overlays.rst"
+            class="fa fa-edit"> Edit Page</a>
+      </li> -->
+      <li>
+         <a href="https://projects.blender.org/blender/documentation/issues/new?template=.gitea/issue_template/bug.yaml&field:body=%2A%2APage+Information%2A%2A%0D%0AFile%3A+%60manual%2Feditors/3dview/display/overlays.rst%60%0D%0ABlender+Version%3A+%604.0%60%0D%0ADocumentation+Language%3A+%60en%60%0D%0A%5BPermanent+Link%5D%28https%3A%2F%2Fdocs.blender.org%2Fmanual%2Fen%2F4.0%2Feditors/3dview/display/overlays.html%29%0D%0A%0D%0A%2A%2AShort+description+of+error%2A%2A%0D%0A%5BPlease+fill+out+a+short+description+of+the+error+here%5D%0D%0A"
+            class="fa fa-bug"> Report issue on this page</a>
+      </li>
+      <ul>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="document versions">
+	<ul id="versionwrap" role="presentation">
+		<li role="presentation">
+			<span id="version-popover" class="version-btn" tabindex="0" role="button" aria-label="versions selector"
+				aria-haspopup="true" aria-controls="version-vsnlist" aria-disabled="true">
+				4.0
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Versions</div>
+				<ul id="version-vsnlist" class="version-list" role="menu" aria-labelledby="version-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<li role="presentation">
+			<span id="lang-popover" class="version-btn" tabindex="0" role="button" aria-label="language selector"
+				aria-haspopup="true" aria-controls="version-langlist">
+				 en 
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Languages</div>
+				<ul id="version-langlist" class="version-list" role="menu" aria-labelledby="lang-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<template id="version-entry">
+			<li tabindex="-1" role="presentation"><a tabindex="-1" role="menuitem"></a></li>
+			<li class="selected" tabindex="-1" role="presentation"><span tabindex="-1" aria-current="page"></spanp></li>
+		</template>
+	</ul>
+<template id="version-warning">
+	<div class="admonition warning">
+		<p class="first admonition-title">Note</p>
+		<p class="last">
+			You are not using the most up to date version of the documentation.
+			<a href="#"></a> is the newest version.
+		</p>
+	</div>
+</template>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1418081-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1418081-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

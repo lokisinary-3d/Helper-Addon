@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>glTF 2.0 &mdash; Blender Manual</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme_overrides.css?v=8da28a04" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/version_switch.css?v=74ca2809" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.blender.org/manual/en/latest/addons/import_export/scene_gltf2.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=715c20a1"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/version_switch.js?v=5cbd935e"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Blender Manual"
+          href="../../_static/opensearch.xml"/>
+<link rel="alternate" hreflang="en" href="https://docs.blender.org/manual/en/latest/" />
+<link rel="alternate" hreflang="ar" href="https://docs.blender.org/manual/ar/latest/" />
+<link rel="alternate" hreflang="de" href="https://docs.blender.org/manual/de/latest/" />
+<link rel="alternate" hreflang="es" href="https://docs.blender.org/manual/es/latest/" />
+<link rel="alternate" hreflang="fi" href="https://docs.blender.org/manual/fi/latest/" />
+<link rel="alternate" hreflang="fr" href="https://docs.blender.org/manual/fr/latest/" />
+<link rel="alternate" hreflang="id" href="https://docs.blender.org/manual/id/latest/" />
+<link rel="alternate" hreflang="it" href="https://docs.blender.org/manual/it/latest/" />
+<link rel="alternate" hreflang="ja" href="https://docs.blender.org/manual/ja/latest/" />
+<link rel="alternate" hreflang="ko" href="https://docs.blender.org/manual/ko/latest/" />
+<link rel="alternate" hreflang="nb" href="https://docs.blender.org/manual/nb/latest/" />
+<link rel="alternate" hreflang="pt" href="https://docs.blender.org/manual/pt/latest/" />
+<link rel="alternate" hreflang="ru" href="https://docs.blender.org/manual/ru/latest/" />
+<link rel="alternate" hreflang="sk" href="https://docs.blender.org/manual/sk/latest/" />
+<link rel="alternate" hreflang="sl" href="https://docs.blender.org/manual/sl/latest/" />
+<link rel="alternate" hreflang="sr" href="https://docs.blender.org/manual/sr/latest/" />
+<link rel="alternate" hreflang="uk" href="https://docs.blender.org/manual/uk/latest/" />
+<link rel="alternate" hreflang="vi" href="https://docs.blender.org/manual/vi/latest/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://docs.blender.org/manual/zh-hans/latest/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://docs.blender.org/manual/zh-hant/latest/" />
+<link rel="alternate" hreflang="x-default" href="https://docs.blender.org/manual/en/latest/" />
+
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="Interface" href="../interface/index.html" />
+    <link rel="prev" title="Web3D X3D/VRML2" href="scene_x3d.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Blender 4.0 Manual
+              <img src="../../_static/blender-logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/about/index.html">About Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installing/index.html">Installing Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/configuration/index.html">Configuring Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/help.html">Help System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sections</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../interface/index.html">User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../editors/index.html">Editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scene_layout/index.html">Scenes &amp; Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modeling/index.html">Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sculpt_paint/index.html">Sculpting &amp; Painting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../grease_pencil/index.html">Grease Pencil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../animation/index.html">Animation &amp; Rigging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../physics/index.html">Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../render/index.html">Rendering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../compositing/index.html">Compositing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../movie_clip/index.html">Motion Tracking &amp; Masking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../video_editing/index.html">Video Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../files/index.html">Assets, Files, &amp; Data System</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Add-ons</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#add-ons-category-listings">Add-ons Category Listings</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../3d_view/index.html">3D View</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../add_curve/index.html">Add Curve</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../add_mesh/index.html">Add Mesh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../animation/index.html">Animation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../baking/index.html">Baking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../camera/index.html">Camera</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../development/index.html">Development</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">Import-Export</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="node_shaders_info.html">Import &amp; Export of Node Shaders</a></li>
+<li class="toctree-l4"><a class="reference internal" href="coat3D.html">3D-Coat Applink</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mesh_atomic.html">Atomic Blender (PDB/XYZ)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="anim_bvh.html">BioVision Motion Capture (BVH)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scene_dxf.html">AutoCAD DXF</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scene_3ds.html">Autodesk 3DS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="anim_camera.html">Camera Animation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="paper_model.html">Paper Model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pc2.html">Pointcache (pc2)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scene_fbx.html">FBX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="images_as_planes.html">Images as Planes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="palettes.html">Import Palettes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="shape_mdd.html">NewTek MDD</a></li>
+<li class="toctree-l4"><a class="reference internal" href="anim_nuke_chan.html">Nuke Animation (chan)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mesh_stl.html">STL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="curve_svg.html">Scalable Vector Graphics (SVG)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mesh_uv_layout.html">UV Layout</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scene_x3d.html">Web3D X3D/VRML2</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">glTF 2.0</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#meshes">Meshes</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#gpu-instances">GPU Instances</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#materials">Materials</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#imported-materials">Imported Materials</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#exported-materials">Exported Materials</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="#base-color">Base Color</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#metallic-and-roughness">Metallic and Roughness</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#baked-ambient-occlusion">Baked Ambient Occlusion</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#normal-map">Normal Map</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#emissive">Emissive</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#clearcoat">Clearcoat</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#sheen">Sheen</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#specular">Specular</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#transmission">Transmission</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#ior">IOR</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#volume">Volume</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#gltf-variants">glTF Variants</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#gltf-variants-switching">glTF Variants switching</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#gltf-variants-creation">glTF Variants creation</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#advanced-gltf-variant-checks">Advanced glTF Variant checks</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#double-sided-backface-culling">Double-Sided / Backface Culling</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#blend-modes">Blend Modes</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#uv-mapping">UV Mapping</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#factors">Factors</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#example">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="#exporting-a-shadeless-unlit-material">Exporting a Shadeless (Unlit) Material</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#extensions">Extensions</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#third-party-gltf-extensions">Third-party glTF Extensions</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#custom-properties">Custom Properties</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#animations">Animations</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#import">Import</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#export">Export</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="#actions-default">Actions (default)</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#active-actions-merged">Active Actions merged</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#nla-tracks">NLA Tracks</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#scene">Scene</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#file-format-variations">File Format Variations</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#gltf-binary-glb">glTF Binary (<code class="docutils literal notranslate"><span class="pre">.glb</span></code>)</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#gltf-separate-gltf-bin-textures">glTF Separate (<code class="docutils literal notranslate"><span class="pre">.gltf</span></code> + <code class="docutils literal notranslate"><span class="pre">.bin</span></code> + textures)</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#properties">Properties</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#id2">Import</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#id3">Export</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="#include">Include</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#transform">Transform</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#data-scene-graph">Data - Scene Graph</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#data-mesh">Data - Mesh</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#data-material">Data - Material</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#data-shape-keys">Data - Shape Keys</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#data-shape-keys-optimize">Data - Shape Keys - Optimize</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#data-armature">Data - Armature</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#data-skinning">Data - Skinning</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#data-lighting">Data - Lighting</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#data-compression">Data - Compression</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#animation">Animation</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#animation-rest-ranges">Animation - Rest &amp; Ranges</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#animation-armature">Animation - Armature</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#animation-sampling">Animation - Sampling</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#animation-optimize">Animation - Optimize</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#contributing">Contributing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../interface/index.html">Interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lighting/index.html">Lighting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../materials/index.html">Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mesh/index.html">Mesh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../node/index.html">Node</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../object/index.html">Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../paint/index.html">Paint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../render/index.html">Render</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rigging/index.html">Rigging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sequencer/index.html">Sequencer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../system/index.html">System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../uv/index.html">UV</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video_tools/index.html">Video Tools</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/index.html">Advanced</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Manual Index</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get Involved</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribute Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Blender 4.0 Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Add-ons</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Import-Export</a></li>
+      <li class="breadcrumb-item active">glTF 2.0</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="gltf-2-0">
+<h1>glTF 2.0<a class="headerlink" href="#gltf-2-0" title="Link to this heading"></a></h1>
+<div class="refbox admonition" id="id1">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Category<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Import-Export</p>
+</dd>
+<dt class="field-even">Menu<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">File ‣ Import/Export ‣ glTF 2.0 (.glb, .gltf)</span></p>
+</dd>
+</dl>
+</div>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
+<p>glTF™ (GL Transmission Format) is used for transmission and loading of 3D models
+in web and native applications. glTF reduces the size of 3D models and
+the runtime processing needed to unpack and render those models.
+This format is commonly used on the web, and has support in various 3D engines
+such as Unity3D, Unreal Engine 4, and Godot.</p>
+<p>This importer/exporter supports the following glTF 2.0 features:</p>
+<ul class="simple">
+<li><p>Meshes</p></li>
+<li><p>Materials (Principled BSDF) and Shadeless (Unlit)</p></li>
+<li><p>Textures</p></li>
+<li><p>Cameras</p></li>
+<li><p>Punctual lights (point, spot, and directional)</p></li>
+<li><p>Extensions (listed below)</p></li>
+<li><p>Extras (custom properties)</p></li>
+<li><p>Animation (keyframe, shape key, and skinning)</p></li>
+</ul>
+</section>
+<section id="meshes">
+<h2>Meshes<a class="headerlink" href="#meshes" title="Link to this heading"></a></h2>
+<p>glTF’s internal structure mimics the memory buffers commonly used by graphics chips
+when rendering in real-time, such that assets can be delivered to desktop, web, or mobile clients
+and be promptly displayed with minimal processing. As a result, quads and n-gons
+are automatically converted to triangles when exporting to glTF.
+Discontinuous UVs and flat-shaded edges may result in moderately higher vertex counts in glTF
+compared to Blender, as such vertices are separated for export.
+Likewise, curves and other non-mesh data are not preserved,
+and must be converted to meshes prior to export.</p>
+<section id="gpu-instances">
+<h3>GPU Instances<a class="headerlink" href="#gpu-instances" title="Link to this heading"></a></h3>
+<p>When the option is enable in Exporter, instances are exported using the <code class="docutils literal notranslate"><span class="pre">EXT_mesh_gpu_instancing</span></code> extension.
+There are some limitations, at export:</p>
+<ul class="simple">
+<li><p>Instances must be meshes, and don’t have any children themselves</p></li>
+<li><p>Instances must all be children of the same object.</p></li>
+<li><p>This extension doesn’t manage material variation. That means that the generated file may include all instances with same materials.</p></li>
+<li><p>Instances detected are objects sharing the same mesh data.</p></li>
+</ul>
+<p>At import, instances are created by creating objects sharing the same mesh data.</p>
+</section>
+</section>
+<section id="materials">
+<h2>Materials<a class="headerlink" href="#materials" title="Link to this heading"></a></h2>
+<p>The core material system in glTF supports a metal/rough <abbr title="Physically Based Rendering">PBR</abbr> workflow
+with the following channels of information:</p>
+<ul class="simple">
+<li><p>Base Color</p></li>
+<li><p>Metallic</p></li>
+<li><p>Roughness</p></li>
+<li><p>Baked Ambient Occlusion</p></li>
+<li><p>Normal Map (tangent space, +Y up)</p></li>
+<li><p>Emissive</p></li>
+</ul>
+<p>Some additional material properties or types of materials can be expressed using glTF extensions.
+The complete list can be found in <a class="reference internal" href="#extensions">Extensions</a> part of this documentation.</p>
+<figure class="align-default" id="id4">
+<img alt="../../_images/addons_import-export_scene-gltf2_material-channels.jpg" src="../../_images/addons_import-export_scene-gltf2_material-channels.jpg" />
+<figcaption>
+<p><span class="caption-text">An example of the various image maps available in the glTF 2.0 core format. This is
+the <a class="reference external" href="https://github.com/KhronosGroup/glTF-Sample-Models/tree/master/2.0/WaterBottle">water bottle sample model</a>
+shown alongside slices of its various image maps.</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<section id="imported-materials">
+<h3>Imported Materials<a class="headerlink" href="#imported-materials" title="Link to this heading"></a></h3>
+<p>The glTF material system is different from Blender’s own materials. When a glTF file is imported,
+the add-on will construct a set of Blender nodes to replicate each glTF material as closely as possible.</p>
+<p>The importer supports Metal/Rough PBR (core glTF), Spec/Gloss PBR (<code class="docutils literal notranslate"><span class="pre">KHR_materials_pbrSpecularGlossiness</span></code>)
+and some extension materials. The complete list can be found in <a class="reference internal" href="#extensions">Extensions</a> part of this documentation.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Examining the result of the material import process is a good way to see examples of
+the types of material nodes and settings that can be exported to glTF.</p>
+</div>
+</section>
+<section id="exported-materials">
+<h3>Exported Materials<a class="headerlink" href="#exported-materials" title="Link to this heading"></a></h3>
+<p>The exporter supports Metal/Rough PBR (core glTF) and Shadeless (<code class="docutils literal notranslate"><span class="pre">KHR_materials_unlit</span></code>) materials.
+It will construct a glTF material based on the nodes it recognizes in the Blender material.
+The material export process handles the settings described below.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When image textures are used by materials, glTF requires that images be in PNG or JPEG format.
+The add-on will automatically convert images from other formats, increasing export time.</p>
+</div>
+<section id="base-color">
+<h4>Base Color<a class="headerlink" href="#base-color" title="Link to this heading"></a></h4>
+<p>The glTF base color is determined by looking for a Base Color input on a Principled BSDF node.
+If the input is unconnected, the input’s default color (the color field next to the unconnected socket)
+is used as the Base Color for the glTF material.</p>
+<figure class="align-default" id="id5">
+<img alt="../../_images/addons_import-export_scene-gltf2_material-base-color-solid-green.png" src="../../_images/addons_import-export_scene-gltf2_material-base-color-solid-green.png" />
+<figcaption>
+<p><span class="caption-text">A solid base color can be specified directly on the node.</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>If an Image Texture node is found to be connected to the Base Color input,
+that image will be used as the glTF base color.</p>
+<figure class="align-default" id="id6">
+<img alt="../../_images/addons_import-export_scene-gltf2_material-base-color-image-hookup.png" src="../../_images/addons_import-export_scene-gltf2_material-base-color-image-hookup.png" />
+<figcaption>
+<p><span class="caption-text">An image is used as the glTF base color.</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="metallic-and-roughness">
+<h4>Metallic and Roughness<a class="headerlink" href="#metallic-and-roughness" title="Link to this heading"></a></h4>
+<p>These values are read from the Principled BSDF node. If both of these inputs are unconnected,
+the node will display sliders to control their respective values between 0.0 and 1.0,
+and these values will be copied into the glTF.</p>
+<p>When using an image, glTF expects the metallic values to be encoded in the blue (<code class="docutils literal notranslate"><span class="pre">B</span></code>) channel,
+and roughness to be encoded in the green (<code class="docutils literal notranslate"><span class="pre">G</span></code>) channel of the same image.
+If images are connected to the Blender node in a manner that does not follow this convention,
+the add-on may attempt to adapt the image to the correct form during exporting (with an increased export time).</p>
+<p>In the Blender node tree, it is recommended to use a Separate RGB node
+to separate the channels from an Image Texture node, and
+connect the green (<code class="docutils literal notranslate"><span class="pre">G</span></code>) channel to Roughness, and blue (<code class="docutils literal notranslate"><span class="pre">B</span></code>) to Metallic.
+The glTF exporter will recognize this arrangement as matching the glTF standard, and
+that will allow it to simply copy the image texture into the glTF file during export.</p>
+<p>The Image Texture node for this should have its <em>Color Space</em> set to Non-Color.</p>
+<figure class="align-default" id="id7">
+<img alt="../../_images/addons_import-export_scene-gltf2_material-metal-rough.png" src="../../_images/addons_import-export_scene-gltf2_material-metal-rough.png" />
+<figcaption>
+<p><span class="caption-text">A metallic/roughness image connected in a manner consistent with the glTF standard,
+allowing it to be used verbatim inside an exported glTF file.</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="baked-ambient-occlusion">
+<h4>Baked Ambient Occlusion<a class="headerlink" href="#baked-ambient-occlusion" title="Link to this heading"></a></h4>
+<p>glTF is capable of storing a baked ambient occlusion map.
+Currently there is no arrangement of nodes that causes Blender
+to use such a map in exactly the same way as intended in glTF.
+However, if the exporter finds a custom node group by the name of <code class="docutils literal notranslate"><span class="pre">glTF</span> <span class="pre">Material</span> <span class="pre">Output</span></code>, and
+finds an input named <code class="docutils literal notranslate"><span class="pre">Occlusion</span></code> on that node group,
+it will look for an Image Texture attached there to use as the occlusion map in glTF.
+The effect need not be shown in Blender, as Blender has other ways of showing ambient occlusion,
+but this method will allow the exporter to write an occlusion image to the glTF.
+This can be useful to real-time glTF viewers, particularly on platforms where there
+may not be spare power for computing such things at render time.</p>
+<figure class="align-default" id="id8">
+<img alt="../../_images/addons_import-export_scene-gltf2_material-occlusion-only.png" src="../../_images/addons_import-export_scene-gltf2_material-occlusion-only.png" />
+<figcaption>
+<p><span class="caption-text">A pre-baked ambient occlusion map, connected to a node that doesn’t render but will export to glTF.</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The easiest way to create the custom node group is to import an existing glTF model
+that contains an occlusion map, such as
+the <a class="reference external" href="https://github.com/KhronosGroup/glTF-Sample-Models/tree/master/2.0/WaterBottle">water bottle</a>
+or another existing model. A manually created custom node group can also be used.</p>
+</div>
+<p>glTF stores occlusion in the red (<code class="docutils literal notranslate"><span class="pre">R</span></code>) channel, allowing it to optionally share
+the same image with the roughness and metallic channels.</p>
+<figure class="align-default" id="id9">
+<img alt="../../_images/addons_import-export_scene-gltf2_material-orm-hookup.png" src="../../_images/addons_import-export_scene-gltf2_material-orm-hookup.png" />
+<figcaption>
+<p><span class="caption-text">This combination of nodes mimics the way glTF packs occlusion, roughness, and
+metallic values into a single image.</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The Cycles render engine has a Bake panel that can be used to bake
+ambient occlusion maps. The resulting image can be saved and connected
+directly to the <code class="docutils literal notranslate"><span class="pre">glTF</span> <span class="pre">Material</span> <span class="pre">Output</span></code> node.</p>
+</div>
+</section>
+<section id="normal-map">
+<h4>Normal Map<a class="headerlink" href="#normal-map" title="Link to this heading"></a></h4>
+<p>To use a normal map in glTF, connect an Image Texture node’s color output
+to a Normal Map node’s color input, and then connect the Normal Map normal output to
+the Principled BSDF node’s normal input. The Image Texture node
+for this should have its <em>Color Space</em> property set to Non-Color.</p>
+<p>The Normal Map node must remain on its default property of Tangent Space as
+this is the only type of normal map currently supported by glTF.
+The strength of the normal map can be adjusted on this node.
+The exporter is not exporting these nodes directly, but will use them to locate
+the correct image and will copy the strength setting into the glTF.</p>
+<figure class="align-default" id="id10">
+<img alt="../../_images/addons_import-export_scene-gltf2_material-normal.png" src="../../_images/addons_import-export_scene-gltf2_material-normal.png" />
+<figcaption>
+<p><span class="caption-text">A normal map image connected such that the exporter will find it and copy it
+to the glTF file.</span><a class="headerlink" href="#id10" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The Cycles render engine has a Bake panel that can be used to bake
+tangent-space normal maps from almost any other arrangement of normal vector nodes.
+Switch the Bake type to Normal. Keep the default space settings
+(space: Tangent, R: +X, G: +Y, B: +Z) when using this bake panel for glTF.
+The resulting baked image can be saved and plugged into to a new material using
+the Normal Map node as described above, allowing it to export correctly.</p>
+<p>See: <a class="reference internal" href="../../render/cycles/baking.html"><span class="doc">Cycles Render Baking</span></a></p>
+</div>
+</section>
+<section id="emissive">
+<h4>Emissive<a class="headerlink" href="#emissive" title="Link to this heading"></a></h4>
+<p>An Image Texture node can be connected to the Emission input on the Principled BSDF node
+to include an emissive map with the glTF material. Alternatively, the Image Texture node
+can be connected to an Emission shader node, and optionally combined with properties
+from a Principled BSDF node by way of an Add Shader node.</p>
+<p>If the emissive map is alone in the material, it is best to set the Base Color default
+to black, and the Roughness default to 1.0. This minimizes the influence of the other
+channels if they are not needed.</p>
+<figure class="align-default" id="id11">
+<img alt="../../_images/addons_import-export_scene-gltf2_material-emissive.png" src="../../_images/addons_import-export_scene-gltf2_material-emissive.png" />
+<figcaption>
+<p><span class="caption-text">This arrangement is supported for backwards compatibility. It is simpler to use
+the Principled BSDF node directly.</span><a class="headerlink" href="#id11" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>If any component of emissiveFactor is &gt; 1.0, <code class="docutils literal notranslate"><span class="pre">KHR_materials_emissive_strength</span></code> extension will be used.</p>
+</section>
+<section id="clearcoat">
+<h4>Clearcoat<a class="headerlink" href="#clearcoat" title="Link to this heading"></a></h4>
+<p>When the <em>Clearcoat</em> input on the Principled BSDF node has a nonzero default value or
+Image Texture node connected, the <code class="docutils literal notranslate"><span class="pre">KHR_materials_clearcoat</span></code> glTF extension will be
+included in the export. This extension will also include a value or Image Texture
+from the <em>Clearcoat Roughness</em> input if available.</p>
+<p>If Image Textures are used, glTF requires that the clearcoat values be written to
+the red (<code class="docutils literal notranslate"><span class="pre">R</span></code>) channel, and <em>Clearcoat Roughness</em> to the green (<code class="docutils literal notranslate"><span class="pre">G</span></code>) channel.
+If monochrome images are connected, the exporter will remap them to these color channels.</p>
+<p>The <em>Clearcoat Normal</em> input accepts the same kinds of inputs as the base Normal input,
+specifically a tangent-space normal map with +Y up, and a user-defined strength.
+This input can reuse the same normal map that the base material is using,
+or can be assigned its own normal map, or can be left disconnected for a smooth coating.</p>
+<p>All Image Texture nodes used for clearcoat shading should have their <em>Color Space</em> set to Non-Color.</p>
+<figure class="align-default" id="id12">
+<img alt="../../_images/addons_import-export_scene-gltf2_material-clearcoat.png" src="../../_images/addons_import-export_scene-gltf2_material-clearcoat.png" />
+<figcaption>
+<p><span class="caption-text">An example of a complex clearcoat application that will export correctly to glTF.
+A much simpler, smooth coating can be applied from just the Principled BSDF node alone.</span><a class="headerlink" href="#id12" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="sheen">
+<h4>Sheen<a class="headerlink" href="#sheen" title="Link to this heading"></a></h4>
+<p>If a Sheen Roughness Texture is used, glTF requires the values be written to the alpha (<code class="docutils literal notranslate"><span class="pre">A</span></code>) channel.</p>
+<figure class="align-default">
+<img alt="../../_images/addons_import-export_scene-gltf2_material-sheen.png" src="../../_images/addons_import-export_scene-gltf2_material-sheen.png" />
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Sheen BSDF node is only available on Cycles render engine.
+You may have to temporary switch to Cycles to add this node, and get back to EEVEE.</p>
+</div>
+</section>
+<section id="specular">
+<h4>Specular<a class="headerlink" href="#specular" title="Link to this heading"></a></h4>
+<p>When the <em>Specular IOR Level</em> or <em>Specular Tint</em> input of Principled BSDF node have a non default value or
+Image Texture node connected, the <code class="docutils literal notranslate"><span class="pre">KHR_materials_specular</span></code> glTF extension will be
+included in the export.</p>
+</section>
+<section id="transmission">
+<h4>Transmission<a class="headerlink" href="#transmission" title="Link to this heading"></a></h4>
+<p>When the Transmission input on the Principled BSDF node has a nonzero default value or
+Image Texture node connected, the <code class="docutils literal notranslate"><span class="pre">KHR_materials_transmission</span></code> glTF extension will be
+included in the export. When a texture is used, glTF stores the values in the red (<code class="docutils literal notranslate"><span class="pre">R</span></code>) channel.
+The <em>Color Space</em> should be set to Non-Color.</p>
+<p>Transmission is different from alpha blending, because transmission allows full-strength specular reflections.
+In glTF, alpha blending is intended to represent physical materials that are partially missing from
+the specified geometry, such as medical gauze wrap. Transmission is intended to represent physical materials
+that are solid but allow non-specularly-reflected light to transmit through the material, like glass.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The material’s base roughness can be used to blur the transmission, like frosted glass.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Typically the alpha blend mode of a transmissive material should remain “Opaque”,
+the default setting, unless the material only partially covers the specified geometry.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In real-time engines where transmission is supported, various technical limitations in
+the engine may determine which parts of the scene are visible through the transmissive surface.
+In particular, transmissive materials may not be visible behind other transmissive materials.
+These limitations affect physically-based transmission, but not alpha-blended non-transmissive materials.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you want to enable refraction on your model, <code class="docutils literal notranslate"><span class="pre">KHR_materials_transmission</span></code> must also
+be used in addition with <code class="docutils literal notranslate"><span class="pre">KHR_materials_volume</span></code>. See the dedicated <em>Volume</em> part of
+the documentation.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Transmission is complex for real-time rendering engines to implement,
+and support for the <code class="docutils literal notranslate"><span class="pre">KHR_materials_transmission</span></code> glTF extension is not yet widespread.</p>
+</div>
+</section>
+<section id="ior">
+<h4>IOR<a class="headerlink" href="#ior" title="Link to this heading"></a></h4>
+<p>At import, there are two different situation:</p>
+<ul class="simple">
+<li><p>if <code class="docutils literal notranslate"><span class="pre">KHR_materials_ior</span></code> is not set, IOR value of Principled BSDF node is set to 1.5,
+that is the glTF default value of IOR.</p></li>
+<li><p>If set, the <code class="docutils literal notranslate"><span class="pre">KHR_materials_ior</span></code> is used to set the IOR value of Principled BSDF.</p></li>
+</ul>
+<p>At export, IOR is included in the export only if one of these extensions are also used:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">KHR_materials_transmission</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">KHR_materials_volume</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">KHR_materials_specular</span></code></p></li>
+</ul>
+<p>IOR of 1.5 are not included in the export, because this is the default glTF IOR value.</p>
+</section>
+<section id="volume">
+<h4>Volume<a class="headerlink" href="#volume" title="Link to this heading"></a></h4>
+<p>Volume can be exported using a Volume Absorption node, linked to Volume socket of Output node.
+Data will be exported using the <code class="docutils literal notranslate"><span class="pre">KHR_materials_volume</span></code> extension.</p>
+<ul class="simple">
+<li><p>For volume to be exported, some <em>transmission</em> must be set on Principled BSDF node.</p></li>
+<li><p>Color of Volume Absorption node is used as glTF attenuation color. No texture is allowed for this property.</p></li>
+<li><p>Density of Volume Absorption node is used as inverse of glTF attenuation distance.</p></li>
+<li><p>Thickness can be plugged into the Thickness socket of custom group node <code class="docutils literal notranslate"><span class="pre">glTF</span> <span class="pre">Material</span> <span class="pre">Output</span></code>.</p></li>
+<li><p>If a texture is used for thickness, it must be plugged on (<code class="docutils literal notranslate"><span class="pre">G</span></code>) Green channel of the image.</p></li>
+</ul>
+<figure class="align-default">
+<img alt="../../_images/addons_import-export_scene-gltf2_material-volume.png" src="../../_images/addons_import-export_scene-gltf2_material-volume.png" />
+</figure>
+</section>
+<section id="gltf-variants">
+<h4>glTF Variants<a class="headerlink" href="#gltf-variants" title="Link to this heading"></a></h4>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For a full Variants experience, you have to enable UI in Add-on preferences</p>
+<blockquote>
+<div><figure class="align-default">
+<img alt="../../_images/addons_import-export_scene-gltf2_addon-preferences-variant.png" src="../../_images/addons_import-export_scene-gltf2_addon-preferences-variant.png" />
+</figure>
+</div></blockquote>
+</div>
+<p>There are two location to manage glTF Variants in Blender</p>
+<ul class="simple">
+<li><p>In 3D View, on <code class="docutils literal notranslate"><span class="pre">glTF</span> <span class="pre">Variants</span></code> tab</p></li>
+<li><p>For advanced settings, in Mesh Material Properties (see Advanced glTF Variant checks)</p></li>
+</ul>
+<p>The main concept to understand for using Variants,
+is that each material slot will be used as equivalent of a glTF primitive.</p>
+</section>
+<section id="gltf-variants-switching">
+<h4>glTF Variants switching<a class="headerlink" href="#gltf-variants-switching" title="Link to this heading"></a></h4>
+<p>After importing a glTF file including <code class="docutils literal notranslate"><span class="pre">KHR_materials_variants</span></code> extension, all variants can be displayed.</p>
+<figure class="align-default">
+<img alt="../../_images/addons_import-export_scene-gltf2_material_variants-switch.png" src="../../_images/addons_import-export_scene-gltf2_material_variants-switch.png" />
+</figure>
+<p>You can switch Variant, by <em>selecting</em> the variant you want to display, then clicking on <em>Display Variant</em>.</p>
+<p>You can switch to default materials (when no Variant are used), by clicking on <em>Reset to default</em>.</p>
+</section>
+<section id="gltf-variants-creation">
+<h4>glTF Variants creation<a class="headerlink" href="#gltf-variants-creation" title="Link to this heading"></a></h4>
+<p>You can add a new Variant by clicking the <code class="docutils literal notranslate"><span class="pre">+</span></code> at right of the Variant list.
+Then you can change the name by double-clicking.</p>
+<p>After changing Materials in Material Slots, you can assign current materials to the active Variant using
+<em>Assign to Variant</em>.</p>
+<p>You can also set default materials using <em>Assign as Original</em>.
+These materials will be exported as default material in glTF.
+This are materials that will be displayed by any viewer that don’t manage <code class="docutils literal notranslate"><span class="pre">KHR_materials_variants</span></code> extension.</p>
+</section>
+<section id="advanced-gltf-variant-checks">
+<h4>Advanced glTF Variant checks<a class="headerlink" href="#advanced-gltf-variant-checks" title="Link to this heading"></a></h4>
+<p>If you want to check primitive by primitive, what are Variants used, you can go to Mesh Material Properties.</p>
+<figure class="align-default">
+<img alt="../../_images/addons_import-export_scene-gltf2_material_variants-detail.png" src="../../_images/addons_import-export_scene-gltf2_material_variants-detail.png" />
+</figure>
+<p>The <em>glTF Material Variants</em> tab refers to the active material Slot and Material used by this slot.
+You can see every Variants that are using this material for the given Slot/Primitive.</p>
+<p>You can also assign material to Variants from this tab, but recommendation is to perform it from 3D View tab.</p>
+</section>
+<section id="double-sided-backface-culling">
+<h4>Double-Sided / Backface Culling<a class="headerlink" href="#double-sided-backface-culling" title="Link to this heading"></a></h4>
+<p>For materials where only the front faces will be visible, turn on <em>Backface Culling</em> in
+the <em>Settings</em> panel of an EEVEE material. When using other engines (Cycles, Workbench)
+you can temporarily switch to EEVEE to configure this setting, then switch back.</p>
+<p>Leave this box unchecked for double-sided materials.</p>
+<figure class="align-default" id="id13">
+<img alt="../../_images/addons_import-export_scene-gltf2_material-backface-culling.png" src="../../_images/addons_import-export_scene-gltf2_material-backface-culling.png" />
+<figcaption>
+<p><span class="caption-text">The inverse of this setting controls glTF’s <code class="docutils literal notranslate"><span class="pre">DoubleSided</span></code> flag.</span><a class="headerlink" href="#id13" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="blend-modes">
+<h4>Blend Modes<a class="headerlink" href="#blend-modes" title="Link to this heading"></a></h4>
+<p>The Base Color input can optionally supply alpha values.
+How these values are treated by glTF depends on the selected blend mode.</p>
+<p>With the EEVEE render engine selected, each material has a Blend Mode on
+the material settings panel. Use this setting to define how alpha values from
+the Base Color channel are treated in glTF. Three settings are supported by glTF:</p>
+<dl class="simple">
+<dt>Opaque</dt><dd><p>Alpha values are ignored.</p>
+</dd>
+<dt>Alpha Blend</dt><dd><p>Lower alpha values cause blending with background objects.</p>
+</dd>
+<dt>Alpha Clip</dt><dd><p>Alpha values below the <em>Clip Threshold</em> setting will cause portions
+of the material to not be rendered at all. Everything else is rendered as opaque.</p>
+</dd>
+</dl>
+<figure class="align-default" id="id14">
+<img alt="../../_images/addons_import-export_scene-gltf2_material-alpha-blend.png" src="../../_images/addons_import-export_scene-gltf2_material-alpha-blend.png" />
+<figcaption>
+<p><span class="caption-text">With the EEVEE engine selected, a material’s blend modes are configurable.</span><a class="headerlink" href="#id14" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Be aware that transparency (or <em>Alpha Blend</em> mode) is complex for real-time engines
+to render, and may behave in unexpected ways after export. Where possible,
+use <em>Alpha Clip</em> mode instead, or place <em>Opaque</em> polygons behind only
+a single layer of <em>Alpha Blend</em> polygons.</p>
+</div>
+</section>
+<section id="uv-mapping">
+<h4>UV Mapping<a class="headerlink" href="#uv-mapping" title="Link to this heading"></a></h4>
+<p>Control over UV map selection and transformations is available by connecting a UV Map node
+and a Mapping node to any Image Texture node.</p>
+<p>Settings from the Mapping node are exported using a glTF extension named <code class="docutils literal notranslate"><span class="pre">KHR_texture_transform</span></code>.
+There is a mapping type selector across the top. <em>Point</em> is the recommended type for export.
+<em>Texture</em> and <em>Vector</em> are also supported. The supported offsets are:</p>
+<ul class="simple">
+<li><p><em>Location</em> - X and Y</p></li>
+<li><p><em>Rotation</em> - Z only</p></li>
+<li><p><em>Scale</em> - X and Y</p></li>
+</ul>
+<p>For the <em>Texture</em> type, <em>Scale</em> X and Y must be equal (uniform scaling).</p>
+<figure class="align-default" id="id15">
+<img alt="../../_images/addons_import-export_scene-gltf2_material-mapping.png" src="../../_images/addons_import-export_scene-gltf2_material-mapping.png" />
+<figcaption>
+<p><span class="caption-text">A deliberate choice of UV mapping.</span><a class="headerlink" href="#id15" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>These nodes are optional. Not all glTF readers support multiple UV maps or texture transforms.</p>
+</div>
+</section>
+<section id="factors">
+<h4>Factors<a class="headerlink" href="#factors" title="Link to this heading"></a></h4>
+<p>Any Image Texture nodes may optionally be multiplied with a constant color or scalar.
+These will be written as factors in the glTF file, which are numbers that are multiplied
+with the specified image textures. These are not common.</p>
+<ul class="simple">
+<li><p>Use Math node (multiply) for scalar factors. Use second value as factor</p></li>
+<li><p>Use Mix node (color / multiply) for color factors. Set Factor to 1, and use Color2 (B) as factors</p></li>
+</ul>
+<figure class="align-default">
+<img alt="../../_images/addons_import-export_scene-gltf2_material-factors.png" src="../../_images/addons_import-export_scene-gltf2_material-factors.png" />
+</figure>
+</section>
+<section id="example">
+<h4>Example<a class="headerlink" href="#example" title="Link to this heading"></a></h4>
+<p>A single material may use all of the above at the same time, if desired. This figure shows
+a typical node structure when several of the above options are applied at once:</p>
+<figure class="align-default" id="id16">
+<img alt="../../_images/addons_import-export_scene-gltf2_material-principled.png" src="../../_images/addons_import-export_scene-gltf2_material-principled.png" />
+<figcaption>
+<p><span class="caption-text">A Principled BSDF material with an emissive texture.</span><a class="headerlink" href="#id16" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="exporting-a-shadeless-unlit-material">
+<h3>Exporting a Shadeless (Unlit) Material<a class="headerlink" href="#exporting-a-shadeless-unlit-material" title="Link to this heading"></a></h3>
+<p>To export an unlit material, mix in a camera ray, and avoid using the Principled BSDF node.</p>
+<figure class="align-default" id="id17">
+<img alt="../../_images/addons_import-export_scene-gltf2_material-unlit.png" src="../../_images/addons_import-export_scene-gltf2_material-unlit.png" />
+<figcaption>
+<p><span class="caption-text">One of several similar node arrangements that will export
+<code class="docutils literal notranslate"><span class="pre">KHR_materials_unlit</span></code> and render shadeless in Blender.</span><a class="headerlink" href="#id17" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="extensions">
+<h2>Extensions<a class="headerlink" href="#extensions" title="Link to this heading"></a></h2>
+<p>The core glTF 2.0 format can be extended with extra information, using glTF extensions.
+This allows the file format to hold details that were not considered universal at the time of first publication.
+Not all glTF readers support all extensions, but some are fairly common.</p>
+<p>Certain Blender features can only be exported to glTF via these extensions.
+The following <a class="reference external" href="https://github.com/KhronosGroup/glTF/tree/main/extensions">glTF 2.0 extensions</a>
+are supported directly by this add-on:</p>
+<p class="rubric">Import</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">KHR_materials_pbrSpecularGlossiness</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">KHR_materials_clearcoat</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">KHR_materials_transmission</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">KHR_materials_unlit</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">KHR_materials_emissive_strength</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">KHR_materials_volume</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">KHR_materials_sheen</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">KHR_materials_specular</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">KHR_materials_ior</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">KHR_materials_variants</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">KHR_lights_punctual</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">KHR_texture_transform</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">KHR_mesh_quantization</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">EXT_mesh_gpu_instancing</span></code></p></li>
+</ul>
+<p class="rubric">Export</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">KHR_draco_mesh_compression</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">KHR_lights_punctual</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">KHR_materials_clearcoat</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">KHR_materials_transmission</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">KHR_materials_unlit</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">KHR_materials_emissive_strength</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">KHR_materials_volume</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">KHR_materials_sheen</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">KHR_materials_specular</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">KHR_materials_ior</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">KHR_materials_variants</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">KHR_texture_transform</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">EXT_mesh_gpu_instancing</span></code></p></li>
+</ul>
+<section id="third-party-gltf-extensions">
+<h3>Third-party glTF Extensions<a class="headerlink" href="#third-party-gltf-extensions" title="Link to this heading"></a></h3>
+<p>It is possible for Python developers to add Blender support for additional glTF extensions by writing their
+own third-party add-on, without modifying this glTF add-on. For more information, <a class="reference external" href="https://github.com/KhronosGroup/glTF-Blender-IO/tree/main/example-addons/">see the example on GitHub</a> and if needed,
+<a class="reference external" href="https://github.com/KhronosGroup/glTF/blob/main/extensions/Prefixes.md">register an extension prefix</a>.</p>
+</section>
+</section>
+<section id="custom-properties">
+<h2>Custom Properties<a class="headerlink" href="#custom-properties" title="Link to this heading"></a></h2>
+<p>Custom properties are always imported, and will be exported from most objects
+if the <span class="menuselection">Include ‣ Custom Properties</span> option is selected before export.
+These are stored in the <code class="docutils literal notranslate"><span class="pre">extras</span></code> field on the corresponding object in the glTF file.</p>
+<p>Unlike glTF extensions, custom properties (extras) have no defined namespace,
+and may be used for any user-specific or application-specific purposes.</p>
+</section>
+<section id="animations">
+<h2>Animations<a class="headerlink" href="#animations" title="Link to this heading"></a></h2>
+<p>A glTF animation changes the transforms of objects or pose bones, or the values of shape keys.
+One animation can affect multiple objects, and there can be multiple animations in a glTF file.</p>
+<section id="import">
+<h3>Import<a class="headerlink" href="#import" title="Link to this heading"></a></h3>
+<p>Imported models are set up so that the first animation in the file is playing automatically.
+Scrub the Timeline to see it play.</p>
+<p>When the file contains multiple animations, the rest will be organized using
+the <a class="reference internal" href="../../editors/nla/tracks.html"><span class="doc">Nonlinear Animation editor</span></a>. Each animation
+becomes an action stashed to an NLA track. The track name is the name of the glTF animation.
+To make the animation within that track visible, click Solo (star icon) next to the track you want to play.</p>
+<figure class="align-default" id="id18">
+<span id="fig-gltf-solo-track"></span><img alt="../../_images/addons_import-export_scene-gltf2_animation-solo-track.png" src="../../_images/addons_import-export_scene-gltf2_animation-solo-track.png" />
+<figcaption>
+<p><span class="caption-text">This is the <a class="reference external" href="https://github.com/KhronosGroup/glTF-Sample-Models/tree/master/2.0/Fox">fox sample model</a>
+showing its “Run” animation.</span><a class="headerlink" href="#id18" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>If an animation affects multiple objects, it will be broken up into multiple parts.
+The part of the animation that affects one object becomes an action stashed on that object.
+Use the track names to tell which actions are part of the same animation.
+To play the whole animation, you need to enable Solo (star icon) for all its tracks.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There is currently no way to see the non-animated pose of a model that had animations.</p>
+</div>
+<p>You can also use the animation switcher that can be found in DopeSheet editor.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You have to enable UI in Add-on preferences for seeing the animation switcher</p>
+<blockquote>
+<div><figure class="align-default">
+<img alt="../../_images/addons_import-export_scene-gltf2_addon-preferences-animation.png" src="../../_images/addons_import-export_scene-gltf2_addon-preferences-animation.png" />
+</figure>
+</div></blockquote>
+</div>
+<p>You can switch all animation imported. It automatically enables Solo (star icon) for all needed tracks.
+It also reset non animated object to Rest transformation.</p>
+</section>
+<section id="export">
+<h3>Export<a class="headerlink" href="#export" title="Link to this heading"></a></h3>
+<p>You can export animations using different ways. How glTF animations are made from actions / NLA is controlled by
+the <span class="menuselection">Animation ‣ Mode</span> export option.</p>
+<section id="actions-default">
+<h4>Actions (default)<a class="headerlink" href="#actions-default" title="Link to this heading"></a></h4>
+<p>An action will be exported if it is the active action on an object, or it is stashed to an NLA track
+(e.g. with the <em>Stash</em> or <em>Push Down</em> buttons in the <a class="reference internal" href="../../editors/dope_sheet/action.html"><span class="doc">Action Editor</span></a>).
+Actions which are <strong>not</strong> associated with an object in one of these ways are <strong>not exported</strong>.
+If you have multiple actions you want to export, make sure they are stashed!</p>
+<p>A glTF animation can have a name, which is the action name by default. You can override it
+by renaming its NLA track from <code class="docutils literal notranslate"><span class="pre">NLATrack</span></code>/<code class="docutils literal notranslate"><span class="pre">[Action</span> <span class="pre">Stash]</span></code> to the name you want to use.
+For example, the Fig. <a class="reference internal" href="#fig-gltf-solo-track"><span class="std std-ref">fox model</span></a> will export with three animations,
+“Survey”, “Walk”, and “Run”.
+If you rename two tracks on two different objects to the same name, they will become part
+of the same glTF animation and will play together.</p>
+<p>The importer organizes actions so they will be exported correctly with this mode.</p>
+<p>This mode is useful if you are exporting for game engine, with an animation library of a character.
+Each action must be on its own NLA track.</p>
+</section>
+<section id="active-actions-merged">
+<h4>Active Actions merged<a class="headerlink" href="#active-actions-merged" title="Link to this heading"></a></h4>
+<p>In this mode, the NLA organization is not used, and only one animation is exported using
+the active actions on all objects.</p>
+</section>
+<section id="nla-tracks">
+<h4>NLA Tracks<a class="headerlink" href="#nla-tracks" title="Link to this heading"></a></h4>
+<p>In this mode, each NLA Track will be export as an independent glTF animation.
+This mode is useful if you are using Strip modifiers, or if you get multiple action on a same Track.</p>
+<p>If you rename two tracks on two different objects to the same name, they will become part
+of the same glTF animation and will play together.</p>
+</section>
+<section id="scene">
+<h4>Scene<a class="headerlink" href="#scene" title="Link to this heading"></a></h4>
+<p>Using <a class="reference internal" href="#scene">Scene</a> option, animations will be exported as you can see them in viewport.
+You can choose to export a single glTF animation, or each object separately.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Remember only certain types of animation are supported:</p>
+<ul class="simple">
+<li><p>Object transform (location, rotation, scale)</p></li>
+<li><p>Pose bones</p></li>
+<li><p>Shape key values</p></li>
+</ul>
+<p>Animation of other properties, like physics, lights, or materials, will be ignored.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In order to sample shape key animations controlled by drivers using bone transformations,
+they must be on a mesh object that is a direct child of the bones’ armature.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only <a class="reference internal" href="#actions-default">Actions (default)</a> and <a class="reference internal" href="#active-actions-merged">Active Actions merged</a> mode can handle not sampled animations.</p>
+</div>
+</section>
+</section>
+</section>
+<section id="file-format-variations">
+<h2>File Format Variations<a class="headerlink" href="#file-format-variations" title="Link to this heading"></a></h2>
+<p>The glTF specification identifies different ways the data can be stored.
+The importer handles all of these ways. The exporter will ask the user to
+select one of the following forms:</p>
+<section id="gltf-binary-glb">
+<h3>glTF Binary (<code class="docutils literal notranslate"><span class="pre">.glb</span></code>)<a class="headerlink" href="#gltf-binary-glb" title="Link to this heading"></a></h3>
+<p>This produces a single <code class="docutils literal notranslate"><span class="pre">.glb</span></code> file with all mesh data, image textures, and
+related information packed into a single binary file.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Using a single file makes it easy to share or copy the model to other systems and services.</p>
+</div>
+</section>
+<section id="gltf-separate-gltf-bin-textures">
+<h3>glTF Separate (<code class="docutils literal notranslate"><span class="pre">.gltf</span></code> + <code class="docutils literal notranslate"><span class="pre">.bin</span></code> + textures)<a class="headerlink" href="#gltf-separate-gltf-bin-textures" title="Link to this heading"></a></h3>
+<p>This produces a JSON text-based <code class="docutils literal notranslate"><span class="pre">.gltf</span></code> file describing the overall structure,
+along with a <code class="docutils literal notranslate"><span class="pre">.bin</span></code> file containing mesh and vector data, and
+optionally a number of <code class="docutils literal notranslate"><span class="pre">.png</span></code> or <code class="docutils literal notranslate"><span class="pre">.jpg</span></code> files containing image textures
+referenced by the <code class="docutils literal notranslate"><span class="pre">.gltf</span></code> file.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Having an assortment of separate files makes it much easier for a user to
+go back and edit any JSON or images after the export has completed.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Be aware that sharing this format requires sharing all of these separate files
+together as a group.</p>
+</div>
+</section>
+</section>
+<section id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Link to this heading"></a></h2>
+<section id="id2">
+<h3>Import<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<dl class="simple">
+<dt>Pack Images</dt><dd><p>Pack all images into the blend-file.</p>
+</dd>
+<dt>Merge Vertices</dt><dd><p>The glTF format requires discontinuous normals, UVs, and other vertex attributes to be stored as separate vertices,
+as required for rendering on typical graphics hardware.
+This option attempts to combine co-located vertices where possible.
+Currently cannot combine verts with different normals.</p>
+</dd>
+<dt>Shading</dt><dd><p>How normals are computed during import.</p>
+</dd>
+<dt>Guess Original Bind Pose</dt><dd><p>Determines the pose for bones (and consequently, skinned meshes) in Edit Mode.
+When on, attempts to guess the pose that was used to compute the inverse bind matrices.</p>
+</dd>
+<dt>Bone Direction</dt><dd><p>Changes the heuristic the importer uses to decide where to place bone tips.
+Note that the Fortune setting may cause inaccuracies in models that use non-uniform scaling.
+Otherwise this is purely aesthetic.
+The default value will not change axis, and is best for re-exporting from Blender.
+This default option will change display mode (adding shape and changing relationship line) to have a better view,
+even if original bones axis are not the most accurate (estheticaly speaking)</p>
+</dd>
+<dt>Lighting Mode</dt><dd><p>Optional backwards compatibility for non-standard render engines. Applies to lights.
+Standard: Physically-based glTF lighting units (cd, lx, nt).
+Unitless: Non-physical, unitless lighting. Useful when exposure controls are not available
+Raw (Deprecated): Blender lighting strengths with no conversion</p>
+</dd>
+<dt>Import WebP textures</dt><dd><p>If a texture exists in WebP format, loads the WebP texture instead of the fallback png/jpg one.</p>
+</dd>
+</dl>
+</section>
+<section id="id3">
+<h3>Export<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<dl class="simple">
+<dt>Format</dt><dd><p>See: <a class="reference internal" href="#file-format-variations">File Format Variations</a>.</p>
+</dd>
+<dt>Keep Original</dt><dd><p>For glTF Separate file format only. Keep original textures files if possible.
+Warning: if you use more than one texture, where PBR standard requires only one,
+only one texture will be used. This can lead to unexpected results</p>
+</dd>
+<dt>Textures</dt><dd><p>For glTF Separate file format only. Folder to place texture files in. Relative to the gltf-file.</p>
+</dd>
+<dt>Copyright</dt><dd><p>Legal rights and conditions for the model.</p>
+</dd>
+<dt>Remember Export Settings</dt><dd><p>Store export settings in the blend-file,
+so they will be recalled next time the file is opened.</p>
+</dd>
+</dl>
+<section id="include">
+<h4>Include<a class="headerlink" href="#include" title="Link to this heading"></a></h4>
+<dl class="simple">
+<dt>Selected Objects</dt><dd><p>Export selected objects only.</p>
+</dd>
+<dt>Visible Objects</dt><dd><p>Export visible objects only.</p>
+</dd>
+<dt>Renderable Objects</dt><dd><p>Export renderable objects only.</p>
+</dd>
+<dt>Active Collection</dt><dd><p>Export objects from active collection only.</p>
+</dd>
+<dt>Include Nested Collections</dt><dd><p>Only when Active Collection is On.
+When On, export recursively objects on nested active collections.</p>
+</dd>
+<dt>Active Scene</dt><dd><p>Export active scene only.</p>
+</dd>
+<dt>Custom Properties</dt><dd><p>Export custom properties as glTF extras.</p>
+</dd>
+<dt>Cameras</dt><dd><p>Export cameras.</p>
+</dd>
+<dt>Punctual Lights</dt><dd><p>Export directional, point, and spot lights. Uses the <code class="docutils literal notranslate"><span class="pre">KHR_lights_punctual</span></code> glTF extension.</p>
+</dd>
+</dl>
+</section>
+<section id="transform">
+<h4>Transform<a class="headerlink" href="#transform" title="Link to this heading"></a></h4>
+<dl class="simple">
+<dt>Y Up</dt><dd><p>Export using glTF convention, +Y up.</p>
+</dd>
+</dl>
+</section>
+<section id="data-scene-graph">
+<h4>Data - Scene Graph<a class="headerlink" href="#data-scene-graph" title="Link to this heading"></a></h4>
+<dl class="simple">
+<dt>GPU Instances</dt><dd><p>Export using <code class="docutils literal notranslate"><span class="pre">EXT_mesh_gpu_instancing</span></code> extensions.</p>
+</dd>
+</dl>
+</section>
+<section id="data-mesh">
+<h4>Data - Mesh<a class="headerlink" href="#data-mesh" title="Link to this heading"></a></h4>
+<dl class="simple">
+<dt>Apply Modifiers</dt><dd><p>Export objects using the evaluated mesh, meaning the resulting mesh after all
+<a class="reference internal" href="../../modeling/modifiers/index.html"><span class="doc">Modifiers</span></a> have been calculated.</p>
+</dd>
+<dt>UVs</dt><dd><p>Export UVs (texture coordinates) with meshes.</p>
+</dd>
+<dt>Normals</dt><dd><p>Export vertex normals with meshes.</p>
+</dd>
+<dt>Tangents</dt><dd><p>Export vertex tangents with meshes.</p>
+</dd>
+<dt>Vertex Colors</dt><dd><p>Export Color Attributes with meshes.</p>
+</dd>
+<dt>Attributes</dt><dd><p>Export Attributes with meshes, when the name starts with underscore.</p>
+</dd>
+<dt>Loose Edges</dt><dd><p>Export loose edges as lines, using the material from the first material slot.</p>
+</dd>
+<dt>Loose Points</dt><dd><p>Export loose points as glTF points, using the material from the first material slot.</p>
+</dd>
+</dl>
+</section>
+<section id="data-material">
+<h4>Data - Material<a class="headerlink" href="#data-material" title="Link to this heading"></a></h4>
+<dl class="simple">
+<dt>Materials</dt><dd><p>Export full materials, only placeholders (all primitives but without materials),
+or does not export materials. (In that last case, primitives are merged, losing material slot information).</p>
+</dd>
+<dt>Images</dt><dd><p>Output format for images. PNG is lossless and generally preferred, but JPEG might be preferable for
+web applications due to the smaller file size.
+If WebP is chosen, all textures will be saved as WebP, without any png/jpg fallback.
+If None is chosen, materials are exported without textures.</p>
+</dd>
+<dt>Image Quality</dt><dd><p>When exporting jpeg or WebP files, the quality of the exported file.</p>
+</dd>
+<dt>Create WebP</dt><dd><p>Creates WebP textures for every textures, in addition to the existing texture.
+For already WebP textures, nothing happen.</p>
+</dd>
+<dt>WebP fallback</dt><dd><p>For all WebP textures, create a png fallback texture.</p>
+</dd>
+</dl>
+</section>
+<section id="data-shape-keys">
+<h4>Data - Shape Keys<a class="headerlink" href="#data-shape-keys" title="Link to this heading"></a></h4>
+<p>Export shape keys (morph targets).</p>
+<dl class="simple">
+<dt>Shape Key Normals</dt><dd><p>Export vertex normals with shape keys (morph targets).</p>
+</dd>
+<dt>Shape Key Tangents</dt><dd><p>Export vertex tangents with shape keys (morph targets).</p>
+</dd>
+</dl>
+</section>
+<section id="data-shape-keys-optimize">
+<h4>Data - Shape Keys - Optimize<a class="headerlink" href="#data-shape-keys-optimize" title="Link to this heading"></a></h4>
+<dl class="simple">
+<dt>Use Sparse Accessor if better</dt><dd><p>Sparse Accessor will be used if it save space (if the exported file is smaller)</p>
+</dd>
+<dt>Omitting Sparse Accessor if data is empty</dt><dd><p>If data is empty, omit to export SParce Accessor. Not all viewer managed it correctly, so this option is Off by default</p>
+</dd>
+</dl>
+</section>
+<section id="data-armature">
+<h4>Data - Armature<a class="headerlink" href="#data-armature" title="Link to this heading"></a></h4>
+<dl class="simple">
+<dt>Use Rest Position Armature</dt><dd><p>Export Armatures using rest position as joint rest pose. When Off, the current frame pose is used as rest pose.</p>
+</dd>
+<dt>Export Deformation Bones only</dt><dd><p>Export Deformation bones only, not other bones.
+Animation for deformation bones are baked.</p>
+</dd>
+<dt>Flatten Bone Hierarchy</dt><dd><p>Useful in case of non-decomposable TRS matrix.</p>
+</dd>
+</dl>
+</section>
+<section id="data-skinning">
+<h4>Data - Skinning<a class="headerlink" href="#data-skinning" title="Link to this heading"></a></h4>
+<p>Export skinning data</p>
+<dl class="simple">
+<dt>Bone influences</dt><dd><p>How many joint verex influences will be exported. Models may appear incorrectly in many viewers with value different to 4 or 8.</p>
+</dd>
+<dt>Include All Bone Influences</dt><dd><p>Export all joint vertex influences. Models may appear incorrectly in many viewers.</p>
+</dd>
+</dl>
+</section>
+<section id="data-lighting">
+<h4>Data - Lighting<a class="headerlink" href="#data-lighting" title="Link to this heading"></a></h4>
+<dl class="simple">
+<dt>Lighting Mode</dt><dd><p>Optional backwards compatibility for non-standard render engines. Applies to lights.
+Standard: Physically-based glTF lighting units (cd, lx, nt).
+Unitless: Non-physical, unitless lighting. Useful when exposure controls are not available
+Raw (Deprecated): Blender lighting strengths with no conversion</p>
+</dd>
+</dl>
+</section>
+<section id="data-compression">
+<h4>Data - Compression<a class="headerlink" href="#data-compression" title="Link to this heading"></a></h4>
+<p>Compress meshes using Google Draco.</p>
+<dl class="simple">
+<dt>Compression Level</dt><dd><p>Higher compression results in slower encoding and decoding.</p>
+</dd>
+<dt>Quantization Position</dt><dd><p>Higher values result in better compression rates.</p>
+</dd>
+<dt>Normal</dt><dd><p>Higher values result in better compression rates.</p>
+</dd>
+<dt>Texture Coordinates</dt><dd><p>Higher values result in better compression rates.</p>
+</dd>
+<dt>Color</dt><dd><p>Higher values result in better compression rates.</p>
+</dd>
+<dt>Generic</dt><dd><p>Higher values result in better compression rates.</p>
+</dd>
+</dl>
+</section>
+<section id="animation">
+<h4>Animation<a class="headerlink" href="#animation" title="Link to this heading"></a></h4>
+<dl class="simple">
+<dt>Animation mode</dt><dd><p>Animation mode used for export (See <a class="reference internal" href="#animations">Animations</a> )</p>
+</dd>
+<dt>Shape Keys Animations</dt><dd><p>Export Shape Keys Animation. Need Shape Keys to be exported (See <a class="reference internal" href="#data-shape-keys">Data - Shape Keys</a>)</p>
+</dd>
+<dt>Bake All Objects Animations</dt><dd><p>Useful when some objects are constrained without being animated themselves.</p>
+</dd>
+</dl>
+</section>
+<section id="animation-rest-ranges">
+<h4>Animation - Rest &amp; Ranges<a class="headerlink" href="#animation-rest-ranges" title="Link to this heading"></a></h4>
+<dl class="simple">
+<dt>Use Current Frame as Object Rest Transformations</dt><dd><p>Export the scene in the current animation frame. When off, frame 0 is used as rest transformation for objects.</p>
+</dd>
+<dt>Limit to Playback Range</dt><dd><p>Clips animations to selected playback range.</p>
+</dd>
+<dt>Set all glTF Animation starting at 0</dt><dd><p>Set all glTF Animation starting at 0. Can be useful for looping animation</p>
+</dd>
+<dt>Negative Frames</dt><dd><p>When some frames are in negative range, slide or crop the animation.</p>
+</dd>
+</dl>
+</section>
+<section id="animation-armature">
+<h4>Animation - Armature<a class="headerlink" href="#animation-armature" title="Link to this heading"></a></h4>
+<dl class="simple">
+<dt>Export all Armature Actions</dt><dd><p>Export all actions, bound to a single armature.
+Warning: Option does not support exports including multiple armatures.</p>
+</dd>
+<dt>Reset pose bones between actions</dt><dd><p>Reset pose bones between each action exported.
+This is needed when some bones are not keyed on some animations.</p>
+</dd>
+</dl>
+</section>
+<section id="animation-sampling">
+<h4>Animation - Sampling<a class="headerlink" href="#animation-sampling" title="Link to this heading"></a></h4>
+<p>Apply sampling to all animations. Do not sample animation can lead to wrong animation export.</p>
+<dl class="simple">
+<dt>Sampling Rate</dt><dd><p>How often to evaluate animated values (in frames).</p>
+</dd>
+</dl>
+</section>
+<section id="animation-optimize">
+<h4>Animation - Optimize<a class="headerlink" href="#animation-optimize" title="Link to this heading"></a></h4>
+<dl class="simple">
+<dt>Optimize Animation Size</dt><dd><p>Reduce exported file size by removing duplicate keyframes when all identical.</p>
+</dd>
+<dt>Force keeping channel for armature / bones</dt><dd><p>if all keyframes are identical in a rig, force keeping the minimal animation.</p>
+</dd>
+<dt>Force keeping channel for objects</dt><dd><p>if all keyframes are identical for object transformations, force keeping the minimal animation</p>
+</dd>
+</dl>
+</section>
+</section>
+</section>
+<section id="contributing">
+<h2>Contributing<a class="headerlink" href="#contributing" title="Link to this heading"></a></h2>
+<p>This importer/exporter is developed through
+the <a class="reference external" href="https://github.com/KhronosGroup/glTF-Blender-IO">glTF-Blender-IO repository</a>,
+where you can file bug reports, submit feature requests, or contribute code.</p>
+<p>Discussion and development of the glTF 2.0 format itself takes place on
+the Khronos Group <a class="reference external" href="https://github.com/KhronosGroup/glTF">glTF GitHub repository</a>,
+and feedback there is welcome.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="scene_x3d.html" class="btn btn-neutral float-left" title="Web3D X3D/VRML2" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../interface/index.html" class="btn btn-neutral float-right" title="Interface" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../copyright.html">Copyright</a> : This page is licensed under a CC-BY-SA 4.0 Int. License.
+      <span class="lastupdated">Last updated on 12/17/2023.
+      </span></p>
+  </div>
+
+  
+<div class="footer-contribute">
+   <ul>
+      <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/addons/import_export/scene_gltf2.rst"
+            class="fa fa-edit"> View Source</a>
+      </li>
+      <!-- <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/addons/import_export/scene_gltf2.rst"
+            class="fa fa-edit"> Edit Page</a>
+      </li> -->
+      <li>
+         <a href="https://projects.blender.org/blender/documentation/issues/new?template=.gitea/issue_template/bug.yaml&field:body=%2A%2APage+Information%2A%2A%0D%0AFile%3A+%60manual%2Faddons/import_export/scene_gltf2.rst%60%0D%0ABlender+Version%3A+%604.0%60%0D%0ADocumentation+Language%3A+%60en%60%0D%0A%5BPermanent+Link%5D%28https%3A%2F%2Fdocs.blender.org%2Fmanual%2Fen%2F4.0%2Faddons/import_export/scene_gltf2.html%29%0D%0A%0D%0A%2A%2AShort+description+of+error%2A%2A%0D%0A%5BPlease+fill+out+a+short+description+of+the+error+here%5D%0D%0A"
+            class="fa fa-bug"> Report issue on this page</a>
+      </li>
+      <ul>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="document versions">
+	<ul id="versionwrap" role="presentation">
+		<li role="presentation">
+			<span id="version-popover" class="version-btn" tabindex="0" role="button" aria-label="versions selector"
+				aria-haspopup="true" aria-controls="version-vsnlist" aria-disabled="true">
+				4.0
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Versions</div>
+				<ul id="version-vsnlist" class="version-list" role="menu" aria-labelledby="version-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<li role="presentation">
+			<span id="lang-popover" class="version-btn" tabindex="0" role="button" aria-label="language selector"
+				aria-haspopup="true" aria-controls="version-langlist">
+				 en 
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Languages</div>
+				<ul id="version-langlist" class="version-list" role="menu" aria-labelledby="lang-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<template id="version-entry">
+			<li tabindex="-1" role="presentation"><a tabindex="-1" role="menuitem"></a></li>
+			<li class="selected" tabindex="-1" role="presentation"><span tabindex="-1" aria-current="page"></spanp></li>
+		</template>
+	</ul>
+<template id="version-warning">
+	<div class="admonition warning">
+		<p class="first admonition-title">Note</p>
+		<p class="last">
+			You are not using the most up to date version of the documentation.
+			<a href="#"></a> is the newest version.
+		</p>
+	</div>
+</template>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1418081-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1418081-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

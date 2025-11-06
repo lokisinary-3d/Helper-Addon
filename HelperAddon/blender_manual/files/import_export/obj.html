@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wavefront OBJ &mdash; Blender Manual</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme_overrides.css?v=8da28a04" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/version_switch.css?v=74ca2809" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.blender.org/manual/en/latest/files/import_export/obj.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=715c20a1"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/version_switch.js?v=5cbd935e"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Blender Manual"
+          href="../../_static/opensearch.xml"/>
+<link rel="alternate" hreflang="en" href="https://docs.blender.org/manual/en/latest/" />
+<link rel="alternate" hreflang="ar" href="https://docs.blender.org/manual/ar/latest/" />
+<link rel="alternate" hreflang="de" href="https://docs.blender.org/manual/de/latest/" />
+<link rel="alternate" hreflang="es" href="https://docs.blender.org/manual/es/latest/" />
+<link rel="alternate" hreflang="fi" href="https://docs.blender.org/manual/fi/latest/" />
+<link rel="alternate" hreflang="fr" href="https://docs.blender.org/manual/fr/latest/" />
+<link rel="alternate" hreflang="id" href="https://docs.blender.org/manual/id/latest/" />
+<link rel="alternate" hreflang="it" href="https://docs.blender.org/manual/it/latest/" />
+<link rel="alternate" hreflang="ja" href="https://docs.blender.org/manual/ja/latest/" />
+<link rel="alternate" hreflang="ko" href="https://docs.blender.org/manual/ko/latest/" />
+<link rel="alternate" hreflang="nb" href="https://docs.blender.org/manual/nb/latest/" />
+<link rel="alternate" hreflang="pt" href="https://docs.blender.org/manual/pt/latest/" />
+<link rel="alternate" hreflang="ru" href="https://docs.blender.org/manual/ru/latest/" />
+<link rel="alternate" hreflang="sk" href="https://docs.blender.org/manual/sk/latest/" />
+<link rel="alternate" hreflang="sl" href="https://docs.blender.org/manual/sl/latest/" />
+<link rel="alternate" hreflang="sr" href="https://docs.blender.org/manual/sr/latest/" />
+<link rel="alternate" hreflang="uk" href="https://docs.blender.org/manual/uk/latest/" />
+<link rel="alternate" hreflang="vi" href="https://docs.blender.org/manual/vi/latest/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://docs.blender.org/manual/zh-hans/latest/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://docs.blender.org/manual/zh-hant/latest/" />
+<link rel="alternate" hreflang="x-default" href="https://docs.blender.org/manual/en/latest/" />
+
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="Stanford PLY" href="ply.html" />
+    <link rel="prev" title="Universal Scene Description" href="usd.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Blender 4.0 Manual
+              <img src="../../_static/blender-logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/about/index.html">About Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installing/index.html">Installing Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/configuration/index.html">Configuring Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/help.html">Help System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sections</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../interface/index.html">User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../editors/index.html">Editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scene_layout/index.html">Scenes &amp; Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modeling/index.html">Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sculpt_paint/index.html">Sculpting &amp; Painting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../grease_pencil/index.html">Grease Pencil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../animation/index.html">Animation &amp; Rigging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../physics/index.html">Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../render/index.html">Rendering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../compositing/index.html">Compositing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../movie_clip/index.html">Motion Tracking &amp; Masking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../video_editing/index.html">Video Editing</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Assets, Files, &amp; Data System</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../blend/index.html">Blender File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data_blocks.html">Data-Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../custom_properties.html">Custom Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../linked_libraries/index.html">Linked Libraries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../asset_libraries/index.html">Asset Libraries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../media/index.html">Media Formats</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../import_export.html">Importing &amp; Exporting Files</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="alembic.html">Alembic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="collada.html">Collada</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usd.html">Universal Scene Description</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Wavefront OBJ</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#exporting">Exporting</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#properties">Properties</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#object-properties">Object Properties</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#geometry-properties">Geometry Properties</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#material-properties">Material Properties</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#grouping-properties">Grouping Properties</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#animation">Animation</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#compatibility">Compatibility</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#importing">Importing</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#id2">Properties</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#transform">Transform</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#options">Options</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ply.html">Stanford PLY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="stl.html">STL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="grease_pencil_svg.html">Scalable Vector Graphics (SVG) as Grease Pencil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="grease_pencil_pdf.html">Portable Document Format (PDF) as Grease Pencil</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../addons/index.html">Add-ons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/index.html">Advanced</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Manual Index</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get Involved</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribute Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Blender 4.0 Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Assets, Files, &amp; Data System</a></li>
+          <li class="breadcrumb-item"><a href="../import_export.html">Importing &amp; Exporting Files</a></li>
+      <li class="breadcrumb-item active">Wavefront OBJ</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="wavefront-obj">
+<h1>Wavefront OBJ<a class="headerlink" href="#wavefront-obj" title="Link to this heading"></a></h1>
+<div class="refbox admonition" id="id1">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">File ‣ Import/Export ‣ Wavefront (.obj)</span></p>
+</dd>
+</dl>
+</div>
+<p>OBJ format is a popular plain text format, however, it has only basic geometry and material support.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There is no support for armatures, lights, cameras, empty objects, parenting, or transformations.
+See <a class="reference internal" href="#compatibility">Compatibility</a> for more information.</p>
+</div>
+<section id="exporting">
+<span id="bpy-ops-wm-obj-export"></span><h2>Exporting<a class="headerlink" href="#exporting" title="Link to this heading"></a></h2>
+<p>Export geometry and curves to the OBJ format.</p>
+<section id="properties">
+<h3>Properties<a class="headerlink" href="#properties" title="Link to this heading"></a></h3>
+<section id="object-properties">
+<h4>Object Properties<a class="headerlink" href="#object-properties" title="Link to this heading"></a></h4>
+<dl>
+<dt>Limit to: Selected Only</dt><dd><p>Only export the selected objects. Otherwise export all objects in the scene.</p>
+</dd>
+<dt>Scale</dt><dd><p>Global scale to use on export.</p>
+</dd>
+<dt>Forward Axis, Up Axis</dt><dd><p>Since many applications use a different axis for ‘Up’, there are axis conversion settings,
+Forward and Up axis – By mapping these to different axis you can convert rotations
+between applications default up and forward axis.</p>
+<p>Blender uses Y Forward, Z Up (since the front view looks along the +Y direction).
+For example, its common for applications to use Y as the up axis, in that case -Z Forward, Y Up is needed.</p>
+</dd>
+<dt>Objects: Apply Modifiers</dt><dd><p>Export objects using the evaluated mesh, meaning the resulting mesh after all
+<a class="reference internal" href="../../modeling/modifiers/index.html"><span class="doc">Modifiers</span></a> have been calculated.</p>
+</dd>
+<dt>Properties</dt><dd><p>For properties that have different settings for the viewport/final render pick which is used for output.
+One example where this is important is the <a class="reference internal" href="../../modeling/modifiers/generate/subdivision_surface.html"><span class="doc">Subdivision Surface Modifier</span></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Viewport<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Use viewport properties.</p>
+</dd>
+<dt class="field-even">Render<span class="colon">:</span></dt>
+<dd class="field-even"><p>Use final render properties.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+<section id="geometry-properties">
+<h4>Geometry Properties<a class="headerlink" href="#geometry-properties" title="Link to this heading"></a></h4>
+<dl>
+<dt>UV Coordinates</dt><dd><p>Write out the active UV layers coordinates from Blender.</p>
+</dd>
+<dt>Normals</dt><dd><p>Write out Blender’s face and vertex normals (depending on the faces smooth setting).</p>
+<p>Mostly this isn’t needed since most applications will calculate their
+own normals but to match Blender’s normal map textures you will need to write these too.</p>
+</dd>
+<dt>Colors</dt><dd><p>Write out the active vertex colors attribute layer, if present. Colors are exported in
+“xyzrgb” OBJ extension format.</p>
+</dd>
+<dt>Triangulated Mesh</dt><dd><p>Write out quads as two triangles. Some programs only have very basic OBJ support and only support triangles.</p>
+</dd>
+<dt>Curves as NURBS</dt><dd><p>Write out NURBS curves as OBJ NURBS rather than converting to geometry.</p>
+</dd>
+</dl>
+</section>
+<section id="material-properties">
+<h4>Material Properties<a class="headerlink" href="#material-properties" title="Link to this heading"></a></h4>
+<dl class="simple">
+<dt>Export</dt><dd><p>Write out the MTL-file along with the OBJ. Most importers that support OBJ will also read the MTL-file.</p>
+</dd>
+<dt>PBR Extensions</dt><dd><p>Export MTL library using PBR extensions (roughness, metallic, sheen, clearcoat, anisotropy, transmission).</p>
+</dd>
+<dt>Path Mode</dt><dd><p>When referencing paths in exported files you may want some control as to the method used since absolute paths
+may only be correct on your own system. Relative paths, on the other hand, are more portable
+but mean that you have to keep your files grouped when moving about on your local file system.
+In some cases, the path doesn’t matter since the target application will search
+a set of predefined paths anyway so you have the option to strip the path too.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Auto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Uses relative paths for files which are in a subdirectory of the exported location,
+absolute for any directories outside that.</p>
+</dd>
+<dt class="field-even">Absolute<span class="colon">:</span></dt>
+<dd class="field-even"><p>Uses full paths.</p>
+</dd>
+<dt class="field-odd">Relative<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Uses relative paths in every case (except when on a different drive on Windows).</p>
+</dd>
+<dt class="field-even">Match<span class="colon">:</span></dt>
+<dd class="field-even"><p>Uses relative / absolute paths based on the paths used in Blender.</p>
+</dd>
+<dt class="field-odd">Strip Path<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Only write the filename and omit the path component.</p>
+</dd>
+<dt class="field-even">Copy<span class="colon">:</span></dt>
+<dd class="field-even"><p>Copy the file on exporting and reference it with a relative path.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+<section id="grouping-properties">
+<h4>Grouping Properties<a class="headerlink" href="#grouping-properties" title="Link to this heading"></a></h4>
+<dl>
+<dt>Object Groups</dt><dd><p>Write out each Blender object as an OBJ object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that as far as Blender is concerned there is no difference between OBJ Groups and Objects,
+this option is only included for applications that treat them differently.</p>
+</div>
+</dd>
+<dt>Material Groups</dt><dd><p>Generate an OBJ group for each part of a geometry using a different material.</p>
+</dd>
+<dt>Vertex Groups</dt><dd><p>Export the name of the vertex group of a face.
+It is approximated by choosing the vertex group with the most members among the vertices of a face.</p>
+</dd>
+<dt>Smooth Groups</dt><dd><p>Write Blender’s sharp edges as smooth groups.</p>
+</dd>
+<dt>Smooth Group Bitflags</dt><dd><p>Generate Bitflags for smooth Groups.</p>
+</dd>
+</dl>
+</section>
+<section id="animation">
+<h4>Animation<a class="headerlink" href="#animation" title="Link to this heading"></a></h4>
+<dl class="simple">
+<dt>Animation</dt><dd><p>Exports a numbered OBJ for each frame from the start to the end frame.
+Please be aware that this can take quite a long time.</p>
+</dd>
+<dt>Frame Start, End</dt><dd><p>The first and last frame to export, used to determine the range of exported frames.</p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="compatibility">
+<h3>Compatibility<a class="headerlink" href="#compatibility" title="Link to this heading"></a></h3>
+<p>NURBS surfaces, text3D and metaballs are converted to meshes at export time.</p>
+</section>
+</section>
+<section id="importing">
+<span id="bpy-ops-wm-obj-import"></span><h2>Importing<a class="headerlink" href="#importing" title="Link to this heading"></a></h2>
+<p>Import geometry and curves to the OBJ format.</p>
+<p>If there is a matching <code class="docutils literal notranslate"><span class="pre">.MTL</span></code> for the OBJ then its materials will be imported too.</p>
+<section id="id2">
+<h3>Properties<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<section id="transform">
+<h4>Transform<a class="headerlink" href="#transform" title="Link to this heading"></a></h4>
+<dl>
+<dt>Scale</dt><dd><p>Value by which to scale the imported objects in relation to the world’s origin.</p>
+</dd>
+<dt>Clamp Bounding Box</dt><dd><p>OBJ-files often vary greatly in scale, this setting clamps the imported file to a fixed size.</p>
+</dd>
+<dt>Forward Axis, Up Axis</dt><dd><p>Since many applications use a different axis for ‘Up’, these are axis conversion for these settings,
+Forward and Up axes – By mapping these to different axes you can convert rotations
+between applications default up and forward axes.</p>
+<p>Blender uses Y Forward, Z Up (since the front view looks along the +Y direction).
+For example, it’s common for applications to use Y as the up axis, in that case -Z Forward, Y Up is needed.</p>
+</dd>
+</dl>
+</section>
+<section id="options">
+<h4>Options<a class="headerlink" href="#options" title="Link to this heading"></a></h4>
+<dl class="simple">
+<dt>Split By Object</dt><dd><p>Import each OBJ “object name” group (<code class="docutils literal notranslate"><span class="pre">o</span></code>) as a separate object.</p>
+</dd>
+<dt>Split By Group</dt><dd><p>Import each OBJ “object name” group (<code class="docutils literal notranslate"><span class="pre">g</span></code>) as a separate object.</p>
+</dd>
+<dt>Vertex Groups</dt><dd><p>Import OBJ groups as vertex groups.</p>
+</dd>
+<dt>Validate Meshes</dt><dd><p>Checks the imported mesh data for errors and corrects them if needed.
+This slows down the importing process but can fix glitches in the imported mesh.</p>
+</dd>
+</dl>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="usd.html" class="btn btn-neutral float-left" title="Universal Scene Description" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="ply.html" class="btn btn-neutral float-right" title="Stanford PLY" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../copyright.html">Copyright</a> : This page is licensed under a CC-BY-SA 4.0 Int. License.
+      <span class="lastupdated">Last updated on 12/17/2023.
+      </span></p>
+  </div>
+
+  
+<div class="footer-contribute">
+   <ul>
+      <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/files/import_export/obj.rst"
+            class="fa fa-edit"> View Source</a>
+      </li>
+      <!-- <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/files/import_export/obj.rst"
+            class="fa fa-edit"> Edit Page</a>
+      </li> -->
+      <li>
+         <a href="https://projects.blender.org/blender/documentation/issues/new?template=.gitea/issue_template/bug.yaml&field:body=%2A%2APage+Information%2A%2A%0D%0AFile%3A+%60manual%2Ffiles/import_export/obj.rst%60%0D%0ABlender+Version%3A+%604.0%60%0D%0ADocumentation+Language%3A+%60en%60%0D%0A%5BPermanent+Link%5D%28https%3A%2F%2Fdocs.blender.org%2Fmanual%2Fen%2F4.0%2Ffiles/import_export/obj.html%29%0D%0A%0D%0A%2A%2AShort+description+of+error%2A%2A%0D%0A%5BPlease+fill+out+a+short+description+of+the+error+here%5D%0D%0A"
+            class="fa fa-bug"> Report issue on this page</a>
+      </li>
+      <ul>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="document versions">
+	<ul id="versionwrap" role="presentation">
+		<li role="presentation">
+			<span id="version-popover" class="version-btn" tabindex="0" role="button" aria-label="versions selector"
+				aria-haspopup="true" aria-controls="version-vsnlist" aria-disabled="true">
+				4.0
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Versions</div>
+				<ul id="version-vsnlist" class="version-list" role="menu" aria-labelledby="version-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<li role="presentation">
+			<span id="lang-popover" class="version-btn" tabindex="0" role="button" aria-label="language selector"
+				aria-haspopup="true" aria-controls="version-langlist">
+				 en 
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Languages</div>
+				<ul id="version-langlist" class="version-list" role="menu" aria-labelledby="lang-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<template id="version-entry">
+			<li tabindex="-1" role="presentation"><a tabindex="-1" role="menuitem"></a></li>
+			<li class="selected" tabindex="-1" role="presentation"><span tabindex="-1" aria-current="page"></spanp></li>
+		</template>
+	</ul>
+<template id="version-warning">
+	<div class="admonition warning">
+		<p class="first admonition-title">Note</p>
+		<p class="last">
+			You are not using the most up to date version of the documentation.
+			<a href="#"></a> is the newest version.
+		</p>
+	</div>
+</template>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1418081-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1418081-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

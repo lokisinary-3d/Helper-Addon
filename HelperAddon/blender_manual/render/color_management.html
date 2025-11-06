@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Color Management &mdash; Blender Manual</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme_overrides.css?v=8da28a04" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/version_switch.css?v=74ca2809" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.blender.org/manual/en/latest/render/color_management.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=715c20a1"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../_static/js/version_switch.js?v=5cbd935e"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Blender Manual"
+          href="../_static/opensearch.xml"/>
+<link rel="alternate" hreflang="en" href="https://docs.blender.org/manual/en/latest/" />
+<link rel="alternate" hreflang="ar" href="https://docs.blender.org/manual/ar/latest/" />
+<link rel="alternate" hreflang="de" href="https://docs.blender.org/manual/de/latest/" />
+<link rel="alternate" hreflang="es" href="https://docs.blender.org/manual/es/latest/" />
+<link rel="alternate" hreflang="fi" href="https://docs.blender.org/manual/fi/latest/" />
+<link rel="alternate" hreflang="fr" href="https://docs.blender.org/manual/fr/latest/" />
+<link rel="alternate" hreflang="id" href="https://docs.blender.org/manual/id/latest/" />
+<link rel="alternate" hreflang="it" href="https://docs.blender.org/manual/it/latest/" />
+<link rel="alternate" hreflang="ja" href="https://docs.blender.org/manual/ja/latest/" />
+<link rel="alternate" hreflang="ko" href="https://docs.blender.org/manual/ko/latest/" />
+<link rel="alternate" hreflang="nb" href="https://docs.blender.org/manual/nb/latest/" />
+<link rel="alternate" hreflang="pt" href="https://docs.blender.org/manual/pt/latest/" />
+<link rel="alternate" hreflang="ru" href="https://docs.blender.org/manual/ru/latest/" />
+<link rel="alternate" hreflang="sk" href="https://docs.blender.org/manual/sk/latest/" />
+<link rel="alternate" hreflang="sl" href="https://docs.blender.org/manual/sl/latest/" />
+<link rel="alternate" hreflang="sr" href="https://docs.blender.org/manual/sr/latest/" />
+<link rel="alternate" hreflang="uk" href="https://docs.blender.org/manual/uk/latest/" />
+<link rel="alternate" hreflang="vi" href="https://docs.blender.org/manual/vi/latest/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://docs.blender.org/manual/zh-hans/latest/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://docs.blender.org/manual/zh-hant/latest/" />
+<link rel="alternate" hreflang="x-default" href="https://docs.blender.org/manual/en/latest/" />
+
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="next" title="Freestyle" href="freestyle/index.html" />
+    <link rel="prev" title="Open Shading Language" href="shader_nodes/osl.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Blender 4.0 Manual
+              <img src="../_static/blender-logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/about/index.html">About Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/installing/index.html">Installing Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/configuration/index.html">Configuring Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/help.html">Help System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sections</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../interface/index.html">User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../editors/index.html">Editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scene_layout/index.html">Scenes &amp; Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modeling/index.html">Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sculpt_paint/index.html">Sculpting &amp; Painting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../grease_pencil/index.html">Grease Pencil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../animation/index.html">Animation &amp; Rigging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../physics/index.html">Physics</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Rendering</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="eevee/index.html">EEVEE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cycles/index.html">Cycles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workbench/index.html">Workbench</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cameras.html">Cameras</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lights/index.html">Lights</a></li>
+<li class="toctree-l2"><a class="reference internal" href="materials/index.html">Materials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shader_nodes/index.html">Shader Nodes</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Color Management</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#workflow">Workflow</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#scene-linear-color-space">Scene Linear Color Space</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#display-transforms">Display Transforms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#image-color-spaces">Image Color Spaces</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#render-settings">Render Settings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#display">Display</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#use-curves">Use Curves</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#image-files">Image Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#opencolorio-configuration">OpenColorIO Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#default-opencolorio-configuration">Default OpenColorIO Configuration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="freestyle/index.html">Freestyle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="layers/index.html">Layers &amp; Passes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="output/index.html">Render Output</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../compositing/index.html">Compositing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../movie_clip/index.html">Motion Tracking &amp; Masking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../video_editing/index.html">Video Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../files/index.html">Assets, Files, &amp; Data System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addons/index.html">Add-ons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">Advanced</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary/index.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Manual Index</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get Involved</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/index.html">Contribute Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Blender 4.0 Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Rendering</a></li>
+      <li class="breadcrumb-item active">Color Management</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="color-management">
+<span id="bpy-types-colormanagedviewsettings"></span><span id="bpy-types-colormanageddisplaysettings"></span><span id="bpy-types-colormanagedsequencercolorspacesettings"></span><h1>Color Management<a class="headerlink" href="#color-management" title="Link to this heading"></a></h1>
+<p>Color management is important to create renders and assets that are physically accurate and look great
+on multiple display devices. It is used both to ensure all parts of the pipeline interpret colors correctly,
+and to make artistic changes like exposure and color grading.</p>
+<figure class="align-right" id="id2">
+<a class="reference internal image-reference" href="../_images/render_color-management_different-exposures.jpg"><img alt="../_images/render_color-management_different-exposures.jpg" src="../_images/render_color-management_different-exposures.jpg" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text">Different views and exposures of the same render.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Blender’s color management is based on the <a class="reference external" href="https://opencolorio.org/">OpenColorIO</a> library.
+By using the same OpenColorIO configuration in multiple applications,
+the same color spaces and transforms will be available for consistent results.</p>
+<section id="workflow">
+<h2>Workflow<a class="headerlink" href="#workflow" title="Link to this heading"></a></h2>
+<section id="scene-linear-color-space">
+<h3>Scene Linear Color Space<a class="headerlink" href="#scene-linear-color-space" title="Link to this heading"></a></h3>
+<p>For correct results, different <a class="reference internal" href="../glossary/index.html#term-Color-Space"><span class="xref std std-term">Color Spaces</span></a>
+are needed for rendering, display and storage of images.
+Rendering and compositing is best done in <em>scene linear</em> color space,
+which corresponds more closely to nature, and makes computations more physically accurate.</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../_images/render_color-management_linear-workflow.svg"><img alt="../_images/render_color-management_linear-workflow.svg" src="../_images/render_color-management_linear-workflow.svg" width="100%" /></a>
+<figcaption>
+<p><span class="caption-text">An example of a linear workflow.</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>If the colors are linear, it means that if in reality, we double the number of photons,
+the color values are also doubled. Put another way,
+if we have two photos/renders each with one of two lights on, and add those images together,
+the result would be the same as a render/photo with both lights on. It follows that such
+a radiometrically linear space is best for photorealistic rendering and compositing.</p>
+<p>However, these values do not directly correspond to human perception or the way display devices
+work. and image files are often stored in different color spaces.
+So we have to take care to do the right conversion into and out of this scene linear color space.</p>
+</section>
+<section id="display-transforms">
+<h3>Display Transforms<a class="headerlink" href="#display-transforms" title="Link to this heading"></a></h3>
+<p>Transforming scene linear colors to display involves both technical and artistic choices.</p>
+<p>Correct display of renders requires a conversion to the display device color space.
+A computer monitor works differently from a digital cinema projector or HDTV,
+and so needs a different conversion.</p>
+<p>There is also an artistic choice to be made.
+Partially that is because display devices cannot display the full spectrum of colors and
+only have limited brightness, so we can squeeze the colors to fit in the gamut of the device.
+Besides that, it can also be useful to give the renders a particular look,
+e.g. as if they have been printed on real camera film.
+The default Filmic transform does this.</p>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../_images/render_color-management_linear-display-space.svg"><img alt="../_images/render_color-management_linear-display-space.svg" src="../_images/render_color-management_linear-display-space.svg" width="100%" /></a>
+<figcaption>
+<p><span class="caption-text">Conversion from linear to display device space.</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="image-color-spaces">
+<h3>Image Color Spaces<a class="headerlink" href="#image-color-spaces" title="Link to this heading"></a></h3>
+<p>When loading and saving media formats it is important to have color management in mind.
+File formats such as PNG or JPEG will typically store colors in a color space ready for
+display, not in a linear space. When they are used as textures in renders,
+they need to be converted to linear first, and when saving renders for display on the web,
+they also need to be converted to a display space.</p>
+<p>For intermediate files in production, it is recommended to use <em>OpenEXR</em> files.
+These are always stored in scene linear color spaces, without any data loss.
+That makes them suitable to store renders that can later be composited, color graded and
+converted to different output formats.</p>
+<p>Images can also contain data that is not actually a color. For example normal or displacement maps
+merely contain vectors and offsets. Such images should be marked as <em>Non-Color Data</em> so
+that no color space conversion happens on them.</p>
+</section>
+</section>
+<section id="render-settings">
+<span id="render-post-color-management"></span><h2>Render Settings<a class="headerlink" href="#render-settings" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id1">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Properties</p>
+</dd>
+<dt class="field-even">Panel<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Render Properties ‣ Color Management</span></p>
+</dd>
+</dl>
+</div>
+<figure class="align-right" id="id5">
+<img alt="../_images/render_color-management_panel.png" src="../_images/render_color-management_panel.png" />
+<figcaption>
+<p><span class="caption-text">Color Management properties.</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>These are color management settings that are used across Blender.
+These color management settings are Scene specific so settings can be customized per Scene.
+Color management can also be overridden when saving images;
+this behavior can be set in the <a class="reference internal" href="output/properties/output.html#render-output-color-management-panel"><span class="std std-ref">Output Color Management Properties</span></a>.</p>
+<dl id="bpy-types-colormanageddisplaysettings-display-device">
+<dt>Display Device</dt><dd><p>The color space for the display that Blender is being viewed on.</p>
+<p>Most displays are sRGB by default with some newer displays having the option to use Rec. 2020.
+These displays have a wider color gamut and can display high dynamic range content.
+If you have an Apple display you probably will want to use Display P3.</p>
+<p>It is important to check your OS and display setting to make sure
+they all match the display in use to view the most accurate image.</p>
+<dl class="field-list simple">
+<dt class="field-odd">sRGB<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Used by most displays.</p>
+</dd>
+<dt class="field-even">Display P3<span class="colon">:</span></dt>
+<dd class="field-even"><p>Used by most Apple devices.</p>
+</dd>
+<dt class="field-odd">Rec. 1886<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Used by many older TVs.</p>
+</dd>
+<dt class="field-even">Rec. 2020<span class="colon">:</span></dt>
+<dd class="field-even"><p>Used for newer wide gamut HDR displays.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl id="bpy-types-colormanagedviewsettings-view-transform">
+<dt>View Transform</dt><dd><p>These are different ways to view the image on the same display device.</p>
+<dl class="field-list">
+<dt class="field-odd">Standard<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Does no extra conversion besides the conversion for the display device. Often used for
+non-photorealistic results or video editing where a specific look is already baked into
+the input video.</p>
+</dd>
+<dt class="field-even">AgX<span class="colon">:</span></dt>
+<dd class="field-even"><p>A tone mapping transform that improves on <em>Filmic</em>, giving more photorealistic results.
+AgX offers 16.5 stops of dynamic range and unsaturates highly
+exposed colors to mimic film’s natural response to light.</p>
+</dd>
+<dt class="field-odd">Filmic<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A tone mapping transform designed to handle high dynamic range colors.
+Filmic is deprecated and is superseded by AgX which improves handling of saturated colors.</p>
+</dd>
+<dt class="field-even">Filmic Log<span class="colon">:</span></dt>
+<dd class="field-even"><p>Converts to Filmic log color space. This can be used for export to color grading applications,
+or to inspect the image by flattening out very dark and light areas.</p>
+</dd>
+<dt class="field-odd">False Color<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Shows a heat map of image intensities, to visualize the dynamic range, and help properly expose an image.</p>
+<p>Below is a table that represents how normalized linear color data is represented with False Color.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Luminance Value</p></th>
+<th class="head"><p>Color</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Low Clip</p></td>
+<td><p>Black</p></td>
+</tr>
+<tr class="row-odd"><td><p>0.0001% to 0.05%</p></td>
+<td><p>Blue</p></td>
+</tr>
+<tr class="row-even"><td><p>0.05% to 0.5%</p></td>
+<td><p>Blue-Cyan</p></td>
+</tr>
+<tr class="row-odd"><td><p>0.5% to 5%</p></td>
+<td><p>Cyan</p></td>
+</tr>
+<tr class="row-even"><td><p>5% to 16%</p></td>
+<td><p>Green-Cyan</p></td>
+</tr>
+<tr class="row-odd"><td><p>16% to 22%</p></td>
+<td><p>Grey</p></td>
+</tr>
+<tr class="row-even"><td><p>22% to 35%</p></td>
+<td><p>Green-Yellow</p></td>
+</tr>
+<tr class="row-odd"><td><p>35% to 55%</p></td>
+<td><p>Yellow</p></td>
+</tr>
+<tr class="row-even"><td><p>55% to 80%</p></td>
+<td><p>Orange</p></td>
+</tr>
+<tr class="row-odd"><td><p>80% to 97%</p></td>
+<td><p>Red</p></td>
+</tr>
+<tr class="row-even"><td><p>High Clip</p></td>
+<td><p>White</p></td>
+</tr>
+</tbody>
+</table>
+</dd>
+<dt class="field-even">Raw<span class="colon">:</span></dt>
+<dd class="field-even"><p>Intended for inspecting the image but not for final export.
+Raw gives the image without any color space conversion.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-colormanagedviewsettings-look">
+<dt>Look</dt><dd><p>Choose an artistic effect from a set of measured film response data
+which roughly emulates the look of certain film types. Applied before color space conversion.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-colormanagedviewsettings-exposure">
+<dt>Exposure</dt><dd><p>Used to control the image brightness (in stops) applied before color space conversion.
+It is calculated as follows: <span class="math notranslate nohighlight">\(output\_value = render\_value × 2^{(exposure)}\)</span></p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-colormanagedviewsettings-gamma">
+<dt>Gamma</dt><dd><p>Extra gamma correction applied after color space conversion.
+Note that the default display transforms already perform the appropriate conversion,
+so this mainly acts as an additional effect for artistic tweaks.</p>
+</dd>
+</dl>
+<dl id="bpy-types-colormanagedsequencercolorspacesettings-name">
+<dt>Sequencer</dt><dd><p>The color space that the <a class="reference internal" href="../editors/video_sequencer/index.html"><span class="doc">Sequencer</span></a> operates in.
+By default, the Sequencer operates in sRGB space,
+but it can also be set to work in Linear space like the Compositing nodes, or another color space.
+Different color spaces will give different results for color correction, crossfades, and other operations.</p>
+<p>The list of color spaces depends on the active <a class="reference internal" href="#ocio-config"><span class="std std-ref">OCIO config</span></a>.
+The default supported color spaces are described in detail here:
+<a class="reference internal" href="#ocio-config-default-color-spaces"><span class="std std-ref">Default OpenColorIO Configuration</span></a></p>
+</dd>
+</dl>
+<section id="display">
+<h3>Display<a class="headerlink" href="#display" title="Link to this heading"></a></h3>
+<dl>
+<dt>High Dynamic Range</dt><dd><p>Enable high dynamic range display in rendered viewport, uncapping display brightness.
+This requires a monitor with HDR support and a view transform designed for HDR
+(Filmic does not generate HDR colors).</p>
+<p>This feature is currently only supported on macOS.</p>
+</dd>
+</dl>
+</section>
+<section id="use-curves">
+<span id="bpy-types-colormanagedviewsettings-use-curve-mapping"></span><h3>Use Curves<a class="headerlink" href="#use-curves" title="Link to this heading"></a></h3>
+<p>Adjust RGB Curves to control the image colors before the color space conversion.
+Read more about using the <a class="reference internal" href="../interface/controls/templates/curve.html#ui-curve-widget"><span class="std std-ref">Curve Widget</span></a>.</p>
+</section>
+</section>
+<section id="image-files">
+<h2>Image Files<a class="headerlink" href="#image-files" title="Link to this heading"></a></h2>
+<p>When working with image files, the default color space is usually the right one.
+If this is not the case, the color space of the image file can be configured in the image settings.
+A common situation where manual changes are needed is when working with or baking normal maps or displacement maps,
+for example. Such maps do not actually store colors, just data encoded as colors.
+Those images should be marked as <em>Non-Color Data</em>.</p>
+<p>Image data-blocks will always store float buffers in memory in the scene linear color space,
+while a byte buffer in memory and files in a drive are stored in the specified
+<a class="reference internal" href="../editors/image/image_settings.html#bpy-types-colormanagedinputcolorspacesettings-name"><span class="std std-ref">color space</span></a> setting.</p>
+<p>By default, only renders are displayed and saved with the render <em>View Transformation</em> applied.
+These images are the “Render Result” and “Viewer” image data-blocks,
+and the files saved directly to a drive with the Render Animation operator.
+However, when loading a render saved to an intermediate OpenEXR file,
+Blender cannot detect automatically that this is a render
+(it could be e.g. an image texture or displacement map).
+We need to specify that this is a render and that we want the transformations applied,
+with these two settings:</p>
+<dl class="simple">
+<dt>View as Render</dt><dd><p>Display the image data-block (not only renders) with view transform, exposure, gamma, RGB curves applied.
+Useful for viewing rendered frames in linear OpenEXR files the same as when rendering them directly.</p>
+</dd>
+<dt>Save as Render</dt><dd><p>Option in the image save operator to apply the view transform, exposure, gamma, RGB curves.
+This is useful for saving linear OpenEXR to e.g. PNG or JPEG files in display space.</p>
+</dd>
+</dl>
+</section>
+<section id="opencolorio-configuration">
+<span id="ocio-config"></span><h2>OpenColorIO Configuration<a class="headerlink" href="#opencolorio-configuration" title="Link to this heading"></a></h2>
+<p>Blender comes with a standard OpenColorIO configuration that
+contains a number of useful display devices and view transforms.
+The reference linear <a class="reference internal" href="../glossary/index.html#term-Color-Space"><span class="xref std std-term">Color Space</span></a> used is the linear color space
+with Rec. 709 chromaticities and D65 white point.</p>
+<p>However, OpenColorIO is also designed to give a consistent user experience across
+<a class="reference external" href="https://opencolorio.org/#supported_apps">multiple applications</a>,
+and for this, a single shared configuration file can be used.
+Blender will use the standard OCIO environment variable to read an OpenColorIO configuration
+other than the default Blender one. More information about how to set up such a workflow
+can be found on the <a class="reference external" href="https://opencolorio.org/">OpenColorIO website</a>.</p>
+<p>Blender currently use the following color space rules:</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">scene_linear</span></code></dt><dd><p>Color space used for rendering, compositing, and storing all float precision images in memory.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">data</span></code></dt><dd><p>Color space for non-color data.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">aces_interchange</span></code></dt><dd><p>ACES2065-1 color space. Used to derive chromaticities of the <em>scene_linear</em> color space, for
+effects such as blackbody emission.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">color_picking</span></code></dt><dd><p>Defines the distribution of colors in color pickers. It is expected to
+be approximately perceptually linear, have the same gamut as the <em>scene_linear</em> color space,
+map 0..1 values to 0..1 values in the scene linear color space for predictable editing of materials’ albedo.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">default_sequencer</span></code></dt><dd><p>Default color space for the Sequencer, <em>scene_linear</em> if not specified.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">default_byte</span></code></dt><dd><p>Default color space for byte precision images and files, <em>texture_paint</em> if not specified.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">default_float</span></code></dt><dd><p>Default color space for float precision images and files, <em>scene_linear</em> if not specified.</p>
+</dd>
+</dl>
+<p>The standard Blender configuration includes support for saving and loading images in
+<a class="reference external" href="https://www.oscars.org/science-technology/sci-tech-projects/aces">ACES</a>
+(<a class="reference external" href="https://github.com/ampas/aces-dev">code and documentation</a>) color spaces.
+However, the ACES gamut is larger than the Rec. 709 gamut, so for best results,
+an ACES specific configuration file should be used. OpenColorIO provides
+an <a class="reference external" href="https://opencolorio.readthedocs.io/en/latest/configurations/_index.html">ACES configuration</a> file,
+though it may need a few more tweaks to be usable in production.</p>
+</section>
+<section id="default-opencolorio-configuration">
+<h2>Default OpenColorIO Configuration<a class="headerlink" href="#default-opencolorio-configuration" title="Link to this heading"></a></h2>
+<dl class="simple" id="ocio-config-default-color-spaces">
+<dt>Color Spaces</dt><dd><p>Blender’s OCIO configuration file is equipped by default to read/write files in these color spaces:</p>
+<dl class="field-list simple">
+<dt class="field-odd">sRGB<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Standard RGB display space using Rec. 709 chromaticities and a D65 white point.</p>
+</dd>
+<dt class="field-even">Rec.2020<span class="colon">:</span></dt>
+<dd class="field-even"><p>BT.2020 2.4 Exponent EOTF Display.</p>
+</dd>
+<dt class="field-odd">Rec.1886<span class="colon">:</span></dt>
+<dd class="field-odd"><p>BT.1886 2.4 Exponent EOTF Display, commonly used for TVs.</p>
+</dd>
+<dt class="field-even">Non-Color<span class="colon">:</span></dt>
+<dd class="field-even"><p>Generic data that is not color, will not apply any color transform (e.g. normal maps).</p>
+</dd>
+<dt class="field-odd">Linear Rec.709<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Linear BT.709 chromaticities with illuminant D65 white point.</p>
+</dd>
+<dt class="field-even">Linear Rec.2020<span class="colon">:</span></dt>
+<dd class="field-even"><p>Linear BT.2020 with illuminant D65 white point.</p>
+</dd>
+<dt class="field-odd">Linear FilmLight E-Gamut<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Linear E-Gamut with illuminant D65 white point.</p>
+</dd>
+<dt class="field-even">Linear DCI-P3 D65<span class="colon">:</span></dt>
+<dd class="field-even"><p>Linear DCI-P3 with illuminant D65 white point.</p>
+</dd>
+<dt class="field-odd">Linear CIE-XYZ E<span class="colon">:</span></dt>
+<dd class="field-odd"><p>1931 CIE XYZ standard with assumed illuminant E white point.</p>
+</dd>
+<dt class="field-even">Linear CIE-XYZ D65<span class="colon">:</span></dt>
+<dd class="field-even"><p>1931 CIE XYZ with adapted illuminant D65 white point.</p>
+</dd>
+<dt class="field-odd">Filmic sRGB<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Similar to <em>sRGB</em> but uses the Filmic view transform.</p>
+</dd>
+<dt class="field-even">Filmic Log<span class="colon">:</span></dt>
+<dd class="field-even"><p>Intermediate log color space of Filmic view transform.</p>
+</dd>
+<dt class="field-odd">Display P3<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Apple’s Display P3 with sRGB compound (piece-wise) encoding transfer function, common on Mac devices.</p>
+</dd>
+<dt class="field-even">ACEScg<span class="colon">:</span></dt>
+<dd class="field-even"><p>An ACES color space that is designed to be used for rendering and compositing.
+It uses the AP1 color primaries, a D60 white point, and a linear transfer function.
+While similar to ACES2065-1, this color space has a smaller color gamut.
+The smaller gamut allow it to better represent the colors that fit inside the CIE 1931 chromaticities diagram.
+Colors that lie outside the CIE 1931 chromaticities are generally not important to rendering and compositing
+because the human stimulus cannot represent these colors.</p>
+</dd>
+<dt class="field-odd">ACES2065-1<span class="colon">:</span></dt>
+<dd class="field-odd"><p>An ACES color space using the AP0 color primaries, a D60 white point and a linear transfer function.
+This color space is meant to store and transfer data with the most amount of possible color information.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="shader_nodes/osl.html" class="btn btn-neutral float-left" title="Open Shading Language" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="freestyle/index.html" class="btn btn-neutral float-right" title="Freestyle" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../copyright.html">Copyright</a> : This page is licensed under a CC-BY-SA 4.0 Int. License.
+      <span class="lastupdated">Last updated on 12/17/2023.
+      </span></p>
+  </div>
+
+  
+<div class="footer-contribute">
+   <ul>
+      <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/render/color_management.rst"
+            class="fa fa-edit"> View Source</a>
+      </li>
+      <!-- <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/render/color_management.rst"
+            class="fa fa-edit"> Edit Page</a>
+      </li> -->
+      <li>
+         <a href="https://projects.blender.org/blender/documentation/issues/new?template=.gitea/issue_template/bug.yaml&field:body=%2A%2APage+Information%2A%2A%0D%0AFile%3A+%60manual%2Frender/color_management.rst%60%0D%0ABlender+Version%3A+%604.0%60%0D%0ADocumentation+Language%3A+%60en%60%0D%0A%5BPermanent+Link%5D%28https%3A%2F%2Fdocs.blender.org%2Fmanual%2Fen%2F4.0%2Frender/color_management.html%29%0D%0A%0D%0A%2A%2AShort+description+of+error%2A%2A%0D%0A%5BPlease+fill+out+a+short+description+of+the+error+here%5D%0D%0A"
+            class="fa fa-bug"> Report issue on this page</a>
+      </li>
+      <ul>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="document versions">
+	<ul id="versionwrap" role="presentation">
+		<li role="presentation">
+			<span id="version-popover" class="version-btn" tabindex="0" role="button" aria-label="versions selector"
+				aria-haspopup="true" aria-controls="version-vsnlist" aria-disabled="true">
+				4.0
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Versions</div>
+				<ul id="version-vsnlist" class="version-list" role="menu" aria-labelledby="version-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<li role="presentation">
+			<span id="lang-popover" class="version-btn" tabindex="0" role="button" aria-label="language selector"
+				aria-haspopup="true" aria-controls="version-langlist">
+				 en 
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Languages</div>
+				<ul id="version-langlist" class="version-list" role="menu" aria-labelledby="lang-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<template id="version-entry">
+			<li tabindex="-1" role="presentation"><a tabindex="-1" role="menuitem"></a></li>
+			<li class="selected" tabindex="-1" role="presentation"><span tabindex="-1" aria-current="page"></spanp></li>
+		</template>
+	</ul>
+<template id="version-warning">
+	<div class="admonition warning">
+		<p class="first admonition-title">Note</p>
+		<p class="last">
+			You are not using the most up to date version of the documentation.
+			<a href="#"></a> is the newest version.
+		</p>
+	</div>
+</template>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1418081-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1418081-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

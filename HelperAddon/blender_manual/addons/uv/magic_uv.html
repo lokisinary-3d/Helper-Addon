@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Magic UV &mdash; Blender Manual</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme_overrides.css?v=8da28a04" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/version_switch.css?v=74ca2809" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.blender.org/manual/en/latest/addons/uv/magic_uv.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=715c20a1"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/version_switch.js?v=5cbd935e"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Blender Manual"
+          href="../../_static/opensearch.xml"/>
+<link rel="alternate" hreflang="en" href="https://docs.blender.org/manual/en/latest/" />
+<link rel="alternate" hreflang="ar" href="https://docs.blender.org/manual/ar/latest/" />
+<link rel="alternate" hreflang="de" href="https://docs.blender.org/manual/de/latest/" />
+<link rel="alternate" hreflang="es" href="https://docs.blender.org/manual/es/latest/" />
+<link rel="alternate" hreflang="fi" href="https://docs.blender.org/manual/fi/latest/" />
+<link rel="alternate" hreflang="fr" href="https://docs.blender.org/manual/fr/latest/" />
+<link rel="alternate" hreflang="id" href="https://docs.blender.org/manual/id/latest/" />
+<link rel="alternate" hreflang="it" href="https://docs.blender.org/manual/it/latest/" />
+<link rel="alternate" hreflang="ja" href="https://docs.blender.org/manual/ja/latest/" />
+<link rel="alternate" hreflang="ko" href="https://docs.blender.org/manual/ko/latest/" />
+<link rel="alternate" hreflang="nb" href="https://docs.blender.org/manual/nb/latest/" />
+<link rel="alternate" hreflang="pt" href="https://docs.blender.org/manual/pt/latest/" />
+<link rel="alternate" hreflang="ru" href="https://docs.blender.org/manual/ru/latest/" />
+<link rel="alternate" hreflang="sk" href="https://docs.blender.org/manual/sk/latest/" />
+<link rel="alternate" hreflang="sl" href="https://docs.blender.org/manual/sl/latest/" />
+<link rel="alternate" hreflang="sr" href="https://docs.blender.org/manual/sr/latest/" />
+<link rel="alternate" hreflang="uk" href="https://docs.blender.org/manual/uk/latest/" />
+<link rel="alternate" hreflang="vi" href="https://docs.blender.org/manual/vi/latest/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://docs.blender.org/manual/zh-hans/latest/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://docs.blender.org/manual/zh-hant/latest/" />
+<link rel="alternate" hreflang="x-default" href="https://docs.blender.org/manual/en/latest/" />
+
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="Video Tools" href="../video_tools/index.html" />
+    <link rel="prev" title="UV" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Blender 4.0 Manual
+              <img src="../../_static/blender-logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/about/index.html">About Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installing/index.html">Installing Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/configuration/index.html">Configuring Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/help.html">Help System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sections</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../interface/index.html">User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../editors/index.html">Editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scene_layout/index.html">Scenes &amp; Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modeling/index.html">Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sculpt_paint/index.html">Sculpting &amp; Painting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../grease_pencil/index.html">Grease Pencil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../animation/index.html">Animation &amp; Rigging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../physics/index.html">Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../render/index.html">Rendering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../compositing/index.html">Compositing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../movie_clip/index.html">Motion Tracking &amp; Masking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../video_editing/index.html">Video Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../files/index.html">Assets, Files, &amp; Data System</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Add-ons</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#add-ons-category-listings">Add-ons Category Listings</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../3d_view/index.html">3D View</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../add_curve/index.html">Add Curve</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../add_mesh/index.html">Add Mesh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../animation/index.html">Animation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../baking/index.html">Baking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../camera/index.html">Camera</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../development/index.html">Development</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../import_export/index.html">Import-Export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../interface/index.html">Interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lighting/index.html">Lighting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../materials/index.html">Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mesh/index.html">Mesh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../node/index.html">Node</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../object/index.html">Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../paint/index.html">Paint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../render/index.html">Render</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rigging/index.html">Rigging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sequencer/index.html">Sequencer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../system/index.html">System</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">UV</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Magic UV</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#activation">Activation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#interface">Interface</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#instructions">Instructions</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#copy-paste-uv">Copy/Paste UV</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="#d-viewport-edit">3D Viewport (Edit)</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#d-viewport-object">3D Viewport (Object)</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#uv-editor-face">UV Editor (Face)</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#uv-editor-island">UV Editor (Island)</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="#transfer-uv">Transfer UV</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#flip-rotate-uv">Flip/Rotate UV</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#mirror-uv">Mirror UV</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#move-uv">Move UV</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#world-scale-uv">World Scale UV</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="#mode-manual">Mode: Manual</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#mode-same-density">Mode: Same Density</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#mode-scaling-density">Mode: Scaling Density</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#mode-proportional-to-mesh">Mode: Proportional to Mesh</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="#preserve-uv-aspect">Preserve UV Aspect</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#texture-lock">Texture Lock</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="#normal-mode">Normal Mode</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#interactive-mode">Interactive Mode</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="#texture-wrap">Texture Wrap</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#uv-sculpt">UV Sculpt</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#unwrap-constraint">Unwrap Constraint</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#texture-projection">Texture Projection</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#uvw">UVW</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#align-uv">Align UV</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="#align">Align</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#snap">Snap</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="#snap-point">Snap: Point</a></li>
+<li class="toctree-l8"><a class="reference internal" href="#snap-edge">Snap: Edge</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="#smooth-uv">Smooth UV</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#select-uv">Select UV</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#pack-uv-extension">Pack UV (Extension)</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#clip-uv">Clip UV</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#align-uv-cursor">Align UV Cursor</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#uv-cursor-location">UV Cursor Location</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#uv-bounding-box">UV Bounding Box</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#uv-inspection">UV Inspection</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="#inspect-uv">Inspect UV</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#paint-uv-island">Paint UV island</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#other-resources">Other Resources</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../video_tools/index.html">Video Tools</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/index.html">Advanced</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Manual Index</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get Involved</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribute Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Blender 4.0 Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Add-ons</a></li>
+          <li class="breadcrumb-item"><a href="index.html">UV</a></li>
+      <li class="breadcrumb-item active">Magic UV</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="magic-uv">
+<span id="bpy-ops-uv-muv"></span><span id="bpy-types-scene-muv"></span><h1>Magic UV<a class="headerlink" href="#magic-uv" title="Link to this heading"></a></h1>
+<section id="activation">
+<h2>Activation<a class="headerlink" href="#activation" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Open Blender and go to Preferences then the Add-ons tab.</p></li>
+<li><p>Click UV then Magic UV to enable the script.</p></li>
+</ul>
+</section>
+<section id="interface">
+<h2>Interface<a class="headerlink" href="#interface" title="Link to this heading"></a></h2>
+<p>Located in the <span class="menuselection">3D Viewport ‣ Sidebar ‣  Edit</span>
+and <span class="menuselection">UV Editor ‣ Sidebar ‣ Magic UV</span>.</p>
+</section>
+<section id="instructions">
+<h2>Instructions<a class="headerlink" href="#instructions" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="#copypaste-uv"><span class="std std-ref">Copy/Paste UV</span></a></p></li>
+<li><p><a class="reference internal" href="#transfer-uv"><span class="std std-ref">Transfer UV</span></a></p></li>
+<li><p><a class="reference internal" href="#fliprotate-uv"><span class="std std-ref">Flip/Rotate UV</span></a></p></li>
+<li><p><a class="reference internal" href="#mirror-uv"><span class="std std-ref">Mirror UV</span></a></p></li>
+<li><p><a class="reference internal" href="#move-uv"><span class="std std-ref">Move UV</span></a></p></li>
+<li><p><a class="reference internal" href="#world-scale-uv"><span class="std std-ref">World Scale UV</span></a></p></li>
+<li><p><a class="reference internal" href="#preserve-uv-aspect"><span class="std std-ref">Preserve UV Aspect</span></a></p></li>
+<li><p><a class="reference internal" href="#texture-lock"><span class="std std-ref">Texture Lock</span></a></p></li>
+<li><p><a class="reference internal" href="#texture-wrap"><span class="std std-ref">Texture Wrap</span></a></p></li>
+<li><p><a class="reference internal" href="#uv-sculpt"><span class="std std-ref">UV Sculpt</span></a></p></li>
+<li><p><a class="reference internal" href="#unwrap-constraint"><span class="std std-ref">Unwrap Constraint</span></a></p></li>
+<li><p><a class="reference internal" href="#texture-projection"><span class="std std-ref">Texture Projection</span></a></p></li>
+<li><p><a class="reference internal" href="#uvw"><span class="std std-ref">UVW</span></a></p></li>
+<li><p><a class="reference internal" href="#align-uv"><span class="std std-ref">Align UV</span></a></p></li>
+<li><p><a class="reference internal" href="#smooth-uv"><span class="std std-ref">Smooth UV</span></a></p></li>
+<li><p><a class="reference internal" href="#select-uv"><span class="std std-ref">Select UV</span></a></p></li>
+<li><p><a class="reference internal" href="#pack-uv-extension"><span class="std std-ref">Pack UV (Extension)</span></a></p></li>
+<li><p><a class="reference internal" href="#clip-uv"><span class="std std-ref">Clip UV</span></a></p></li>
+<li><p><a class="reference internal" href="#align-uv-cursor"><span class="std std-ref">Align UV Cursor</span></a></p></li>
+<li><p><a class="reference internal" href="#uv-cursor-location"><span class="std std-ref">UV Cursor Location</span></a></p></li>
+<li><p><a class="reference internal" href="#uv-bounding-box"><span class="std std-ref">UV Bounding Box</span></a></p></li>
+<li><p><a class="reference internal" href="#uv-inspection"><span class="std std-ref">UV Inspection</span></a></p></li>
+</ul>
+<section id="copy-paste-uv">
+<span id="copypaste-uv"></span><h3>Copy/Paste UV<a class="headerlink" href="#copy-paste-uv" title="Link to this heading"></a></h3>
+<section id="d-viewport-edit">
+<h4>3D Viewport (Edit)<a class="headerlink" href="#d-viewport-edit" title="Link to this heading"></a></h4>
+<div class="refbox admonition" id="id1">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>3D Viewport</p>
+</dd>
+<dt class="field-even">Mode<span class="colon">:</span></dt>
+<dd class="field-even"><p>Edit</p>
+</dd>
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">UV ‣ Copy/Paste UV</span></p>
+</dd>
+<dt class="field-even">Panel<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Sidebar ‣ Magic UV ‣ Copy/Paste UV ‣ Copy/Paste UV</span></p>
+</dd>
+</dl>
+</div>
+<p>Copy and paste UV coordinates among same/different object’s faces in 3D View.
+Copy/Paste UV sometimes fails to paste UV correctly because of the incorrect UV index.
+Instead, you can try Transfer UV which you can copy and paste based on the topology.</p>
+<dl class="simple">
+<dt>Target UV Map</dt><dd><dl class="field-list simple">
+<dt class="field-odd">Default<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Copy/paste UV maps currently displayed.</p>
+</dd>
+<dt class="field-even">All<span class="colon">:</span></dt>
+<dd class="field-even"><p>Copy/Paste all UV maps.</p>
+</dd>
+<dt class="field-odd">New<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Allocate new UV map and paste to it.</p>
+</dd>
+</dl>
+</dd>
+<dt>Copy/Paste Mode</dt><dd><dl class="field-list simple">
+<dt class="field-odd">Selection Sequence<span class="colon">:</span></dt>
+<dd class="field-odd"><p>provides a way to specify the ordering of copied/pasted faces by face selection.</p>
+</dd>
+</dl>
+</dd>
+<dt>Seams</dt><dd><p>If enabled, you can also copy/paste seams.</p>
+</dd>
+<dt>Strategy</dt><dd><p>Provides a way to decide copy/paste UV repeatedly if a number of copied faces is differs from pasted faces.</p>
+</dd>
+</dl>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can flip or rotate UV by changing <em>Flip Copied UV</em> property or <em>Rotate Copied UV</em> property.</p>
+</div>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>Copy/Paste UV</em> to show Copy/Paste UV menu.</p></li>
+<li><p>Select faces whose UV you want to copy.</p></li>
+<li><p>Click <span class="menuselection">Copy ‣ (Target UV Map)</span>.</p></li>
+<li><p>Select faces whose UV you want to paste.</p></li>
+<li><p>Click <span class="menuselection">Paste ‣ (Target UV Map)`</span>.</p></li>
+</ol>
+</section>
+<section id="d-viewport-object">
+<h4>3D Viewport (Object)<a class="headerlink" href="#d-viewport-object" title="Link to this heading"></a></h4>
+<div class="refbox admonition" id="id2">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>3D Viewport</p>
+</dd>
+<dt class="field-even">Mode<span class="colon">:</span></dt>
+<dd class="field-even"><p>Object</p>
+</dd>
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Object ‣ Copy/Paste UV</span></p>
+</dd>
+<dt class="field-even">Panel<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Sidebar ‣ Magic UV ‣ Copy/Paste UV</span></p>
+</dd>
+</dl>
+</div>
+<p>Copy and paste UV coordinates among same topology objects.</p>
+<dl class="simple">
+<dt>Copy/Target UV Map</dt><dd><dl class="field-list simple">
+<dt class="field-odd">[Default]<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Copy/paste UV maps currently displayed.</p>
+</dd>
+<dt class="field-even">[All]<span class="colon">:</span></dt>
+<dd class="field-even"><p>Copy/Paste all UV maps.</p>
+</dd>
+<dt class="field-odd">[New]<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Allocate new UV map and paste to it.</p>
+</dd>
+</dl>
+</dd>
+<dt>Seams</dt><dd><p>If enabled, you can also copy/paste seams.</p>
+</dd>
+</dl>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Select object whose UV you want to copy.</p></li>
+<li><p>Click <span class="menuselection">Copy ‣ (Target UV Map)</span>.</p></li>
+<li><p>Select objects whose UV you want to paste.</p></li>
+<li><p>Click <span class="menuselection">Paste ‣ (Target UV Map)</span>.</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can paste UV to the multiple objects.</p>
+</div>
+</section>
+<section id="uv-editor-face">
+<h4>UV Editor (Face)<a class="headerlink" href="#uv-editor-face" title="Link to this heading"></a></h4>
+<div class="refbox admonition" id="id3">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>UV Editor</p>
+</dd>
+<dt class="field-even">Menu<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">UV ‣ Copy/Paste UV</span></p>
+</dd>
+<dt class="field-odd">Panel<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Sidebar ‣ Magic UV ‣ Copy/Paste UV ‣ Face</span></p>
+</dd>
+</dl>
+</div>
+<p>Copy and paste UV coordinates among same/different object’s faces in UV Editor.</p>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Select UVs you want to copy.</p></li>
+<li><p>Click <em>Copy</em>.</p></li>
+<li><p>Select UVs you want to paste.</p></li>
+<li><p>Click <em>Paste</em>.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You must select UVs which consist closed loop (i.e. face).</p>
+</div>
+</section>
+<section id="uv-editor-island">
+<h4>UV Editor (Island)<a class="headerlink" href="#uv-editor-island" title="Link to this heading"></a></h4>
+<div class="refbox admonition" id="id4">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>UV Editor</p>
+</dd>
+<dt class="field-even">Menu<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">UV ‣ Copy/Paste UV</span></p>
+</dd>
+<dt class="field-odd">Panel<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Sidebar ‣ Magic UV ‣ Copy/Paste UV ‣ Island</span></p>
+</dd>
+</dl>
+</div>
+<p>Copy and paste UV coordinates based on the UV islands.</p>
+<dl class="simple">
+<dt>Unique Target</dt><dd><p>If enabled, paste to the target uniquely.</p>
+</dd>
+</dl>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Select UV islands you want to copy.</p></li>
+<li><p>Click <em>Copy</em>.</p></li>
+<li><p>Select UV islands you want to paste.</p></li>
+<li><p>Click <em>Paste</em>.</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Selection of UV island can easily be done by using the island selection mode.</p>
+</div>
+</section>
+</section>
+<section id="transfer-uv">
+<span id="id5"></span><h3>Transfer UV<a class="headerlink" href="#transfer-uv" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id6">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>3D Viewport</p>
+</dd>
+<dt class="field-even">Mode<span class="colon">:</span></dt>
+<dd class="field-even"><p>Edit</p>
+</dd>
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">UV ‣ Transfer UV</span></p>
+</dd>
+<dt class="field-even">Panel<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Sidebar ‣ Magic UV ‣ Copy/Paste UV ‣ Transfer UV</span></p>
+</dd>
+</dl>
+</div>
+<p>Copy and paste UV coordinates based on the mesh’s topology.
+Transfer UV can solve the Copy/Paste UV issue raised when the meshes don’t have same UV indices.
+However, Transfer UV also can not solve the issue raised when you try the meshes which don’t have same topology.</p>
+<dl class="simple">
+<dt>Invert Normals</dt><dd><p>If enabled, you can copy/paste to the mirrored mesh.</p>
+</dd>
+<dt>Seams</dt><dd><p>If enabled, you can also copy/paste seams.</p>
+</dd>
+</dl>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>Transfer UV</em> to show Transfer UV menu.</p></li>
+<li><p>Select <em>2 adjacent faces</em> of the mesh whose UV you want to copy.</p></li>
+<li><p>Click <em>Copy</em>.</p></li>
+<li><p>Select <em>2 adjacent faces</em> of the mesh whose UV you want to paste.</p></li>
+<li><p>Click <em>Paste</em>.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Copied/Pasted mesh must have the same number of faces.</p></li>
+<li><p>Transfer UV ignore the hidden faces.</p></li>
+<li><p>You can paste UV to the multiple meshes.</p></li>
+</ul>
+</div>
+</section>
+<section id="flip-rotate-uv">
+<span id="fliprotate-uv"></span><h3>Flip/Rotate UV<a class="headerlink" href="#flip-rotate-uv" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id7">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>3D Viewport</p>
+</dd>
+<dt class="field-even">Mode<span class="colon">:</span></dt>
+<dd class="field-even"><p>Edit</p>
+</dd>
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">UV ‣ Flip/Rotate UV</span></p>
+</dd>
+<dt class="field-even">Panel<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Sidebar ‣ Magic UV ‣ UV Manipulation ‣ Flip/Rotate UV</span></p>
+</dd>
+</dl>
+</div>
+<p>Flip or rotate UV.</p>
+<dl class="simple">
+<dt>Seams</dt><dd><p>If enabled, you can also flip/rotate seams.</p>
+</dd>
+</dl>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>Flip/Rotate UV</em> to show Flip/Rotate UV menu.</p></li>
+<li><p>Select faces whose UV you want to flip or rotate.</p></li>
+<li><p>Click <em>Flip/Rotate</em>.</p></li>
+<li><p>Change value <em>Flip UV</em> or <em>Rotate UV</em>.</p></li>
+</ol>
+</section>
+<section id="mirror-uv">
+<span id="id8"></span><h3>Mirror UV<a class="headerlink" href="#mirror-uv" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id9">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>3D Viewport</p>
+</dd>
+<dt class="field-even">Mode<span class="colon">:</span></dt>
+<dd class="field-even"><p>Edit</p>
+</dd>
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">UV ‣ Mirror UV</span></p>
+</dd>
+<dt class="field-even">Panel<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Sidebar ‣ Magic UV ‣ UV Manipulation ‣ Mirror UV</span></p>
+</dd>
+</dl>
+</div>
+<p>Make mirrored UV.</p>
+<dl class="simple">
+<dt>Error</dt><dd><p>Changes the error threshold for mirror.</p>
+</dd>
+<dt>Origin</dt><dd><p>Specifies the origin of the mirror operation.</p>
+</dd>
+</dl>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>Mirror UV</em> to show Mirror UV menu.</p></li>
+<li><p>Select faces you want to refer.</p></li>
+<li><p>Choose the axis of the mirror direction.</p></li>
+<li><p>Click <em>Mirror</em>.</p></li>
+</ol>
+</section>
+<section id="move-uv">
+<span id="id10"></span><h3>Move UV<a class="headerlink" href="#move-uv" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id11">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>3D Viewport</p>
+</dd>
+<dt class="field-even">Mode<span class="colon">:</span></dt>
+<dd class="field-even"><p>Edit</p>
+</dd>
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">UV ‣ Move UV</span></p>
+</dd>
+<dt class="field-even">Panel<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Sidebar ‣ Magic UV ‣ UV Manipulation ‣ Move UV</span></p>
+</dd>
+</dl>
+</div>
+<p>Move UV with a mouse in the 3D Viewport.</p>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>Move UV</em> to show Move UV menu.</p></li>
+<li><p>Select vertices/edges/faces whose UV you want to move.</p></li>
+<li><p>Click <em>Start</em>.</p></li>
+<li><p>Press <em>Mouse Left Button</em> to start moving UV.</p></li>
+<li><p>You can move UV with mouse.</p></li>
+<li><p>Press <em>Mouse Left Button</em> to stop moving UV.</p></li>
+</ol>
+<p>If you want to cancel moving UV, press <kbd class="kbd docutils literal notranslate">RMB</kbd>.</p>
+</section>
+<section id="world-scale-uv">
+<span id="id12"></span><h3>World Scale UV<a class="headerlink" href="#world-scale-uv" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id13">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>3D Viewport</p>
+</dd>
+<dt class="field-even">Mode<span class="colon">:</span></dt>
+<dd class="field-even"><p>Edit</p>
+</dd>
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">UV ‣ World Scale UV</span></p>
+</dd>
+<dt class="field-even">Panel<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Sidebar ‣ Magic UV ‣ UV Manipulation ‣ World Scale UV</span></p>
+</dd>
+</dl>
+</div>
+<p>Measure and set texel density.</p>
+<dl>
+<dt>Texture</dt><dd><blockquote>
+<div><p>Texture to be used for the size calculation of density.</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">[Average]<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Average size of textures assigned to the selected object.</p>
+</dd>
+<dt class="field-even">[Max]<span class="colon">:</span></dt>
+<dd class="field-even"><p>Max size of textures assigned to the selected object.</p>
+</dd>
+<dt class="field-odd">[Min]<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Min size of textures assigned to the selected object.</p>
+</dd>
+<dt class="field-even">(Texture Name)<span class="colon">:</span></dt>
+<dd class="field-even"><p>Size of selected texture.</p>
+</dd>
+</dl>
+</dd>
+<dt>Origin</dt><dd><p>Changes the UV origin after applying texel density.</p>
+</dd>
+<dt>Area Calculation Method</dt><dd><p>Method to calculate mesh area, UV area and density.</p>
+</dd>
+<dt>Only Selected</dt><dd><p>If enabled, measure/apply only to the selected faces.</p>
+</dd>
+</dl>
+<section id="mode-manual">
+<h4>Mode: Manual<a class="headerlink" href="#mode-manual" title="Link to this heading"></a></h4>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>World Scale UV</em> to show World Scale UV menu.</p></li>
+<li><p>Select mode <em>Manual</em>.</p></li>
+<li><p>Change value <em>Texture Size</em> referred as virtual texture size.</p></li>
+<li><p>Change value <em>Density</em> referred as target texel density.</p></li>
+<li><p>Select face you want to apply texel density.</p></li>
+<li><p>Click <em>Apply</em>.</p></li>
+</ol>
+</section>
+<section id="mode-same-density">
+<h4>Mode: Same Density<a class="headerlink" href="#mode-same-density" title="Link to this heading"></a></h4>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>World Scale UV</em> to show World Scale UV menu.</p></li>
+<li><p>Select mode <em>Same Density</em>.</p></li>
+<li><p>Select face you want to measure a texel density.</p></li>
+<li><p>Click <em>Measure</em>.</p></li>
+<li><p>You can see the target texel density.</p></li>
+<li><p>Select face you want to apply texel density.</p></li>
+<li><p>Click <em>Apply</em>.</p></li>
+</ol>
+</section>
+<section id="mode-scaling-density">
+<h4>Mode: Scaling Density<a class="headerlink" href="#mode-scaling-density" title="Link to this heading"></a></h4>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>World Scale UV</em> to show World Scale UV menu.</p></li>
+<li><p>Select mode <em>Scaling Density</em>.</p></li>
+<li><p>Select face you want to measure a texel density.</p></li>
+<li><p>Click <em>Measure</em>.</p></li>
+<li><p>You can see the measured texel density.</p></li>
+<li><p>Change value <em>Scaling Factor</em> for the scale factor of the texel density.</p></li>
+<li><p>Select face you want to apply texel density.</p></li>
+<li><p>Click <em>Apply</em>.</p></li>
+</ol>
+</section>
+<section id="mode-proportional-to-mesh">
+<h4>Mode: Proportional to Mesh<a class="headerlink" href="#mode-proportional-to-mesh" title="Link to this heading"></a></h4>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>World Scale UV</em> to show World Scale UV menu.</p></li>
+<li><p>Select mode <em>Proportional to Mesh</em>.</p></li>
+<li><p>Select face you want to measure a texel density.</p></li>
+<li><p>Click <em>Measure</em>.</p></li>
+<li><p>You can see the measured mesh area, UV area and density.</p></li>
+<li><p>Select face you want to apply texel density.</p></li>
+<li><p>Click <em>Apply</em>.</p></li>
+</ol>
+</section>
+</section>
+<section id="preserve-uv-aspect">
+<span id="id14"></span><h3>Preserve UV Aspect<a class="headerlink" href="#preserve-uv-aspect" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id15">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>3D Viewport</p>
+</dd>
+<dt class="field-even">Menu<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">UVs ‣ Preserve UV</span></p>
+</dd>
+<dt class="field-odd">Panel<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Sidebar ‣ Magic UV ‣ UV Manipulation ‣ Preserve UV Aspect</span></p>
+</dd>
+</dl>
+</div>
+<p>Change assigned texture with preserving UV aspect.</p>
+<dl class="simple">
+<dt>Origin</dt><dd><p>Changes the UV origin after changing texture.</p>
+</dd>
+</dl>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>Preserve UV Aspect</em> to show Preserve UV Aspect menu.</p></li>
+<li><p>Select face you want to change texture.</p></li>
+<li><p>Select texture you want to assign.</p></li>
+<li><p>Click <em>Change Image</em>.</p></li>
+</ol>
+</section>
+<section id="texture-lock">
+<span id="id16"></span><h3>Texture Lock<a class="headerlink" href="#texture-lock" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id17">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>3D Viewport</p>
+</dd>
+<dt class="field-even">Mode<span class="colon">:</span></dt>
+<dd class="field-even"><p>Edit</p>
+</dd>
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">UV ‣ Texture Lock</span></p>
+</dd>
+<dt class="field-even">Panel<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Sidebar ‣ Edit ‣ UV Manipulation ‣ Texture Lock</span></p>
+</dd>
+</dl>
+</div>
+<p>Preserve UV while you edit the mesh.</p>
+<section id="normal-mode">
+<h4>Normal Mode<a class="headerlink" href="#normal-mode" title="Link to this heading"></a></h4>
+<dl class="simple">
+<dt>Connect</dt><dd><p>If enabled, you can keep UV connection by changing other face’s UV.</p>
+</dd>
+</dl>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>Texture Lock</em> to show Texture Lock menu.</p></li>
+<li><p>Select vertices/edges/faces which you want to preserve UV.</p></li>
+<li><p>Click <em>Lock</em>.</p></li>
+<li><p>Transform vertices/edges/faces as you like.</p></li>
+<li><p>Click <em>Unlock</em>, you can return to the UV before locking.</p></li>
+</ol>
+</section>
+<section id="interactive-mode">
+<h4>Interactive Mode<a class="headerlink" href="#interactive-mode" title="Link to this heading"></a></h4>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>Texture Lock</em> to show Texture Lock menu.</p></li>
+<li><p>Select vertices/edges/faces which you want to preserve UV.</p></li>
+<li><p>Click <em>Lock</em>.</p></li>
+<li><p>Transform vertices/edges/faces while preserving UV.</p></li>
+<li><p>Click <em>Unlock</em>.</p></li>
+</ol>
+</section>
+</section>
+<section id="texture-wrap">
+<span id="id18"></span><h3>Texture Wrap<a class="headerlink" href="#texture-wrap" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id19">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>3D Viewport</p>
+</dd>
+<dt class="field-even">Mode<span class="colon">:</span></dt>
+<dd class="field-even"><p>Edit</p>
+</dd>
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">UV ‣ Texture Wrap</span></p>
+</dd>
+<dt class="field-even">Panel<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Sidebar ‣ Edit ‣ UV Manipulation ‣ Texture Wrap</span></p>
+</dd>
+</dl>
+</div>
+<p>Set texture coordinate along to the mesh structure.</p>
+<dl class="simple">
+<dt>Set and Refer</dt><dd><p>If enabled, you don’t need to click <em>Refer</em> after <em>Set</em> as long as you refer same face.</p>
+</dd>
+<dt>Selection Sequence</dt><dd><p>If enabled, you can select multiple faces and apply <em>Set</em> at once.
+The application order follows the selection sequence.</p>
+</dd>
+</dl>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>Texture Wrap</em> to show Texture Wrap menu.</p></li>
+<li><p>Select a face whose UV you want to refer as initial position.</p></li>
+<li><p>Click <em>Refer</em>.</p></li>
+<li><p>Select an adjacent face whose UV you want to set.</p></li>
+<li><p>Click <em>Set</em>.</p></li>
+</ol>
+</section>
+<section id="uv-sculpt">
+<span id="id20"></span><h3>UV Sculpt<a class="headerlink" href="#uv-sculpt" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id21">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>3D Viewport</p>
+</dd>
+<dt class="field-even">Mode<span class="colon">:</span></dt>
+<dd class="field-even"><p>Edit</p>
+</dd>
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">UV ‣ UV Sculpt</span></p>
+</dd>
+<dt class="field-even">Panel<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Sidebar ‣ Edit ‣ UV Manipulation ‣ UV Sculpt</span></p>
+</dd>
+</dl>
+</div>
+<p>UV Sculpt in the 3D Viewport.
+Same features are supported as the UV sculpt in UV Editor.</p>
+<dl>
+<dt>Radius</dt><dd><p>Provides a way to change the brush radius.</p>
+</dd>
+<dt>Strength</dt><dd><p>Provides a way to change the effectiveness.</p>
+</dd>
+<dt>Tools</dt><dd><dl class="field-list">
+<dt class="field-odd">Grab<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Move UV along to the mouse movement while you press <em>Mouse Left Button</em>.</p>
+</dd>
+<dt class="field-even">Relax<span class="colon">:</span></dt>
+<dd class="field-even"><p>Relax UV while you press <em>Mouse Left Button</em>.</p>
+<dl class="simple">
+<dt>Method</dt><dd><p>Provides a way to change the relax method.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-odd">Pinch<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Pinch UV while you press <em>Mouse Left Button</em>.</p>
+<dl class="simple">
+<dt>Invert</dt><dd><p>If enabled, the direction of pinch will be inverted.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt>Show Brush</dt><dd><p>If enabled, display the brush’s effective range while sculpting.</p>
+</dd>
+</dl>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>UV Sculpt</em> to show UV Sculpt menu.</p></li>
+<li><p>Select faces whose UV you want to sculpt.</p></li>
+<li><p>Click <em>Enable</em>.</p></li>
+<li><p>Sculpt UV as you like (See detail each tool’s usage).</p></li>
+<li><p>Click <em>Disable</em>.</p></li>
+</ol>
+</section>
+<section id="unwrap-constraint">
+<span id="id22"></span><h3>Unwrap Constraint<a class="headerlink" href="#unwrap-constraint" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id23">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>3D Viewport</p>
+</dd>
+<dt class="field-even">Mode<span class="colon">:</span></dt>
+<dd class="field-even"><p>Edit</p>
+</dd>
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">UV ‣ Unwrap Constraint</span></p>
+</dd>
+<dt class="field-even">Panel<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Sidebar ‣ Edit ‣ UV Mapping ‣ Unwrap Constraint</span></p>
+</dd>
+</dl>
+</div>
+<p>Unwrap UV with an axis fixed.</p>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>Unwrap Constraint</em> to show Unwrap Constraint menu.</p></li>
+<li><p>Select faces whose UV you want to unwrap.</p></li>
+<li><p>Enable or disable <em>U-Constraint</em> property and <em>V-constraint</em> property to fix axis while unwrapping.</p></li>
+<li><p>Click <em>Unwrap</em>.</p></li>
+</ol>
+</section>
+<section id="texture-projection">
+<span id="id24"></span><h3>Texture Projection<a class="headerlink" href="#texture-projection" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id25">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>3D Viewport</p>
+</dd>
+<dt class="field-even">Mode<span class="colon">:</span></dt>
+<dd class="field-even"><p>Edit</p>
+</dd>
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">UV ‣ Texture Projection</span></p>
+</dd>
+<dt class="field-even">Panel<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Sidebar ‣ Edit ‣ UV Mapping ‣ Texture Projection</span></p>
+</dd>
+</dl>
+</div>
+<p>Project the texture to the mesh while displaying texture image in 3D View.</p>
+<dl class="simple">
+<dt>Transparency</dt><dd><p>Provides a way to change transparency of the displayed texture.</p>
+</dd>
+<dt>Adjust Window</dt><dd><p>If enabled, size of the displayed texture is adjusted to the window.</p>
+</dd>
+<dt>Scaling, Rotation, Translation</dt><dd><p>Provide a way to apply the affine transformation to the displayed texture.
+Available when <em>Adjust Window</em> is disabled.</p>
+</dd>
+<dt>Texture Aspect Ratio</dt><dd><p>If enabled, keep the original aspect of the displayed texture.</p>
+</dd>
+<dt>Assign UV Map</dt><dd><p>If enabled, assign new UV map when no UV is assigned to the mesh.</p>
+</dd>
+</dl>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>Texture Projection</em> to show Texture Projection menu.</p></li>
+<li><p>Select faces whose UV you want to apply Texture Projection.</p></li>
+<li><p>Select a texture to be projected.</p></li>
+<li><p>Click <em>Enable</em> to display the texture.</p></li>
+<li><p>Adjust texture size and the mesh location to decide the location of projection.</p></li>
+<li><p>Click <em>Project</em> to project texture to UV.</p></li>
+<li><p>Click <em>Disable</em>.</p></li>
+</ol>
+</section>
+<section id="uvw">
+<span id="id26"></span><h3>UVW<a class="headerlink" href="#uvw" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id27">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>3D Viewport</p>
+</dd>
+<dt class="field-even">Mode<span class="colon">:</span></dt>
+<dd class="field-even"><p>Edit</p>
+</dd>
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">UV ‣ UVW</span></p>
+</dd>
+<dt class="field-even">Panel<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Sidebar ‣ Edit ‣ UV Mapping ‣ UVW</span></p>
+</dd>
+</dl>
+</div>
+<p>UVW mapping.</p>
+<dl class="simple">
+<dt>Assign UV Map</dt><dd><p>If enabled, assign new UV map when no UV is assigned to the mesh.</p>
+</dd>
+<dt>Force Axis</dt><dd><p>Specifies the axis to apply force mapping.</p>
+</dd>
+</dl>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>UVW</em> to show UVW menu.</p></li>
+<li><p>Select faces you want to apply UVW mapping.</p></li>
+<li><p>Click <em>Box</em> if you apply Box mapping, or click <em>Best Planner</em> if you apply Best Planner mapping.</p></li>
+</ol>
+</section>
+<section id="align-uv">
+<span id="id28"></span><h3>Align UV<a class="headerlink" href="#align-uv" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id29">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>UV Editor</p>
+</dd>
+<dt class="field-even">Menu<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">UVs ‣ Align UV</span></p>
+</dd>
+<dt class="field-odd">Panel<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Sidebar ‣ Magic UV ‣ UV Manipulation ‣ Align UV</span></p>
+</dd>
+</dl>
+</div>
+<section id="align">
+<h4>Align<a class="headerlink" href="#align" title="Link to this heading"></a></h4>
+<p>Align UV.</p>
+<dl class="simple">
+<dt>Circle</dt><dd><p>Selects all the outermost UVs and aligns them to a round shape.</p>
+</dd>
+<dt>Straighten</dt><dd><p>Selects the endmost UVs and aligns them to a straight line between begin UV and end UV.</p>
+</dd>
+<dt>XY-axis</dt><dd><p>Selects the endmost UVs and aligns them to a straight line along to X or Y axis.</p>
+</dd>
+<dt>Align Location</dt><dd><p>In case of XY-axis alignment, you can change the location (Middle, Right/Bottom, Left/Top) after UV alignment.</p>
+</dd>
+<dt>Transmission</dt><dd><p>Align UVs with vertical direction.</p>
+</dd>
+<dt>Select</dt><dd><p>The aligned UVs will be selected after operation.</p>
+</dd>
+<dt>Vertical</dt><dd><p>Align UVs to vertical direction with using the influence of mesh vertex location.</p>
+</dd>
+<dt>Horizontal</dt><dd><p>Align UVs to horizontal direction with using influence of mesh vertex location.</p>
+</dd>
+<dt>Mesh Influence</dt><dd><p>Provides a way to change the influence of mesh structure.</p>
+</dd>
+</dl>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>Align UV</em> to show Align UV menu.</p></li>
+<li><p>Select UVs you want to align (see details below).</p></li>
+<li><p>Click <em>Circle</em> or <em>Straighten</em> or <em>XY-axis</em> depending on your purpose.</p></li>
+</ol>
+</section>
+<section id="snap">
+<h4>Snap<a class="headerlink" href="#snap" title="Link to this heading"></a></h4>
+<p>Snap UV coordinates to the specified location.</p>
+<dl class="simple">
+<dt>Snap Method</dt><dd><dl class="field-list simple">
+<dt class="field-odd">Point<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Snap UV coordinates to the location specified by <em>Target Point</em>.</p>
+</dd>
+<dt class="field-even">Edge<span class="colon">:</span></dt>
+<dd class="field-even"><p>Snap UV coordinates to the location specified by <em>Target Edge</em>.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<section id="snap-point">
+<h5>Snap: Point<a class="headerlink" href="#snap-point" title="Link to this heading"></a></h5>
+<dl class="simple">
+<dt>Group</dt><dd><dl class="field-list simple">
+<dt class="field-odd">Vertex<span class="colon">:</span></dt>
+<dd class="field-odd"><p>All selected vertices will snap to <em>Target Point</em>.</p>
+</dd>
+<dt class="field-even">Face<span class="colon">:</span></dt>
+<dd class="field-even"><p>Center of all selected faces will snap to <em>Target Point</em>.</p>
+</dd>
+<dt class="field-odd">UV Island<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Center of all selected islands will snap to <em>Target Point</em>.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>Align UV</em> to show Align UV menu.</p></li>
+<li><p>Select snap method <em>Point</em>.</p></li>
+<li><p>Set <em>Target Point</em> where UV coordinate will snap to.</p></li>
+<li><p>Set snap <em>Group</em> (See below for details).</p></li>
+<li><p>Select vertices or faces or UV islands which you want to snap.</p></li>
+</ol>
+</section>
+<section id="snap-edge">
+<h5>Snap: Edge<a class="headerlink" href="#snap-edge" title="Link to this heading"></a></h5>
+<dl class="simple">
+<dt>Group</dt><dd><dl class="field-list simple">
+<dt class="field-odd">Edge<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Selected edge will snap to the center of <em>Target Edge</em>.</p>
+</dd>
+<dt class="field-even">Face<span class="colon">:</span></dt>
+<dd class="field-even"><p>All edges belonging to faces which are included in selected
+edge will snap to the center of <em>Target Edge</em>.</p>
+</dd>
+<dt class="field-odd">UV Island<span class="colon">:</span></dt>
+<dd class="field-odd"><p>All edges belonging to UV islands which are included in
+selected edge will snap to the center of <em>Target Edge</em>.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>Align UV</em> to show Align UV menu</p></li>
+<li><p>Select snap method <em>Edge</em>.</p></li>
+<li><p>Set <em>Target Edge</em> where UV edge will snap to.</p></li>
+<li><p>Set snap <em>Group</em> (See below for details).</p></li>
+<li><p>Select edges which you want to snap.</p></li>
+</ol>
+</section>
+</section>
+</section>
+<section id="smooth-uv">
+<span id="id30"></span><h3>Smooth UV<a class="headerlink" href="#smooth-uv" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id31">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>UV Editor</p>
+</dd>
+<dt class="field-even">Menu<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">UVs ‣ Smooth UV</span></p>
+</dd>
+<dt class="field-odd">Panel<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Sidebar ‣ Magic UV ‣ UV Manipulation ‣ Smooth UV</span></p>
+</dd>
+</dl>
+</div>
+<p>Smooth UV.</p>
+<dl class="simple">
+<dt>Transmission</dt><dd><p>If enabled, smooth UVs which are located on vertical direction of selected UV.</p>
+</dd>
+<dt>Select</dt><dd><p>If enabled, the smoothed UVs are selected.</p>
+</dd>
+<dt>Mesh Influence</dt><dd><p>Provides a way to change the influence of mesh structure.</p>
+</dd>
+</dl>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>Smooth UV</em> to show Smooth UV menu.</p></li>
+<li><p>Select UVs you want to smooth (The endmost UVs must be selected).</p></li>
+<li><p>Click <em>Smooth</em>.</p></li>
+</ol>
+</section>
+<section id="select-uv">
+<span id="id32"></span><h3>Select UV<a class="headerlink" href="#select-uv" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id33">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>UV Editor</p>
+</dd>
+<dt class="field-even">Menu<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">UVs ‣ Select UV</span></p>
+</dd>
+<dt class="field-odd">Panel<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Sidebar ‣ Magic UV ‣ UV Manipulation ‣ Select UV</span></p>
+</dd>
+</dl>
+</div>
+<p>Select UV under the specific condition.</p>
+<dl class="simple">
+<dt>Overlapped</dt><dd><p>Selects all overlapped UVs.</p>
+</dd>
+<dt>Flipped</dt><dd><p>Selects all flipped UVs.</p>
+</dd>
+<dt>Same Polygon Threshold</dt><dd><p>Provides a way to set a threshold for judging the same polygons.</p>
+</dd>
+<dt>Selection Method</dt><dd><p>Specifies how to select the faces.</p>
+</dd>
+<dt>Sync Mesh Selection</dt><dd><p>Select the mesh’s faces as well as UV faces.</p>
+</dd>
+<dt>Zoom Selected UV</dt><dd><p>Zoom to the selected UV in 3D Viewport.</p>
+</dd>
+</dl>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>Select UV</em> to show Select UV menu.</p></li>
+<li><p>Click <em>Overlapped</em> or <em>Flipped</em> depending on your purpose (see details below).</p></li>
+</ol>
+</section>
+<section id="pack-uv-extension">
+<span id="id34"></span><h3>Pack UV (Extension)<a class="headerlink" href="#pack-uv-extension" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id35">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>UV Editor</p>
+</dd>
+<dt class="field-even">Menu<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">UVs ‣ Pack UV</span></p>
+</dd>
+<dt class="field-odd">Panel<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Sidebar ‣ Magic UV ‣ UV Manipulation ‣ Pack UV (Extension)</span></p>
+</dd>
+</dl>
+</div>
+<p>Apply island packing and integrate islands which have same shape.</p>
+<dl class="simple">
+<dt>Allowable Center Deviation</dt><dd><p>Provides a way to specify the center deviation that regards as the same island.</p>
+</dd>
+<dt>Allowable Size Deviation</dt><dd><p>Provides a way to specify the size deviation that regards as the same island.</p>
+</dd>
+<dt>Accurate Island Copy</dt><dd><p>If enabled, copy islands topologically in island integration phase.</p>
+</dd>
+<dt>Stride</dt><dd><p>Move coordinates amount of UV islands after island integration.</p>
+</dd>
+<dt>Apply Pack UV</dt><dd><p>If enabled, apply Blender intrinsic Pack UV operation.</p>
+</dd>
+</dl>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>Pack UV (Extension)</em> to show Pack UV (Extension) menu.</p></li>
+<li><p>Select faces whose UV you want to pack.</p></li>
+<li><p>Click <em>Pack UV</em>.</p></li>
+</ol>
+</section>
+<section id="clip-uv">
+<span id="id36"></span><h3>Clip UV<a class="headerlink" href="#clip-uv" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id37">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>UV Editor</p>
+</dd>
+<dt class="field-even">Menu<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">UVs ‣ Clip UV</span></p>
+</dd>
+<dt class="field-odd">Panel<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Sidebar ‣ Magic UV ‣ UV Manipulation ‣ Clip UV</span></p>
+</dd>
+</dl>
+</div>
+<p>Clip UV coordinate to the specified range.</p>
+<dl class="simple">
+<dt>Range</dt><dd><p>Specifies the clipping range.</p>
+</dd>
+</dl>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>Clip UV</em> to show Clip UV menu.</p></li>
+<li><p>Select faces you want to clip UV coordinates.</p></li>
+<li><p>Click <em>Clip UV</em>.</p></li>
+</ol>
+</section>
+<section id="align-uv-cursor">
+<span id="id38"></span><h3>Align UV Cursor<a class="headerlink" href="#align-uv-cursor" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id39">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>UV Editor</p>
+</dd>
+<dt class="field-even">Menu<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">UVs ‣ Align UV Cursor</span></p>
+</dd>
+<dt class="field-odd">Panel<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Sidebar ‣ Magic UV ‣ Editor Enhancement ‣ Align UV Cursor</span></p>
+</dd>
+</dl>
+</div>
+<p>Align UV cursor (2D Cursor in UV Editor).</p>
+<dl class="simple">
+<dt>Align Method</dt><dd><dl class="field-list simple">
+<dt class="field-odd">Texture<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The UV cursor aligns to the selected texture.</p>
+</dd>
+<dt class="field-even">UV<span class="colon">:</span></dt>
+<dd class="field-even"><p>The UV cursor aligns to the UV (includes non-selected UV).</p>
+</dd>
+<dt class="field-odd">UV (Selected)<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The UV cursor aligns to the selected portion of the UV.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>Align UV Cursor</em> to show Align UV Cursor menu.</p></li>
+<li><p>Select <em>Texture</em> or <em>UV</em> or <em>UV (Selected)</em> depending on your purpose (See details below).</p></li>
+<li><p>Click the position button (You can choose the position from 9 buttons).</p></li>
+</ol>
+</section>
+<section id="uv-cursor-location">
+<span id="id40"></span><h3>UV Cursor Location<a class="headerlink" href="#uv-cursor-location" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id41">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>UV Editor</p>
+</dd>
+<dt class="field-even">Panel<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Sidebar ‣ Magic UV ‣ Editor Enhancement ‣ UV Cursor Location</span></p>
+</dd>
+</dl>
+</div>
+<p>Set and display UV Cursor (2D Cursor in UV Editor) location.</p>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>UV Cursor Location</em> to show UV Cursor Location menu.</p></li>
+<li><p>UV cursor location is displayed, and you can set the new location as you like.</p></li>
+</ol>
+</section>
+<section id="uv-bounding-box">
+<span id="id42"></span><h3>UV Bounding Box<a class="headerlink" href="#uv-bounding-box" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id43">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>UV Editor</p>
+</dd>
+<dt class="field-even">Menu<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">UVs ‣ UV Bounding Box</span></p>
+</dd>
+<dt class="field-odd">Panel<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Sidebar ‣ Magic UV ‣ Editor Enhancement ‣ UV Bounding Box</span></p>
+</dd>
+</dl>
+</div>
+<p>Transform UV with Bounding Box like a Photoshop/GIMP’s Bounding Box.</p>
+<dl class="simple">
+<dt>Uniform Scaling</dt><dd><p>If enabled, you can transform uniformly.</p>
+</dd>
+<dt>Boundary</dt><dd><p>Specifies the boundary of the bounding box.</p>
+</dd>
+</dl>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>UV Bounding Box</em> to show UV Bounding Box menu.</p></li>
+<li><p>Click <em>Show</em> to show the bounding box.</p></li>
+<li><p>Transform UV with the bounding box as you like (You can transform UV same as Photoshop/Gimp).</p></li>
+<li><p>Click <em>Hide</em>.</p></li>
+</ol>
+</section>
+<section id="uv-inspection">
+<span id="id44"></span><h3>UV Inspection<a class="headerlink" href="#uv-inspection" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id45">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>UV Editor</p>
+</dd>
+<dt class="field-even">Menu<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">UVs ‣ Inspect UV</span></p>
+</dd>
+<dt class="field-odd">Panel<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Sidebar ‣ Magic UV ‣ Editor Enhancement ‣ UV Inspection</span></p>
+</dd>
+</dl>
+</div>
+<section id="inspect-uv">
+<h4>Inspect UV<a class="headerlink" href="#inspect-uv" title="Link to this heading"></a></h4>
+<p>Inspect UV and help you to find which UV is on the abnormal condition.</p>
+<dl class="simple">
+<dt>Overlapped</dt><dd><p>The overlapped part/face is enhanced.</p>
+</dd>
+<dt>Flipped</dt><dd><p>The flipped part/face is enhanced.</p>
+</dd>
+<dt>Mode</dt><dd><dl class="field-list simple">
+<dt class="field-odd">Part<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Enhance only to the overlapped/flipped part.</p>
+</dd>
+<dt class="field-even">Face<span class="colon">:</span></dt>
+<dd class="field-even"><p>Enhance the overlapped/flipped face.</p>
+</dd>
+</dl>
+</dd>
+<dt>Same Polygon Threshold</dt><dd><p>Provides a way to set a threshold for judging the same polygons.</p>
+</dd>
+<dt>Display View3D</dt><dd><p>Display overlapped/flipped faces on View3D as well as UV Editor.</p>
+</dd>
+</dl>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>UV Inspection</em> to show UV Inspection menu.</p></li>
+<li><p>Click <em>Show</em> to enhance the part on which is under specific condition.</p></li>
+<li><p>Click <em>Update</em> if you want to update to the latest status.</p></li>
+<li><p>Click <em>Hide</em>.</p></li>
+</ol>
+</section>
+<section id="paint-uv-island">
+<h4>Paint UV island<a class="headerlink" href="#paint-uv-island" title="Link to this heading"></a></h4>
+<p>Paint UV island with random color.</p>
+<p class="rubric">Usage</p>
+<ol class="arabic simple">
+<li><p>Click check box <em>UV Inspection</em> to show UV Inspection menu.</p></li>
+<li><p>Click <em>Paint UV island</em>.</p></li>
+</ol>
+</section>
+</section>
+</section>
+<section id="other-resources">
+<h2>Other Resources<a class="headerlink" href="#other-resources" title="Link to this heading"></a></h2>
+<p>The supplemental documentation (e.g. FAQ) and early release can be found in Magic UV’s
+<a class="reference external" href="https://github.com/nutti/Magic-UV">Github repository</a>.</p>
+<div class="refbox admonition" id="id46">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Category<span class="colon">:</span></dt>
+<dd class="field-odd"><p>UV</p>
+</dd>
+<dt class="field-even">Description<span class="colon">:</span></dt>
+<dd class="field-even"><p>UV tool set. See add-ons preferences for details.</p>
+</dd>
+<dt class="field-odd">Location<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">3D Viewport ‣ Sidebar ‣  Edit</span> and <cite>UV Editor –&gt; Sidebar —&gt; Magic UV</cite></p>
+</dd>
+<dt class="field-even">File<span class="colon">:</span></dt>
+<dd class="field-even"><p>magic_uv folder</p>
+</dd>
+<dt class="field-odd">Author<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Nutti, Mifth, Jace Priester, kgeogeo, mem, imdjs, Keith (Wahooney) Boshoff, McBuff,
+MaxRobinot, Alexander Milovsky</p>
+</dd>
+<dt class="field-even">License<span class="colon">:</span></dt>
+<dd class="field-even"><p>GPL 3+</p>
+</dd>
+<dt class="field-odd">Note<span class="colon">:</span></dt>
+<dd class="field-odd"><p>This add-on is bundled with Blender.</p>
+</dd>
+</dl>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="UV" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../video_tools/index.html" class="btn btn-neutral float-right" title="Video Tools" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../copyright.html">Copyright</a> : This page is licensed under a CC-BY-SA 4.0 Int. License.
+      <span class="lastupdated">Last updated on 12/17/2023.
+      </span></p>
+  </div>
+
+  
+<div class="footer-contribute">
+   <ul>
+      <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/addons/uv/magic_uv.rst"
+            class="fa fa-edit"> View Source</a>
+      </li>
+      <!-- <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/addons/uv/magic_uv.rst"
+            class="fa fa-edit"> Edit Page</a>
+      </li> -->
+      <li>
+         <a href="https://projects.blender.org/blender/documentation/issues/new?template=.gitea/issue_template/bug.yaml&field:body=%2A%2APage+Information%2A%2A%0D%0AFile%3A+%60manual%2Faddons/uv/magic_uv.rst%60%0D%0ABlender+Version%3A+%604.0%60%0D%0ADocumentation+Language%3A+%60en%60%0D%0A%5BPermanent+Link%5D%28https%3A%2F%2Fdocs.blender.org%2Fmanual%2Fen%2F4.0%2Faddons/uv/magic_uv.html%29%0D%0A%0D%0A%2A%2AShort+description+of+error%2A%2A%0D%0A%5BPlease+fill+out+a+short+description+of+the+error+here%5D%0D%0A"
+            class="fa fa-bug"> Report issue on this page</a>
+      </li>
+      <ul>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="document versions">
+	<ul id="versionwrap" role="presentation">
+		<li role="presentation">
+			<span id="version-popover" class="version-btn" tabindex="0" role="button" aria-label="versions selector"
+				aria-haspopup="true" aria-controls="version-vsnlist" aria-disabled="true">
+				4.0
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Versions</div>
+				<ul id="version-vsnlist" class="version-list" role="menu" aria-labelledby="version-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<li role="presentation">
+			<span id="lang-popover" class="version-btn" tabindex="0" role="button" aria-label="language selector"
+				aria-haspopup="true" aria-controls="version-langlist">
+				 en 
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Languages</div>
+				<ul id="version-langlist" class="version-list" role="menu" aria-labelledby="lang-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<template id="version-entry">
+			<li tabindex="-1" role="presentation"><a tabindex="-1" role="menuitem"></a></li>
+			<li class="selected" tabindex="-1" role="presentation"><span tabindex="-1" aria-current="page"></spanp></li>
+		</template>
+	</ul>
+<template id="version-warning">
+	<div class="admonition warning">
+		<p class="first admonition-title">Note</p>
+		<p class="last">
+			You are not using the most up to date version of the documentation.
+			<a href="#"></a> is the newest version.
+		</p>
+	</div>
+</template>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1418081-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1418081-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

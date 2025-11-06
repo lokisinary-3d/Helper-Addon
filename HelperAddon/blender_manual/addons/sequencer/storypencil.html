@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Storypencil &mdash; Blender Manual</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme_overrides.css?v=8da28a04" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/version_switch.css?v=74ca2809" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.blender.org/manual/en/latest/addons/sequencer/storypencil.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=715c20a1"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/version_switch.js?v=5cbd935e"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Blender Manual"
+          href="../../_static/opensearch.xml"/>
+<link rel="alternate" hreflang="en" href="https://docs.blender.org/manual/en/latest/" />
+<link rel="alternate" hreflang="ar" href="https://docs.blender.org/manual/ar/latest/" />
+<link rel="alternate" hreflang="de" href="https://docs.blender.org/manual/de/latest/" />
+<link rel="alternate" hreflang="es" href="https://docs.blender.org/manual/es/latest/" />
+<link rel="alternate" hreflang="fi" href="https://docs.blender.org/manual/fi/latest/" />
+<link rel="alternate" hreflang="fr" href="https://docs.blender.org/manual/fr/latest/" />
+<link rel="alternate" hreflang="id" href="https://docs.blender.org/manual/id/latest/" />
+<link rel="alternate" hreflang="it" href="https://docs.blender.org/manual/it/latest/" />
+<link rel="alternate" hreflang="ja" href="https://docs.blender.org/manual/ja/latest/" />
+<link rel="alternate" hreflang="ko" href="https://docs.blender.org/manual/ko/latest/" />
+<link rel="alternate" hreflang="nb" href="https://docs.blender.org/manual/nb/latest/" />
+<link rel="alternate" hreflang="pt" href="https://docs.blender.org/manual/pt/latest/" />
+<link rel="alternate" hreflang="ru" href="https://docs.blender.org/manual/ru/latest/" />
+<link rel="alternate" hreflang="sk" href="https://docs.blender.org/manual/sk/latest/" />
+<link rel="alternate" hreflang="sl" href="https://docs.blender.org/manual/sl/latest/" />
+<link rel="alternate" hreflang="sr" href="https://docs.blender.org/manual/sr/latest/" />
+<link rel="alternate" hreflang="uk" href="https://docs.blender.org/manual/uk/latest/" />
+<link rel="alternate" hreflang="vi" href="https://docs.blender.org/manual/vi/latest/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://docs.blender.org/manual/zh-hans/latest/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://docs.blender.org/manual/zh-hant/latest/" />
+<link rel="alternate" hreflang="x-default" href="https://docs.blender.org/manual/en/latest/" />
+
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="System" href="../system/index.html" />
+    <link rel="prev" title="Power Sequencer" href="power_sequencer.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Blender 4.0 Manual
+              <img src="../../_static/blender-logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/about/index.html">About Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installing/index.html">Installing Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/configuration/index.html">Configuring Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/help.html">Help System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sections</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../interface/index.html">User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../editors/index.html">Editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scene_layout/index.html">Scenes &amp; Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modeling/index.html">Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sculpt_paint/index.html">Sculpting &amp; Painting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../grease_pencil/index.html">Grease Pencil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../animation/index.html">Animation &amp; Rigging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../physics/index.html">Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../render/index.html">Rendering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../compositing/index.html">Compositing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../movie_clip/index.html">Motion Tracking &amp; Masking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../video_editing/index.html">Video Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../files/index.html">Assets, Files, &amp; Data System</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Add-ons</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#add-ons-category-listings">Add-ons Category Listings</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../3d_view/index.html">3D View</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../add_curve/index.html">Add Curve</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../add_mesh/index.html">Add Mesh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../animation/index.html">Animation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../baking/index.html">Baking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../camera/index.html">Camera</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../development/index.html">Development</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../import_export/index.html">Import-Export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../interface/index.html">Interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lighting/index.html">Lighting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../materials/index.html">Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mesh/index.html">Mesh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../node/index.html">Node</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../object/index.html">Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../paint/index.html">Paint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../render/index.html">Render</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rigging/index.html">Rigging</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">Sequencer</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="power_sequencer.html">Power Sequencer</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Storypencil</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#activation">Activation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#usage">Usage</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#new">New</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#edit">Edit</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="#new-window-mode">New Window mode</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#switching-mode">Switching mode</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="#render">Render</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#settings">Settings</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#edit-scenes">Edit Scenes</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#new-scenes">New Scenes</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#render-strips">Render Strips</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#general">General</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../system/index.html">System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../uv/index.html">UV</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video_tools/index.html">Video Tools</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/index.html">Advanced</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Manual Index</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get Involved</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribute Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Blender 4.0 Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Add-ons</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Sequencer</a></li>
+      <li class="breadcrumb-item active">Storypencil</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="storypencil">
+<h1>Storypencil<a class="headerlink" href="#storypencil" title="Link to this heading"></a></h1>
+<p>Storypencil is an add-on that adds tools to help the storyboarding workflow using the video sequencer.
+It adds many features to help adding, editing and rendering linked scenes.</p>
+<figure class="align-right">
+<a class="reference internal image-reference" href="../../_images/addons_sequencer_storypencil_panel.png"><img alt="../../_images/addons_sequencer_storypencil_panel.png" src="../../_images/addons_sequencer_storypencil_panel.png" style="width: 285px;" /></a>
+</figure>
+<section id="activation">
+<h2>Activation<a class="headerlink" href="#activation" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Open Blender and go to Edit Menu, Preferences, then Add-ons.</p></li>
+<li><p>Search for Storypencil, and activate the add-on.</p></li>
+</ul>
+</section>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
+<p>After activating the add-on, it will place buttons on the video sequencer header to control the linked Scenes Strips:
+Edit, New and Render.</p>
+<p>In the video Sequencer sidebar you will find a Storypencil tab with all the Settings for the add-on.</p>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
+<p>With the 2D Animation Template in Draw Mode, you can use the menu located in the
+<span class="menuselection">3D Viewport ‣ Draw ‣ Setup Storyboard Session</span>
+and the add-on will take care to set up all the general settings and create the work-spaces and Scenes needed for the
+storyboard session.</p>
+<p>Use the main buttons on the video sequencer header to add, edit and render Scene Strips.</p>
+<section id="new">
+<h3>New<a class="headerlink" href="#new" title="Link to this heading"></a></h3>
+<p>Add a new Scene Strip to the active channel based on the Base Scene selected in the add-on settings.
+The name of the new Scene Strip will use the prefix and suffix established on the settings.</p>
+</section>
+<section id="edit">
+<h3>Edit<a class="headerlink" href="#edit" title="Link to this heading"></a></h3>
+<p>Opens the linked source scene under the timeline cursor in the video sequencer.
+There are two modes for editing source scenes, you can select the mode under Edit Scenes section in the Stoypencil
+panel.</p>
+<section id="new-window-mode">
+<h4>New Window mode<a class="headerlink" href="#new-window-mode" title="Link to this heading"></a></h4>
+<p>Storypencil will open the source scene in a new window keeping their timelines synchronized.
+When you finish editing the source scene you can close the opened window or keep it opened and control the timeline in
+the video sequencer to change to another scene.</p>
+<p>This method is best suited when using multiple monitors.</p>
+</section>
+<section id="switching-mode">
+<h4>Switching mode<a class="headerlink" href="#switching-mode" title="Link to this heading"></a></h4>
+<p>Storypencil will open the source scene switching to the proper Workspace at the same video sequencer cursor position.
+When you finish editing the source scene you can return to the video Sequencer using the Back button on the Dope Sheet
+header in the source scene Workspace.</p>
+<p>Stoypencil will also temporarily copy the audio from the video sequencer edit to the source scene.
+This makes it easy to work on the scene with the audio in sync and without having to go back to the video sequencer
+each time.</p>
+<p>This method is best suited when using only one monitor.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>There is still a known issue when the Add-on is used together with a scene pinned to a workspace.
+Synchronization between scenes may fail.</p>
+</div>
+</section>
+</section>
+<section id="render">
+<h3>Render<a class="headerlink" href="#render" title="Link to this heading"></a></h3>
+<p>Render all or only selected scene strips, depending on the Add-on Render Strips settings.</p>
+</section>
+</section>
+<section id="settings">
+<h2>Settings<a class="headerlink" href="#settings" title="Link to this heading"></a></h2>
+<section id="edit-scenes">
+<h3>Edit Scenes<a class="headerlink" href="#edit-scenes" title="Link to this heading"></a></h3>
+<dl class="simple">
+<dt>Mode</dt><dd><p>Set the mode to use while working with Storypencil</p>
+</dd>
+<dt>Show Strip Range</dt><dd><p>When enabled, shows the IN/OUT range from the video sequencer in the scene dope sheet of the source scene. (Green
+and red lines)</p>
+</dd>
+<dt>Timeline Synchronization (New Window Mode)</dt><dd><p>When enabled, keeps the video sequencer and source scene timelines in sync.</p>
+</dd>
+<dt>Audio Copy to Scene (Switch Mode)</dt><dd><p>Temporally copy the audio from the video sequencer to the source scene.</p>
+</dd>
+<dt>Audio Ignore Muted Sound (Switch Mode)</dt><dd><p>When copy the audio ignore the muted audio strips.</p>
+</dd>
+</dl>
+</section>
+<section id="new-scenes">
+<h3>New Scenes<a class="headerlink" href="#new-scenes" title="Link to this heading"></a></h3>
+<dl class="simple">
+<dt>Name Prefix</dt><dd><p>Prefix that will be added to the name of new Scene Strips.</p>
+</dd>
+<dt>Name Suffix</dt><dd><p>Suffix that will be added to the name of new Scene Strips.</p>
+</dd>
+<dt>Frames</dt><dd><p>Duration in frames for the new Scene Strips.</p>
+</dd>
+<dt>Template Scene</dt><dd><p>The Scene used as base for Scene Strips.
+In this template Scene you can setup cameras, Grease Pencil objects,
+background objects, etc. to avoid start from scratch every time.</p>
+</dd>
+</dl>
+</section>
+<section id="render-strips">
+<h3>Render Strips<a class="headerlink" href="#render-strips" title="Link to this heading"></a></h3>
+<p>If the render format is Movie the add-on will render one Movie clip per Scene strip using the video sequencer render
+settings. All rendered Movies will be imported (if Import Rendered Strips setting is enabled) as Movie clips on the
+selected channel.</p>
+<p>If the render format is Image the add-on will render one image on each keyframe found in the source scene of the
+Scene strip using the video sequencer render settings. All rendered Images will be imported (if Import Rendered
+Strips setting is enabled) as Image Strips on the selected channel, the length used for the imported Image Clip will
+correspond to the gap between keyframes.</p>
+<dl class="simple">
+<dt>Output Path</dt><dd><p>Directory name where rendered video or images will be saved.</p>
+</dd>
+<dt>Render Only Selected Strips</dt><dd><p>When enabled, only the selected Scene Strips will be rendered.</p>
+</dd>
+<dt>File Format</dt><dd><p>Select the File Format to render the Scene Strips.</p>
+</dd>
+<dt>Container</dt><dd><p>Output file container to use.</p>
+</dd>
+<dt>Audio Codec</dt><dd><p>FFmpeg audio codec to use.</p>
+</dd>
+<dt>Import Rendered Strips</dt><dd><p>When enabled, The Movie clips or images generated will be imported after rendered.</p>
+</dd>
+<dt>Channel</dt><dd><p>The Channel to use for Movie clips or images imported after rendered.</p>
+</dd>
+<dt>Image Steps</dt><dd><p>If greater than 0, when rendering images sets the number of images to generate between keyframes.</p>
+</dd>
+<dt>Image Numbering</dt><dd><p>Sets the Numbering format for the generated images to use.</p>
+</dd>
+<dt>Folder by Strip</dt><dd><p>When enabled, saves the images to the Output Path inside different folders with the Scene Strip name.</p>
+</dd>
+</dl>
+</section>
+<section id="general">
+<h3>General<a class="headerlink" href="#general" title="Link to this heading"></a></h3>
+<dl class="simple">
+<dt>VSE Workspace</dt><dd><p>Workspace to use for video editing.</p>
+</dd>
+<dt>VSE Scene</dt><dd><p>Scene to use as the main video editing scene.</p>
+</dd>
+<dt>Drawing Workspace</dt><dd><p>Workspace to use for edit the source scenes.</p>
+</dd>
+</dl>
+<div class="refbox admonition" id="id1">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Category<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Sequencer</p>
+</dd>
+<dt class="field-even">Description<span class="colon">:</span></dt>
+<dd class="field-even"><p>Storyboard tools.</p>
+</dd>
+<dt class="field-odd">Location<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Video Sequencer</p>
+</dd>
+<dt class="field-even">File<span class="colon">:</span></dt>
+<dd class="field-even"><p>Storypencil folder</p>
+</dd>
+<dt class="field-odd">Author<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Antonio Vazquez, Matias Mendiola, Daniel Martinez Lara, Rodrigo Blaas</p>
+</dd>
+<dt class="field-even">Note<span class="colon">:</span></dt>
+<dd class="field-even"><p>This add-on is bundled with Blender.</p>
+</dd>
+</dl>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="power_sequencer.html" class="btn btn-neutral float-left" title="Power Sequencer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../system/index.html" class="btn btn-neutral float-right" title="System" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../copyright.html">Copyright</a> : This page is licensed under a CC-BY-SA 4.0 Int. License.
+      <span class="lastupdated">Last updated on 12/17/2023.
+      </span></p>
+  </div>
+
+  
+<div class="footer-contribute">
+   <ul>
+      <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/addons/sequencer/storypencil.rst"
+            class="fa fa-edit"> View Source</a>
+      </li>
+      <!-- <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/addons/sequencer/storypencil.rst"
+            class="fa fa-edit"> Edit Page</a>
+      </li> -->
+      <li>
+         <a href="https://projects.blender.org/blender/documentation/issues/new?template=.gitea/issue_template/bug.yaml&field:body=%2A%2APage+Information%2A%2A%0D%0AFile%3A+%60manual%2Faddons/sequencer/storypencil.rst%60%0D%0ABlender+Version%3A+%604.0%60%0D%0ADocumentation+Language%3A+%60en%60%0D%0A%5BPermanent+Link%5D%28https%3A%2F%2Fdocs.blender.org%2Fmanual%2Fen%2F4.0%2Faddons/sequencer/storypencil.html%29%0D%0A%0D%0A%2A%2AShort+description+of+error%2A%2A%0D%0A%5BPlease+fill+out+a+short+description+of+the+error+here%5D%0D%0A"
+            class="fa fa-bug"> Report issue on this page</a>
+      </li>
+      <ul>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="document versions">
+	<ul id="versionwrap" role="presentation">
+		<li role="presentation">
+			<span id="version-popover" class="version-btn" tabindex="0" role="button" aria-label="versions selector"
+				aria-haspopup="true" aria-controls="version-vsnlist" aria-disabled="true">
+				4.0
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Versions</div>
+				<ul id="version-vsnlist" class="version-list" role="menu" aria-labelledby="version-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<li role="presentation">
+			<span id="lang-popover" class="version-btn" tabindex="0" role="button" aria-label="language selector"
+				aria-haspopup="true" aria-controls="version-langlist">
+				 en 
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Languages</div>
+				<ul id="version-langlist" class="version-list" role="menu" aria-labelledby="lang-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<template id="version-entry">
+			<li tabindex="-1" role="presentation"><a tabindex="-1" role="menuitem"></a></li>
+			<li class="selected" tabindex="-1" role="presentation"><span tabindex="-1" aria-current="page"></spanp></li>
+		</template>
+	</ul>
+<template id="version-warning">
+	<div class="admonition warning">
+		<p class="first admonition-title">Note</p>
+		<p class="last">
+			You are not using the most up to date version of the documentation.
+			<a href="#"></a> is the newest version.
+		</p>
+	</div>
+</template>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1418081-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1418081-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

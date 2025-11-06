@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pose Library &mdash; Blender Manual</title>
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme_overrides.css?v=8da28a04" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/version_switch.css?v=74ca2809" />
+
+  
+    <link rel="shortcut icon" href="../../../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.blender.org/manual/en/latest/animation/armatures/posing/editing/pose_library.html" />
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../../_static/documentation_options.js?v=715c20a1"></script>
+        <script src="../../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../../_static/js/version_switch.js?v=5cbd935e"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Blender Manual"
+          href="../../../../_static/opensearch.xml"/>
+<link rel="alternate" hreflang="en" href="https://docs.blender.org/manual/en/latest/" />
+<link rel="alternate" hreflang="ar" href="https://docs.blender.org/manual/ar/latest/" />
+<link rel="alternate" hreflang="de" href="https://docs.blender.org/manual/de/latest/" />
+<link rel="alternate" hreflang="es" href="https://docs.blender.org/manual/es/latest/" />
+<link rel="alternate" hreflang="fi" href="https://docs.blender.org/manual/fi/latest/" />
+<link rel="alternate" hreflang="fr" href="https://docs.blender.org/manual/fr/latest/" />
+<link rel="alternate" hreflang="id" href="https://docs.blender.org/manual/id/latest/" />
+<link rel="alternate" hreflang="it" href="https://docs.blender.org/manual/it/latest/" />
+<link rel="alternate" hreflang="ja" href="https://docs.blender.org/manual/ja/latest/" />
+<link rel="alternate" hreflang="ko" href="https://docs.blender.org/manual/ko/latest/" />
+<link rel="alternate" hreflang="nb" href="https://docs.blender.org/manual/nb/latest/" />
+<link rel="alternate" hreflang="pt" href="https://docs.blender.org/manual/pt/latest/" />
+<link rel="alternate" hreflang="ru" href="https://docs.blender.org/manual/ru/latest/" />
+<link rel="alternate" hreflang="sk" href="https://docs.blender.org/manual/sk/latest/" />
+<link rel="alternate" hreflang="sl" href="https://docs.blender.org/manual/sl/latest/" />
+<link rel="alternate" hreflang="sr" href="https://docs.blender.org/manual/sr/latest/" />
+<link rel="alternate" hreflang="uk" href="https://docs.blender.org/manual/uk/latest/" />
+<link rel="alternate" hreflang="vi" href="https://docs.blender.org/manual/vi/latest/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://docs.blender.org/manual/zh-hans/latest/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://docs.blender.org/manual/zh-hant/latest/" />
+<link rel="alternate" hreflang="x-default" href="https://docs.blender.org/manual/en/latest/" />
+
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../../../copyright.html" />
+    <link rel="next" title="Flip Quats" href="flip_quats.html" />
+    <link rel="prev" title="Copy/Paste Pose" href="copy_paste.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            Blender 4.0 Manual
+              <img src="../../../../_static/blender-logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting_started/about/index.html">About Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting_started/installing/index.html">Installing Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting_started/configuration/index.html">Configuring Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting_started/help.html">Help System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sections</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../interface/index.html">User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../editors/index.html">Editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../scene_layout/index.html">Scenes &amp; Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modeling/index.html">Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../sculpt_paint/index.html">Sculpting &amp; Painting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../grease_pencil/index.html">Grease Pencil</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Animation &amp; Rigging</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../keyframes/index.html">Keyframes</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html">Armatures</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../introduction.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../bones/index.html">Bones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../properties/index.html">Properties</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../structure.html">Structure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../skinning/index.html">Skinning</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html">Posing</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../selecting.html">Selecting</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">Editing</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l5"><a class="reference internal" href="clear.html">Clear Transform</a></li>
+<li class="toctree-l5"><a class="reference internal" href="apply.html">Apply</a></li>
+<li class="toctree-l5"><a class="reference internal" href="in_betweens.html">In-Betweens</a></li>
+<li class="toctree-l5"><a class="reference internal" href="propagate.html">Propagate</a></li>
+<li class="toctree-l5"><a class="reference internal" href="copy_paste.html">Copy/Paste Pose</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">Pose Library</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#what-is-a-pose-asset">What is a Pose Asset?</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#creating-a-pose-library">Creating a Pose Library</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="#pose-creation-via-action-editor">Pose Creation via Action Editor</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#pose-creation-from-existing-animation">Pose Creation from Existing Animation</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#pose-creation-by-copying-from-other-file">Pose Creation by Copying from Other File</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#automatically-assigned-catalog">Automatically Assigned Catalog</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#controlling-the-look-of-preview-images">Controlling the Look of Preview Images</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#scene-animation-for-preview-images">Scene Animation for Preview Images</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="#using-the-pose-library">Using the Pose Library</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="#use-from-the-asset-browser">Use from the Asset Browser</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#use-from-3d-viewport">Use from 3D Viewport</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="#old-pose-library">Old Pose Library</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="#converting-old-pose-libraries">Converting Old Pose Libraries</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="flip_quats.html">Flip Quats</a></li>
+<li class="toctree-l5"><a class="reference internal" href="show_hide.html">Show/Hide</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../tool_settings.html">Tool Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../bone_constraints/index.html">Bone Constraints</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../lattice.html">Lattice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../constraints/index.html">Constraints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../actions.html">Actions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../drivers/index.html">Drivers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../markers.html">Markers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../shape_keys/index.html">Shape Keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../motion_paths.html">Motion Paths</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../physics/index.html">Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../render/index.html">Rendering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../compositing/index.html">Compositing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../movie_clip/index.html">Motion Tracking &amp; Masking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../video_editing/index.html">Video Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../files/index.html">Assets, Files, &amp; Data System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../addons/index.html">Add-ons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../advanced/index.html">Advanced</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../troubleshooting/index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../glossary/index.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../genindex.html">Manual Index</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get Involved</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../contribute/index.html">Contribute Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Blender 4.0 Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../index.html">Animation &amp; Rigging</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Armatures</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Posing</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Editing</a></li>
+      <li class="breadcrumb-item active">Pose Library</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pose-library">
+<span id="bpy-ops-poselib"></span><h1>Pose Library<a class="headerlink" href="#pose-library" title="Link to this heading"></a></h1>
+<p>This section describes the pose library, which is based on the <a class="reference internal" href="../../../../editors/asset_browser.html"><span class="doc">Asset Browser</span></a>.
+For an overview of the asset system, see the <a class="reference internal" href="../../../../files/asset_libraries/index.html"><span class="doc">Asset Libraries</span></a> section.
+The pose library is meant to be used in Pose Mode. In other words, it only works
+when posing an armature, and not for general object animation.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The pose library is implemented as an add-on. This add-on is enabled by
+default; disabling it will remove the pose library from Blender’s user
+interface.</p>
+<p>The “building blocks” of the pose library are actually implemented in Blender
+itself. The add-on only contains the user interface and the logic that
+determines what is stored in a pose asset. This was intentionally put into an
+add-on, so that artists or studios who want to change the behavior can do
+so with an add-on of their own.</p>
+</div>
+<section id="what-is-a-pose-asset">
+<h2>What is a Pose Asset?<a class="headerlink" href="#what-is-a-pose-asset" title="Link to this heading"></a></h2>
+<p>A <em>pose asset</em> is an action that has been <a class="reference internal" href="../../../../files/asset_libraries/introduction.html#asset-create"><span class="std std-ref">marked as asset</span></a>,
+and that contains exactly <strong>one frame of animation</strong> data.
+Usually these are created via the <em>Create Pose Asset</em> button (see below),
+but any action that is keyed on exactly one frame can be seen as pose asset.</p>
+<p>Each pose in the library is stored in its own action data-block.
+This means that it can get its own name, its own preview image,
+and can be organized in <a class="reference internal" href="../../../../files/asset_libraries/catalogs.html"><span class="doc">Asset Catalogs</span></a>.</p>
+</section>
+<section id="creating-a-pose-library">
+<span id="bpy-ops-poselib-create-pose-asset"></span><h2>Creating a Pose Library<a class="headerlink" href="#creating-a-pose-library" title="Link to this heading"></a></h2>
+<p>A <em>pose library file</em> is typically a blend-file that is dedicated to poses.
+It can link in a character, props, etc., which can then not only be used to create the poses,
+but also for <a class="reference internal" href="#poselib-preview-images"><span class="std std-ref">rendering previews</span></a>.</p>
+<figure class="align-default" id="id1">
+<img alt="../../../../_images/asset_browser-pose_library_ellie.png" src="../../../../_images/asset_browser-pose_library_ellie.png" />
+<figcaption>
+<p><span class="caption-text">Example pose library of the Sprite Fright character Ellie.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<section id="pose-creation-via-action-editor">
+<h3>Pose Creation via Action Editor<a class="headerlink" href="#pose-creation-via-action-editor" title="Link to this heading"></a></h3>
+<p>To create a pose in the library from the Action Editor, <strong>pose the character,
+select the relevant bones</strong>, and click the <em>Create Pose Asset</em> button.
+This will create the new pose Action, which will contain keys for the current value of
+each bone’s location, rotation, scale, and Bendy Bone properties.</p>
+<figure class="align-default" id="id2">
+<img alt="../../../../_images/asset_browser-pose_library-create_from_action_editor.png" src="../../../../_images/asset_browser-pose_library-create_from_action_editor.png" />
+<figcaption>
+<p><span class="caption-text">To create a new pose asset, use the Create Pose Asset button in the Action editor.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>The created Action is now assigned to the armature.</strong>
+This makes it possible to inspect which bones are included and to tweak anything.
+In that respect, it’s an Action like any other, and you can add or remove keys as usual.
+Just make sure that the keys are all on the same frame, in order to keep this a “pose”
+instead of an “animation snippet”; the latter isn’t supported at the moment.</p>
+<p>True to its name, the <em>Create Pose Asset</em> button automatically marks the Action as Asset.
+Not only does this make it available in the pose library, it will also act as a <em>fake user</em>
+to ensure the Action isn’t lost after you unassign it from the armature.</p>
+<p>The pose asset can be renamed in the Asset Browser. There you can also right
+click on the thumbnail, then choose Assign Action to assign the Action to the
+active Object (see description above).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>Create Pose Asset</strong> button creates a new Action. To make sure that this
+is actually visible in the user interface, so that you know that something happened,
+it tries to make sure that the Asset Browser shows the newly created pose asset.
+Because of this, it <strong>requires that there is an Asset Browser visible,
+and that it’s set to show the Current File asset library</strong>.</p>
+<p>This is especially relevant to pose assets, compared to other assets.
+You cannot mark an object as asset multiple times, but you can create ten pose assets
+from the same character pose.</p>
+</div>
+</section>
+<section id="pose-creation-from-existing-animation">
+<span id="bpy-ops-poselib-restore-previous-action"></span><h3>Pose Creation from Existing Animation<a class="headerlink" href="#pose-creation-from-existing-animation" title="Link to this heading"></a></h3>
+<p>Animators eat and breathe time, so there is a fair chance that you already have
+some poses lined up on the timeline. Creating a pose asset from existing animation
+is pretty much the same as described above, with a few subtle differences:</p>
+<ul class="simple">
+<li><p>Go to the frame with the pose you want to turn into an asset.</p></li>
+<li><p>Select the relevant bones and click the <strong>Create Pose Asset button</strong> in the Action Editor.</p></li>
+<li><p>This creates an Action as before, but this time
+<strong>it also includes any bone property that was keyed on the current frame</strong>.
+In other words: any bone property (regular and custom) that’s displayed in
+yellow in the user interface will be included in the pose asset.
+This makes it possible to also include properties that control IK/FK switching,
+for example. As with the pose, the current value is copied into the pose asset,
+and not the keyed value.</p></li>
+<li><p>Blender saves which action was previously assigned to the armature.</p></li>
+<li><p>The new pose Action is assigned to the armature so you can give it a name and
+inspect/adjust its contents.</p></li>
+<li><p>Click the <em>Restore Previous Action</em> button (back arrow icon) that appeared
+next to the Create Pose Asset button. This <strong>reassigns the previous Action</strong>,
+so that you’re back at the animation you had before.</p></li>
+</ul>
+</section>
+<section id="pose-creation-by-copying-from-other-file">
+<span id="bpy-ops-poselib-copy-as-asset"></span><h3>Pose Creation by Copying from Other File<a class="headerlink" href="#pose-creation-by-copying-from-other-file" title="Link to this heading"></a></h3>
+<p>As described in <a class="reference internal" href="../../../../files/asset_libraries/introduction.html#asset-libraries-design-limitations"><span class="std std-ref">Design Limitations</span></a>, Blender only writes
+data to the currently open blend-file. To copy a pose from some other file into
+a pose library file, see the following steps:</p>
+<ul class="simple">
+<li><p>Pose the character and select the relevant bones.</p></li>
+<li><p>Click the <strong>Copy Pose as Asset button</strong>, which is available in the Action Editor. This will create the pose asset
+(including its thumbnail) and store it in a temporary file somewhere.</p></li>
+<li><p>Choose an existing pose asset, and open its context menu. Click the <strong>Open Blend File</strong> option.</p></li>
+<li><p>A new Blender process will start, and automatically open the asset library
+file that contains the chosen pose. By the way, this works for all assets, not just poses!</p></li>
+<li><p>In the Asset Browser, click the <strong>Paste as New Asset button</strong>. This will load that temporary file,
+and load all the assets it can find in there. In our case, it will only find a single pose,
+but future versions of Blender may extend this for other asset types.
+This is why the button is named so generically – it is not pose-specific.</p></li>
+<li><p>Give the pose a name, and click on the “refresh” button in the preview image panel
+to render a new preview if you want.</p></li>
+<li><p><strong>Save the file and quit Blender</strong>.</p></li>
+<li><p>The original Blender is still running in the background and notices that the new Blender has quit.
+It <strong>automatically refreshes the Asset Browser</strong> to show the newly added pose.</p></li>
+</ul>
+</section>
+<section id="automatically-assigned-catalog">
+<h3>Automatically Assigned Catalog<a class="headerlink" href="#automatically-assigned-catalog" title="Link to this heading"></a></h3>
+<p>When you create a pose asset, Blender may automatically assign it to an asset catalog.
+This only works if there is an Asset Browser visible;
+Blender then assigns the pose asset to its active asset catalog.
+If there are multiple Asset Browsers open, it performs the following steps:</p>
+<ul class="simple">
+<li><p>If the current window has one Asset Browser, it uses that one.</p></li>
+<li><p>If the current window has multiple Asset Browsers, it uses the biggest one.</p></li>
+<li><p>Otherwise Blender goes over the other windows (if there are any), and do a similar search.
+The first window it sees that has an Asset Browser wins.</p></li>
+</ul>
+</section>
+<section id="controlling-the-look-of-preview-images">
+<span id="poselib-preview-images"></span><h3>Controlling the Look of Preview Images<a class="headerlink" href="#controlling-the-look-of-preview-images" title="Link to this heading"></a></h3>
+<p>The pose library preview images are rendered with the active <a class="reference internal" href="../../../../scene_layout/scene/properties.html#bpy-types-scene-camera"><span class="std std-ref">Scene camera</span></a>.
+This approach was preferred over rendering a specific 3D Viewport for two main reasons:</p>
+<ul class="simple">
+<li><p>There is only one scene camera active at any time, making it predictable which camera is used.</p></li>
+<li><p>The camera, as well as the rest of the scene, can be set up specifically for rendering the thumbnails.
+Pose library files are intended for that purpose: to contain the poses and render their preview images.</p></li>
+</ul>
+<p>The preview images are rendered using the <a class="reference internal" href="../../../../render/workbench/index.html"><span class="doc">Workbench Engine</span></a>.
+Switch the scene to use that as render engine, and you’ll see various options to influence the look.
+Select a pose asset and press the Generate Preview button to re-render the preview image with the current settings.</p>
+<p>You can also animate settings such as MatCap rendering, light positions, and intensities, etc.
+Use this to your advantage!</p>
+</section>
+<section id="scene-animation-for-preview-images">
+<h3>Scene Animation for Preview Images<a class="headerlink" href="#scene-animation-for-preview-images" title="Link to this heading"></a></h3>
+<p>Sometimes it’s handy to have a few different background colors or camera angles
+for your poses. Many facial poses are made with a specific camera angle in mind.</p>
+<ul class="simple">
+<li><p>Background color can be animated by placing a plane behind the character and animating its material.
+In this case just for fun, but for more serious applications
+this could be used to indicate a certain character, or a mood, or anything else.</p></li>
+<li><p>The active camera can be switched by using <a class="reference internal" href="../../../markers.html#bpy-ops-marker-camera-bind"><span class="std std-ref">camera markers</span></a>.</p></li>
+</ul>
+<p>Both make it possible to choose a specific frame to pick the background color and camera angle.
+Pose the character, click the <em>Create Pose Asset</em> button,
+and the pose action will be keyed on the current frame.
+This means it’s easy to edit the pose and refresh its preview image,
+because you know exactly which frame it was originally created on.</p>
+</section>
+</section>
+<section id="using-the-pose-library">
+<h2>Using the Pose Library<a class="headerlink" href="#using-the-pose-library" title="Link to this heading"></a></h2>
+<p>The pose library can be used to pose a character in a few different ways.
+In short, you can fully apply a pose or blend it into the character’s current pose interactively.
+How exactly these operations work depends on where you use them.
+This section will explain the use from both the Asset Browser and the 3D Viewport.</p>
+<section id="use-from-the-asset-browser">
+<h3>Use from the Asset Browser<a class="headerlink" href="#use-from-the-asset-browser" title="Link to this heading"></a></h3>
+<p>The pose library can be used directly from the Asset Browser.
+The <strong>Pose Library panels will appear</strong> when the active object is an armature
+and in Pose Mode. The <a class="reference internal" href="../../../../files/asset_libraries/catalogs.html"><span class="doc">catalog system</span></a>
+and the filter bar at the top can be used to search for specific poses.</p>
+<p>The following operators can be accessed by <kbd class="kbd docutils literal notranslate">RMB</kbd> on a pose:</p>
+<dl class="simple" id="bpy-ops-poselib-apply-pose-asset">
+<dt>Apply Pose</dt><dd><p>Applies the pose to the character. If there are any bones selected,
+the pose will be applied only to those bones. This makes it possible to
+create a “finger guns” pose by applying a fist pose to the hand,
+and then an “open hand” pose for only the index finger and thumb.
+Double-clicking a pose will also apply it.</p>
+</dd>
+<dt>Apply Pose Flipped</dt><dd><p>Will mirror the pose from left to right and vice versa. This makes it
+possible, for example, to apply a left-hand pose to the right hand, reducing
+the number of poses you have to put into the library. This can of course also
+be applied for asymmetrical facial expressions that depend on the camera
+angle. While blending (see below), keep <kbd class="kbd docutils literal notranslate">Ctrl</kbd> pressed to blend the flipped pose.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-ops-poselib-blend-pose-asset">
+<dt>Blend Pose</dt><dd><p>Allows you to gradually blend a pose from the library into the character’s pose.
+Click the button, then move the mouse left/right to determine the desired blend.
+A pose asset can be “subtracted” while blending. Drag to the right to blend as usual, drag to the left to subtract
+the pose. While blending, you can use <kbd class="kbd docutils literal notranslate">Tab</kbd> to toggle between the original and the blended pose.
+As usual in Blender, <kbd class="kbd docutils literal notranslate">LMB</kbd> or press <kbd class="kbd docutils literal notranslate">Return</kbd> to confirm; <kbd class="kbd docutils literal notranslate">RMB</kbd> or press <kbd class="kbd docutils literal notranslate">Esc</kbd> to cancel the
+operator. Blending can also exaggerate a pose, by pressing <kbd class="kbd docutils literal notranslate">E</kbd> (for Extrapolate) and applying a pose for more
+than 100%.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-ops-poselib-pose-asset-select-bones">
+<dt>Select/Deselect Pose Bones</dt><dd><p>Select or deselect the bones that are used in the pose. This can be used to create a selection set,
+or simply show what was part of the pose and what wasn’t.</p>
+</dd>
+</dl>
+</section>
+<section id="use-from-3d-viewport">
+<span id="pose-library-from-viewport"></span><h3>Use from 3D Viewport<a class="headerlink" href="#use-from-3d-viewport" title="Link to this heading"></a></h3>
+<figure class="align-default" id="id3">
+<img alt="../../../../_images/asset_browser-pose_library-use_from_viewport.png" src="../../../../_images/asset_browser-pose_library-use_from_viewport.png" />
+<figcaption>
+<p><span class="caption-text">The pose library in use from the Asset Shelf.</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The pose library previously lived in the Sidebar within the Pose Library panel.
+The panel still exists, but now contains a button to open the asset shelf.</p>
+</div>
+<p>In the 3D viewport, poses can be quickly applied from the <a class="reference internal" href="../../../../interface/window_system/regions.html#ui-region-asset-shelf"><span class="std std-ref">Asset Shelf</span></a>.
+Contrary to the Asset Browser, the shelf allows you to apply poses quicker.</p>
+<p><strong>Click on a pose to apply it.</strong> A single click is enough.
+You can also select and apply a pose via the cursor keys.
+This allows for fast exploration of the poses,
+to directly see the result on the active character.</p>
+<p><strong>Drag the pose thumbnail left to right to blend it</strong> into the character’s current pose.
+Just release the mouse button to confirm.</p>
+</section>
+</section>
+<section id="old-pose-library">
+<span id="pose-library-old"></span><h2>Old Pose Library<a class="headerlink" href="#old-pose-library" title="Link to this heading"></a></h2>
+<p>In Blender 3.0, the Asset Browser based pose library, described above, replaced
+its predecessor pose library system. This section describes how to convert poses
+from the old pose library to the current system.</p>
+<section id="converting-old-pose-libraries">
+<span id="bpy-ops-poselib-convert-old-poselib"></span><span id="pose-library-convert-old"></span><h3>Converting Old Pose Libraries<a class="headerlink" href="#converting-old-pose-libraries" title="Link to this heading"></a></h3>
+<p>Old-style pose libraries can be converted to pose assets in the following way:</p>
+<ul class="simple">
+<li><p>In the Action Editor, select the Action containing the pose library you want to convert.</p></li>
+<li><p>Make sure the scene camera is set up correctly for rendering preview images.</p></li>
+<li><p>In the Action Editor’s Pose Library panel, click the “Convert Old-Style Pose Library” button.</p></li>
+<li><p>Open the Asset Browser, and see the poses have been converted.</p></li>
+<li><p>If you’re happy with the result, remove the old pose library Action.</p></li>
+<li><p>Save the blend-file.</p></li>
+</ul>
+<p>As usual, the blend-file should be saved to a directory marked as asset library
+in order to use the pose assets from other blend-files.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This conversion does not assign the poses to any catalog, and so they will
+appear in the “Unassigned” section of the “Current File” asset library.</p>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="copy_paste.html" class="btn btn-neutral float-left" title="Copy/Paste Pose" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="flip_quats.html" class="btn btn-neutral float-right" title="Flip Quats" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../../../copyright.html">Copyright</a> : This page is licensed under a CC-BY-SA 4.0 Int. License.
+      <span class="lastupdated">Last updated on 12/17/2023.
+      </span></p>
+  </div>
+
+  
+<div class="footer-contribute">
+   <ul>
+      <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/animation/armatures/posing/editing/pose_library.rst"
+            class="fa fa-edit"> View Source</a>
+      </li>
+      <!-- <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/animation/armatures/posing/editing/pose_library.rst"
+            class="fa fa-edit"> Edit Page</a>
+      </li> -->
+      <li>
+         <a href="https://projects.blender.org/blender/documentation/issues/new?template=.gitea/issue_template/bug.yaml&field:body=%2A%2APage+Information%2A%2A%0D%0AFile%3A+%60manual%2Fanimation/armatures/posing/editing/pose_library.rst%60%0D%0ABlender+Version%3A+%604.0%60%0D%0ADocumentation+Language%3A+%60en%60%0D%0A%5BPermanent+Link%5D%28https%3A%2F%2Fdocs.blender.org%2Fmanual%2Fen%2F4.0%2Fanimation/armatures/posing/editing/pose_library.html%29%0D%0A%0D%0A%2A%2AShort+description+of+error%2A%2A%0D%0A%5BPlease+fill+out+a+short+description+of+the+error+here%5D%0D%0A"
+            class="fa fa-bug"> Report issue on this page</a>
+      </li>
+      <ul>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="document versions">
+	<ul id="versionwrap" role="presentation">
+		<li role="presentation">
+			<span id="version-popover" class="version-btn" tabindex="0" role="button" aria-label="versions selector"
+				aria-haspopup="true" aria-controls="version-vsnlist" aria-disabled="true">
+				4.0
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Versions</div>
+				<ul id="version-vsnlist" class="version-list" role="menu" aria-labelledby="version-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<li role="presentation">
+			<span id="lang-popover" class="version-btn" tabindex="0" role="button" aria-label="language selector"
+				aria-haspopup="true" aria-controls="version-langlist">
+				 en 
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Languages</div>
+				<ul id="version-langlist" class="version-list" role="menu" aria-labelledby="lang-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<template id="version-entry">
+			<li tabindex="-1" role="presentation"><a tabindex="-1" role="menuitem"></a></li>
+			<li class="selected" tabindex="-1" role="presentation"><span tabindex="-1" aria-current="page"></spanp></li>
+		</template>
+	</ul>
+<template id="version-warning">
+	<div class="admonition warning">
+		<p class="first admonition-title">Note</p>
+		<p class="last">
+			You are not using the most up to date version of the documentation.
+			<a href="#"></a> is the newest version.
+		</p>
+	</div>
+</template>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1418081-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1418081-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

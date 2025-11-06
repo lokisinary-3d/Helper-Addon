@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expand &mdash; Blender Manual</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=8da28a04" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/version_switch.css?v=74ca2809" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/editing/expand.html" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=715c20a1"></script>
+        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../_static/js/version_switch.js?v=5cbd935e"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Blender Manual"
+          href="../../../_static/opensearch.xml"/>
+<link rel="alternate" hreflang="en" href="https://docs.blender.org/manual/en/latest/" />
+<link rel="alternate" hreflang="ar" href="https://docs.blender.org/manual/ar/latest/" />
+<link rel="alternate" hreflang="de" href="https://docs.blender.org/manual/de/latest/" />
+<link rel="alternate" hreflang="es" href="https://docs.blender.org/manual/es/latest/" />
+<link rel="alternate" hreflang="fi" href="https://docs.blender.org/manual/fi/latest/" />
+<link rel="alternate" hreflang="fr" href="https://docs.blender.org/manual/fr/latest/" />
+<link rel="alternate" hreflang="id" href="https://docs.blender.org/manual/id/latest/" />
+<link rel="alternate" hreflang="it" href="https://docs.blender.org/manual/it/latest/" />
+<link rel="alternate" hreflang="ja" href="https://docs.blender.org/manual/ja/latest/" />
+<link rel="alternate" hreflang="ko" href="https://docs.blender.org/manual/ko/latest/" />
+<link rel="alternate" hreflang="nb" href="https://docs.blender.org/manual/nb/latest/" />
+<link rel="alternate" hreflang="pt" href="https://docs.blender.org/manual/pt/latest/" />
+<link rel="alternate" hreflang="ru" href="https://docs.blender.org/manual/ru/latest/" />
+<link rel="alternate" hreflang="sk" href="https://docs.blender.org/manual/sk/latest/" />
+<link rel="alternate" hreflang="sl" href="https://docs.blender.org/manual/sl/latest/" />
+<link rel="alternate" hreflang="sr" href="https://docs.blender.org/manual/sr/latest/" />
+<link rel="alternate" hreflang="uk" href="https://docs.blender.org/manual/uk/latest/" />
+<link rel="alternate" hreflang="vi" href="https://docs.blender.org/manual/vi/latest/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://docs.blender.org/manual/zh-hans/latest/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://docs.blender.org/manual/zh-hant/latest/" />
+<link rel="alternate" hreflang="x-default" href="https://docs.blender.org/manual/en/latest/" />
+
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="next" title="Texture Paint" href="../../texture_paint/index.html" />
+    <link rel="prev" title="Face Sets" href="face_sets.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Blender 4.0 Manual
+              <img src="../../../_static/blender-logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/about/index.html">About Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/installing/index.html">Installing Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/configuration/index.html">Configuring Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/help.html">Help System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sections</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../interface/index.html">User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../editors/index.html">Editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../scene_layout/index.html">Scenes &amp; Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../modeling/index.html">Modeling</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Sculpting &amp; Painting</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../brush/index.html">Brush</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../selection_visibility.html">Selection &amp; Visibility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../navigation.html">Navigation</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html#modes">Modes</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html">Sculpting</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../introduction/index.html">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../toolbar.html">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tools/index.html">Tools</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tool_settings/index.html">Tool Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../controls.html">Controls</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">Editing</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="sculpt.html">Sculpt</a></li>
+<li class="toctree-l5"><a class="reference internal" href="mask.html">Mask</a></li>
+<li class="toctree-l5"><a class="reference internal" href="face_sets.html">Face Sets</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">Expand</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#expand-mask-by-topology">Expand Mask by Topology</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#controls">Controls</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="#expand-mask-by-normals">Expand Mask by Normals</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#expand-face-set-by-topology">Expand Face Set by Topology</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="#id4">Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="#expand-active-face-set">Expand Active Face Set</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="#id6">Usage</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../texture_paint/index.html">Texture Paint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vertex_paint/index.html">Vertex Paint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../weight_paint/index.html">Weight Paint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../curves_sculpting/index.html">Curves Sculpting</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../grease_pencil/index.html">Grease Pencil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../animation/index.html">Animation &amp; Rigging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../physics/index.html">Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../render/index.html">Rendering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../compositing/index.html">Compositing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../movie_clip/index.html">Motion Tracking &amp; Masking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../video_editing/index.html">Video Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../files/index.html">Assets, Files, &amp; Data System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../addons/index.html">Add-ons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../advanced/index.html">Advanced</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../troubleshooting/index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../glossary/index.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../genindex.html">Manual Index</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get Involved</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../contribute/index.html">Contribute Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Blender 4.0 Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Sculpting &amp; Painting</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Sculpting</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Editing</a></li>
+      <li class="breadcrumb-item active">Expand</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="expand">
+<span id="bpy-ops-sculpt-expand"></span><span id="bpy-ops-sculpt-mask-expand"></span><h1>Expand<a class="headerlink" href="#expand" title="Link to this heading"></a></h1>
+<p>This is a multi-purpose modal operator to intuitively create and edit masks/face sets.
+When executed, it uniformly expand outwards a pattern from the vertex under the cursor.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These operators are meant to be used interactively through the shortcut.</p>
+</div>
+<p>There is also a <a class="reference external" href="https://www.youtube.com/watch?v=XT7h6lmE5bc">full showcase of the Expand features and use cases</a>.</p>
+<figure class="align-default" id="id7">
+<img alt="../../../_images/sculpt-paint_sculpting_expand_example.png" src="../../../_images/sculpt-paint_sculpting_expand_example.png" />
+<figcaption>
+<p><span class="caption-text">A preview of <em>Expand Mask by Topology</em></span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<section id="expand-mask-by-topology">
+<h2>Expand Mask by Topology<a class="headerlink" href="#expand-mask-by-topology" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id1">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Mode<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Sculpt Mode</p>
+</dd>
+<dt class="field-even">Menu<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Mask ‣ Expand Mask by Topology</span></p>
+</dd>
+<dt class="field-odd">Shortcut<span class="colon">:</span></dt>
+<dd class="field-odd"><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">A</kbd></kbd></p>
+</dd>
+</dl>
+</div>
+<p>Expands a mask from the active vertex.</p>
+<section id="usage">
+<h3>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h3>
+<dl>
+<dt>Mask from A to B</dt><dd><p>Start the operator and expand a mask from an origin to your mouse cursor distance.
+Then confirm with <kbd class="kbd docutils literal notranslate">LMB</kbd> or <kbd class="kbd docutils literal notranslate">Return</kbd></p>
+<p>By default the expansion will use a <em>Geodesic</em> falloff <kbd class="kbd docutils literal notranslate">1</kbd>
+to create perfectly accurate distances along the surfaces.
+Use other falloff types via <kbd class="kbd docutils literal notranslate">2</kbd>, <kbd class="kbd docutils literal notranslate">3</kbd> &amp; <kbd class="kbd docutils literal notranslate">4</kbd> to expand via
+triangles, whole faces or scene distances instead.</p>
+<figure class="align-default" id="id8">
+<img alt="../../../_images/sculpt-paint_sculpting_expand_falloff_example.png" src="../../../_images/sculpt-paint_sculpting_expand_falloff_example.png" />
+<figcaption>
+<p><span class="caption-text">The typical result when using the <em>Diagonals</em> falloff to expand along the quads of the face.</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Start Expand while pointing at an open boundary to expand from the entire boundary loop.
+This will always use the <em>Topology</em> falloff mode.</p>
+</dd>
+<dt>Fill Connected Meshes</dt><dd><p>Move your cursor outside of the boundaries of the mesh to mask the entire connected mesh.
+This can be done repeatedly to quickly mask separate meshes.</p>
+</dd>
+<dt>Fill Face Sets</dt><dd><p>Hold <kbd class="kbd docutils literal notranslate">Ctrl</kbd> to snap to face sets under your cursor and fill them.
+Any face set that was already covered in the expansion will be filled as well.</p>
+</dd>
+<dt>Automatically Set Transform Pivot</dt><dd><p>While using any Transform tool, the pivot point
+will automatically snap the border of an Expand result.
+This way areas (Like limbs) can be masked and then immediately rotated or otherwise transformed.</p>
+<figure class="align-default">
+<img alt="../../../_images/sculpt-paint_sculpting_expand_auto_pivot.png" src="../../../_images/sculpt-paint_sculpting_expand_auto_pivot.png" />
+</figure>
+</dd>
+<dt>Pattern Creation</dt><dd><p>The different falloff types can be used for circular, triangular and square patterns.
+More loops can also be added/removed via <kbd class="kbd docutils literal notranslate">W</kbd> &amp; <kbd class="kbd docutils literal notranslate">Q</kbd> to repeat the pattern across the mesh.</p>
+<figure class="align-default" id="id9">
+<img alt="../../../_images/sculpt-paint_sculpting_expand_pattern1.png" src="../../../_images/sculpt-paint_sculpting_expand_pattern1.png" />
+<figcaption>
+<p><span class="caption-text">An example of using expand with mirror options,
+loops and a recursion to create wood carving patterns.</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><a class="reference internal" href="../tool_settings/symmetry.html"><span class="doc">Mirror options</span></a>
+can also be combined with the expansion.</p>
+</div>
+<p>Linear gradients <kbd class="kbd docutils literal notranslate">G</kbd> or brush falloff gradients <kbd class="kbd docutils literal notranslate">B</kbd> will help to add slanted surfaces
+to the patterns.</p>
+<p>A “Recursions” with <kbd class="kbd docutils literal notranslate">R</kbd> or <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">R</kbd></kbd> will start
+a new expansion along the border of the current expansion.
+Doing this multiple times, can help for increasingly random patterns
+or advanced pattern creation.</p>
+<figure class="align-default" id="id10">
+<img alt="../../../_images/sculpt-paint_sculpting_expand_pattern2.png" src="../../../_images/sculpt-paint_sculpting_expand_pattern2.png" />
+<figcaption>
+<p><span class="caption-text">An example of using loops and gradients with multiple expanded masks.</span><a class="headerlink" href="#id10" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Remember that Expand only affects visible geometry.
+So if a pattern should only be created on a part of the mesh,
+<a class="reference internal" href="sculpt.html"><span class="doc">hide</span></a> the other geometry first.</p>
+</div>
+<p>Use the <a class="reference internal" href="../tools/mesh_filter.html"><span class="doc">Mesh Filter</span></a>
+to deform the geometry and the <a class="reference internal" href="../tools/color_filter.html"><span class="doc">Color Filter</span></a>
+to add colors, to apply the patterns on the sculpt.</p>
+</dd>
+<dt>Expanding Textures</dt><dd><p>Textures can be used to affect the shape and gradients of the expanded mask.
+This feature can be combined with loops and recursion to create unique results.</p>
+<p>To use a texture, you need to assign it to your currently active brush in the
+<a class="reference internal" href="../../brush/texture.html"><span class="doc">Texture</span></a> Brush Settings. The texture can be edited/created
+in the <a class="reference internal" href="../../../render/materials/legacy_textures/index.html"><span class="doc">Texture Properties</span></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This texture only works when the <a class="reference internal" href="../../brush/texture.html#bpy-types-brushtextureslot-map-mode"><span class="std std-ref">Mapping</span></a> is set to <em>3D</em>.</p>
+</div>
+<p>Use <kbd class="kbd docutils literal notranslate">Y</kbd> and <kbd class="kbd docutils literal notranslate">T</kbd> to increase or decrease the affect the texture has on the edge of the mask.</p>
+</dd>
+</dl>
+</section>
+<section id="controls">
+<h3>Controls<a class="headerlink" href="#controls" title="Link to this heading"></a></h3>
+<dl class="field-list simple">
+<dt class="field-odd">Invert<span class="colon">:</span></dt>
+<dd class="field-odd"><p><kbd class="kbd docutils literal notranslate">F</kbd>
+Flips between expanding a positive mask (value of one) or a negative mask (value of zero).
+In the case of face sets, this option flips between including areas inside the masked area
+or areas outside the masked area.
+.. needs visual technical examples for both</p>
+</dd>
+<dt class="field-even">Toggle Preserve State<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd docutils literal notranslate">E</kbd>
+Accumulate the new mask on top of the previous one or replace it.
+For Face Sets, this will toggle between creating Face Sets boundaries
+or replacing the existing Face Sets.</p>
+</dd>
+<dt class="field-odd">Move Origin<span class="colon">:</span></dt>
+<dd class="field-odd"><p><kbd class="kbd docutils literal notranslate">Spacebar</kbd>
+Moves the initial vertex used for calculating the falloff.
+.. needs visual technical example</p>
+</dd>
+<dt class="field-even">Geodesic Falloff<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd docutils literal notranslate">1</kbd>
+Uses a falloff based on the <a class="reference internal" href="../../../glossary/index.html#term-Geodesic"><span class="xref std std-term">Geodesic</span></a> distances from the edge boundary to the active vertex.</p>
+</dd>
+<dt class="field-odd">Topology Falloff<span class="colon">:</span></dt>
+<dd class="field-odd"><p><kbd class="kbd docutils literal notranslate">2</kbd>
+Uses a falloff based on a flood fill using edges.</p>
+</dd>
+<dt class="field-even">Diagonals Falloff<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd docutils literal notranslate">3</kbd>
+Uses a falloff based on a flood fill using polygon diagonals and edges.</p>
+</dd>
+<dt class="field-odd">Spherical Falloff<span class="colon">:</span></dt>
+<dd class="field-odd"><p><kbd class="kbd docutils literal notranslate">4</kbd>
+Uses a falloff based on the Euclidean distances from the edge boundary to the active vertex.
+.. needs visual technical examples</p>
+</dd>
+<dt class="field-even">Toggle Gradient<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd docutils literal notranslate">G</kbd>
+Enables linear gradient of values from the origin to the current active vertex.</p>
+</dd>
+<dt class="field-odd">Toggle Brush Gradient<span class="colon">:</span></dt>
+<dd class="field-odd"><p><kbd class="kbd docutils literal notranslate">B</kbd>
+Similar to linear gradient but uses the current brush <a class="reference internal" href="../../brush/falloff.html"><span class="doc">Falloff</span></a>
+to define the shape of the falloff.
+.. needs visual technical examples</p>
+</dd>
+<dt class="field-even">Geodesic Recursive Step<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd docutils literal notranslate">R</kbd>
+Start a new expansion with a <a class="reference internal" href="../../../glossary/index.html#term-Geodesic"><span class="xref std std-term">Geodesic</span></a> falloff from the boundary of the current falloff.</p>
+</dd>
+<dt class="field-odd">Topology Recursive Step<span class="colon">:</span></dt>
+<dd class="field-odd"><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">R</kbd></kbd>
+Start a new expansion with a topology falloff from the boundary of the current falloff.
+.. needs visual technical examples</p>
+</dd>
+<dt class="field-even">Snap Expanded to Face Sets<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd docutils literal notranslate">Ctrl</kbd>
+Isolates the expanded region to the boundary of the face set under the cursor.</p>
+</dd>
+<dt class="field-odd">Loop Count Increase<span class="colon">:</span></dt>
+<dd class="field-odd"><p><kbd class="kbd docutils literal notranslate">W</kbd>
+Increase the number of loops or iterations the operator is run;
+using four loops will split the mask into four parts.</p>
+</dd>
+<dt class="field-even">Loop Count Decrease<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd docutils literal notranslate">Q</kbd>
+Decrease the number of loops or iterations the operator is run;
+using four loops will split the mask into four parts.
+.. needs visual technical examples</p>
+</dd>
+<dt class="field-odd">Texture Distortion Increase<span class="colon">:</span></dt>
+<dd class="field-odd"><p><kbd class="kbd docutils literal notranslate">Y</kbd>
+Increases the falloff distance when using a texture to distort the mask shape.</p>
+</dd>
+<dt class="field-even">Texture Distortion Decrease<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd docutils literal notranslate">T</kbd>
+Decreases the falloff distance when using a texture to distort the mask shape.
+..needs visual technical examples</p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="expand-mask-by-normals">
+<h2>Expand Mask by Normals<a class="headerlink" href="#expand-mask-by-normals" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id2">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Mode<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Sculpt Mode</p>
+</dd>
+<dt class="field-even">Menu<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Mask ‣ Expand Mask by Normals</span></p>
+</dd>
+<dt class="field-odd">Shortcut<span class="colon">:</span></dt>
+<dd class="field-odd"><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">A</kbd></kbd></p>
+</dd>
+</dl>
+</div>
+<p>Expand a mask, following the curvature of the surface.
+This operator uses the same internal operator as <a class="reference internal" href="#bpy-ops-sculpt-expand"><span class="std std-ref">Expand</span></a>
+meaning all the shortcuts and functionality works the same as that tool.</p>
+<p>This operator is especially useful for hard surface sculpting.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If one expansion does not properly fill the entire desired surface,
+use the operator repeatedly with a different starting point.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Using any of the Falloff shortcuts <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">1</kbd>-<kbd class="kbd docutils literal notranslate">4</kbd></kbd>
+will replace the curvature falloff of this operator.</p>
+</div>
+</section>
+<section id="expand-face-set-by-topology">
+<span id="face-set-expand"></span><h2>Expand Face Set by Topology<a class="headerlink" href="#expand-face-set-by-topology" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id3">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Mode<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Sculpt Mode</p>
+</dd>
+<dt class="field-even">Menu<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Face Sets ‣ Expand Face Set by Topology</span></p>
+</dd>
+<dt class="field-odd">Shortcut<span class="colon">:</span></dt>
+<dd class="field-odd"><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">W</kbd></kbd></p>
+</dd>
+</dl>
+</div>
+<p>Expands a face set from the active vertex.
+This operator uses the same internal operator as <a class="reference internal" href="#bpy-ops-sculpt-expand"><span class="std std-ref">Expand</span></a>
+meaning all the hotkeys and functionality works the same as that tool,
+with the gradient features as the exception.</p>
+<section id="id4">
+<h3>Usage<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<dl class="simple">
+<dt>Saving Masks</dt><dd><p>Expanding Face Sets has all the same use cases as expanding masks.
+The advantage for this one is that they will be saved for repeated usage.
+Face sets can be filled any time with a mask,
+so assigning areas face sets will save you time.
+(And of course face sets can be used to
+<a class="reference internal" href="sculpt.html"><span class="doc">hide face sets</span></a>)</p>
+</dd>
+<dt>Pivot Points for Pose Brush</dt><dd><p>When using the <a class="reference internal" href="../tools/pose.html"><span class="doc">Pose Brush</span></a> it is most predictable when using it with
+Face Sets to define the face set boundaries as pivot point locations.
+Face Sets can be expanded from a point or from a boundary between hidden face sets
+to create them quickly.
+Alternatively <a class="reference internal" href="face_sets.html#bpy-ops-sculpt-face-set-edit"><span class="std std-ref">Grow/Shrink Face Sets</span></a>
+or use the <a class="reference internal" href="#face-set-expand-active"><span class="std std-ref">Expand Active Face Set</span></a> to dynamically grow/shrink them.</p>
+</dd>
+<dt>Cloth Sculpting</dt><dd><p>Tools like the <a class="reference internal" href="../tools/cloth_filter.html"><span class="doc">Cloth Filter</span></a>
+and <a class="reference internal" href="../tools/cloth.html"><span class="doc">Cloth Brush</span></a>
+work especially well when only simulating small areas at a time.
+Face Sets can very easily be created with Expand to assign areas of action.</p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="expand-active-face-set">
+<span id="face-set-expand-active"></span><h2>Expand Active Face Set<a class="headerlink" href="#expand-active-face-set" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id5">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Mode<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Sculpt Mode</p>
+</dd>
+<dt class="field-even">Menu<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Face Sets ‣ Expand Face Set by Topology</span></p>
+</dd>
+<dt class="field-odd">Shortcut<span class="colon">:</span></dt>
+<dd class="field-odd"><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">W</kbd></kbd></p>
+</dd>
+</dl>
+</div>
+<p>Expands an existing face set with a geodesic falloff.
+This operator uses the same internal operator as <a class="reference internal" href="#bpy-ops-sculpt-expand"><span class="std std-ref">Expand</span></a>
+meaning all the hotkeys and functionality works the same as that tool.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Using any of the Falloff shortcuts <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">1</kbd>-<kbd class="kbd docutils literal notranslate">4</kbd></kbd>
+the operator to switch to <a class="reference internal" href="#face-set-expand"><span class="std std-ref">Expand Face Set by Topology</span></a>.</p>
+</div>
+<section id="id6">
+<h3>Usage<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+<dl class="simple">
+<dt>Resizing Face Sets</dt><dd><p>Resize a Face Set along the surface distances.
+It is an alternative to <a class="reference internal" href="face_sets.html#bpy-ops-sculpt-face-set-edit"><span class="std std-ref">Grow/Shrink Face Sets</span></a>
+which follows the topology instead of geodesic distances.</p>
+</dd>
+<dt>Joining Face Sets</dt><dd><p>When holding <kbd class="kbd docutils literal notranslate">Ctrl</kbd> the expansion will instead snap to other Face Sets.
+This is a fast way of joining multiple face sets into one.</p>
+</dd>
+</dl>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="face_sets.html" class="btn btn-neutral float-left" title="Face Sets" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../texture_paint/index.html" class="btn btn-neutral float-right" title="Texture Paint" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../../copyright.html">Copyright</a> : This page is licensed under a CC-BY-SA 4.0 Int. License.
+      <span class="lastupdated">Last updated on 12/17/2023.
+      </span></p>
+  </div>
+
+  
+<div class="footer-contribute">
+   <ul>
+      <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/sculpt_paint/sculpting/editing/expand.rst"
+            class="fa fa-edit"> View Source</a>
+      </li>
+      <!-- <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/sculpt_paint/sculpting/editing/expand.rst"
+            class="fa fa-edit"> Edit Page</a>
+      </li> -->
+      <li>
+         <a href="https://projects.blender.org/blender/documentation/issues/new?template=.gitea/issue_template/bug.yaml&field:body=%2A%2APage+Information%2A%2A%0D%0AFile%3A+%60manual%2Fsculpt_paint/sculpting/editing/expand.rst%60%0D%0ABlender+Version%3A+%604.0%60%0D%0ADocumentation+Language%3A+%60en%60%0D%0A%5BPermanent+Link%5D%28https%3A%2F%2Fdocs.blender.org%2Fmanual%2Fen%2F4.0%2Fsculpt_paint/sculpting/editing/expand.html%29%0D%0A%0D%0A%2A%2AShort+description+of+error%2A%2A%0D%0A%5BPlease+fill+out+a+short+description+of+the+error+here%5D%0D%0A"
+            class="fa fa-bug"> Report issue on this page</a>
+      </li>
+      <ul>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="document versions">
+	<ul id="versionwrap" role="presentation">
+		<li role="presentation">
+			<span id="version-popover" class="version-btn" tabindex="0" role="button" aria-label="versions selector"
+				aria-haspopup="true" aria-controls="version-vsnlist" aria-disabled="true">
+				4.0
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Versions</div>
+				<ul id="version-vsnlist" class="version-list" role="menu" aria-labelledby="version-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<li role="presentation">
+			<span id="lang-popover" class="version-btn" tabindex="0" role="button" aria-label="language selector"
+				aria-haspopup="true" aria-controls="version-langlist">
+				 en 
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Languages</div>
+				<ul id="version-langlist" class="version-list" role="menu" aria-labelledby="lang-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<template id="version-entry">
+			<li tabindex="-1" role="presentation"><a tabindex="-1" role="menuitem"></a></li>
+			<li class="selected" tabindex="-1" role="presentation"><span tabindex="-1" aria-current="page"></spanp></li>
+		</template>
+	</ul>
+<template id="version-warning">
+	<div class="admonition warning">
+		<p class="first admonition-title">Note</p>
+		<p class="last">
+			You are not using the most up to date version of the documentation.
+			<a href="#"></a> is the newest version.
+		</p>
+	</div>
+</template>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1418081-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1418081-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction &mdash; Blender Manual</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme_overrides.css?v=8da28a04" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/version_switch.css?v=74ca2809" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.blender.org/manual/en/latest/editors/nla/introduction.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=715c20a1"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/version_switch.js?v=5cbd935e"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Blender Manual"
+          href="../../_static/opensearch.xml"/>
+<link rel="alternate" hreflang="en" href="https://docs.blender.org/manual/en/latest/" />
+<link rel="alternate" hreflang="ar" href="https://docs.blender.org/manual/ar/latest/" />
+<link rel="alternate" hreflang="de" href="https://docs.blender.org/manual/de/latest/" />
+<link rel="alternate" hreflang="es" href="https://docs.blender.org/manual/es/latest/" />
+<link rel="alternate" hreflang="fi" href="https://docs.blender.org/manual/fi/latest/" />
+<link rel="alternate" hreflang="fr" href="https://docs.blender.org/manual/fr/latest/" />
+<link rel="alternate" hreflang="id" href="https://docs.blender.org/manual/id/latest/" />
+<link rel="alternate" hreflang="it" href="https://docs.blender.org/manual/it/latest/" />
+<link rel="alternate" hreflang="ja" href="https://docs.blender.org/manual/ja/latest/" />
+<link rel="alternate" hreflang="ko" href="https://docs.blender.org/manual/ko/latest/" />
+<link rel="alternate" hreflang="nb" href="https://docs.blender.org/manual/nb/latest/" />
+<link rel="alternate" hreflang="pt" href="https://docs.blender.org/manual/pt/latest/" />
+<link rel="alternate" hreflang="ru" href="https://docs.blender.org/manual/ru/latest/" />
+<link rel="alternate" hreflang="sk" href="https://docs.blender.org/manual/sk/latest/" />
+<link rel="alternate" hreflang="sl" href="https://docs.blender.org/manual/sl/latest/" />
+<link rel="alternate" hreflang="sr" href="https://docs.blender.org/manual/sr/latest/" />
+<link rel="alternate" hreflang="uk" href="https://docs.blender.org/manual/uk/latest/" />
+<link rel="alternate" hreflang="vi" href="https://docs.blender.org/manual/vi/latest/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://docs.blender.org/manual/zh-hans/latest/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://docs.blender.org/manual/zh-hant/latest/" />
+<link rel="alternate" hreflang="x-default" href="https://docs.blender.org/manual/en/latest/" />
+
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="Tracks" href="tracks.html" />
+    <link rel="prev" title="Nonlinear Animation" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Blender 4.0 Manual
+              <img src="../../_static/blender-logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/about/index.html">About Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installing/index.html">Installing Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/configuration/index.html">Configuring Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/help.html">Help System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sections</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../interface/index.html">User Interface</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Editors</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../3dview/index.html">3D Viewport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../image/index.html">Image Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../uv/index.html">UV Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../compositor.html">Compositor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../texture_node/index.html">Texture Nodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../geometry_node.html">Geometry Node Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shader_editor.html">Shader Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../video_sequencer/index.html">Video Sequencer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../clip/index.html">Movie Clip Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dope_sheet/index.html">Dope Sheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../timeline.html">Timeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../graph_editor/index.html">Graph Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../drivers_editor.html">Drivers Editor</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Nonlinear Animation</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Introduction</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#header">Header</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#view-menu">View Menu</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#select-menu">Select Menu</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#markers-menu">Markers Menu</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#edit-menu">Edit Menu</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#add">Add</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#transform-controls">Transform Controls</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tracks.html">Tracks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="strips.html">Strips</a></li>
+<li class="toctree-l3"><a class="reference internal" href="editing.html">Editing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sidebar.html">Sidebar</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../text_editor.html">Text Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../python_console.html">Python Console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../info_editor.html">Info Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../outliner/index.html">Outliner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../properties_editor.html">Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../file_browser.html">File Browser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../asset_browser.html">Asset Browser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../spreadsheet.html">Spreadsheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../preferences/index.html">Preferences</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../scene_layout/index.html">Scenes &amp; Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modeling/index.html">Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sculpt_paint/index.html">Sculpting &amp; Painting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../grease_pencil/index.html">Grease Pencil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../animation/index.html">Animation &amp; Rigging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../physics/index.html">Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../render/index.html">Rendering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../compositing/index.html">Compositing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../movie_clip/index.html">Motion Tracking &amp; Masking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../video_editing/index.html">Video Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../files/index.html">Assets, Files, &amp; Data System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../addons/index.html">Add-ons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/index.html">Advanced</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Manual Index</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get Involved</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribute Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Blender 4.0 Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Editors</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Nonlinear Animation</a></li>
+      <li class="breadcrumb-item active">Introduction</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="introduction">
+<span id="index-0"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h1>
+<p>The NLA editor, short for NonLinear Animation, can manipulate and repurpose <a class="reference internal" href="../../animation/actions.html"><span class="doc">Actions</span></a>,
+without the tedium of handling keyframes. It is often used to make broad,
+significant changes to a scene’s animation, with relative ease.
+It can also repurpose, chain together a sequence of motions, and “layered” actions, which make it easier to organize,
+and version-control your animation.</p>
+<section id="header">
+<h2>Header<a class="headerlink" href="#header" title="Link to this heading"></a></h2>
+<section id="view-menu">
+<h3>View Menu<a class="headerlink" href="#view-menu" title="Link to this heading"></a></h3>
+<dl>
+<dt>Adjust Last Operation</dt><dd><p>Displays a pop-up panel to alter properties of the last
+completed operation. See <a class="reference internal" href="../../interface/undo_redo.html#bpy-ops-screen-redo-last"><span class="std std-ref">Adjust Last Operation</span></a>.</p>
+</dd>
+<dt>Realtime Updates</dt><dd><p>When transforming NLA-strips, the changes to the animation are propagated to other views.</p>
+</dd>
+<dt>Show Control F-Curves</dt><dd><p>Overlays a graph of the NLA-strip’s influence on top of the strip.</p>
+</dd>
+<dt>Show Markers</dt><dd><p>Shows the markers region. When disabled, the <a class="reference internal" href="#markers-menu">Markers Menu</a> is also hidden
+and markers operators are not available in this editor.</p>
+</dd>
+<dt>Show Local Markers</dt><dd><p>Shows action-local markers on the strip, this is useful when synchronizing time across strips.</p>
+<figure class="align-default" id="id1">
+<img alt="../../_images/editors_nla_tracks_local_markers.png" src="../../_images/editors_nla_tracks_local_markers.png" />
+<figcaption>
+<p><span class="caption-text">Local markers shown on a strip.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</dd>
+<dt>Set Preview Range <kbd class="kbd docutils literal notranslate">P</kbd></dt><dd><p>Selecting a preview range by dragging in the NLA Editor.</p>
+</dd>
+<dt>Clear Preview Range <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">P</kbd></kbd></dt><dd><p>Unset the preview range</p>
+</dd>
+<dt>Auto Select Preview Range <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">P</kbd></kbd></dt><dd><p>Automatically select the preview range based on the range of keyframes.</p>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>See Timeline’s <a class="reference internal" href="../timeline.html#timeline-view-menu"><span class="std std-ref">View Menu</span></a>.</p>
+</div>
+</section>
+<section id="select-menu">
+<h3>Select Menu<a class="headerlink" href="#select-menu" title="Link to this heading"></a></h3>
+<dl class="simple">
+<dt>All <kbd class="kbd docutils literal notranslate">A</kbd></dt><dd><p>Select all NLA-strips.</p>
+</dd>
+<dt>None <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">A</kbd></kbd></dt><dd><p>Deselect all NLA-strips.</p>
+</dd>
+<dt>Invert <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">I</kbd></kbd></dt><dd><p>Invert the current selection of NLA-strips.</p>
+</dd>
+<dt>Box Select <kbd class="kbd docutils literal notranslate">B</kbd></dt><dd><p>Select NLA-strips by drawing a box. All NLA-strips that intersects the box
+will be added to the current selection.</p>
+</dd>
+<dt>Border Axis Range <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">B</kbd></kbd></dt><dd><p>Select NLA-strips by drawing a box. All NLA-strips that intersects the frames
+of the drawn box will be added to the current selection.</p>
+</dd>
+<dt>Before Current Frame <kbd class="kbd docutils literal notranslate">[</kbd></dt><dd><p>Select all NLA-strips before the current frame.</p>
+</dd>
+<dt>After Current Frame <kbd class="kbd docutils literal notranslate">]</kbd></dt><dd><p>Select all NLA-strips after the current frame.</p>
+</dd>
+</dl>
+</section>
+<section id="markers-menu">
+<h3>Markers Menu<a class="headerlink" href="#markers-menu" title="Link to this heading"></a></h3>
+<p><a class="reference internal" href="../../animation/markers.html"><span class="doc">Markers</span></a> are used to denote frames with key points or significant events
+within an animation. Like with most animation editors, markers are shown at the bottom of the editor.</p>
+<figure class="align-default" id="id2">
+<img alt="../../_images/editors_graph-editor_introduction_markers.png" src="../../_images/editors_graph-editor_introduction_markers.png" />
+<figcaption>
+<p><span class="caption-text">Markers in animation editor.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>For descriptions of the different marker tools, see <a class="reference internal" href="../../animation/markers.html#animation-markers-editing"><span class="std std-ref">Editing Markers</span></a>.</p>
+</section>
+<section id="edit-menu">
+<h3>Edit Menu<a class="headerlink" href="#edit-menu" title="Link to this heading"></a></h3>
+<p>Contains tools for working with NLA strips.
+For descriptions of the different editing tools, see <a class="reference internal" href="editing.html"><span class="doc">Editing Strips</span></a>.</p>
+</section>
+<section id="add">
+<h3>Add<a class="headerlink" href="#add" title="Link to this heading"></a></h3>
+<dl class="simple">
+<dt>Add Action Strip <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">A</kbd></kbd></dt><dd><p>Add an NLA-strip referencing an Action to the active track.</p>
+</dd>
+<dt>Add Transition <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">T</kbd></kbd></dt><dd><p>Add an NLA-strip to create a transition between a selection of two adjacent NLA-strips.</p>
+</dd>
+<dt>Add Sound Strip <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">K</kbd></kbd></dt><dd><p>Add an NLA-strip controlling when the speaker object plays its sound clip.</p>
+</dd>
+<dt>Add Meta-Strip <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">G</kbd></kbd></dt><dd><p>Group selected NLA-strips into a meta strip.
+A meta strip will group the selected NLA-strips of the same NLA-track.</p>
+</dd>
+<dt>Remove Meta-Strip <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">G</kbd></kbd></dt><dd><p>Ungroup selected Meta strips.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-ops-nla-tracks-add">
+<dt>Add Tracks</dt><dd><p>Add a new NLA-Track on top of the selected object.</p>
+</dd>
+<dt>Add Track Above Selected</dt><dd><p>Add a new NLA-Track just above the selected NLA-track.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-ops-nla-selected-objects-add">
+<dt>Include Selected Objects</dt><dd><p>Let the selected objects appear in the NLA Editor. This is done by adding
+an empty animation data object to the selected object.</p>
+</dd>
+</dl>
+</section>
+<section id="transform-controls">
+<h3>Transform Controls<a class="headerlink" href="#transform-controls" title="Link to this heading"></a></h3>
+<dl>
+<dt>Snap</dt><dd><p>Activates automatic snapping when you moving keys.</p>
+<dl class="simple">
+<dt>Snap To</dt><dd><p>Type of element to snap to.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Frame<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Snap to frame.</p>
+</dd>
+<dt class="field-even">Second<span class="colon">:</span></dt>
+<dd class="field-even"><p>Snap to seconds.</p>
+</dd>
+<dt class="field-odd">Nearest Marker<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Snap to nearest <a class="reference internal" href="../../animation/markers.html"><span class="doc">Marker</span></a>.</p>
+</dd>
+</dl>
+</dd>
+<dt>Absolute Time Snap</dt><dd><p>Absolute time alignment when transforming keyframes</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Nonlinear Animation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tracks.html" class="btn btn-neutral float-right" title="Tracks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../copyright.html">Copyright</a> : This page is licensed under a CC-BY-SA 4.0 Int. License.
+      <span class="lastupdated">Last updated on 12/17/2023.
+      </span></p>
+  </div>
+
+  
+<div class="footer-contribute">
+   <ul>
+      <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/editors/nla/introduction.rst"
+            class="fa fa-edit"> View Source</a>
+      </li>
+      <!-- <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/editors/nla/introduction.rst"
+            class="fa fa-edit"> Edit Page</a>
+      </li> -->
+      <li>
+         <a href="https://projects.blender.org/blender/documentation/issues/new?template=.gitea/issue_template/bug.yaml&field:body=%2A%2APage+Information%2A%2A%0D%0AFile%3A+%60manual%2Feditors/nla/introduction.rst%60%0D%0ABlender+Version%3A+%604.0%60%0D%0ADocumentation+Language%3A+%60en%60%0D%0A%5BPermanent+Link%5D%28https%3A%2F%2Fdocs.blender.org%2Fmanual%2Fen%2F4.0%2Feditors/nla/introduction.html%29%0D%0A%0D%0A%2A%2AShort+description+of+error%2A%2A%0D%0A%5BPlease+fill+out+a+short+description+of+the+error+here%5D%0D%0A"
+            class="fa fa-bug"> Report issue on this page</a>
+      </li>
+      <ul>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="document versions">
+	<ul id="versionwrap" role="presentation">
+		<li role="presentation">
+			<span id="version-popover" class="version-btn" tabindex="0" role="button" aria-label="versions selector"
+				aria-haspopup="true" aria-controls="version-vsnlist" aria-disabled="true">
+				4.0
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Versions</div>
+				<ul id="version-vsnlist" class="version-list" role="menu" aria-labelledby="version-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<li role="presentation">
+			<span id="lang-popover" class="version-btn" tabindex="0" role="button" aria-label="language selector"
+				aria-haspopup="true" aria-controls="version-langlist">
+				 en 
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Languages</div>
+				<ul id="version-langlist" class="version-list" role="menu" aria-labelledby="lang-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<template id="version-entry">
+			<li tabindex="-1" role="presentation"><a tabindex="-1" role="menuitem"></a></li>
+			<li class="selected" tabindex="-1" role="presentation"><span tabindex="-1" aria-current="page"></spanp></li>
+		</template>
+	</ul>
+<template id="version-warning">
+	<div class="admonition warning">
+		<p class="first admonition-title">Note</p>
+		<p class="last">
+			You are not using the most up to date version of the documentation.
+			<a href="#"></a> is the newest version.
+		</p>
+	</div>
+</template>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1418081-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1418081-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

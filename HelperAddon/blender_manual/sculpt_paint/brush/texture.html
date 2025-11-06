@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Texture &amp; Texture Mask &mdash; Blender Manual</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme_overrides.css?v=8da28a04" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/version_switch.css?v=74ca2809" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.blender.org/manual/en/latest/sculpt_paint/brush/texture.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=715c20a1"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/version_switch.js?v=5cbd935e"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Blender Manual"
+          href="../../_static/opensearch.xml"/>
+<link rel="alternate" hreflang="en" href="https://docs.blender.org/manual/en/latest/" />
+<link rel="alternate" hreflang="ar" href="https://docs.blender.org/manual/ar/latest/" />
+<link rel="alternate" hreflang="de" href="https://docs.blender.org/manual/de/latest/" />
+<link rel="alternate" hreflang="es" href="https://docs.blender.org/manual/es/latest/" />
+<link rel="alternate" hreflang="fi" href="https://docs.blender.org/manual/fi/latest/" />
+<link rel="alternate" hreflang="fr" href="https://docs.blender.org/manual/fr/latest/" />
+<link rel="alternate" hreflang="id" href="https://docs.blender.org/manual/id/latest/" />
+<link rel="alternate" hreflang="it" href="https://docs.blender.org/manual/it/latest/" />
+<link rel="alternate" hreflang="ja" href="https://docs.blender.org/manual/ja/latest/" />
+<link rel="alternate" hreflang="ko" href="https://docs.blender.org/manual/ko/latest/" />
+<link rel="alternate" hreflang="nb" href="https://docs.blender.org/manual/nb/latest/" />
+<link rel="alternate" hreflang="pt" href="https://docs.blender.org/manual/pt/latest/" />
+<link rel="alternate" hreflang="ru" href="https://docs.blender.org/manual/ru/latest/" />
+<link rel="alternate" hreflang="sk" href="https://docs.blender.org/manual/sk/latest/" />
+<link rel="alternate" hreflang="sl" href="https://docs.blender.org/manual/sl/latest/" />
+<link rel="alternate" hreflang="sr" href="https://docs.blender.org/manual/sr/latest/" />
+<link rel="alternate" hreflang="uk" href="https://docs.blender.org/manual/uk/latest/" />
+<link rel="alternate" hreflang="vi" href="https://docs.blender.org/manual/vi/latest/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://docs.blender.org/manual/zh-hans/latest/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://docs.blender.org/manual/zh-hant/latest/" />
+<link rel="alternate" hreflang="x-default" href="https://docs.blender.org/manual/en/latest/" />
+
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="Stroke" href="stroke.html" />
+    <link rel="prev" title="Brush Settings" href="brush_settings.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Blender 4.0 Manual
+              <img src="../../_static/blender-logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/about/index.html">About Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installing/index.html">Installing Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/configuration/index.html">Configuring Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/help.html">Help System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sections</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../interface/index.html">User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../editors/index.html">Editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scene_layout/index.html">Scenes &amp; Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modeling/index.html">Modeling</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Sculpting &amp; Painting</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Brush</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#brush-settings">Brush Settings</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="brush.html">Brushes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="brush_settings.html">Brush Settings</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Texture &amp; Texture Mask</a></li>
+<li class="toctree-l4"><a class="reference internal" href="stroke.html">Stroke</a></li>
+<li class="toctree-l4"><a class="reference internal" href="falloff.html">Falloff</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cursor.html">Cursor</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../selection_visibility.html">Selection &amp; Visibility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../navigation.html">Navigation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#modes">Modes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../grease_pencil/index.html">Grease Pencil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../animation/index.html">Animation &amp; Rigging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../physics/index.html">Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../render/index.html">Rendering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../compositing/index.html">Compositing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../movie_clip/index.html">Motion Tracking &amp; Masking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../video_editing/index.html">Video Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../files/index.html">Assets, Files, &amp; Data System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../addons/index.html">Add-ons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/index.html">Advanced</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Manual Index</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get Involved</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribute Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Blender 4.0 Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Sculpting &amp; Painting</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Brush</a></li>
+      <li class="breadcrumb-item active">Texture &amp; Texture Mask</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="texture-texture-mask">
+<span id="bpy-types-brushtextureslot"></span><h1>Texture &amp; Texture Mask<a class="headerlink" href="#texture-texture-mask" title="Link to this heading"></a></h1>
+<p>This page covers both the Texture and Texture Mask panels.
+Add a Texture to the brush to control the color of the brush.
+A Texture Mask is used to control the strength of the brush.
+Both the Texture and Texture Mask offer the same settings.</p>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../../_images/sculpt-paint_brush_texture_ui-example.jpg"><img alt="../../_images/sculpt-paint_brush_texture_ui-example.jpg" src="../../_images/sculpt-paint_brush_texture_ui-example.jpg" style="width: 580px;" /></a>
+<figcaption>
+<p><span class="caption-text">Example of the Texture panel and a textured brush in use.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<dl>
+<dt>Texture</dt><dd><p>In paint modes the texture is used as a color source,
+while for sculpting it is used to determine the strength of the brush.</p>
+<p>Any image texture or procedural texture can be assigned in the texture and texture mask panels.
+Textures can be further edited in the properties editor (Click the properties icon for quick access)</p>
+</dd>
+</dl>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>It’s recommended to load all needed images ahead of time as image textures into Blender.
+Then they can be easily selected by clicking on the texture and picking it from the data-block popup.
+Textures can also be <cite>appended/linked</cite> from other Blender files.</p>
+</div>
+<span id="bpy-types-brushtextureslot-map-mode"></span><dl id="bpy-types-brushtextureslot-mask-map-mode">
+<dt>Mapping &amp; Mask Mapping</dt><dd><p>How the texture is applied to the brush stroke.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>It is recommended to set this to <em>Area Plane</em> or <em>View Plane</em> for the most common behavior.
+Ideally match this setting with the
+<a class="reference internal" href="brush_settings.html#bpy-types-brush-sculpt-plane"><span class="std std-ref">Sculpt Plane</span></a> setting if in sculpt mode.</p>
+</div>
+<dl class="field-list">
+<dt class="field-odd">View Plane<span class="colon">:</span></dt>
+<dd class="field-odd"><p>If <em>View Plane</em> is enabled, the current viewing angle is used to project the brush texture onto the model.
+This is especially useful for projection painting.</p>
+</dd>
+<dt class="field-even">Area Plane<span class="colon">:</span></dt>
+<dd class="field-even"><p>Projects the brush texture along the local surface <a class="reference internal" href="../../glossary/index.html#term-Normal"><span class="xref std std-term">normal</span></a>,
+which keeps the texture from stretching on steep angles.
+This is an ideal default for most brushes.</p>
+</dd>
+<dt class="field-odd">Tiled<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The <em>Tile</em> option repeats the texture across the screen,
+so moving the brush will not change where the texture is applied.
+The <em>Tile</em> option is most useful with tileable images, rather than procedural textures.</p>
+</dd>
+<dt class="field-even">3D<span class="colon">:</span></dt>
+<dd class="field-even"><p>The <em>3D</em> option allows the brush to take full advantage of procedural textures.
+This mode uses vertex coordinates rather than the brush location to determine what area of the texture to use.</p>
+<p>This option is not available for the Texture Mask.</p>
+</dd>
+<dt class="field-odd">Random<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Picks a random texture coordinate to sample from for each step of the stroke.</p>
+</dd>
+<dt class="field-even">Stencil<span class="colon">:</span></dt>
+<dd class="field-even"><p>This is the ideal option for stamping textures for projection painting.
+Stencil mapping works by projecting the texture from the camera space on the mesh or canvas.
+Painting is applied only inside the boundaries of the stencil.
+The stencil is displayed as a screen space overlay on the viewport.
+To transform the stencil texture use the following shortcuts (Hold <kbd class="kbd docutils literal notranslate">Alt</kbd> for the Texture Mask):</p>
+<ul class="simple">
+<li><p>Move <kbd class="kbd docutils literal notranslate">RMB</kbd></p></li>
+<li><p>Scale <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">RMB</kbd></kbd></p></li>
+<li><p>Rotate <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">RMB</kbd></kbd></p></li>
+</ul>
+<p>While using stencil scaling, <kbd class="kbd docutils literal notranslate">X</kbd> and <kbd class="kbd docutils literal notranslate">Y</kbd> are used to constrain the scaling to one axis.
+Pressing one of the buttons twice reverts to unconstrained scaling.</p>
+<dl class="simple" id="bpy-ops-brush-stencil-fit-image-aspect">
+<dt>Image Aspect</dt><dd><p>Restore the aspect ratio of the original image to reset stretching introduce by scaling,
+(Image textures only.) This operator can use the tiling and scale values of the brush texture
+if the relevant are enabled in <a class="reference internal" href="../../interface/undo_redo.html#bpy-ops-screen-redo-last"><span class="std std-ref">Adjust Last Operation</span></a> panel.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-ops-brush-stencil-reset-transform">
+<dt>Reset Transform</dt><dd><p>Restores the position of the stencil.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-brush-use-pressure-masking">
+<dt>Pressure Masking</dt><dd><p>Only available for the Texture Mask. It allows to clip the mask result based on pressure.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Off<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Disabled.</p>
+</dd>
+<dt class="field-even">Ramp<span class="colon">:</span></dt>
+<dd class="field-even"><p>Fades out the mask effect on higher pressure.</p>
+</dd>
+<dt class="field-odd">Cutoff<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Expands the used values from the image based on stylus pressure.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-brushtextureslot-angle">
+<dt>Angle <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">F</kbd></kbd></dt><dd><p>This is the rotation angle of the texture brush.
+It can be changed interactively via <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">F</kbd></kbd> in the 3D Viewport.
+While rotating the angle via the hotkey you can enter a value numerically as well.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-brushtextureslot-use-rake">
+<dt>Rake</dt><dd><p>Texture angle follows the direction of the brush stroke.
+Useful for stamping textures repeatedly along the stroke.
+Not available with <em>3D</em>, <em>Tiled</em>, or <em>Stencil</em> Mapping types.
+The shortcut is not available in Sculpt mode.</p>
+</dd>
+</dl>
+<dl id="bpy-types-brushtextureslot-use-random">
+<dt>Random</dt><dd><p>Angle is randomized on each step of the stroke.
+Not available with <em>3D</em>, <em>Tiled</em>, or <em>Stencil</em> Mapping types.
+The shortcut is not available in Sculpt mode.</p>
+<dl class="simple" id="bpy-types-brushtextureslot-random-angle">
+<dt>Random Angle</dt><dd><p>Constraints the random deviation to a range.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-textureslot-offset">
+<dt>Offset X, Y, Z</dt><dd><p>Offset the texture map placement in X, Y, and Z axes.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-textureslot-scale">
+<dt>Size X, Y, Z</dt><dd><p>Set the scale of the texture in each axis.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-brush-texture-sample-bias">
+<dt>Sample Bias <span class="guilabel">Sculpt Mode</span></dt><dd><p>Value added to texture samples.
+This can be used if the mid-level of a height map is not correct.</p>
+</dd>
+</dl>
+<dl id="bpy-types-brush-use-color-as-displacement">
+<dt>Vector Displacement <span class="guilabel">Sculpt Mode</span></dt><dd><p>Use the color channels to displace geometry in 3 vectors.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is only supported for the <a class="reference internal" href="../sculpting/tools/draw.html"><span class="doc">Draw</span></a> brush
+with <a class="reference internal" href="#bpy-types-brushtextureslot-map-mode"><span class="std std-ref">Area Plane</span></a> mapping enabled.</p>
+</div>
+</dd>
+</dl>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="brush_settings.html" class="btn btn-neutral float-left" title="Brush Settings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="stroke.html" class="btn btn-neutral float-right" title="Stroke" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../copyright.html">Copyright</a> : This page is licensed under a CC-BY-SA 4.0 Int. License.
+      <span class="lastupdated">Last updated on 12/17/2023.
+      </span></p>
+  </div>
+
+  
+<div class="footer-contribute">
+   <ul>
+      <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/sculpt_paint/brush/texture.rst"
+            class="fa fa-edit"> View Source</a>
+      </li>
+      <!-- <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/sculpt_paint/brush/texture.rst"
+            class="fa fa-edit"> Edit Page</a>
+      </li> -->
+      <li>
+         <a href="https://projects.blender.org/blender/documentation/issues/new?template=.gitea/issue_template/bug.yaml&field:body=%2A%2APage+Information%2A%2A%0D%0AFile%3A+%60manual%2Fsculpt_paint/brush/texture.rst%60%0D%0ABlender+Version%3A+%604.0%60%0D%0ADocumentation+Language%3A+%60en%60%0D%0A%5BPermanent+Link%5D%28https%3A%2F%2Fdocs.blender.org%2Fmanual%2Fen%2F4.0%2Fsculpt_paint/brush/texture.html%29%0D%0A%0D%0A%2A%2AShort+description+of+error%2A%2A%0D%0A%5BPlease+fill+out+a+short+description+of+the+error+here%5D%0D%0A"
+            class="fa fa-bug"> Report issue on this page</a>
+      </li>
+      <ul>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="document versions">
+	<ul id="versionwrap" role="presentation">
+		<li role="presentation">
+			<span id="version-popover" class="version-btn" tabindex="0" role="button" aria-label="versions selector"
+				aria-haspopup="true" aria-controls="version-vsnlist" aria-disabled="true">
+				4.0
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Versions</div>
+				<ul id="version-vsnlist" class="version-list" role="menu" aria-labelledby="version-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<li role="presentation">
+			<span id="lang-popover" class="version-btn" tabindex="0" role="button" aria-label="language selector"
+				aria-haspopup="true" aria-controls="version-langlist">
+				 en 
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Languages</div>
+				<ul id="version-langlist" class="version-list" role="menu" aria-labelledby="lang-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<template id="version-entry">
+			<li tabindex="-1" role="presentation"><a tabindex="-1" role="menuitem"></a></li>
+			<li class="selected" tabindex="-1" role="presentation"><span tabindex="-1" aria-current="page"></spanp></li>
+		</template>
+	</ul>
+<template id="version-warning">
+	<div class="admonition warning">
+		<p class="first admonition-title">Note</p>
+		<p class="last">
+			You are not using the most up to date version of the documentation.
+			<a href="#"></a> is the newest version.
+		</p>
+	</div>
+</template>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1418081-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1418081-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

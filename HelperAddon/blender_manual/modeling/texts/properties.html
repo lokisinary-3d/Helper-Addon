@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Properties &mdash; Blender Manual</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme_overrides.css?v=8da28a04" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/version_switch.css?v=74ca2809" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.blender.org/manual/en/latest/modeling/texts/properties.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=715c20a1"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/version_switch.js?v=5cbd935e"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Blender Manual"
+          href="../../_static/opensearch.xml"/>
+<link rel="alternate" hreflang="en" href="https://docs.blender.org/manual/en/latest/" />
+<link rel="alternate" hreflang="ar" href="https://docs.blender.org/manual/ar/latest/" />
+<link rel="alternate" hreflang="de" href="https://docs.blender.org/manual/de/latest/" />
+<link rel="alternate" hreflang="es" href="https://docs.blender.org/manual/es/latest/" />
+<link rel="alternate" hreflang="fi" href="https://docs.blender.org/manual/fi/latest/" />
+<link rel="alternate" hreflang="fr" href="https://docs.blender.org/manual/fr/latest/" />
+<link rel="alternate" hreflang="id" href="https://docs.blender.org/manual/id/latest/" />
+<link rel="alternate" hreflang="it" href="https://docs.blender.org/manual/it/latest/" />
+<link rel="alternate" hreflang="ja" href="https://docs.blender.org/manual/ja/latest/" />
+<link rel="alternate" hreflang="ko" href="https://docs.blender.org/manual/ko/latest/" />
+<link rel="alternate" hreflang="nb" href="https://docs.blender.org/manual/nb/latest/" />
+<link rel="alternate" hreflang="pt" href="https://docs.blender.org/manual/pt/latest/" />
+<link rel="alternate" hreflang="ru" href="https://docs.blender.org/manual/ru/latest/" />
+<link rel="alternate" hreflang="sk" href="https://docs.blender.org/manual/sk/latest/" />
+<link rel="alternate" hreflang="sl" href="https://docs.blender.org/manual/sl/latest/" />
+<link rel="alternate" hreflang="sr" href="https://docs.blender.org/manual/sr/latest/" />
+<link rel="alternate" hreflang="uk" href="https://docs.blender.org/manual/uk/latest/" />
+<link rel="alternate" hreflang="vi" href="https://docs.blender.org/manual/vi/latest/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://docs.blender.org/manual/zh-hans/latest/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://docs.blender.org/manual/zh-hant/latest/" />
+<link rel="alternate" hreflang="x-default" href="https://docs.blender.org/manual/en/latest/" />
+
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="Volumes" href="../volumes/index.html" />
+    <link rel="prev" title="Editing" href="editing.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Blender 4.0 Manual
+              <img src="../../_static/blender-logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/about/index.html">About Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installing/index.html">Installing Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/configuration/index.html">Configuring Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/help.html">Help System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sections</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../interface/index.html">User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../editors/index.html">Editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scene_layout/index.html">Scenes &amp; Objects</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Modeling</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../meshes/index.html">Meshes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../curves/index.html">Curves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../surfaces/index.html">Surfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../metas/index.html">Metaball</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Text</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="selecting.html">Selecting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="editing.html">Editing</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Properties</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#shape">Shape</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#texture-space">Texture Space</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#geometry">Geometry</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#extrusion-taper-bevel">Extrusion, Taper &amp; Bevel</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#font">Font</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#transform">Transform</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#paragraph">Paragraph</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#alignment">Alignment</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#spacing">Spacing</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#text-boxes">Text Boxes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../volumes/index.html">Volumes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../empties.html">Empties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modifiers/index.html">Modifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../geometry_nodes/index.html">Geometry Nodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../transform/index.html">Transform</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../sculpt_paint/index.html">Sculpting &amp; Painting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../grease_pencil/index.html">Grease Pencil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../animation/index.html">Animation &amp; Rigging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../physics/index.html">Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../render/index.html">Rendering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../compositing/index.html">Compositing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../movie_clip/index.html">Motion Tracking &amp; Masking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../video_editing/index.html">Video Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../files/index.html">Assets, Files, &amp; Data System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../addons/index.html">Add-ons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/index.html">Advanced</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Manual Index</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get Involved</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribute Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Blender 4.0 Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Modeling</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Text</a></li>
+      <li class="breadcrumb-item active">Properties</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="properties">
+<h1>Properties<a class="headerlink" href="#properties" title="Link to this heading"></a></h1>
+<section id="shape">
+<h2>Shape<a class="headerlink" href="#shape" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id1">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Mode<span class="colon">:</span></dt>
+<dd class="field-odd"><p>All Modes</p>
+</dd>
+<dt class="field-even">Panel<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Properties ‣ Text ‣ Shape</span></p>
+</dd>
+</dl>
+</div>
+<p>Most of the settings in the <em>Shape</em> panel are shared with those of
+<a class="reference internal" href="../curves/properties/shape.html"><span class="doc">Curves</span></a>
+data-blocks, please refer to those for details.</p>
+<dl class="simple" id="bpy-types-textcurve-use-fast-edit">
+<dt>Fast Editing</dt><dd><p>Does not fill the letters in Edit Mode, only show their outline.</p>
+</dd>
+</dl>
+</section>
+<section id="texture-space">
+<h2>Texture Space<a class="headerlink" href="#texture-space" title="Link to this heading"></a></h2>
+<p>Each Object can have an automatically generated UV map, these maps can be adjusted here.</p>
+<p>See <a class="reference internal" href="../meshes/uv/uv_texture_spaces.html#properties-texture-space"><span class="std std-ref">Generated UV Properties</span></a> for more information.</p>
+</section>
+<section id="geometry">
+<h2>Geometry<a class="headerlink" href="#geometry" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id2">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Mode<span class="colon">:</span></dt>
+<dd class="field-odd"><p>All Modes</p>
+</dd>
+<dt class="field-even">Panel<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Properties ‣ Font ‣ Geometry</span></p>
+</dd>
+</dl>
+</div>
+<dl class="simple">
+<dt>Offset</dt><dd><p>Offset the control points of the curves defining the letters, which will make them thinner or thicker.
+Use with care, it can quickly lead to artifacts…</p>
+</dd>
+</dl>
+<section id="extrusion-taper-bevel">
+<h3>Extrusion, Taper &amp; Bevel<a class="headerlink" href="#extrusion-taper-bevel" title="Link to this heading"></a></h3>
+<p>The remaining settings of that panel, which are used to give volume to the letters,
+are also shared with the <a class="reference internal" href="../curves/properties/geometry.html"><span class="doc">Curves</span></a> data-blocks,
+please refer to those for details.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>How the Taper object effect works depends on how the curves defining the letters are built.
+The results can often look quite random…</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference internal" href="../curves/properties/geometry.html#bpy-types-curve-bevel"><span class="std std-ref">Bevel</span></a> is applied to the curves defining the letters,
+which means that usually it will follow their outlines
+(there will be two parallel beveled curves, and not a single one, as one might expect).</p>
+</div>
+</section>
+</section>
+<section id="font">
+<span id="modeling-text-character"></span><h2>Font<a class="headerlink" href="#font" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id3">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Mode<span class="colon">:</span></dt>
+<dd class="field-odd"><p>All Modes</p>
+</dd>
+<dt class="field-even">Panel<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Properties ‣ Font ‣ Font</span></p>
+</dd>
+</dl>
+</div>
+<p>Blender comes with a <em>built-in</em> font by default that is displayed in
+each of the four font style data-block menus.
+The <em>built-in</em> font is always present and shows in this list as “Bfont”.
+The data-block menu contains a list displaying the currently loaded fonts.
+Select one for each font style.</p>
+<p>To load a different <em>Font</em>, click one of the <em>Load</em> buttons
+in the <em>Font</em> panel and navigate to a font file.
+The <a class="reference internal" href="../../editors/file_browser.html"><span class="doc">File Browser</span></a> will give all valid fonts a capital “F” icon.</p>
+<p>If you select a font that is unsupported by Blender, you will get the error <code class="docutils literal notranslate"><span class="pre">Not</span> <span class="pre">a</span> <span class="pre">valid</span> <span class="pre">font</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Location of Fonts on Unix</p>
+<p>Fonts are typically located under <code class="docutils literal notranslate"><span class="pre">/usr/lib/fonts</span></code>, or some variant like <code class="docutils literal notranslate"><span class="pre">/usr/lib/X11/fonts</span></code>,
+but not always. They may be in other locations as well,
+such as <code class="docutils literal notranslate"><span class="pre">/usr/share/local</span></code> or <code class="docutils literal notranslate"><span class="pre">/usr/local/share</span></code>, and possibly related sub-trees.</p>
+</div>
+<p>Remember that the same font will be applied to all chars with same style in a text,
+but that a separate font is required for each style.
+For example, you will need to load an <em>Italics</em> font in order to make characters or words italic.
+Once the font is loaded you can apply that font “Style” to the selected characters or the whole object.
+In all, you would need to load a minimum of four different types of fonts to represent each style
+(Normal, Italics, Bold, Bold &amp; Italics).</p>
+<p>It is important to understand, that Blender does not care what font
+you load for “normal”, “bold”, etc., styles.
+This is how you can have up to four different fonts in use in the same text,
+but you have to choose between different styles of a same font, or different fonts.
+Blender has a number of typographic controls for changing the style and layout of text,
+found in the <em>Font</em> panel.</p>
+<dl class="simple" id="bpy-types-textcharacterformat-use-bold">
+<dt>Bold</dt><dd><p>With no text selected, toggles new text to be <strong>bold</strong>.
+With text selected, toggles the selected text to be <strong>bold</strong>.
+Text can also be set to bold by selecting it then using the <em>Bold</em>
+entry in the <em>Text</em> menu of the 3D Viewport.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-textcharacterformat-use-italic">
+<dt>Italic</dt><dd><p>With no text selected, toggles new text to be <em>italic</em>.
+With text selected, toggles the selected text to be <em>italic</em>.
+Text can also be set to italic by selecting it then using the <em>Bold</em>
+entry in the <em>Text</em> menu of the 3D Viewport.</p>
+</dd>
+</dl>
+<dl id="bpy-types-textcharacterformat-use-underline">
+<dt>Underline</dt><dd><p>With no text selected, toggles new text to be underline.
+With text selected, toggles the selected text to be underline.
+Text can also be set to underline by selecting it then using the <em>Underline</em>
+entry in the <em>Text</em> menu of the 3D Viewport.</p>
+<p>See also <a class="reference internal" href="#modeling-text-character-underline"><span class="std std-ref">underline settings</span></a> below.</p>
+</dd>
+</dl>
+<dl id="bpy-types-textcharacterformat-use-small-caps">
+<dt>Small Caps</dt><dd><p>With no text selected, toggles new text to be small capitals.
+With text selected, toggles the selected text to be small capitals.
+Text can also be set to small caps by selecting it then using the <em>Small Caps</em>
+entry in the <em>Text</em> menu of the 3D Viewport.</p>
+<p>The size of the <em>Small Caps</em> can be changed with
+the <a class="reference internal" href="#modeling-text-character-underline"><span class="std std-ref">Small Caps Scale setting</span></a>.</p>
+</dd>
+</dl>
+<section id="transform">
+<h3>Transform<a class="headerlink" href="#transform" title="Link to this heading"></a></h3>
+<dl class="simple" id="bpy-types-textcurve-size">
+<dt>Size</dt><dd><p>Controls the size of the whole text (no way to control each char size independently).
+Note however, that chars with different fonts (different styles, see below) might have different visible sizes.</p>
+</dd>
+</dl>
+<dl id="bpy-types-textcurve-shear">
+<dt>Shear</dt><dd><p>Controls the inclination of the whole text.
+As similar as it may seem, this is not the same thing as italics style.</p>
+<figure class="align-default" id="id6">
+<a class="reference internal image-reference" href="../../_images/modeling_texts_properties_shear-example.png"><img alt="../../_images/modeling_texts_properties_shear-example.png" src="../../_images/modeling_texts_properties_shear-example.png" style="width: 340px;" /></a>
+<figcaption>
+<p><span class="caption-text">Shear example.</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</dd>
+</dl>
+<dl id="bpy-types-textcurve-family">
+<dt>Object Font</dt><dd><p>Allows individual objects to be used to render fonts, you can create/model your own complex font inside Blender!
+This field is used to select the objects prefix name (object “family”) to be used
+to locate the individual characters used for typing.
+This is quite a complex process, so here are detailed steps to follow:</p>
+<ol class="arabic simple">
+<li><p>Create the font characters, each character can be any object type (mesh, curve, etc.).
+They must all have a name following the naming schema:
+“common prefix” followed by the “character name” (e.g. “ft.a”, “ft.b”, etc.).</p></li>
+<li><p>For the text object, enable
+<a class="reference internal" href="../../scene_layout/object/properties/instancing/verts.html"><span class="doc">Instancing Vertices</span></a>.</p></li>
+<li><p>In the <em>Font</em> tab, fill the <em>Object Font</em> field with the “common prefix” of your “font” objects.
+Now, each time a character in your text matches the <em>suffix part</em> of a “font” object’s name,
+this object is duplicated on this character.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The objects are duplicated so that their center is positioned at
+the <em>lower right corner</em> of the corresponding characters.</p>
+</div>
+</dd>
+</dl>
+<dl id="bpy-types-textcurve-follow-curve">
+<dt>Text on Curve</dt><dd><p>Select a curve object for the text object to follow.</p>
+<figure class="align-default" id="id7">
+<a class="reference internal image-reference" href="../../_images/modeling_texts_properties_curved-lowres-example.png"><img alt="../../_images/modeling_texts_properties_curved-lowres-example.png" src="../../_images/modeling_texts_properties_curved-lowres-example.png" style="width: 360px;" /></a>
+<figcaption>
+<p><span class="caption-text">Text on curve.</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You should rather use the <a class="reference internal" href="../modifiers/deform/curve.html"><span class="doc">Curve modifier</span></a>,
+which offers more control, and is the standard way to achieve such effects in modern Blender.</p>
+</div>
+</dd>
+</dl>
+<span id="modeling-text-character-underline"></span><dl class="simple" id="bpy-types-textcurve-underline-position">
+<dt>Underline Position</dt><dd><p>This allows you to shift vertically the position of the underline.</p>
+</dd>
+</dl>
+<dl class="simple" id="py-types-textcurve-underline-height">
+<dt>Underline Thickness</dt><dd><p>This controls the thickness of the underline.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-textcurve-small-caps-scale">
+<dt>Small Caps Scale</dt><dd><p>The scaling applied to capital letters to turn them into small caps.</p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="paragraph">
+<h2>Paragraph<a class="headerlink" href="#paragraph" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id4">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Mode<span class="colon">:</span></dt>
+<dd class="field-odd"><p>All</p>
+</dd>
+<dt class="field-even">Panel<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Properties ‣ Font ‣ Paragraph</span></p>
+</dd>
+</dl>
+</div>
+<p>The <em>Paragraph</em> Panel has settings for the alignment and spacing of text.</p>
+<figure class="align-default" id="id8">
+<img alt="../../_images/modeling_texts_properties_paragraph-settings.png" src="../../_images/modeling_texts_properties_paragraph-settings.png" />
+<figcaption>
+<p><span class="caption-text">The Paragraph panel.</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<section id="alignment">
+<h3>Alignment<a class="headerlink" href="#alignment" title="Link to this heading"></a></h3>
+<dl id="bpy-types-textcurve-align-x">
+<dt>Horizontal</dt><dd><dl class="field-list simple">
+<dt class="field-odd">Left<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Aligns text to the left of the frames when using them,
+else uses the origin of the text object as the starting point of the text (which grows to the right).</p>
+</dd>
+<dt class="field-even">Center<span class="colon">:</span></dt>
+<dd class="field-even"><p>Centers text in the frames when using them,
+else uses the origin of the text object as the mid-point of the text
+(which grows equally to the left and right).</p>
+</dd>
+<dt class="field-odd">Right<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Aligns text to the right of the frames when using them,
+else uses the origin of the text object as the ending point of the text (which grows to the left).</p>
+</dd>
+<dt class="field-even">Justify<span class="colon">:</span></dt>
+<dd class="field-even"><p>Only flushes a line when it is terminated by a word wrap (<strong>not</strong> by a newline),
+and uses <em>whitespace</em> instead of <em>character spacing</em> (kerning) to fill lines.</p>
+</dd>
+<dt class="field-odd">Flush<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Always flushes the line, even when it is still being typed-in.
+It uses character spacing (kerning) to fill lines.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Both <em>Justify</em> and <em>Flush</em> only work within frames.</p>
+</div>
+</dd>
+</dl>
+<dl id="bpy-types-textcurve-align-y">
+<dt>Vertical</dt><dd><dl class="field-list">
+<dt class="field-odd">Top<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>With text boxes, aligns the top of the text to the top of the frames.</p></li>
+<li><p>With no text box, aligns the top of the text to the origin of the object, and grows to the bottom.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Top Baseline<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>With text boxes, aligns the ‘top’ baseline of the text to the top of the frames.</p></li>
+<li><p>With no text box, aligns the actual baseline of the text to the origin of the object,
+and grows to the bottom.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>That difference of reference point in the first line
+depending on usage of boxes or not is indeed confusing.</p>
+</div>
+</dd>
+<dt class="field-odd">Middle<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>With text boxes, centers the text in the frames.</p></li>
+<li><p>With no text box, centers the text on the origin of the object,
+and grows in both top and bottom directions equally.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Bottom Baseline<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>With text boxes, aligns the baseline of the text to the bottom of the frames.</p></li>
+<li><p>With no text box, aligns the baseline of the text to the origin of the object, and grows to the top.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Bottom<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>With text boxes, align the bottom of the text to the bottom of the frames.</p></li>
+<li><p>With no text box, align the bottom of the text to the origin of the object, and grows to the top.</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+<section id="spacing">
+<h3>Spacing<a class="headerlink" href="#spacing" title="Link to this heading"></a></h3>
+<dl id="bpy-types-textcurve-space-character">
+<dt>Character Spacing</dt><dd><p>A factor by which space between each character (kerning) is scaled in width.</p>
+<p>In Edit Mode in the 3D Viewport, you can also control individual kerning
+at text cursor position by pressing <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">Left</kbd></kbd> / <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Alt</kbd>-<kbd class="kbd docutils literal notranslate">Right</kbd></kbd> to decrease/increase it.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-textcurve-space-word">
+<dt>Word Spacing</dt><dd><p>A factor by which whitespace between words is scaled in width.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-textcurve-space-line">
+<dt>Line Spacing</dt><dd><p>A factor by which the vertical space between lines is scaled.</p>
+</dd>
+</dl>
+<span id="bpy-types-textcurve-offset-x"></span><dl class="simple" id="bpy-types-textcurve-offset-y">
+<dt>Offset X, Y</dt><dd><p>These settings control the X and Y offset of the text position within the object.
+This applies relatively to the object’s origin, either to the whole text or, when using text boxes, to each frame.</p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="text-boxes">
+<span id="bpy-types-textbox"></span><h2>Text Boxes<a class="headerlink" href="#text-boxes" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id5">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Mode<span class="colon">:</span></dt>
+<dd class="field-odd"><p>All</p>
+</dd>
+<dt class="field-even">Panel<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Properties ‣ Font ‣ Text Boxes</span></p>
+</dd>
+</dl>
+</div>
+<p>Text boxes (or frames) allow you to distribute the text among rectangular areas within a single text object.
+An arbitrary number of freely movable and re-sizable text frames are allowed per text object.</p>
+<p>The text flows continuously from the lowest-numbered frame to the highest-numbered frame with text
+inside each frame word-wrapped.
+It flows between frames when a lower-numbered frame cannot fit any more text.
+If the last frame is reached, text overflows out of it (by default, see options below).</p>
+<figure class="align-default" id="id9">
+<img alt="../../_images/modeling_texts_properties_frame-upperpanel-area.png" src="../../_images/modeling_texts_properties_frame-upperpanel-area.png" />
+<figcaption>
+<p><span class="caption-text">Text Boxes panel.</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<dl class="simple" id="bpy-ops-font-textbox-add">
+<dt>Add Textbox</dt><dd><p>Inserts a new frame, just after the current one (in text flow order).
+The new frame will have the same size and position as the selected one.</p>
+</dd>
+</dl>
+<p>.._bpy.ops.font.textbox_remove:</p>
+<dl class="simple">
+<dt>Delete <code class="docutils literal notranslate"><span class="pre">X</span></code></dt><dd><p>Delete the current frame.</p>
+</dd>
+</dl>
+<dl id="bpy-types-textcurve-overflow">
+<dt>Overflow</dt><dd><p>How to handle text overflowing available space in the defined boxes.</p>
+<dl class="field-list">
+<dt class="field-odd">Overflow<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Just keep text running out of the last box.</p>
+</dd>
+<dt class="field-even">Scale to Fit<span class="colon">:</span></dt>
+<dd class="field-even"><p>Scale text to fit into the available space.</p>
+</dd>
+<dt class="field-odd">Truncate<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Hide the end of the text that does not fit into the available space.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It will only truncate in <em>Object Mode</em>,
+in <em>Edit Mode</em> the whole text remains visible (and overflows as needed).</p>
+</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-textbox-width">
+<dt>Size X, Y</dt><dd><p>Specifies the width and height of the text box, if set to <strong>zero</strong> no word wrapping happens
+(it is ignored, and the whole text box system is disabled if all are set to a null size).</p>
+</dd>
+</dl>
+<span id="bpy-types-textbox-x"></span><dl class="simple" id="bpy-types-textbox-y">
+<dt>Offset X, Y</dt><dd><p>Controls the <em>X</em> and <em>Y</em> offset of the frame, i.e. its position.</p>
+</dd>
+</dl>
+<figure class="align-default" id="id10">
+<img alt="../../_images/modeling_texts_properties_frame-example4.png" src="../../_images/modeling_texts_properties_frame-example4.png" />
+<figcaption>
+<p><span class="caption-text">Multiple columns, text flowing between boxes.</span><a class="headerlink" href="#id10" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="editing.html" class="btn btn-neutral float-left" title="Editing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../volumes/index.html" class="btn btn-neutral float-right" title="Volumes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../copyright.html">Copyright</a> : This page is licensed under a CC-BY-SA 4.0 Int. License.
+      <span class="lastupdated">Last updated on 12/17/2023.
+      </span></p>
+  </div>
+
+  
+<div class="footer-contribute">
+   <ul>
+      <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/modeling/texts/properties.rst"
+            class="fa fa-edit"> View Source</a>
+      </li>
+      <!-- <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/modeling/texts/properties.rst"
+            class="fa fa-edit"> Edit Page</a>
+      </li> -->
+      <li>
+         <a href="https://projects.blender.org/blender/documentation/issues/new?template=.gitea/issue_template/bug.yaml&field:body=%2A%2APage+Information%2A%2A%0D%0AFile%3A+%60manual%2Fmodeling/texts/properties.rst%60%0D%0ABlender+Version%3A+%604.0%60%0D%0ADocumentation+Language%3A+%60en%60%0D%0A%5BPermanent+Link%5D%28https%3A%2F%2Fdocs.blender.org%2Fmanual%2Fen%2F4.0%2Fmodeling/texts/properties.html%29%0D%0A%0D%0A%2A%2AShort+description+of+error%2A%2A%0D%0A%5BPlease+fill+out+a+short+description+of+the+error+here%5D%0D%0A"
+            class="fa fa-bug"> Report issue on this page</a>
+      </li>
+      <ul>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="document versions">
+	<ul id="versionwrap" role="presentation">
+		<li role="presentation">
+			<span id="version-popover" class="version-btn" tabindex="0" role="button" aria-label="versions selector"
+				aria-haspopup="true" aria-controls="version-vsnlist" aria-disabled="true">
+				4.0
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Versions</div>
+				<ul id="version-vsnlist" class="version-list" role="menu" aria-labelledby="version-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<li role="presentation">
+			<span id="lang-popover" class="version-btn" tabindex="0" role="button" aria-label="language selector"
+				aria-haspopup="true" aria-controls="version-langlist">
+				 en 
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Languages</div>
+				<ul id="version-langlist" class="version-list" role="menu" aria-labelledby="lang-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<template id="version-entry">
+			<li tabindex="-1" role="presentation"><a tabindex="-1" role="menuitem"></a></li>
+			<li class="selected" tabindex="-1" role="presentation"><span tabindex="-1" aria-current="page"></spanp></li>
+		</template>
+	</ul>
+<template id="version-warning">
+	<div class="admonition warning">
+		<p class="first admonition-title">Note</p>
+		<p class="last">
+			You are not using the most up to date version of the documentation.
+			<a href="#"></a> is the newest version.
+		</p>
+	</div>
+</template>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1418081-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1418081-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

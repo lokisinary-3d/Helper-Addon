@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snapping &mdash; Blender Manual</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=8da28a04" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/version_switch.css?v=74ca2809" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.blender.org/manual/en/latest/editors/3dview/controls/snapping.html" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=715c20a1"></script>
+        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../_static/js/version_switch.js?v=5cbd935e"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Blender Manual"
+          href="../../../_static/opensearch.xml"/>
+<link rel="alternate" hreflang="en" href="https://docs.blender.org/manual/en/latest/" />
+<link rel="alternate" hreflang="ar" href="https://docs.blender.org/manual/ar/latest/" />
+<link rel="alternate" hreflang="de" href="https://docs.blender.org/manual/de/latest/" />
+<link rel="alternate" hreflang="es" href="https://docs.blender.org/manual/es/latest/" />
+<link rel="alternate" hreflang="fi" href="https://docs.blender.org/manual/fi/latest/" />
+<link rel="alternate" hreflang="fr" href="https://docs.blender.org/manual/fr/latest/" />
+<link rel="alternate" hreflang="id" href="https://docs.blender.org/manual/id/latest/" />
+<link rel="alternate" hreflang="it" href="https://docs.blender.org/manual/it/latest/" />
+<link rel="alternate" hreflang="ja" href="https://docs.blender.org/manual/ja/latest/" />
+<link rel="alternate" hreflang="ko" href="https://docs.blender.org/manual/ko/latest/" />
+<link rel="alternate" hreflang="nb" href="https://docs.blender.org/manual/nb/latest/" />
+<link rel="alternate" hreflang="pt" href="https://docs.blender.org/manual/pt/latest/" />
+<link rel="alternate" hreflang="ru" href="https://docs.blender.org/manual/ru/latest/" />
+<link rel="alternate" hreflang="sk" href="https://docs.blender.org/manual/sk/latest/" />
+<link rel="alternate" hreflang="sl" href="https://docs.blender.org/manual/sl/latest/" />
+<link rel="alternate" hreflang="sr" href="https://docs.blender.org/manual/sr/latest/" />
+<link rel="alternate" hreflang="uk" href="https://docs.blender.org/manual/uk/latest/" />
+<link rel="alternate" hreflang="vi" href="https://docs.blender.org/manual/vi/latest/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://docs.blender.org/manual/zh-hans/latest/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://docs.blender.org/manual/zh-hant/latest/" />
+<link rel="alternate" hreflang="x-default" href="https://docs.blender.org/manual/en/latest/" />
+
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="next" title="Proportional Editing" href="proportional_editing.html" />
+    <link rel="prev" title="Active Element" href="pivot_point/active_element.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Blender 4.0 Manual
+              <img src="../../../_static/blender-logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/about/index.html">About Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/installing/index.html">Installing Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/configuration/index.html">Configuring Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/help.html">Help System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sections</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../interface/index.html">User Interface</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Editors</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">3D Viewport</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../startup_scene.html">Startup Scene</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../modes.html">Object Modes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../navigate/index.html">Navigating</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3d_cursor.html">3D Cursor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../selecting.html">Selecting</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">Controls</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="orientation.html">Transform Orientation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pivot_point/index.html">Pivot Point</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Snapping</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#snap-with">Snap With</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#snap-to">Snap To</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#snap-individual-elements-to">Snap Individual Elements To</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#target-selection">Target Selection</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#affect">Affect</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="proportional_editing.html">Proportional Editing</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../display/index.html">Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../toolbar/index.html">Toolbar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sidebar.html">Sidebar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../viewport_render.html">Viewport Render</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../image/index.html">Image Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../uv/index.html">UV Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../compositor.html">Compositor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../texture_node/index.html">Texture Nodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../geometry_node.html">Geometry Node Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../shader_editor.html">Shader Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../video_sequencer/index.html">Video Sequencer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../clip/index.html">Movie Clip Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../dope_sheet/index.html">Dope Sheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../timeline.html">Timeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../graph_editor/index.html">Graph Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../drivers_editor.html">Drivers Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../nla/index.html">Nonlinear Animation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../text_editor.html">Text Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_console.html">Python Console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../info_editor.html">Info Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../outliner/index.html">Outliner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../properties_editor.html">Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../file_browser.html">File Browser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../asset_browser.html">Asset Browser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../spreadsheet.html">Spreadsheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../preferences/index.html">Preferences</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../scene_layout/index.html">Scenes &amp; Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../modeling/index.html">Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sculpt_paint/index.html">Sculpting &amp; Painting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../grease_pencil/index.html">Grease Pencil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../animation/index.html">Animation &amp; Rigging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../physics/index.html">Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../render/index.html">Rendering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../compositing/index.html">Compositing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../movie_clip/index.html">Motion Tracking &amp; Masking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../video_editing/index.html">Video Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../files/index.html">Assets, Files, &amp; Data System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../addons/index.html">Add-ons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../advanced/index.html">Advanced</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../troubleshooting/index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../glossary/index.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../genindex.html">Manual Index</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get Involved</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../contribute/index.html">Contribute Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Blender 4.0 Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Editors</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">3D Viewport</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Controls</a></li>
+      <li class="breadcrumb-item active">Snapping</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="snapping">
+<span id="bpy-types-toolsettings-use-snap"></span><h1>Snapping<a class="headerlink" href="#snapping" title="Link to this heading"></a></h1>
+<div class="refbox admonition" id="id1">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Mode<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Object, Edit, and Pose Mode</p>
+</dd>
+<dt class="field-even">Header<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Snap</span> (<img alt="snap-header-icon" src="../../../_images/editors_3dview_controls_snapping_header-magnet-icon.png" />)</p>
+</dd>
+<dt class="field-odd">Shortcut<span class="colon">:</span></dt>
+<dd class="field-odd"><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">Tab</kbd></kbd></p>
+</dd>
+</dl>
+</div>
+<figure class="align-right" id="id5">
+<img alt="../../../_images/editors_3dview_controls_snapping_element-menu.png" src="../../../_images/editors_3dview_controls_snapping_element-menu.png" />
+<figcaption>
+<p><span class="caption-text">Snap menu.</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Snapping lets you easily align objects and mesh elements to others.
+It can be toggled by clicking the magnet icon in the 3D Viewport’s header,
+or more temporarily by holding <kbd class="kbd docutils literal notranslate">Ctrl</kbd>.</p>
+<div class="lead docutils container">
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Transform operators have there own snapping operators,
+see <a class="reference internal" href="../../../modeling/transform/modal_map.html"><span class="doc">Transform Modal Map</span></a></p>
+</div>
+<section id="snap-with">
+<span id="bpy-types-toolsettings-snap-target"></span><h2>Snap With<a class="headerlink" href="#snap-with" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id2">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Mode<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Object, Edit, and Pose Mode</p>
+</dd>
+<dt class="field-even">Header<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Snapping ‣ Snap with</span></p>
+</dd>
+<dt class="field-odd">Shortcut<span class="colon">:</span></dt>
+<dd class="field-odd"><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">Tab</kbd></kbd></p>
+</dd>
+</dl>
+</div>
+<p>Determines what part of the selection will coincide with the target.
+(The rest of the selection will follow along.)</p>
+<dl class="simple">
+<dt>Active</dt><dd><p>Snaps using the origin (in Object Mode) or center (in Edit Mode) of the active element.</p>
+</dd>
+<dt>Median</dt><dd><p>Snaps using the median of the selection.</p>
+</dd>
+<dt>Center</dt><dd><p>Snaps using the current transformation center
+(another word for the <a class="reference internal" href="pivot_point/index.html"><span class="doc">pivot point</span></a>).
+This option is especially useful in combination with the
+<a class="reference internal" href="../3d_cursor.html"><span class="doc">3D Cursor</span></a> for choosing the snapping
+point completely manually.</p>
+</dd>
+<dt>Closest</dt><dd><p>Snaps using the vertex that’s closest to the target.</p>
+</dd>
+</dl>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id6">
+<img alt="../../../_images/editors_3dview_controls_snapping_target-closest.png" src="../../../_images/editors_3dview_controls_snapping_target-closest.png" />
+<figcaption>
+<p><span class="caption-text">Closest.</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+<td><figure class="align-default" id="id7">
+<img alt="../../../_images/editors_3dview_controls_snapping_target-active.png" src="../../../_images/editors_3dview_controls_snapping_target-active.png" />
+<figcaption>
+<p><span class="caption-text">Active.</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+<td><figure class="align-default" id="id8">
+<img alt="../../../_images/editors_3dview_controls_snapping_target-median.png" src="../../../_images/editors_3dview_controls_snapping_target-median.png" />
+<figcaption>
+<p><span class="caption-text">Median.</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="snap-to">
+<span id="bpy-types-toolsettings-snap-elements-base"></span><h2>Snap To<a class="headerlink" href="#snap-to" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id3">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Mode<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Object, Edit, and Pose Mode</p>
+</dd>
+<dt class="field-even">Header<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Snapping ‣ Snap To</span></p>
+</dd>
+<dt class="field-odd">Shortcut<span class="colon">:</span></dt>
+<dd class="field-odd"><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">Tab</kbd></kbd></p>
+</dd>
+</dl>
+</div>
+<p>Determines the target which the selection will be snapped to.</p>
+<dl>
+<dt>Increment</dt><dd><p>Snaps to grid points. When in Orthographic view, the snapping increment changes depending on the zoom level.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>By default, this option won’t snap to the grid that’s displayed in the viewport,
+but an imaginary grid with the same resolution that starts at the selection’s
+original location. In other words, it lets you move the selection in “increments” of the
+grid cell size.</p>
+<p>If you want to snap to the viewport grid instead, you can enable <em>Absolute Grid Snap</em>
+(see below).</p>
+</div>
+</dd>
+<dt>Vertex</dt><dd><p>Snaps to the vertex that’s closest to the mouse cursor.</p>
+</dd>
+<dt>Edge</dt><dd><p>Snaps to the edge that’s closest to the mouse cursor.</p>
+</dd>
+<dt>Volume</dt><dd><p>Snaps the selection to a depth that’s centered <em>inside</em> the object under the cursor.
+This is useful for positioning an <a class="reference internal" href="../../../animation/armatures/introduction.html"><span class="doc">Armature</span></a>
+bone so it’s centered inside a character’s arm, for example; the other snapping options
+would place it on the arm’s surface instead.</p>
+<p>While Blender also has <a class="reference internal" href="../../../modeling/volumes/introduction.html"><span class="doc">Volume objects</span></a>, this option
+is not related to those.</p>
+</dd>
+<dt>Edge Center</dt><dd><p>Snaps to the centerpoint of the edge that’s closest to the mouse cursor.</p>
+</dd>
+<dt>Edge Perpendicular</dt><dd><p>Snaps to a specific point on the edge so that the line from the selection’s original location
+(indicated by a white cross) to its new location is perpendicular to that edge.</p>
+</dd>
+</dl>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Multiple snapping modes can be enabled at once using <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">LMB</kbd></kbd>.</p>
+</div>
+</section>
+<section id="snap-individual-elements-to">
+<span id="bpy-types-toolsettings-snap-elements-individual"></span><h2>Snap Individual Elements To<a class="headerlink" href="#snap-individual-elements-to" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id4">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Mode<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Object, Edit, and Pose Mode</p>
+</dd>
+<dt class="field-even">Header<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">Snapping ‣ Snap Individual Elements To</span></p>
+</dd>
+<dt class="field-odd">Shortcut<span class="colon">:</span></dt>
+<dd class="field-odd"><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">Tab</kbd></kbd></p>
+</dd>
+</dl>
+</div>
+<p>Type of element for individual transformed elements to snap to.</p>
+<dl>
+<dt>Face Project</dt><dd><p>Snaps to the face that’s under the mouse cursor.</p>
+<p>This can be used for bending a flat sheet so it snugly fits against a curved
+surface, for example.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="../../../modeling/modifiers/deform/shrinkwrap.html"><span class="doc">Shrinkwrap Modifier</span></a></p>
+</div>
+</dd>
+<dt>Face Nearest</dt><dd><p>Individually snaps each object (in Object Mode) or vertex (in Edit Mode) to the face that’s closest
+to its new location. This makes it possible to snap to occluded geometry.</p>
+</dd>
+</dl>
+</section>
+<section id="target-selection">
+<h2>Target Selection<a class="headerlink" href="#target-selection" title="Link to this heading"></a></h2>
+<p>Sets more detailed snapping options. The available options depend on the mode
+(Object/Edit) as well as the Snap To selection.</p>
+<dl id="bpy-types-toolsettings-use-snap-self">
+<dt>Include Active <span class="guilabel">Edit Mode</span></dt><dd><p>Snap to other mesh elements of the active object.</p>
+<p>This checkbox is ignored if
+<a class="reference internal" href="proportional_editing.html"><span class="doc">Proportional Editing</span></a>
+is enabled.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-toolsettings-use-snap-edit">
+<dt>Include Edited <span class="guilabel">Edit Mode</span></dt><dd><p>Snap to other objects that are also in Edit Mode.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-toolsettings-use-snap-nonedit">
+<dt>Include Non-Edited <span class="guilabel">Edit Mode</span></dt><dd><p>Snap to other objects that are not in Edit Mode.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-toolsettings-use-snap-selectable">
+<dt>Exclude Non-Selectable</dt><dd><p>Snap only to objects that are selectable.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-toolsettings-use-snap-grid-absolute">
+<dt>Absolute Grid Snap <span class="guilabel">Increment</span></dt><dd><p>Snaps to the grid, instead of snapping in increments relative to the current location.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-toolsettings-use-snap-align-rotation">
+<dt>Align Rotation to Target</dt><dd><p>Rotates the selection so that its Z axis gets aligned to the normal of the target.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-toolsettings-use-snap-backface-culling">
+<dt>Backface Culling</dt><dd><p>Exclude back-facing geometry from snapping.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-toolsettings-use-snap-to-same-target">
+<dt>Snap to Same Target <span class="guilabel">Face Nearest</span></dt><dd><p>Snap only to the object which the selection was nearest to before starting
+the transformation.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-toolsettings-snap-face-nearest-steps">
+<dt>Face Nearest Steps <span class="guilabel">Face Nearest</span> <span class="guilabel">Edit Mode</span></dt><dd><p>Breaks the overall transformation into multiple steps, performing a snap each time.
+This can give better results in certain cases.</p>
+</dd>
+</dl>
+<dl class="simple" id="bpy-types-toolsettings-use-snap-peel-object">
+<dt>Snap Peel Object <span class="guilabel">Volume</span></dt><dd><p>If the target object is composed of several disconnected mesh islands that
+intersect each other, “Snap To Volume” will normally snap to the island which the
+mouse is hovering over, ignoring the other islands. By enabling “Snap Peel Object,”
+you can instead treat the target object as one connected whole.</p>
+</dd>
+</dl>
+</section>
+<section id="affect">
+<span id="bpy-types-toolsettings-use-snap-scale"></span><span id="bpy-types-toolsettings-use-snap-rotate"></span><span id="bpy-types-toolsettings-use-snap-translate"></span><h2>Affect<a class="headerlink" href="#affect" title="Link to this heading"></a></h2>
+<p>Specifies which transformations are affected by snapping.
+By default, snapping only happens while moving something,
+but you can also enable it for rotating and scaling.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="pivot_point/active_element.html" class="btn btn-neutral float-left" title="Active Element" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="proportional_editing.html" class="btn btn-neutral float-right" title="Proportional Editing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../../copyright.html">Copyright</a> : This page is licensed under a CC-BY-SA 4.0 Int. License.
+      <span class="lastupdated">Last updated on 12/17/2023.
+      </span></p>
+  </div>
+
+  
+<div class="footer-contribute">
+   <ul>
+      <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/editors/3dview/controls/snapping.rst"
+            class="fa fa-edit"> View Source</a>
+      </li>
+      <!-- <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/editors/3dview/controls/snapping.rst"
+            class="fa fa-edit"> Edit Page</a>
+      </li> -->
+      <li>
+         <a href="https://projects.blender.org/blender/documentation/issues/new?template=.gitea/issue_template/bug.yaml&field:body=%2A%2APage+Information%2A%2A%0D%0AFile%3A+%60manual%2Feditors/3dview/controls/snapping.rst%60%0D%0ABlender+Version%3A+%604.0%60%0D%0ADocumentation+Language%3A+%60en%60%0D%0A%5BPermanent+Link%5D%28https%3A%2F%2Fdocs.blender.org%2Fmanual%2Fen%2F4.0%2Feditors/3dview/controls/snapping.html%29%0D%0A%0D%0A%2A%2AShort+description+of+error%2A%2A%0D%0A%5BPlease+fill+out+a+short+description+of+the+error+here%5D%0D%0A"
+            class="fa fa-bug"> Report issue on this page</a>
+      </li>
+      <ul>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="document versions">
+	<ul id="versionwrap" role="presentation">
+		<li role="presentation">
+			<span id="version-popover" class="version-btn" tabindex="0" role="button" aria-label="versions selector"
+				aria-haspopup="true" aria-controls="version-vsnlist" aria-disabled="true">
+				4.0
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Versions</div>
+				<ul id="version-vsnlist" class="version-list" role="menu" aria-labelledby="version-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<li role="presentation">
+			<span id="lang-popover" class="version-btn" tabindex="0" role="button" aria-label="language selector"
+				aria-haspopup="true" aria-controls="version-langlist">
+				 en 
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Languages</div>
+				<ul id="version-langlist" class="version-list" role="menu" aria-labelledby="lang-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<template id="version-entry">
+			<li tabindex="-1" role="presentation"><a tabindex="-1" role="menuitem"></a></li>
+			<li class="selected" tabindex="-1" role="presentation"><span tabindex="-1" aria-current="page"></spanp></li>
+		</template>
+	</ul>
+<template id="version-warning">
+	<div class="admonition warning">
+		<p class="first admonition-title">Note</p>
+		<p class="last">
+			You are not using the most up to date version of the documentation.
+			<a href="#"></a> is the newest version.
+		</p>
+	</div>
+</template>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1418081-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1418081-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Autodesk 3DS &mdash; Blender Manual</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme_overrides.css?v=8da28a04" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/version_switch.css?v=74ca2809" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.blender.org/manual/en/latest/addons/import_export/scene_3ds.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=715c20a1"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/version_switch.js?v=5cbd935e"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Blender Manual"
+          href="../../_static/opensearch.xml"/>
+<link rel="alternate" hreflang="en" href="https://docs.blender.org/manual/en/latest/" />
+<link rel="alternate" hreflang="ar" href="https://docs.blender.org/manual/ar/latest/" />
+<link rel="alternate" hreflang="de" href="https://docs.blender.org/manual/de/latest/" />
+<link rel="alternate" hreflang="es" href="https://docs.blender.org/manual/es/latest/" />
+<link rel="alternate" hreflang="fi" href="https://docs.blender.org/manual/fi/latest/" />
+<link rel="alternate" hreflang="fr" href="https://docs.blender.org/manual/fr/latest/" />
+<link rel="alternate" hreflang="id" href="https://docs.blender.org/manual/id/latest/" />
+<link rel="alternate" hreflang="it" href="https://docs.blender.org/manual/it/latest/" />
+<link rel="alternate" hreflang="ja" href="https://docs.blender.org/manual/ja/latest/" />
+<link rel="alternate" hreflang="ko" href="https://docs.blender.org/manual/ko/latest/" />
+<link rel="alternate" hreflang="nb" href="https://docs.blender.org/manual/nb/latest/" />
+<link rel="alternate" hreflang="pt" href="https://docs.blender.org/manual/pt/latest/" />
+<link rel="alternate" hreflang="ru" href="https://docs.blender.org/manual/ru/latest/" />
+<link rel="alternate" hreflang="sk" href="https://docs.blender.org/manual/sk/latest/" />
+<link rel="alternate" hreflang="sl" href="https://docs.blender.org/manual/sl/latest/" />
+<link rel="alternate" hreflang="sr" href="https://docs.blender.org/manual/sr/latest/" />
+<link rel="alternate" hreflang="uk" href="https://docs.blender.org/manual/uk/latest/" />
+<link rel="alternate" hreflang="vi" href="https://docs.blender.org/manual/vi/latest/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://docs.blender.org/manual/zh-hans/latest/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://docs.blender.org/manual/zh-hant/latest/" />
+<link rel="alternate" hreflang="x-default" href="https://docs.blender.org/manual/en/latest/" />
+
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="Camera Animation" href="anim_camera.html" />
+    <link rel="prev" title="AutoCAD DXF" href="scene_dxf.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Blender 4.0 Manual
+              <img src="../../_static/blender-logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/about/index.html">About Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installing/index.html">Installing Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/configuration/index.html">Configuring Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/help.html">Help System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sections</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../interface/index.html">User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../editors/index.html">Editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scene_layout/index.html">Scenes &amp; Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modeling/index.html">Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sculpt_paint/index.html">Sculpting &amp; Painting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../grease_pencil/index.html">Grease Pencil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../animation/index.html">Animation &amp; Rigging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../physics/index.html">Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../render/index.html">Rendering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../compositing/index.html">Compositing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../movie_clip/index.html">Motion Tracking &amp; Masking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../video_editing/index.html">Video Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../files/index.html">Assets, Files, &amp; Data System</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Add-ons</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#add-ons-category-listings">Add-ons Category Listings</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../3d_view/index.html">3D View</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../add_curve/index.html">Add Curve</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../add_mesh/index.html">Add Mesh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../animation/index.html">Animation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../baking/index.html">Baking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../camera/index.html">Camera</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../development/index.html">Development</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">Import-Export</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="node_shaders_info.html">Import &amp; Export of Node Shaders</a></li>
+<li class="toctree-l4"><a class="reference internal" href="coat3D.html">3D-Coat Applink</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mesh_atomic.html">Atomic Blender (PDB/XYZ)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="anim_bvh.html">BioVision Motion Capture (BVH)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scene_dxf.html">AutoCAD DXF</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Autodesk 3DS</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#properties">Properties</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#import">Import</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="#include">Include</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#transform">Transform</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="#export">Export</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="#id2">Include</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#id3">Transform</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#materials">Materials</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#textures">Textures</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#meshes">Meshes</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ambient">Ambient</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#lights">Lights</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#cameras">Cameras</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#keyframes">Keyframes</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="anim_camera.html">Camera Animation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="paper_model.html">Paper Model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pc2.html">Pointcache (pc2)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scene_fbx.html">FBX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="images_as_planes.html">Images as Planes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="palettes.html">Import Palettes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="shape_mdd.html">NewTek MDD</a></li>
+<li class="toctree-l4"><a class="reference internal" href="anim_nuke_chan.html">Nuke Animation (chan)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mesh_stl.html">STL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="curve_svg.html">Scalable Vector Graphics (SVG)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mesh_uv_layout.html">UV Layout</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scene_x3d.html">Web3D X3D/VRML2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scene_gltf2.html">glTF 2.0</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../interface/index.html">Interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lighting/index.html">Lighting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../materials/index.html">Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mesh/index.html">Mesh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../node/index.html">Node</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../object/index.html">Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../paint/index.html">Paint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../render/index.html">Render</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rigging/index.html">Rigging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sequencer/index.html">Sequencer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../system/index.html">System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../uv/index.html">UV</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video_tools/index.html">Video Tools</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/index.html">Advanced</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Manual Index</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get Involved</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribute Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Blender 4.0 Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Add-ons</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Import-Export</a></li>
+      <li class="breadcrumb-item active">Autodesk 3DS</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="autodesk-3ds">
+<h1>Autodesk 3DS<a class="headerlink" href="#autodesk-3ds" title="Link to this heading"></a></h1>
+<div class="refbox admonition" id="id1">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Category<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Import-Export</p>
+</dd>
+<dt class="field-even">Menu<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="menuselection">File ‣ Import/Export ‣ 3D Studio (.3ds)</span></p>
+</dd>
+<dt class="field-odd">Version<span class="colon">:</span></dt>
+<dd class="field-odd"><p>2.4.8</p>
+</dd>
+<dt class="field-even">Blender<span class="colon">:</span></dt>
+<dd class="field-even"><p>4.0</p>
+</dd>
+<dt class="field-odd">Authors<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Bob Holcomb, Campbell Barton, Sebastian Schrand</p>
+</dd>
+<dt class="field-even">Maintainer<span class="colon">:</span></dt>
+<dd class="field-even"><p>Sebastian Sille (NRGSille)</p>
+</dd>
+<dt class="field-odd">Support Level<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Community</p>
+</dd>
+</dl>
+</div>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
+<p>This add-on can be used to import and export objects to/from the 3DS Studio file format,
+the native file format of the 3D Studio DOS releases R1 to R4.
+This format is one of the first 3D file formats beside OBJ
+and was commonly used to exchange files from Autodesk<sup>®</sup> 3ds MAX<sup>®</sup>.</p>
+</section>
+<section id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Link to this heading"></a></h2>
+<section id="import">
+<h3>Import<a class="headerlink" href="#import" title="Link to this heading"></a></h3>
+<section id="include">
+<h4>Include<a class="headerlink" href="#include" title="Link to this heading"></a></h4>
+<dl class="simple">
+<dt>Image Search</dt><dd><p>This enables a recursive file search if an image file can’t be found.</p>
+</dd>
+<dt>Object Filter</dt><dd><p>The kind of objects to be imported, checked object types will be imported and unchecked not.
+Hold shift while selecting to check multiple object types.</p>
+</dd>
+<dt>Animation</dt><dd><p>Reads the keyframe tracks from a 3ds file and transforms the objects to the data which was found.
+Usually only one frame is found in static scenes, it will be imported to the timeline.
+If the 3ds scene is animated, the complete animation will be imported to the timeline.</p>
+</dd>
+<dt>Cursor Origin</dt><dd><p>Reads the 3D cursor location chunk if one is found. Almost all valid 3ds files including this chunk,
+but with the location set to zero.</p>
+</dd>
+</dl>
+</section>
+<section id="transform">
+<h4>Transform<a class="headerlink" href="#transform" title="Link to this heading"></a></h4>
+<dl class="simple">
+<dt>Constrain Size</dt><dd><p>Scales the imported objects by 10 scene units until it reaches the size defined here.
+To disable set the <em>Size Constraint</em> to zero.</p>
+</dd>
+<dt>Scene Units</dt><dd><p>Converts the scale of all objects to the scene unit length settings. Blender uses meter scale,
+but many 3ds files have millimeter unit scale, especially the ones exported from CAD applications.
+If millimeters are expected to import, set the scene unit length settings to <em>Millimeters</em>.
+The meshes can also be converted to imperial unit measures if this is enabled in the scene units.</p>
+</dd>
+<dt>Pivot Origin</dt><dd><p>Moves all geometry to the pivot origin. Enable this option for transformed pivot centers to move
+the geometry back to its origin.</p>
+</dd>
+<dt>Apply Transform</dt><dd><p>Applies object transformations after importing. If unchecked, all transformations will be cleared
+and the objects will stay at its origins.</p>
+</dd>
+<dt>World Space</dt><dd><p>Use world matrix instead of local matrix to transform the objects.
+This is useful for older 3ds files from 3D Studio DOS which only used world space to transform the objects.
+It is also useful if the object was exported without apply transform.</p>
+</dd>
+<dt>Forward / Up Axis</dt><dd><p>Since many applications use a different axis for ‘Up’,
+these are axis conversions for Forward and Up axes – By mapping these to different axes
+you can convert rotations between applications default up and forward axes.
+Blender uses Y forward, Z up (since the front view looks along the +Y direction).
+For example, its common for applications to use Y as the up axis, in that case -Z forward, Y up is needed.</p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="export">
+<h3>Export<a class="headerlink" href="#export" title="Link to this heading"></a></h3>
+<section id="id2">
+<h4>Include<a class="headerlink" href="#id2" title="Link to this heading"></a></h4>
+<dl class="simple">
+<dt>Selection</dt><dd><p>When checked, only selected objects are exported. Otherwise export all objects in the scene.</p>
+</dd>
+<dt>Object Filter</dt><dd><p>The kind of objects to be exported, checked object types will be exported and unchecked not.
+Hold shift while selecting to check multiple object types.</p>
+</dd>
+<dt>Hierarchy</dt><dd><p>Preserves the object hierarchy if no keyframe section is written. Blender can read the hierarchy chunks
+but most importers do not use them, therefore only recommended if the file is used in Blender only.</p>
+</dd>
+<dt>Animation</dt><dd><p>Writes the keyframe section of a 3ds file and exports the animation if an action was found.
+The animation can be imported the same way, un-check if any importer crashes,
+not every application can handle the keyframe section.</p>
+</dd>
+<dt>Cursor Origin</dt><dd><p>Saves the current 3D cursor location of the scene to a chunk, the importer can read the location,
+if the option is enabled.</p>
+</dd>
+</dl>
+</section>
+<section id="id3">
+<h4>Transform<a class="headerlink" href="#id3" title="Link to this heading"></a></h4>
+<dl class="simple">
+<dt>Scale Factor</dt><dd><p>The global scale factor for export. There are no unit scale definitions in a 3ds file,
+only the float values are stored. Blender will use meters for export but many applications,
+like 3ds MAX<sup>®</sup>, are using millimeters. This option defines the scale factor to use for export.
+If millimeters are desired, the scale factor has to be setted to 1000.</p>
+</dd>
+<dt>Scene Units</dt><dd><p>Takes the scene unit length settings into account to export the real size of the objects.
+If the settings are millimeters, the exported scene will be scaled up since Blender uses meters for unit scale.
+Also imperial unit measures are supported, the exporter will convert the mesh to the selected scene unit.</p>
+</dd>
+<dt>Forward / Up Axis</dt><dd><p>Since many applications use a different axis for pointing upwards,
+these are axis conversion for these settings, Forward and up axes – By mapping these to different axes
+you can convert rotations between applications default up and forward axes. Blender uses Y forward,
+Z up (since the front view looks along the +Y direction).
+For example, it is common for applications to use Y as the up axis, in that case -Z forward, Y up is needed.</p>
+</dd>
+</dl>
+</section>
+</section>
+</section>
+<section id="materials">
+<h2>Materials<a class="headerlink" href="#materials" title="Link to this heading"></a></h2>
+<p>Materials in 3ds are defined in various color and percent chunks which can include
+either integer percent and 24bit color values or float color and percent values,
+both can be read by the importer and will be converted to blender values.
+The exporter uses the integer values, since this is used from 3ds version 3 and above.
+The material definitions which Blender can use are the following:</p>
+<ul class="simple">
+<li><p>3ds Diffuse Color &lt;-&gt; blender Base Color</p></li>
+<li><p>3ds Specular Color &lt;-&gt; blender Specular Tint</p></li>
+<li><p>3ds Ambient Color &lt;-&gt; blender Emission Color</p></li>
+<li><p>3ds Mat Shininess &lt;-&gt; blender Roughness inverted</p></li>
+<li><p>3ds Mat Shin2 &lt;-&gt; blender Specular Intensity</p></li>
+<li><p>3ds Mat Shin3 &lt;-&gt; blender Metallic</p></li>
+<li><p>3ds Mat Opacity &lt;-&gt; blender Alpha inverted</p></li>
+<li><p>3ds Mat TransFall &lt;-&gt; blender Transmission</p></li>
+<li><p>3ds Mat RefBlur &lt;-&gt; blender Coat Weight</p></li>
+<li><p>3ds Mat TexBlur &lt;-&gt; blender Sheen Weight</p></li>
+<li><p>3ds Mat Bump PCT &lt;-&gt; blender Normal-map Strength</p></li>
+<li><p>3ds Self Illumination PCT &lt;-&gt; blender Emission Strength</p></li>
+</ul>
+<section id="textures">
+<h3>Textures<a class="headerlink" href="#textures" title="Link to this heading"></a></h3>
+<p>Each 3ds material can include different texture mappings,
+which are all imported to Blender material nodes including texture coordinates.
+The 3ds exporter basically takes the images and coordinates,
+which are directly connected to the Principled BSDF shader,
+if an image is connected to a color-mix shader, it will exported as secondary texture.
+Shininess maps to roughness and opacity to the alpha channel,
+they must be color inverted afterwards to match with Blender definition.
+The material mappings are defined as following:</p>
+<ul class="simple">
+<li><p>3ds Diffuse Map &lt;-&gt; blender Base Color Texture</p></li>
+<li><p>3ds Specular Map &lt;-&gt; blender Specular Tint Texture</p></li>
+<li><p>3ds Shininess Map &lt;-&gt; blender Roughness Texture</p></li>
+<li><p>3ds Reflection Map &lt;-&gt; blender Metallic Texture</p></li>
+<li><p>3ds Opacity Map &lt;-&gt; blender Alpha Texture</p></li>
+<li><p>3ds Self Illumination Map &lt;-&gt; blender Emission Texture</p></li>
+<li><p>3ds Bump Map &lt;-&gt; blender Normal Map (tangent space)</p></li>
+<li><p>3ds Tex2 Map &lt;-&gt; blender Color Texture (connect to mix-shader)</p></li>
+</ul>
+<figure class="align-default" id="id4">
+<img alt="../../_images/addons_io_3ds_shader-nodes.jpg" src="../../_images/addons_io_3ds_shader-nodes.jpg" />
+<figcaption>
+<p><span class="caption-text">An example of a 3ds file with all image maps imported.</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All texture filenames are limited to the 8.3 DOS format,
+means that the name of the image texture can only be 8 characters long, others will be stripped away.</p>
+</div>
+</section>
+</section>
+<section id="meshes">
+<h2>Meshes<a class="headerlink" href="#meshes" title="Link to this heading"></a></h2>
+<p>Meshes are made of triangles only, no quads are supported,
+3ds Studio uses edge visibility flags to hide and show edges, many 3ds files use them to mark the quads.
+The Blender 3ds importer and exporter will use those flags to mark edges sharp,
+this can be used to convert the triangles back to quads.
+The importer can read the smooth-chunk and shades a face smooth if it belongs to a smooth-group,
+the exporter creates a smooth chunk if the mesh contains any smooth faces.
+3ds only supports one pair of UV coordinates per vertex. If any vertex has more UVs, it will be duplicated.</p>
+</section>
+<section id="ambient">
+<h2>Ambient<a class="headerlink" href="#ambient" title="Link to this heading"></a></h2>
+<p>If ambient chunks are found by the importer, a new world with the ambient color will be created. Ambient keyframes
+will be imported to the timeline and background color to the world background node. If a background image is found, it
+will be connected to the background node and if fog chunks are found, volume shaders with the fog settings will be
+connected to the world output. If ambient is animated, an ambient node will be created and connected to a mixshader.
+Gradient chunks will be imported to a color ramp node. The exporter can export these settings and will also accept an
+add-shader instead of a mixshader, images are taken from the background input. The exporter creates an ambient chunk
+with the color of the active world and creates background chunks with color or image if the nodes are connected to
+world output or mix and add shader. Ambient color animations can primary be exported from the world color. If nodes
+are used, the exporter checks the RGB input node and the emission shader for color animations and writes an ambient
+track node chunk. If a color ramp node is connected to background or colormix node and includes at least three colors,
+the exporter will create a gradient chunk.</p>
+<figure class="align-default" id="id5">
+<img alt="../../_images/addons_io_3ds_world-nodes.jpg" src="../../_images/addons_io_3ds_world-nodes.jpg" />
+<figcaption>
+<p><span class="caption-text">An example of a 3ds file with all world nodes imported.</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="lights">
+<h2>Lights<a class="headerlink" href="#lights" title="Link to this heading"></a></h2>
+<p>Lights in 3DS Studio can be a point source or a spotlight,
+they use color and energy data and a target for the spotlight.
+The color and position of a light can be animated, the spotlight additionally has a target, beam angle and hotspot,
+wich can be animated. The lights and animation can be imported and exported, the spotlight can contain a projection
+bitmap, if an image is connected to a emission or colormixer, it will be exported. The x/y scale of a spotlight will
+be exported in an aspect ratio chunk, the importer can calculate it back to x/y scale. The target data is calculated
+to Z and X axis angle for pan and tilt, Y is used for the roll angle.</p>
+</section>
+<section id="cameras">
+<h2>Cameras<a class="headerlink" href="#cameras" title="Link to this heading"></a></h2>
+<p>Cameras can be imported and exported to 3ds files.
+They can be animated with field of view (converted to focal length), position and target data,
+calculated to X and Z axis angle for pitch and yaw, Y is used for the roll angle.</p>
+</section>
+<section id="keyframes">
+<h2>Keyframes<a class="headerlink" href="#keyframes" title="Link to this heading"></a></h2>
+<p>The importer can read the keyframes, they will be added to the timeline.
+Most animations will play, but the transformations may not be correct,
+some axes or rotations can be inverted. It depends on how it was exported from other applications.
+The exporter can write the keyframes of the timeline to an animated 3ds file.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="scene_dxf.html" class="btn btn-neutral float-left" title="AutoCAD DXF" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="anim_camera.html" class="btn btn-neutral float-right" title="Camera Animation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../copyright.html">Copyright</a> : This page is licensed under a CC-BY-SA 4.0 Int. License.
+      <span class="lastupdated">Last updated on 12/17/2023.
+      </span></p>
+  </div>
+
+  
+<div class="footer-contribute">
+   <ul>
+      <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/addons/import_export/scene_3ds.rst"
+            class="fa fa-edit"> View Source</a>
+      </li>
+      <!-- <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/addons/import_export/scene_3ds.rst"
+            class="fa fa-edit"> Edit Page</a>
+      </li> -->
+      <li>
+         <a href="https://projects.blender.org/blender/documentation/issues/new?template=.gitea/issue_template/bug.yaml&field:body=%2A%2APage+Information%2A%2A%0D%0AFile%3A+%60manual%2Faddons/import_export/scene_3ds.rst%60%0D%0ABlender+Version%3A+%604.0%60%0D%0ADocumentation+Language%3A+%60en%60%0D%0A%5BPermanent+Link%5D%28https%3A%2F%2Fdocs.blender.org%2Fmanual%2Fen%2F4.0%2Faddons/import_export/scene_3ds.html%29%0D%0A%0D%0A%2A%2AShort+description+of+error%2A%2A%0D%0A%5BPlease+fill+out+a+short+description+of+the+error+here%5D%0D%0A"
+            class="fa fa-bug"> Report issue on this page</a>
+      </li>
+      <ul>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="document versions">
+	<ul id="versionwrap" role="presentation">
+		<li role="presentation">
+			<span id="version-popover" class="version-btn" tabindex="0" role="button" aria-label="versions selector"
+				aria-haspopup="true" aria-controls="version-vsnlist" aria-disabled="true">
+				4.0
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Versions</div>
+				<ul id="version-vsnlist" class="version-list" role="menu" aria-labelledby="version-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<li role="presentation">
+			<span id="lang-popover" class="version-btn" tabindex="0" role="button" aria-label="language selector"
+				aria-haspopup="true" aria-controls="version-langlist">
+				 en 
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Languages</div>
+				<ul id="version-langlist" class="version-list" role="menu" aria-labelledby="lang-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<template id="version-entry">
+			<li tabindex="-1" role="presentation"><a tabindex="-1" role="menuitem"></a></li>
+			<li class="selected" tabindex="-1" role="presentation"><span tabindex="-1" aria-current="page"></spanp></li>
+		</template>
+	</ul>
+<template id="version-warning">
+	<div class="admonition warning">
+		<p class="first admonition-title">Note</p>
+		<p class="last">
+			You are not using the most up to date version of the documentation.
+			<a href="#"></a> is the newest version.
+		</p>
+	</div>
+</template>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1418081-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1418081-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

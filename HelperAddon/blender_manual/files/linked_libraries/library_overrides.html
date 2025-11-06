@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Library Overrides &mdash; Blender Manual</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme_overrides.css?v=8da28a04" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/version_switch.css?v=74ca2809" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.blender.org/manual/en/latest/files/linked_libraries/library_overrides.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=715c20a1"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/version_switch.js?v=5cbd935e"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Blender Manual"
+          href="../../_static/opensearch.xml"/>
+<link rel="alternate" hreflang="en" href="https://docs.blender.org/manual/en/latest/" />
+<link rel="alternate" hreflang="ar" href="https://docs.blender.org/manual/ar/latest/" />
+<link rel="alternate" hreflang="de" href="https://docs.blender.org/manual/de/latest/" />
+<link rel="alternate" hreflang="es" href="https://docs.blender.org/manual/es/latest/" />
+<link rel="alternate" hreflang="fi" href="https://docs.blender.org/manual/fi/latest/" />
+<link rel="alternate" hreflang="fr" href="https://docs.blender.org/manual/fr/latest/" />
+<link rel="alternate" hreflang="id" href="https://docs.blender.org/manual/id/latest/" />
+<link rel="alternate" hreflang="it" href="https://docs.blender.org/manual/it/latest/" />
+<link rel="alternate" hreflang="ja" href="https://docs.blender.org/manual/ja/latest/" />
+<link rel="alternate" hreflang="ko" href="https://docs.blender.org/manual/ko/latest/" />
+<link rel="alternate" hreflang="nb" href="https://docs.blender.org/manual/nb/latest/" />
+<link rel="alternate" hreflang="pt" href="https://docs.blender.org/manual/pt/latest/" />
+<link rel="alternate" hreflang="ru" href="https://docs.blender.org/manual/ru/latest/" />
+<link rel="alternate" hreflang="sk" href="https://docs.blender.org/manual/sk/latest/" />
+<link rel="alternate" hreflang="sl" href="https://docs.blender.org/manual/sl/latest/" />
+<link rel="alternate" hreflang="sr" href="https://docs.blender.org/manual/sr/latest/" />
+<link rel="alternate" hreflang="uk" href="https://docs.blender.org/manual/uk/latest/" />
+<link rel="alternate" hreflang="vi" href="https://docs.blender.org/manual/vi/latest/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://docs.blender.org/manual/zh-hans/latest/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://docs.blender.org/manual/zh-hant/latest/" />
+<link rel="alternate" hreflang="x-default" href="https://docs.blender.org/manual/en/latest/" />
+
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="Asset Libraries" href="../asset_libraries/index.html" />
+    <link rel="prev" title="Proxies" href="library_proxies.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Blender 4.0 Manual
+              <img src="../../_static/blender-logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/about/index.html">About Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installing/index.html">Installing Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/configuration/index.html">Configuring Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/help.html">Help System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sections</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../interface/index.html">User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../editors/index.html">Editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scene_layout/index.html">Scenes &amp; Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modeling/index.html">Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sculpt_paint/index.html">Sculpting &amp; Painting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../grease_pencil/index.html">Grease Pencil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../animation/index.html">Animation &amp; Rigging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../physics/index.html">Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../render/index.html">Rendering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../compositing/index.html">Compositing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../movie_clip/index.html">Motion Tracking &amp; Masking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../video_editing/index.html">Video Editing</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Assets, Files, &amp; Data System</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../blend/index.html">Blender File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data_blocks.html">Data-Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../custom_properties.html">Custom Properties</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Linked Libraries</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="link_append.html">Link &amp; Append</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_proxies.html">Proxies</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Library Overrides</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#override-hierarchies">Override Hierarchies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#resyncing-overrides">Resyncing Overrides</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#non-editable-overrides">Non-Editable Overrides</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#make-an-override">Make an Override</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#selected-items">Selected Items</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#dview">3DView</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#outliner">Outliner</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#id-widget">ID Widget</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#make-editable">Make Editable</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#reset-an-override">Reset an Override</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#clear-an-override">Clear an Override</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#edit-an-override">Edit an Override</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#define-overrides">Define Overrides</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#define-single-override">Define Single Override</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#remove-overrides">Remove Overrides</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#remove-single-override">Remove Single Override</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#troubleshoot-an-override-hierarchy">Troubleshoot an Override Hierarchy</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#resync">Resync</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#resync-enforce">Resync Enforce</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#delete">Delete</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../asset_libraries/index.html">Asset Libraries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../media/index.html">Media Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../import_export.html">Importing &amp; Exporting Files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../addons/index.html">Add-ons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/index.html">Advanced</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Manual Index</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get Involved</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribute Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Blender 4.0 Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Assets, Files, &amp; Data System</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Linked Libraries</a></li>
+      <li class="breadcrumb-item active">Library Overrides</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="library-overrides">
+<h1>Library Overrides<a class="headerlink" href="#library-overrides" title="Link to this heading"></a></h1>
+<p>Library Overrides is a system designed to allow editing
+<a class="reference internal" href="link_append.html"><span class="doc">linked data</span></a>, while keeping it in sync
+with the original library data. Most types of linked data-blocks can be overridden,
+and the properties of these overrides can then be edited. When the library data changes,
+unmodified properties of the overridden one will be updated accordingly.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The old proxy system has been deprecated in Blender 3.0, and fully removed in Blender 3.2.
+Automatic conversion from proxies to library overrides happens when loading a blend-file,
+but results on complex characters are not guaranteed and may need manual fixes.</p>
+</div>
+<p>Library overrides supports:</p>
+<ul class="simple">
+<li><p>Multiple independent overrides of a same linked data
+(e.g. having the same character multiple times in the same scene).</p></li>
+<li><p>Adding new modifiers and constraints, anywhere in the stack.</p></li>
+<li><p>Recursively chaining overrides (i.e. link and override overrides from another library file, etc.).</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There are known issues that have to be addressed. See the <a class="reference external" href="https://projects.blender.org/blender/blender/issues/73318">main task of the project</a>, for more details.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>While in most cases library overrides data is preserved across a loss of reference linked data
+(if e.g. the library file becomes unavailable or is relocated), there are some exceptions.</p>
+<p>The main one is probably posed (but not animated) armature objects, when their Armature obdata
+itself is not overridden. The Pose bones of an armature object are fully linked to the bones
+of its Armature obdata, if the later goes missing, the pose bones are definitively lost.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Proper Collections Layout Matters</p>
+<p>For library overrides to work well, it is much better if <strong>all</strong> the collections needed by
+the character are children of the root (linked and instantiated) one, such that there is a
+clear hierarchy.
+Otherwise, some data may not be properly automatically overridden, and other operations
+may be less reliable.</p>
+</div>
+<section id="override-hierarchies">
+<h2>Override Hierarchies<a class="headerlink" href="#override-hierarchies" title="Link to this heading"></a></h2>
+<p>Hierarchy is a very important concept to understand when working with library overrides.
+In Blender, a real-life asset (a character, a prop, a set, etc.) is almost never made of a
+single data-block, but is rather a group of data-blocks with dependency relationships to each-other.
+E.g. a character will typically have an armature object, several geometry objects,
+rig-controllers objects, the object data for all of these objects, materials, textures, etc.</p>
+<p>These relationships can be represented as a tree, with a root data-block ‘linking-in’ all its
+dependencies, recursively. With library overrides, typically, the root of the hierarchy is also
+the data-block that is directly linked when importing the asset (usually a collection).</p>
+<p>This concept of hierarchy can also be seen as some sort of super meta-data-block. It is critical
+when there are several overrides of the same linked data, since it allows to clearly identify a given
+data-block to one override, leaving no ambiguity to processes that affect the whole hierarchy
+(e.g. resyncing overrides with their linked data). It also allows to share relationships between
+data-blocks of different hierarchies, like a parenting relationships between two different overrides
+of a same character.</p>
+</section>
+<section id="resyncing-overrides">
+<h2>Resyncing Overrides<a class="headerlink" href="#resyncing-overrides" title="Link to this heading"></a></h2>
+<p>The relationships between linked data-blocks can change, resulting in outdated overrides.
+When this happens, overrides need to be resynced to match the new structure of their hierarchy.
+Overrides are automatically resynced if needed on blend-files opening. However,
+it may be needed to resynced them manually sometimes, see <a class="reference internal" href="#troubleshoot-an-override-hierarchy">Troubleshoot an Override Hierarchy</a>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Blender is also able to resync library overrides from external libraries, that are then linked into a
+working file. However, this is a costly process that needs to be fully redone every time the working
+file is loaded, since Blender cannot edit/modify the external library directly.</p>
+<p>So users linking overrides (or creating recursive overrides) should ensure that their library files are
+regularly updated, to avoid this overhead on file load (typically, opening and saving those library files
+should be enough to update them).</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Auto resyncing can be disabled in the <a class="reference internal" href="../../editors/preferences/experimental.html"><span class="doc">Experimental Preferences</span></a>.</p>
+</div>
+</section>
+<section id="non-editable-overrides">
+<h2>Non-Editable Overrides<a class="headerlink" href="#non-editable-overrides" title="Link to this heading"></a></h2>
+<p>For technical reasons (how relationships between data-blocks are stored), Blender needs to create
+overrides of a lot of data-blocks, even when only one or two of them actually needs to be edited
+by the user. To reduce the amount of information and risk of potential unwanted editing, most of
+these data-blocks are now marked as non-editable by default. This can be changed once the
+override has been created.</p>
+</section>
+<section id="make-an-override">
+<span id="bpy-ops-ui-override-idtemplate-make"></span><span id="bpy-ops-object-make-override-library"></span><span id="bpy-ops-outliner-liboverride-operation"></span><h2>Make an Override<a class="headerlink" href="#make-an-override" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id1">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>3D Viewport, Outliner, Properties</p>
+</dd>
+<dt class="field-even">Mode<span class="colon">:</span></dt>
+<dd class="field-even"><p>Object Mode</p>
+</dd>
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">3D Viewport ‣ Header ‣ Object ‣ Library Override ‣ Make</span>
+<span class="menuselection">Outliner ‣ Context Menu ‣ Library Override ‣ Make</span>
+<span class="menuselection">ID Widget ‣ Context Menu ‣ Library Override ‣ Make</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">LMB</kbd></kbd> on the ‘linked’/’overridden’ button of an ID Widget.</p>
+</dd>
+</dl>
+</div>
+<p>Create overrides from the selected data-blocks.</p>
+<p>Blender automatically create overrides for all required data-blocks to ensure that
+valid override hierarchies are created.</p>
+<p>Only overrides created from selected items will be user-editable.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The support for the creation of library overrides from the ID Widget (mainly from within
+the <em>Properties</em> editor) is limited. While the most common usages should be supported,
+especially with Objects, meshes, etc., much remains to be implemented.</p>
+</div>
+<section id="selected-items">
+<h3>Selected Items<a class="headerlink" href="#selected-items" title="Link to this heading"></a></h3>
+<p>Depending on where from the override is created, there are several ways to
+‘select’ items to be overridden and user-editable.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This also applies to the other common operations (<em>Reset</em> and <em>Clear</em>).</p>
+<p>The <em>Troubleshoot</em> advanced operations only available from the Outliner
+always apply to a whole override hierarchy.</p>
+</div>
+<section id="dview">
+<h4>3DView<a class="headerlink" href="#dview" title="Link to this heading"></a></h4>
+<p>The selected objects will be considered as selected.</p>
+<p>When a selected object is a local <em>Empty</em> instantiating a linked collection,
+the following will happen:
+* The <em>Empty</em> object will be removed.
+* Its linked collection will be overridden, and that override will be instanced
+in the same collection in the current <em>View Layer</em>.
+* If the collection contains <em>Armature</em> objects, they will be user-editable.
+Otherwise, no created override will be defined as user-editable.</p>
+</section>
+<section id="outliner">
+<h4>Outliner<a class="headerlink" href="#outliner" title="Link to this heading"></a></h4>
+<p>The operation can be applied on either the selected items only, their content only, or both.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Using <em>Selected &amp; Content</em> is an easy way to get all newly created overrides immediately
+user-editable.</p>
+</div>
+</section>
+<section id="id-widget">
+<h4>ID Widget<a class="headerlink" href="#id-widget" title="Link to this heading"></a></h4>
+<p>Only the linked data-block in the ID Widget is considered as selected, and set as editable
+once overridden.</p>
+</section>
+</section>
+<section id="make-editable">
+<h3>Make Editable<a class="headerlink" href="#make-editable" title="Link to this heading"></a></h3>
+<p>That same operation can also be used to make existing overrides user-editable,
+after they have been created, or <a class="reference internal" href="#clear-override"><span class="std std-ref">cleared</span></a></p>
+</section>
+</section>
+<section id="reset-an-override">
+<span id="bpy-ops-ui-override-idtemplate-reset"></span><span id="bpy-ops-object-reset-override-library"></span><h2>Reset an Override<a class="headerlink" href="#reset-an-override" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id2">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>3D Viewport, Outliner, Properties</p>
+</dd>
+<dt class="field-even">Mode<span class="colon">:</span></dt>
+<dd class="field-even"><p>Object Mode</p>
+</dd>
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">3D Viewport ‣ Header ‣ Object ‣ Library Override ‣ Reset</span>
+<span class="menuselection">Outliner ‣ Context Menu ‣ Library Override ‣ Reset</span>
+<span class="menuselection">ID Widget ‣ Context Menu ‣ Library Override ‣ Reset</span></p>
+</dd>
+</dl>
+</div>
+<p>Reset the selected overrides to their original values (from the linked reference data).
+Unlike with the <em>Clear</em> operation, the overrides remain fully editable, and are never deleted.</p>
+</section>
+<section id="clear-an-override">
+<span id="clear-override"></span><span id="bpy-ops-ui-override-idtemplate-clear"></span><span id="bpy-ops-object-clear-override-library"></span><h2>Clear an Override<a class="headerlink" href="#clear-an-override" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id3">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>3D Viewport, Outliner, Properties</p>
+</dd>
+<dt class="field-even">Mode<span class="colon">:</span></dt>
+<dd class="field-even"><p>Object Mode</p>
+</dd>
+<dt class="field-odd">Menu<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">3D Viewport ‣ Header ‣ Object ‣ Library Override ‣ Clear</span>
+<span class="menuselection">Outliner ‣ Context Menu ‣ Library Override ‣ Clear</span>
+<span class="menuselection">ID Widget ‣ Context Menu ‣ Library Override ‣ Clear</span></p>
+</dd>
+<dt class="field-even">Shortcut<span class="colon">:</span></dt>
+<dd class="field-even"><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">LMB</kbd></kbd> on the ‘overridden’ button of an ID Widget.</p>
+</dd>
+</dl>
+</div>
+<p>Reset the selected overrides to their original values, and if possible without breaking the
+existing hierarchy, delete them and replace them by their linked reference data.
+Otherwise, keep the overrides but mark them as non-editable.</p>
+</section>
+<section id="edit-an-override">
+<h2>Edit an Override<a class="headerlink" href="#edit-an-override" title="Link to this heading"></a></h2>
+<p>Essentially, an override is edited the same way as a regular local data-block.
+You can use operators on them, edit their properties from various editors, etc.
+There are some limitations however, most notably Edit Mode is not allowed for overrides.
+In most cases, as soon as you edit a property, you can see that it’s overridden by its teal blue
+outline/background.</p>
+<p>You can also animate overrides, animated properties just replace/supersede overrides then.
+Note that you cannot override/edit an existing animation, you’ll have to create a new action.
+You can manually define or remove an override from the context menu of the relevant property.
+If an override is not editable, you have to make it editable first.</p>
+<section id="define-overrides">
+<span id="bpy-ops-ui-override-type-set-button"></span><h3>Define Overrides<a class="headerlink" href="#define-overrides" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id4">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Any</p>
+</dd>
+<dt class="field-even">Mode<span class="colon">:</span></dt>
+<dd class="field-even"><p>Object Mode</p>
+</dd>
+<dt class="field-odd">Property<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Context Menu ‣ Define Overrides</span>
+<span class="menuselection">Context Menu ‣ Define Override</span></p>
+</dd>
+</dl>
+</div>
+<p>Mark a property to be overridden in the local blend file. For array properties
+all elements will be overridden.</p>
+</section>
+<section id="define-single-override">
+<h3>Define Single Override<a class="headerlink" href="#define-single-override" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id5">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Any</p>
+</dd>
+<dt class="field-even">Mode<span class="colon">:</span></dt>
+<dd class="field-even"><p>Object Mode</p>
+</dd>
+<dt class="field-odd">Property<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Context Menu ‣ Define Single Override</span></p>
+</dd>
+</dl>
+</div>
+<p>Mark a property to be overridden in the local blend file. For array properties only
+the selected element will be overridden.</p>
+</section>
+<section id="remove-overrides">
+<span id="bpy-ops-ui-remove-override-button"></span><h3>Remove Overrides<a class="headerlink" href="#remove-overrides" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id6">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Any</p>
+</dd>
+<dt class="field-even">Mode<span class="colon">:</span></dt>
+<dd class="field-even"><p>Object Mode</p>
+</dd>
+<dt class="field-odd">Property<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Context Menu ‣ Remove Overrides</span>
+<span class="menuselection">Context Menu ‣ Remove Override</span></p>
+</dd>
+</dl>
+</div>
+<p>Remove the property from the overrides. The value of the linked in data-block will be used.
+For array properties all elements will be removed from the override.</p>
+</section>
+<section id="remove-single-override">
+<h3>Remove Single Override<a class="headerlink" href="#remove-single-override" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id7">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Any</p>
+</dd>
+<dt class="field-even">Mode<span class="colon">:</span></dt>
+<dd class="field-even"><p>Object Mode</p>
+</dd>
+<dt class="field-odd">Property<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Context Menu ‣ Remove Single Override</span></p>
+</dd>
+</dl>
+</div>
+<p>Remove the property from the overrides. The value of the linked in data-block will be used.
+For array properties only the selected elements will be removed from the override.</p>
+</section>
+</section>
+<section id="troubleshoot-an-override-hierarchy">
+<span id="bpy-ops-outliner-liboverride-troubleshoot-operation"></span><span id="troubleshootoverride"></span><h2>Troubleshoot an Override Hierarchy<a class="headerlink" href="#troubleshoot-an-override-hierarchy" title="Link to this heading"></a></h2>
+<div class="refbox admonition" id="id8">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Outliner</p>
+</dd>
+<dt class="field-even">Mode<span class="colon">:</span></dt>
+<dd class="field-even"><p>Object Mode</p>
+</dd>
+<dt class="field-odd">Outliner<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Context Menu ‣ Library override ‣ Troubleshoot</span></p>
+</dd>
+</dl>
+</div>
+<p>These operations are only available from the Outliner contextual menu. They can help fixing a broken
+override hierarchy.</p>
+<section id="resync">
+<h3>Resync<a class="headerlink" href="#resync" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id9">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Outliner</p>
+</dd>
+<dt class="field-even">Mode<span class="colon">:</span></dt>
+<dd class="field-even"><p>Object Mode</p>
+</dd>
+<dt class="field-odd">Outliner<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Context Menu ‣ Library override ‣ Troubleshoot ‣ Resync</span></p>
+</dd>
+</dl>
+</div>
+<p>The hierarchy of the linked data (the relationships between linked data-blocks) can change.
+Overrides need to be resynced to match the new hierarchy. This operator will resync the override
+to match the new hierarchy in the library.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>While resyncing a library override it is possible that edited overrides
+get deleted if they are changed in the original library.
+If this is the case, a warning message will be displayed stating how many overrides were deleted,
+if the deletion is undesirable the resync can be undone before saving the blend-file.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This Process is Automatic</p>
+<p>Usually, this operation happens automatically when blender detects it is needed, on file load, unless
+it is disabled in the <a class="reference internal" href="../../editors/preferences/experimental.html"><span class="doc">Experimental Preferences</span></a>.</p>
+</div>
+</section>
+<section id="resync-enforce">
+<h3>Resync Enforce<a class="headerlink" href="#resync-enforce" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id10">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Outliner</p>
+</dd>
+<dt class="field-even">Mode<span class="colon">:</span></dt>
+<dd class="field-even"><p>Object Mode</p>
+</dd>
+<dt class="field-odd">Outliner<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Context Menu ‣ Library override ‣ Troubleshoot ‣ Resync Enforce</span></p>
+</dd>
+</dl>
+</div>
+<p>In some cases, especially with older blend-files that were saved with ‘broken’ (non-hierarchy-matching) overrides,
+a regular resync itself cannot rebuild properly the override as expected (e.g. some objects might go missing).
+To solve this issue, this operator rebuilds the local override from its linked reference,
+as well as its hierarchy of dependencies, enforcing that hierarchy to match the linked data
+(i.e. ignoring existing overrides on data-blocks properties).
+This is similar to a regular resync, but is more forceful, aggressive,
+at the cost of a potential loss of some overrides on ID pointers properties.</p>
+</section>
+<section id="delete">
+<h3>Delete<a class="headerlink" href="#delete" title="Link to this heading"></a></h3>
+<div class="refbox admonition" id="id11">
+<p class="admonition-title">Reference</p>
+<dl class="field-list simple">
+<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Outliner</p>
+</dd>
+<dt class="field-even">Mode<span class="colon">:</span></dt>
+<dd class="field-even"><p>Object Mode</p>
+</dd>
+<dt class="field-odd">Outliner<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="menuselection">Context Menu ‣ Library override ‣ Troubleshoot ‣ Delete</span></p>
+</dd>
+</dl>
+</div>
+<p>Remove the whole library override hierarchy, and replace all of these override data-blocks by
+their original linked data-blocks. This fully reverts the <em>Make</em> operation.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="library_proxies.html" class="btn btn-neutral float-left" title="Proxies" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../asset_libraries/index.html" class="btn btn-neutral float-right" title="Asset Libraries" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../copyright.html">Copyright</a> : This page is licensed under a CC-BY-SA 4.0 Int. License.
+      <span class="lastupdated">Last updated on 12/17/2023.
+      </span></p>
+  </div>
+
+  
+<div class="footer-contribute">
+   <ul>
+      <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/files/linked_libraries/library_overrides.rst"
+            class="fa fa-edit"> View Source</a>
+      </li>
+      <!-- <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/files/linked_libraries/library_overrides.rst"
+            class="fa fa-edit"> Edit Page</a>
+      </li> -->
+      <li>
+         <a href="https://projects.blender.org/blender/documentation/issues/new?template=.gitea/issue_template/bug.yaml&field:body=%2A%2APage+Information%2A%2A%0D%0AFile%3A+%60manual%2Ffiles/linked_libraries/library_overrides.rst%60%0D%0ABlender+Version%3A+%604.0%60%0D%0ADocumentation+Language%3A+%60en%60%0D%0A%5BPermanent+Link%5D%28https%3A%2F%2Fdocs.blender.org%2Fmanual%2Fen%2F4.0%2Ffiles/linked_libraries/library_overrides.html%29%0D%0A%0D%0A%2A%2AShort+description+of+error%2A%2A%0D%0A%5BPlease+fill+out+a+short+description+of+the+error+here%5D%0D%0A"
+            class="fa fa-bug"> Report issue on this page</a>
+      </li>
+      <ul>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="document versions">
+	<ul id="versionwrap" role="presentation">
+		<li role="presentation">
+			<span id="version-popover" class="version-btn" tabindex="0" role="button" aria-label="versions selector"
+				aria-haspopup="true" aria-controls="version-vsnlist" aria-disabled="true">
+				4.0
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Versions</div>
+				<ul id="version-vsnlist" class="version-list" role="menu" aria-labelledby="version-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<li role="presentation">
+			<span id="lang-popover" class="version-btn" tabindex="0" role="button" aria-label="language selector"
+				aria-haspopup="true" aria-controls="version-langlist">
+				 en 
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Languages</div>
+				<ul id="version-langlist" class="version-list" role="menu" aria-labelledby="lang-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<template id="version-entry">
+			<li tabindex="-1" role="presentation"><a tabindex="-1" role="menuitem"></a></li>
+			<li class="selected" tabindex="-1" role="presentation"><span tabindex="-1" aria-current="page"></spanp></li>
+		</template>
+	</ul>
+<template id="version-warning">
+	<div class="admonition warning">
+		<p class="first admonition-title">Note</p>
+		<p class="last">
+			You are not using the most up to date version of the documentation.
+			<a href="#"></a> is the newest version.
+		</p>
+	</div>
+</template>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1418081-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1418081-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

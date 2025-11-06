@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Attributes &mdash; Blender Manual</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme_overrides.css?v=8da28a04" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/version_switch.css?v=74ca2809" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/attributes_reference.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=715c20a1"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/version_switch.js?v=5cbd935e"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Blender Manual"
+          href="../../_static/opensearch.xml"/>
+<link rel="alternate" hreflang="en" href="https://docs.blender.org/manual/en/latest/" />
+<link rel="alternate" hreflang="ar" href="https://docs.blender.org/manual/ar/latest/" />
+<link rel="alternate" hreflang="de" href="https://docs.blender.org/manual/de/latest/" />
+<link rel="alternate" hreflang="es" href="https://docs.blender.org/manual/es/latest/" />
+<link rel="alternate" hreflang="fi" href="https://docs.blender.org/manual/fi/latest/" />
+<link rel="alternate" hreflang="fr" href="https://docs.blender.org/manual/fr/latest/" />
+<link rel="alternate" hreflang="id" href="https://docs.blender.org/manual/id/latest/" />
+<link rel="alternate" hreflang="it" href="https://docs.blender.org/manual/it/latest/" />
+<link rel="alternate" hreflang="ja" href="https://docs.blender.org/manual/ja/latest/" />
+<link rel="alternate" hreflang="ko" href="https://docs.blender.org/manual/ko/latest/" />
+<link rel="alternate" hreflang="nb" href="https://docs.blender.org/manual/nb/latest/" />
+<link rel="alternate" hreflang="pt" href="https://docs.blender.org/manual/pt/latest/" />
+<link rel="alternate" hreflang="ru" href="https://docs.blender.org/manual/ru/latest/" />
+<link rel="alternate" hreflang="sk" href="https://docs.blender.org/manual/sk/latest/" />
+<link rel="alternate" hreflang="sl" href="https://docs.blender.org/manual/sl/latest/" />
+<link rel="alternate" hreflang="sr" href="https://docs.blender.org/manual/sr/latest/" />
+<link rel="alternate" hreflang="uk" href="https://docs.blender.org/manual/uk/latest/" />
+<link rel="alternate" hreflang="vi" href="https://docs.blender.org/manual/vi/latest/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://docs.blender.org/manual/zh-hans/latest/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://docs.blender.org/manual/zh-hant/latest/" />
+<link rel="alternate" hreflang="x-default" href="https://docs.blender.org/manual/en/latest/" />
+
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="Fields" href="fields.html" />
+    <link rel="prev" title="Inspection" href="inspection.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Blender 4.0 Manual
+              <img src="../../_static/blender-logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/about/index.html">About Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installing/index.html">Installing Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/configuration/index.html">Configuring Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/help.html">Help System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sections</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../interface/index.html">User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../editors/index.html">Editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scene_layout/index.html">Scenes &amp; Objects</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Modeling</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../meshes/index.html">Meshes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../curves/index.html">Curves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../surfaces/index.html">Surfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../metas/index.html">Metaball</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../texts/index.html">Text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../volumes/index.html">Volumes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../empties.html">Empties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modifiers/index.html">Modifiers</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Geometry Nodes</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inspection.html">Inspection</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Attributes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#named-attributes">Named Attributes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#anonymous-attributes">Anonymous Attributes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#attribute-data-types">Attribute Data Types</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#attribute-domains">Attribute Domains</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#boolean-domain-interpolation">Boolean Domain Interpolation</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#built-in-attributes">Built-In Attributes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#naming-conventions">Naming Conventions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#custom-attributes">Custom Attributes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#attribute-conversion-operator">Attribute Conversion Operator</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="fields.html">Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="instances.html">Instances</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tools.html">Node-Based Tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#node-types">Node Types</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../transform/index.html">Transform</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../sculpt_paint/index.html">Sculpting &amp; Painting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../grease_pencil/index.html">Grease Pencil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../animation/index.html">Animation &amp; Rigging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../physics/index.html">Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../render/index.html">Rendering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../compositing/index.html">Compositing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../movie_clip/index.html">Motion Tracking &amp; Masking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../video_editing/index.html">Video Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../files/index.html">Assets, Files, &amp; Data System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../addons/index.html">Add-ons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/index.html">Advanced</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Manual Index</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get Involved</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribute Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Blender 4.0 Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Modeling</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Geometry Nodes</a></li>
+      <li class="breadcrumb-item active">Attributes</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="attributes">
+<span id="bpy-ops-geometry-attribute-remove"></span><span id="bpy-ops-geometry-attribute-add"></span><span id="bpy-ops-object-attribute-remove"></span><span id="bpy-ops-object-attribute-add"></span><span id="index-0"></span><h1>Attributes<a class="headerlink" href="#attributes" title="Link to this heading"></a></h1>
+<p>An <em>attribute</em> is a generic term to describe data stored per-element in a geometry data-block.
+For example, every vertex can have an associated number or vector.
+Attributes can be altered by connecting a value to the <em>Group Output</em> node,
+but also many nodes can change the values of specific attributes.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Attribute data types and domains are converted implicitly where possible, just like node sockets.</p>
+</div>
+<section id="named-attributes">
+<h2>Named Attributes<a class="headerlink" href="#named-attributes" title="Link to this heading"></a></h2>
+<p>Named attributes are created and used in other areas of Blender like shaders, painting, and UV mapping.
+In the <a class="reference internal" href="../modifiers/generate/geometry_nodes.html"><span class="doc">modifier panel</span></a>, a named attribute can
+be used for input by clicking the icon to the right of the value button. The string input input
+allows you to search and choose existing attributes from the modifier’s input geometry.</p>
+<figure class="align-center" id="id4">
+<img alt="../../_images/modeling_geometry-nodes_attribute-reference_search.png" src="../../_images/modeling_geometry-nodes_attribute-reference_search.png" />
+<figcaption>
+<p><span class="caption-text">Attribute Search.</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>The attribute search gives a bit of context about each attribute.
+To the left of the menu, the attribute domain is shown followed by the attribute name.
+To the right of the menu, the attribute data type is shown.</p>
+</section>
+<section id="anonymous-attributes">
+<span id="id1"></span><h2>Anonymous Attributes<a class="headerlink" href="#anonymous-attributes" title="Link to this heading"></a></h2>
+<figure class="align-center" id="id5">
+<img alt="../../_images/modeling_geometry-nodes_attribute-reference_attribute-field.png" src="../../_images/modeling_geometry-nodes_attribute-reference_attribute-field.png" />
+<figcaption>
+<p><span class="caption-text">The <em>Normal</em> and <em>Rotation</em> outputs are examples of attribute fields,
+which refer to an attribute stored on a geometry.</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>An anonymous attribute is a set of generic data stored on a geometry that doesn’t have a name.
+Usually, attributes exposed in Blender’s interface all have names. However,
+in geometry nodes, attributes can be passed around with node sockets.
+In these cases, an <em>Attribute Field</em> output is created, which is used by
+nodes to find attribute data in an input geometry.</p>
+<p>Anonymous attributes are still stored on the geometry like other attributes, and they are even
+automatically interpolated when the geometry changes with other nodes, except for a few cases.
+So generally, if the node link is still accessible, the attribute it references will be available
+too. However, anonymous attributes cannot be connected to a completely separate geometry
+that was created from a different source. To transfer attributes between separate geometries,
+the <a class="reference internal" href="geometry/sample/sample_index.html"><span class="doc">Sample Index Node</span></a> or other similar nodes like the
+<a class="reference internal" href="mesh/sample/sample_nearest_surface.html"><span class="doc">Sample Nearest Surface Node</span></a> can be used.</p>
+</section>
+<section id="attribute-data-types">
+<span id="id2"></span><h2>Attribute Data Types<a class="headerlink" href="#attribute-data-types" title="Link to this heading"></a></h2>
+<p>The type of an attribute is the kind of data stored at each element.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">Boolean<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True or false value.</p>
+</dd>
+<dt class="field-even">Integer<span class="colon">:</span></dt>
+<dd class="field-even"><p>32-bit integer.</p>
+</dd>
+<dt class="field-odd">8-Bit Integer<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Smaller integer with a range from -128 to 127.</p>
+</dd>
+<dt class="field-even">Float<span class="colon">:</span></dt>
+<dd class="field-even"><p>Floating-point value.</p>
+</dd>
+<dt class="field-odd">Vector<span class="colon">:</span></dt>
+<dd class="field-odd"><p>3D vector with floating-point values.</p>
+</dd>
+<dt class="field-even">2D Vector<span class="colon">:</span></dt>
+<dd class="field-even"><p>2D vector with floating-point values.</p>
+</dd>
+<dt class="field-odd">Color<span class="colon">:</span></dt>
+<dd class="field-odd"><p>RGBA color with 32-bit floating-point values.</p>
+</dd>
+<dt class="field-even">Byte Color<span class="colon">:</span></dt>
+<dd class="field-even"><p>RGBA color with 8-bit positive integer values.</p>
+</dd>
+<dt class="field-odd">Quaternion<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Floating point <a class="reference internal" href="../../glossary/index.html#term-Quaternion"><span class="xref std std-term">Quaternion</span></a> rotation.</p>
+</dd>
+</dl>
+</div></blockquote>
+<p>The above list is in the order of least to most “complex” (An integer can contain more data than a
+boolean, so it is more complicated). When joining separate geometries together, the more complex data
+type is preferred when there are matching names. This is particularly important when joining geometry
+with named attributes with the <a class="reference internal" href="geometry/join_geometry.html"><span class="doc">Join Geometry Node</span></a></p>
+<p>To store 2D Vectors (UV maps) and Byte Colors the
+<a class="reference internal" href="attribute/store_named_attribute.html"><span class="doc">Store Named Attribute Node</span></a> must be
+used because there are no sockets for those types.</p>
+</section>
+<section id="attribute-domains">
+<span id="id3"></span><h2>Attribute Domains<a class="headerlink" href="#attribute-domains" title="Link to this heading"></a></h2>
+<p>The domain of an attribute refers to what type of geometry element the attribute corresponds to.
+Knowing the domain of an attribute is important because it defines how it may be interpolated and
+used in nodes and shading. You can use the <a class="reference internal" href="../../editors/spreadsheet.html"><span class="doc">Spreadsheet Editor</span></a>
+to determine the domains of attributes.</p>
+<ul>
+<li><p><strong>Point</strong> domain attributes are associated with single locations in space with a position:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Vertices of a mesh</p></li>
+<li><p>Points of a point cloud</p></li>
+<li><p>Curve control points</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Edge</strong> domain attributes are associated with the edges of a mesh.</p></li>
+<li><p><strong>Face</strong> domain attributes are associated with the faces of a mesh.</p></li>
+<li><p><strong>Face Corner</strong> domain attributes are associated with the corners of the faces of the mesh.
+An example is a UV map attribute.</p></li>
+<li><p><strong>Spline</strong> domain attributes are associated with a group of connected
+curve control points.</p></li>
+<li><p><strong>Instance</strong> domain attributes exist on the <a class="reference internal" href="instances.html"><span class="doc">Instances</span></a> in a geometry.
+They can be used to store different values on copies of geometry data. Instance domain attributes are
+only supported in geometry nodes.</p></li>
+</ul>
+<p>Attributes are automatically interpolated to other domains. For example, when the
+<a class="reference internal" href="geometry/read/position.html"><span class="doc">Position Node</span></a> is connected to the selection input of
+the <a class="reference internal" href="material/set_material.html"><span class="doc">Set Material Node</span></a> node, the values are interpolated
+from the <em>Point</em> domain to the <em>Face</em> domain. Normally, domain conversions use simple averages
+for values, but <em>Boolean</em> data type attributes have special rules for interpolation:</p>
+<section id="boolean-domain-interpolation">
+<h3>Boolean Domain Interpolation<a class="headerlink" href="#boolean-domain-interpolation" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>From</p></th>
+<th class="head"><p>To</p></th>
+<th class="head"><p>Conversion</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Point</p></td>
+<td><p>Edge</p></td>
+<td><p>An edge is selected if both of its vertices were selected.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Point</p></td>
+<td><p>Face</p></td>
+<td><p>A face is selected if all of its vertices were selected too.</p></td>
+</tr>
+<tr class="row-even"><td><p>Point</p></td>
+<td><p>Corner</p></td>
+<td><p>Each corner’s value is simply a copy of the value at its vertex.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Point</p></td>
+<td><p>Spline</p></td>
+<td><p>A spline is selected if all of its control points were selected.</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Edge</p></td>
+<td><p>Point</p></td>
+<td><p>A vertex is selected if any connected edge was selected.</p></td>
+</tr>
+<tr class="row-even"><td><p>Edge</p></td>
+<td><p>Face</p></td>
+<td><p>A face is selected if all of its edges are selected</p></td>
+</tr>
+<tr class="row-odd"><td><p>Edge</p></td>
+<td><p>Corner</p></td>
+<td><p>A corner is selected if its two adjacent edges were selected.</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Face</p></td>
+<td><p>Point</p></td>
+<td><p>A vertex is selected if any of the connected faces were selected.</p></td>
+</tr>
+<tr class="row-even"><td><p>Face</p></td>
+<td><p>Edge</p></td>
+<td><p>An edge is selected if any connected face was selected.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Face</p></td>
+<td><p>Corner</p></td>
+<td><p>Each corner’s value is simply a copy of the value at its face.</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Corner</p></td>
+<td><p>Point</p></td>
+<td><p>A vertex is selected if all connected face corners were selected and it is not a loose vertex.</p></td>
+</tr>
+<tr class="row-even"><td><p>Corner</p></td>
+<td><p>Edge</p></td>
+<td><p>An edge is selected if all corners on adjacent faces were selected.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Corner</p></td>
+<td><p>Face</p></td>
+<td><p>A face is selected if all of its corners were selected.</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Spline</p></td>
+<td><p>Point</p></td>
+<td><p>Each point’s value is simply a copy of the corresponding value of the spline.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="built-in-attributes">
+<span id="geometry-nodes-builtin-attributes"></span><h2>Built-In Attributes<a class="headerlink" href="#built-in-attributes" title="Link to this heading"></a></h2>
+<p>Built-in attributes always exist, and cannot be removed. Their data type and domain cannot be changed.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Domain</p></th>
+<th class="head"><p>Notes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">position</span></code></p></td>
+<td><p><em>Vector</em></p></td>
+<td><p><em>Point</em></p></td>
+<td><p>Built-in attribute describing vertex or point locations, in the local space of a geometry.
+Any node that changes the location of points will adjust this attribute,
+like the <a class="reference internal" href="geometry/operations/transform_geometry.html"><span class="doc">Transform Geometry Node</span></a>
+and the <a class="reference internal" href="geometry/write/set_position.html"><span class="doc">Set Position Node</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">radius</span></code></p></td>
+<td><p><em>Float</em></p></td>
+<td><p><em>Point</em></p></td>
+<td><p>A built-in attribute on point clouds used to set the size for the points in the viewport.
+Also built-in on curves, where it controls the size of each curve control point when
+converted to a mesh, or for other operations.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">id</span></code></p></td>
+<td><p><em>Integer</em></p></td>
+<td><p><em>Point</em></p></td>
+<td><p>Created by the <a class="reference internal" href="point/distribute_points_on_faces.html"><span class="doc">Distribute Points on Faces</span></a>
+to provide stability when the shape of the input mesh changes,
+and used on instances to create motion blur.
+Values are expected to be large, with no order. This attribute is used by nodes
+that generate randomness, like the <a class="reference internal" href="utilities/random_value.html"><span class="doc">Random Value Node</span></a>.
+Unlike other built-in attributes, this attribute is not required, and can be removed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">material_index</span></code></p></td>
+<td><p><em>Integer</em></p></td>
+<td><p><em>Face</em></p></td>
+<td><p>Used to specify the material slot for every face in a mesh.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">crease</span></code></p></td>
+<td><p><em>Float</em></p></td>
+<td><p><em>Edge</em></p></td>
+<td><p>Edge attribute used by the Subdivision Surface modifier.
+The values are limited to a range of 0 and 1.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">sharp_face</span></code></p></td>
+<td><p><em>Boolean</em></p></td>
+<td><p><em>Face</em></p></td>
+<td><p>Attribute determining if a face should have sharp (rather than smooth) shading enabled
+in the viewport or a render.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">resolution</span></code></p></td>
+<td><p><em>Integer</em></p></td>
+<td><p><em>Spline</em></p></td>
+<td><p>Determines the number of evaluated points between two control points of a spline.
+Only NURBS and Bézier splines have this attribute, for poly splines, the value is always one.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">cyclic</span></code></p></td>
+<td><p><em>Boolean</em></p></td>
+<td><p><em>Spline</em></p></td>
+<td><p>Determines whether the spline has a segment that connects its first and last control points.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">handle_left</span></code></p></td>
+<td><p><em>Vector</em></p></td>
+<td><p><em>Point</em></p></td>
+<td><p>Describes the location of the left handle of a curve control point, on the side
+of the curve’s start. Only exists when the curve contains a Bézier spline.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">handle_right</span></code></p></td>
+<td><p><em>Vector</em></p></td>
+<td><p><em>Point</em></p></td>
+<td><p>Describes the location of the right handle of a curve control point, on the side
+of the curve’s end. Only exists when the curve contains a Bézier spline.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="naming-conventions">
+<h2>Naming Conventions<a class="headerlink" href="#naming-conventions" title="Link to this heading"></a></h2>
+<p>These attributes do not exist by default, but are used implicitly by certain parts of Blender.
+The data type of these attributes can be changed, just like any attribute besides the built-in attributes.
+However, the attributes might be expected by Blender to have a certain type.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Notes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">velocity</span></code></p></td>
+<td><p><em>Vector</em></p></td>
+<td><p>Used to create motion blur when rendering animations.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">rest_position</span></code></p></td>
+<td><p><em>Vector</em></p></td>
+<td><p>Holds the position of points or vertices from before a geometry is deformed procedurally.
+Can be created automatically before <a class="reference internal" href="../../animation/shape_keys/index.html"><span class="doc">Shape Keys</span></a> and
+<a class="reference internal" href="../modifiers/introduction.html"><span class="doc">Modifiers</span></a> are evaluated with the
+<a class="reference internal" href="../../animation/shape_keys/shape_keys_panel.html#bpy-types-object-add-rest-position-attribute"><span class="std std-ref">Add Rest Position</span></a> option.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">surface_uv_coordinate</span></code></p></td>
+<td><p><em>2D Vector</em></p></td>
+<td><p>Used to describe curve attachment locations on a mesh surface, typically used for hair use cases.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="custom-attributes">
+<h2>Custom Attributes<a class="headerlink" href="#custom-attributes" title="Link to this heading"></a></h2>
+<p>Vertex groups, UV maps and Color Attributes are available as attributes in geometry nodes.
+They are referred to by their name.
+Naming collisions (e.g. a vertex group and a UV map with the same name) should be avoided.
+If there is a naming collision, only one of the attributes is accessible in geometry nodes.</p>
+<p>Attributes with any other name can also be created by nodes, when the name is used for the first time.</p>
+<p>Note that geometry nodes does not always produce e.g. vertex groups if a node like
+<a class="reference internal" href="geometry/join_geometry.html"><span class="doc">Join Geometry</span></a> is used.
+Similarly, if the data type of a vertex group attribute is changed from the initial “Float” type,
+the attribute will no longer be a vertex group.</p>
+</section>
+<section id="attribute-conversion-operator">
+<span id="bpy-ops-geometry-attribute-convert"></span><h2>Attribute Conversion Operator<a class="headerlink" href="#attribute-conversion-operator" title="Link to this heading"></a></h2>
+<figure class="align-center">
+<img alt="../../_images/modeling_geometry-nodes_attribute-reference_convert.png" src="../../_images/modeling_geometry-nodes_attribute-reference_convert.png" />
+</figure>
+<p>This operator found in the <em>Attributes</em> panel of the property editor can change the
+domain or data type of an attribute.</p>
+<p>Due to ongoing development in the area of attributes, many areas of Blender can not yet work with
+the generic (identified with a name, stored on any domain with any data type) attributes used by
+geometry nodes. That makes this operator an essential workaround in some cases where existing
+tools must be used with data generated from geometry nodes.</p>
+<dl class="simple">
+<dt>Mode</dt><dd><dl class="field-list simple">
+<dt class="field-odd">Generic<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Interpolate and convert the attribute between the domains and data types described on this page.</p>
+</dd>
+<dt class="field-even">Vertex Group<span class="colon">:</span></dt>
+<dd class="field-even"><p>Create a <a class="reference internal" href="../meshes/properties/vertex_groups/index.html"><span class="doc">Vertex Group</span></a>
+from the attribute, which corresponds to a float attribute on the point domain.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This operator only works on <em>original</em> object data, not including the results of modifiers,
+so any attributes added or changed by geometry nodes will not be affected. To change the type
+of an attribute generated procedurally, modifiers must be applied.</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="inspection.html" class="btn btn-neutral float-left" title="Inspection" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="fields.html" class="btn btn-neutral float-right" title="Fields" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../copyright.html">Copyright</a> : This page is licensed under a CC-BY-SA 4.0 Int. License.
+      <span class="lastupdated">Last updated on 12/17/2023.
+      </span></p>
+  </div>
+
+  
+<div class="footer-contribute">
+   <ul>
+      <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/modeling/geometry_nodes/attributes_reference.rst"
+            class="fa fa-edit"> View Source</a>
+      </li>
+      <!-- <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/modeling/geometry_nodes/attributes_reference.rst"
+            class="fa fa-edit"> Edit Page</a>
+      </li> -->
+      <li>
+         <a href="https://projects.blender.org/blender/documentation/issues/new?template=.gitea/issue_template/bug.yaml&field:body=%2A%2APage+Information%2A%2A%0D%0AFile%3A+%60manual%2Fmodeling/geometry_nodes/attributes_reference.rst%60%0D%0ABlender+Version%3A+%604.0%60%0D%0ADocumentation+Language%3A+%60en%60%0D%0A%5BPermanent+Link%5D%28https%3A%2F%2Fdocs.blender.org%2Fmanual%2Fen%2F4.0%2Fmodeling/geometry_nodes/attributes_reference.html%29%0D%0A%0D%0A%2A%2AShort+description+of+error%2A%2A%0D%0A%5BPlease+fill+out+a+short+description+of+the+error+here%5D%0D%0A"
+            class="fa fa-bug"> Report issue on this page</a>
+      </li>
+      <ul>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="document versions">
+	<ul id="versionwrap" role="presentation">
+		<li role="presentation">
+			<span id="version-popover" class="version-btn" tabindex="0" role="button" aria-label="versions selector"
+				aria-haspopup="true" aria-controls="version-vsnlist" aria-disabled="true">
+				4.0
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Versions</div>
+				<ul id="version-vsnlist" class="version-list" role="menu" aria-labelledby="version-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<li role="presentation">
+			<span id="lang-popover" class="version-btn" tabindex="0" role="button" aria-label="language selector"
+				aria-haspopup="true" aria-controls="version-langlist">
+				 en 
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Languages</div>
+				<ul id="version-langlist" class="version-list" role="menu" aria-labelledby="lang-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<template id="version-entry">
+			<li tabindex="-1" role="presentation"><a tabindex="-1" role="menuitem"></a></li>
+			<li class="selected" tabindex="-1" role="presentation"><span tabindex="-1" aria-current="page"></spanp></li>
+		</template>
+	</ul>
+<template id="version-warning">
+	<div class="admonition warning">
+		<p class="first admonition-title">Note</p>
+		<p class="last">
+			You are not using the most up to date version of the documentation.
+			<a href="#"></a> is the newest version.
+		</p>
+	</div>
+</template>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1418081-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1418081-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

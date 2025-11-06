@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generated Rig Features &mdash; Blender Manual</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme_overrides.css?v=8da28a04" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/version_switch.css?v=74ca2809" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.blender.org/manual/en/latest/addons/rigging/rigify/rig_features.html" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=715c20a1"></script>
+        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../_static/js/version_switch.js?v=5cbd935e"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Blender Manual"
+          href="../../../_static/opensearch.xml"/>
+<link rel="alternate" hreflang="en" href="https://docs.blender.org/manual/en/latest/" />
+<link rel="alternate" hreflang="ar" href="https://docs.blender.org/manual/ar/latest/" />
+<link rel="alternate" hreflang="de" href="https://docs.blender.org/manual/de/latest/" />
+<link rel="alternate" hreflang="es" href="https://docs.blender.org/manual/es/latest/" />
+<link rel="alternate" hreflang="fi" href="https://docs.blender.org/manual/fi/latest/" />
+<link rel="alternate" hreflang="fr" href="https://docs.blender.org/manual/fr/latest/" />
+<link rel="alternate" hreflang="id" href="https://docs.blender.org/manual/id/latest/" />
+<link rel="alternate" hreflang="it" href="https://docs.blender.org/manual/it/latest/" />
+<link rel="alternate" hreflang="ja" href="https://docs.blender.org/manual/ja/latest/" />
+<link rel="alternate" hreflang="ko" href="https://docs.blender.org/manual/ko/latest/" />
+<link rel="alternate" hreflang="nb" href="https://docs.blender.org/manual/nb/latest/" />
+<link rel="alternate" hreflang="pt" href="https://docs.blender.org/manual/pt/latest/" />
+<link rel="alternate" hreflang="ru" href="https://docs.blender.org/manual/ru/latest/" />
+<link rel="alternate" hreflang="sk" href="https://docs.blender.org/manual/sk/latest/" />
+<link rel="alternate" hreflang="sl" href="https://docs.blender.org/manual/sl/latest/" />
+<link rel="alternate" hreflang="sr" href="https://docs.blender.org/manual/sr/latest/" />
+<link rel="alternate" hreflang="uk" href="https://docs.blender.org/manual/uk/latest/" />
+<link rel="alternate" hreflang="vi" href="https://docs.blender.org/manual/vi/latest/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://docs.blender.org/manual/zh-hans/latest/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://docs.blender.org/manual/zh-hant/latest/" />
+<link rel="alternate" hreflang="x-default" href="https://docs.blender.org/manual/en/latest/" />
+
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="next" title="Creating Meta-rigs" href="metarigs.html" />
+    <link rel="prev" title="Bone Positioning Guide" href="bone_positioning.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Blender 4.0 Manual
+              <img src="../../../_static/blender-logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/about/index.html">About Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/installing/index.html">Installing Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/configuration/index.html">Configuring Blender</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/help.html">Help System</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sections</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../interface/index.html">User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../editors/index.html">Editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../scene_layout/index.html">Scenes &amp; Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../modeling/index.html">Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sculpt_paint/index.html">Sculpting &amp; Painting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../grease_pencil/index.html">Grease Pencil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../animation/index.html">Animation &amp; Rigging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../physics/index.html">Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../render/index.html">Rendering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../compositing/index.html">Compositing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../movie_clip/index.html">Motion Tracking &amp; Masking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../video_editing/index.html">Video Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../files/index.html">Assets, Files, &amp; Data System</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Add-ons</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html#add-ons-category-listings">Add-ons Category Listings</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../3d_view/index.html">3D View</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../add_curve/index.html">Add Curve</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../add_mesh/index.html">Add Mesh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../animation/index.html">Animation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../baking/index.html">Baking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../camera/index.html">Camera</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../development/index.html">Development</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../import_export/index.html">Import-Export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../interface/index.html">Interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../lighting/index.html">Lighting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../materials/index.html">Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../mesh/index.html">Mesh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../node/index.html">Node</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../object/index.html">Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../paint/index.html">Paint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../render/index.html">Render</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html">Rigging</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">Rigify</a><ul class="current">
+<li class="toctree-l5 current"><a class="reference internal" href="index.html#basics">Basics</a><ul class="current">
+<li class="toctree-l6"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l6"><a class="reference internal" href="basics.html">Basic Usage</a></li>
+<li class="toctree-l6"><a class="reference internal" href="bone_positioning.html">Bone Positioning Guide</a></li>
+<li class="toctree-l6 current"><a class="current reference internal" href="#">Generated Rig Features</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="#common-features">Common Features</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="#rig-ui-panels">Rig UI Panels</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="#rig-bake-settings">Rig Bake Settings</a></li>
+<li class="toctree-l9"><a class="reference internal" href="#rig-main-properties">Rig Main Properties</a></li>
+<li class="toctree-l9"><a class="reference internal" href="#rig-layers">Rig Layers</a></li>
+</ul>
+</li>
+<li class="toctree-l8"><a class="reference internal" href="#common-controls">Common Controls</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="#root-bone">Root Bone</a></li>
+<li class="toctree-l9"><a class="reference internal" href="#limb-master">Limb Master</a></li>
+<li class="toctree-l9"><a class="reference internal" href="#tweak-controls">Tweak Controls</a></li>
+<li class="toctree-l9"><a class="reference internal" href="#custom-pivots">Custom Pivots</a></li>
+<li class="toctree-l9"><a class="reference internal" href="#ik-and-fk-switching">IK and FK Switching</a></li>
+<li class="toctree-l9"><a class="reference internal" href="#parent-switching">Parent Switching</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="#limbs">Limbs</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="#arms">Arms</a></li>
+<li class="toctree-l8"><a class="reference internal" href="#legs">Legs</a></li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="#fingers-tentacles">Fingers &amp; Tentacles</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="#simple-tentacle">Simple Tentacle</a></li>
+<li class="toctree-l8"><a class="reference internal" href="#advanced-finger">Advanced Finger</a></li>
+<li class="toctree-l8"><a class="reference internal" href="#spline-tentacle">Spline Tentacle</a></li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="#spine-head-tail">Spine, Head &amp; Tail</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="#spine">Spine</a></li>
+<li class="toctree-l8"><a class="reference internal" href="#head">Head</a></li>
+<li class="toctree-l8"><a class="reference internal" href="#tail">Tail</a></li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="#face">Face</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="#basic-concepts">Basic Concepts</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="#skin-bone-chains">Skin Bone Chains</a></li>
+<li class="toctree-l9"><a class="reference internal" href="#specialized-controllers">Specialized Controllers</a></li>
+</ul>
+</li>
+<li class="toctree-l8"><a class="reference internal" href="#eyes">Eyes</a></li>
+<li class="toctree-l8"><a class="reference internal" href="#mouth">Mouth</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="index.html#customization">Customization</a></li>
+<li class="toctree-l5"><a class="reference internal" href="index.html#extensions">Extensions</a></li>
+<li class="toctree-l5"><a class="reference internal" href="index.html#development">Development</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../sequencer/index.html">Sequencer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../system/index.html">System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uv/index.html">UV</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../video_tools/index.html">Video Tools</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../advanced/index.html">Advanced</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../troubleshooting/index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../glossary/index.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../genindex.html">Manual Index</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get Involved</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../contribute/index.html">Contribute Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Blender 4.0 Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Add-ons</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Rigging</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Rigify</a></li>
+      <li class="breadcrumb-item active">Generated Rig Features</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="generated-rig-features">
+<h1>Generated Rig Features<a class="headerlink" href="#generated-rig-features" title="Link to this heading"></a></h1>
+<p>After human rig generation a new armature named <code class="docutils literal notranslate"><span class="pre">rig</span></code> will be added to your scene.
+This is the character rig you have generated from the human meta-rig and will contain all the features.</p>
+<section id="common-features">
+<h2>Common Features<a class="headerlink" href="#common-features" title="Link to this heading"></a></h2>
+<section id="rig-ui-panels">
+<span id="rigify-rig-ui-template-riglayers"></span><span id="rigify-rig-ui-template-rigui"></span><span id="rigify-rig-ui-template-rigbakesettings"></span><h3>Rig UI Panels<a class="headerlink" href="#rig-ui-panels" title="Link to this heading"></a></h3>
+<figure class="align-right">
+<a class="reference internal image-reference" href="../../../_images/addons_rigging_rigify_rig-features_rig-ui-panels.png"><img alt="../../../_images/addons_rigging_rigify_rig-features_rig-ui-panels.png" src="../../../_images/addons_rigging_rigify_rig-features_rig-ui-panels.png" style="width: 200px;" /></a>
+</figure>
+<p>The generated rig is accompanied by a script that implements a set of panels that appear in the Item
+tab of the 3D view sidebar when a bone belonging to the generated rig is active.</p>
+<section id="rig-bake-settings">
+<h4>Rig Bake Settings<a class="headerlink" href="#rig-bake-settings" title="Link to this heading"></a></h4>
+<p>This panel is displayed if the armature has an active <a class="reference internal" href="../../../animation/actions.html"><span class="doc">Action</span></a>, and
+is used by operators that apply an operation to multiple keyframes.</p>
+<dl>
+<dt>Bake All Keyed Frames</dt><dd><p>When enabled, the operator computes and keyframes its result on every frame that has a key for any of the
+bones, as opposed to just relevant ones.</p>
+</dd>
+<dt>Limit Frame Range</dt><dd><p>When enabled, the operator is limited to a certain frame range.</p>
+<dl class="simple">
+<dt>Start, End</dt><dd><p>Specify the frame range to process.</p>
+</dd>
+<dt>Get Frame Range</dt><dd><p>Sets the baking frame range from the scene frame range.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+<section id="rig-main-properties">
+<h4>Rig Main Properties<a class="headerlink" href="#rig-main-properties" title="Link to this heading"></a></h4>
+<p>This panel shows properties and operators that are relevant to the selected bones.</p>
+</section>
+<section id="rig-layers">
+<h4>Rig Layers<a class="headerlink" href="#rig-layers" title="Link to this heading"></a></h4>
+<p>This panel contains buttons for toggling visibility of bone collections.</p>
+<p>The layout and labels of the buttons are defined in the metarig
+<a class="reference internal" href="metarigs.html#bpy-types-bonecollection-rigify-ui-row"><span class="std std-ref">Bone Collection UI</span></a> panel.</p>
+</section>
+</section>
+<section id="common-controls">
+<h3>Common Controls<a class="headerlink" href="#common-controls" title="Link to this heading"></a></h3>
+<p>Rigify rigs are built from standardized components called sub-rigs, which are linked together in a parent-child
+hierarchy. Although the precise behavior of each sub-rig is determined by its implementation, there are certain
+conventions that are followed by many of them.</p>
+<section id="root-bone">
+<h4>Root Bone<a class="headerlink" href="#root-bone" title="Link to this heading"></a></h4>
+<p>Every Rigify rig has a bone called <cite>root</cite>, which serves as a parent for all bones of the rig.
+It is assigned to a bone collection called <cite>Root</cite>. Unless the metarig has a custom bone
+of that name, it is positioned at the origin of the rig object. Its widget looks like
+a circle with four arrow shaped protrusions.</p>
+<figure class="align-right">
+<a class="reference internal image-reference" href="../../../_images/addons_rigging_rigify_rig-features_arm-controls.png"><img alt="../../../_images/addons_rigging_rigify_rig-features_arm-controls.png" src="../../../_images/addons_rigging_rigify_rig-features_arm-controls.png" style="width: 200px;" /></a>
+</figure>
+</section>
+<section id="limb-master">
+<h4>Limb Master<a class="headerlink" href="#limb-master" title="Link to this heading"></a></h4>
+<p>Many limb-like sub-rigs have a gear-shaped bone at their base.</p>
+<p>This bone can in some cases be used to transform the whole sub-rig as a rigid unit, and is also used as a container
+for its custom properties that are displayed in the <em>Rig Main Properties</em> panel. If you are looking in the Graph editor
+for the animated values of the properties, this is most likely the bone to look at.</p>
+<p>As an exception, if multiple controls of the sub-rig need their own copy of conceptually the same property,
+it may be placed on those controls directly instead.</p>
+</section>
+<section id="tweak-controls">
+<h4>Tweak Controls<a class="headerlink" href="#tweak-controls" title="Link to this heading"></a></h4>
+<p>These controls look like blue spheres in the default color scheme, and are the final control layer above the
+deformation bones themselves.</p>
+<p>Tweaks are subordinate to the general IK or FK limb position but can be moved apart, twisted and scaled freely,
+even reaching virtually impossible limb shapes.</p>
+<dl>
+<dt>Rubber Tweak</dt><dd><figure class="align-right">
+<a class="reference internal image-reference" href="../../../_images/addons_rigging_rigify_rig-features_rubber-tweak.png"><img alt="../../../_images/addons_rigging_rigify_rig-features_rubber-tweak.png" src="../../../_images/addons_rigging_rigify_rig-features_rubber-tweak.png" style="width: 200px;" /></a>
+</figure>
+<p>Some sub-rigs provide a slider in their <em>Rig Main Properties</em> when tweaks are selected, which controls
+the smoothness of the Bendy Bone joint at that position. When zero, the joint deforms with a sharp bend,
+while setting it to 1 makes the transition smooth for a more rubber hose cartoon like appearance.</p>
+</dd>
+</dl>
+</section>
+<section id="custom-pivots">
+<h4>Custom Pivots<a class="headerlink" href="#custom-pivots" title="Link to this heading"></a></h4>
+<p>Some bones that can be freely moved in space (like IK controls) can be optionally accompanied by a custom pivot
+control. These controls usually look like a plain axes empty with the axis lines capped with squares or crosses,
+like the one in the image above. The control can be freely moved to change the location of the pivot, and then
+rotated or scaled to transform the target bone around the pivot.</p>
+</section>
+<section id="ik-and-fk-switching">
+<h4>IK and FK Switching<a class="headerlink" href="#ik-and-fk-switching" title="Link to this heading"></a></h4>
+<figure class="align-right">
+<a class="reference internal image-reference" href="../../../_images/addons_rigging_rigify_rig-features_ik-fk-switch.png"><img alt="../../../_images/addons_rigging_rigify_rig-features_ik-fk-switch.png" src="../../../_images/addons_rigging_rigify_rig-features_ik-fk-switch.png" style="width: 200px;" /></a>
+</figure>
+<p>A number of rig types provides both IK and FK controls (red for IK and green for FK in the image above),
+with an ability to switch and snap between them.</p>
+<p>Switching is controlled by a slider in <em>Rig Main Properties</em>, usually blending between full IK at 0 and full FK at 1.</p>
+<p>Snapping one type of controls to the shape of the other is done via buttons, which form a group of three
+in their complete set:</p>
+<ul class="simple">
+<li><p>The main button will snap on the current frame, and auto-key the result if enabled.</p></li>
+<li><p>The <em>Action</em> button will bake the change on multiple keyframes, according to <em>Rig Bake Settings</em>.</p></li>
+<li><p>The <em>Clear</em> button will delete keyframes on the corresponding controls within the bake interval.</p></li>
+</ul>
+</section>
+<section id="parent-switching">
+<h4>Parent Switching<a class="headerlink" href="#parent-switching" title="Link to this heading"></a></h4>
+<figure class="align-right">
+<a class="reference internal image-reference" href="../../../_images/addons_rigging_rigify_rig-features_parent-switch.png"><img alt="../../../_images/addons_rigging_rigify_rig-features_parent-switch.png" src="../../../_images/addons_rigging_rigify_rig-features_parent-switch.png" style="width: 200px;" /></a>
+</figure>
+<p>Some freely movable controls, e.g. usually the IK controls, can have a mechanism to switch their parent bone
+between a set of choices, including the root bone, or none at all.</p>
+<p>This mechanism is exposed in the <em>Rig Main Properties</em> panel through a row with three controls:</p>
+<ul class="simple">
+<li><p>A button that presents a dropdown menu, which allows switching the parent on the current frame while
+preserving the bone position and orientation in the world space.</p></li>
+<li><p>An input field that exposes the raw switch property for keyframing and direct manipulation. Values correspond to
+positions in the dropdown list.</p></li>
+<li><p>A button to apply the position preserving parent switch over the bake range of keyframes.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When manually placing a Child Of constraint on the control bone, the built-in parent should be switched to none.</p>
+</div>
+</section>
+</section>
+</section>
+<section id="limbs">
+<h2>Limbs<a class="headerlink" href="#limbs" title="Link to this heading"></a></h2>
+<p>Limbs have a master bone and tweaks. Depending on the user defined meta-rig options,
+multiple deform bone segments with tweaks will be created.</p>
+<p>The IK control may have an optional custom pivot, as well as additional predefined pivots.</p>
+<p>Rigify’s limbs have the following controls in the Sidebar panel:</p>
+<figure class="align-right">
+<a class="reference internal image-reference" href="../../../_images/addons_rigging_rigify_rig-features_limb-properties.png"><img alt="../../../_images/addons_rigging_rigify_rig-features_limb-properties.png" src="../../../_images/addons_rigging_rigify_rig-features_limb-properties.png" style="width: 200px;" /></a>
+</figure>
+<dl>
+<dt>FK Limb Follow <span class="guilabel">Slider</span></dt><dd><p>When set to 1 the FK limb will not rotate with the torso and will retain is rotation
+relative to the root bone instead.</p>
+</dd>
+<dt>IK-FK <span class="guilabel">Slider</span></dt><dd><p>Controls whether the limb follows IK or FK controls, blending between full IK at 0 and full FK at 1.</p>
+</dd>
+<dt>IK&lt;-&gt;FK Snapping <span class="guilabel">Buttons</span></dt><dd><p>Snaps one type of controls to another.</p>
+</dd>
+<dt>IK Stretch <span class="guilabel">Slider</span></dt><dd><p>Blends between the limb stretching freely at 1, or having its maximum length constrained at 0.</p>
+</dd>
+<dt>Toggle Pole <span class="guilabel">Switch</span></dt><dd><p>When set to 0 the IK limb will use the rotational pole vector (the arrow at the base of the limb).
+Rotating/translating/scaling the arrow will control the IK limb base.
+When set to 1 the classic pole vector will be displayed and used to orient the IK limb.
+The arrow will continue to handle the scale and the location of the IK limb base.</p>
+<p>Similar to <em>Parent Switching</em>, the row includes buttons to convert the current pose between types,
+or bake the whole action.</p>
+</dd>
+<dt>IK Parent <span class="guilabel">Switch</span></dt><dd><p>Switches the effective parent of the main IK control.</p>
+</dd>
+<dt>Pole Parent <span class="guilabel">Switch</span></dt><dd><p>Switches the effective parent of the classic IK Pole control.</p>
+</dd>
+</dl>
+<section id="arms">
+<h3>Arms<a class="headerlink" href="#arms" title="Link to this heading"></a></h3>
+<figure class="align-right">
+<a class="reference internal image-reference" href="../../../_images/addons_rigging_rigify_rig-features_hand-controls.png"><img alt="../../../_images/addons_rigging_rigify_rig-features_hand-controls.png" src="../../../_images/addons_rigging_rigify_rig-features_hand-controls.png" style="width: 200px;" /></a>
+</figure>
+<p><a class="reference internal" href="rig_types/limbs.html#rigify-rigs-limbs-arm"><span class="std std-ref">Arms</span></a> have the simplest control structure: the IK controls consist of the main IK
+control, the optional custom pivot control, and the optional wrist control (the bent circle), which pivots around
+the tail rather than the head of the hand bone.</p>
+<p>There are no additional controls in the <em>Rig Main Properties</em> panel.</p>
+</section>
+<section id="legs">
+<h3>Legs<a class="headerlink" href="#legs" title="Link to this heading"></a></h3>
+<p><a class="reference internal" href="rig_types/limbs.html#rigify-rigs-limbs-leg"><span class="std std-ref">Legs</span></a> have a more complicated setup, which has:</p>
+<figure class="align-right">
+<a class="reference internal image-reference" href="../../../_images/addons_rigging_rigify_rig-features_foot-controls.png"><img alt="../../../_images/addons_rigging_rigify_rig-features_foot-controls.png" src="../../../_images/addons_rigging_rigify_rig-features_foot-controls.png" style="width: 200px;" /></a>
+</figure>
+<dl class="simple">
+<dt>IK &amp; FK Toe <span class="guilabel">Optional</span></dt><dd><p>Two separate IK and FK controls for the toe (this is  on by default in the bundled metarigs,
+and is recommended for stable IK&lt;-&gt;FK snapping).</p>
+</dd>
+<dt>IK Heel</dt><dd><p>A heel control which can be rotated to command forward or backward roll, sideways rock, or yaw of the heel.</p>
+</dd>
+<dt>Toe Pivot <span class="guilabel">Optional</span></dt><dd><p>An extra pivot control rotating around the base of the toe.</p>
+</dd>
+<dt>Custom Pivot <span class="guilabel">Optional</span></dt><dd><p>A custom pivot control.</p>
+</dd>
+</dl>
+<p>The properties panel has two additional features:</p>
+<figure class="align-right">
+<a class="reference internal image-reference" href="../../../_images/addons_rigging_rigify_rig-features_foot-properties.png"><img alt="../../../_images/addons_rigging_rigify_rig-features_foot-properties.png" src="../../../_images/addons_rigging_rigify_rig-features_foot-properties.png" style="width: 200px;" /></a>
+</figure>
+<dl>
+<dt>IK-&gt;FK Snap With Roll <span class="guilabel">Buttons</span></dt><dd><p>Standard IK to FK snapping resets the transformations of all IK controls other than the main one. This is
+not convenient to use in an animation that involves the use of the heel control, because roll and rock would
+be folded into the transformation of the main control.</p>
+<p>This alternative snapping operator tries to deduce the rotation of the heel control so as to keep the main
+IK control parallel to the ground plane inferred from the <em>current</em> orientation of the IK control. The operator
+has options to specify which rotational axes to use for the heel control rotation.</p>
+</dd>
+<dt>Roll On Toe <span class="guilabel">Slider</span> <span class="guilabel">Optional</span></dt><dd><p>If enabled in the sub-rig settings, this slider can be used to control whether the heel rotation (excluding
+backward roll) is applied at the base or the tip of the toe.</p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="fingers-tentacles">
+<h2>Fingers &amp; Tentacles<a class="headerlink" href="#fingers-tentacles" title="Link to this heading"></a></h2>
+<section id="simple-tentacle">
+<h3>Simple Tentacle<a class="headerlink" href="#simple-tentacle" title="Link to this heading"></a></h3>
+<figure class="align-default">
+<img alt="../../../_images/addons_rigging_rigify_rig-features_simple-controls.png" src="../../../_images/addons_rigging_rigify_rig-features_simple-controls.png" />
+</figure>
+<p>The simplest type of rig for a finger or appendage in general is the
+<a class="reference internal" href="rig_types/limbs.html#rigify-rigs-limbs-simple-tentacle"><span class="std std-ref">simple tentacle</span></a> sub-rig. It has only basic FK controls and tweaks,
+with the only automation being the ability to copy certain axes of the local rotation of a FK control to the next one.</p>
+</section>
+<section id="advanced-finger">
+<h3>Advanced Finger<a class="headerlink" href="#advanced-finger" title="Link to this heading"></a></h3>
+<figure class="align-default">
+<img alt="../../../_images/addons_rigging_rigify_rig-features_finger-controls.png" src="../../../_images/addons_rigging_rigify_rig-features_finger-controls.png" />
+</figure>
+<p>For fingers specifically, Rigify has a dedicated <a class="reference internal" href="rig_types/limbs.html#rigify-rigs-limbs-super-finger"><span class="std std-ref">finger</span></a> sub-rig type,
+which provides:</p>
+<dl class="simple">
+<dt>Master</dt><dd><p>A master control (orange), which can be used to rotate the finger as a whole, as well as to bend it via Y scaling.</p>
+</dd>
+<dt>FK Chain</dt><dd><p>FK control chain (green) that can also operate as semi-tweaks through allowing translation.</p>
+</dd>
+<dt>IK Control <span class="guilabel">Optional</span></dt><dd><p>IK control for the tip (red).</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>IK in this sub-rig is rudimentary and operates as an adjustment for FK. The intended way of use is to pose
+the finger in FK, and then enable IK after using IK-&gt;FK snap if it is necessary to pin the tip of the finger
+in place.</p>
+</div>
+<p>The properties panel has the following features:</p>
+<figure class="align-right">
+<a class="reference internal image-reference" href="../../../_images/addons_rigging_rigify_rig-features_finger-properties.png"><img alt="../../../_images/addons_rigging_rigify_rig-features_finger-properties.png" src="../../../_images/addons_rigging_rigify_rig-features_finger-properties.png" style="width: 200px;" /></a>
+</figure>
+<dl class="simple">
+<dt>Finger IK <span class="guilabel">Slider</span> <span class="guilabel">Optional</span></dt><dd><p>Slider controlling the influence of the IK.</p>
+</dd>
+<dt>FK&lt;-&gt;IK Snapping <span class="guilabel">Buttons</span> <span class="guilabel">Optional</span></dt><dd><p>Snaps the IK control to the end of the finger, or adjusts the FK controls to the result of the IK correction.</p>
+</dd>
+<dt>Curvature <span class="guilabel">Slider</span></dt><dd><p>Has the same effect as <em>Rubber Tweak</em> on limbs, controlling the rubber hose cartoon effect.</p>
+</dd>
+</dl>
+</section>
+<section id="spline-tentacle">
+<h3>Spline Tentacle<a class="headerlink" href="#spline-tentacle" title="Link to this heading"></a></h3>
+<figure class="align-default" id="id1">
+<img alt="../../../_images/addons_rigging_rigify_rig-features_spline-controls.png" src="../../../_images/addons_rigging_rigify_rig-features_spline-controls.png" />
+<figcaption>
+<p><span class="caption-text">Spline Tentacle (Stretch To Fit, Manual Squash &amp; Stretch)</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id2">
+<img alt="../../../_images/addons_rigging_rigify_rig-features_spline-controls-tip.png" src="../../../_images/addons_rigging_rigify_rig-features_spline-controls-tip.png" />
+<figcaption>
+<p><span class="caption-text">Spline Tentacle (Direct Tip Control)</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>The <a class="reference internal" href="rig_types/limbs.html#rigify-rigs-limbs-spline-tentacle"><span class="std std-ref">spline tentacle</span></a> is an advanced rig for a flexible appendage (tentacle)
+based on the <a class="reference internal" href="../../../animation/constraints/tracking/spline_ik.html"><span class="doc">Spline IK</span></a> constraint. The IK control bones manage
+control points of a Bezier spline curve, which in turn is followed by the IK chain.</p>
+<p>The tentacle can be generated in three major modes:</p>
+<dl class="simple">
+<dt>Stretch To Fit</dt><dd><p>In this simplest mode all bones of the sub-rig deform chain follow the curve and squash &amp; stretch to match
+its length.</p>
+</dd>
+<dt>Manual Squash &amp; Stretch</dt><dd><p>This mode is almost the same, but the chain does not automatically scale to match the curve length.
+Instead, it tries to cover as much as possible of the curve given its manually scaled length.
+If the curve is too short, the chain will overhang it and straighten out, but this can result in jitter.</p>
+</dd>
+<dt>Direct Tip Control</dt><dd><p>This mode is more similar to the behavior of IK limbs: the final bone of the chain is directly controlled by
+the tip IK control, while the other bones of the chain stretch and follow the curve to bridge the gap.</p>
+</dd>
+</dl>
+<p>The tentacle sub-rig has the following control bones:</p>
+<dl>
+<dt>Master</dt><dd><p>The tentacle has the same gear master control as other limbs (seen as a line in the images).</p>
+</dd>
+<dt>IK Start</dt><dd><p>The IK control at the base of the tentacle, which can be used to control the base twist and sideways scale, and
+is one of the potential switchable parents for other IK controls.</p>
+<p>In the <em>Manual Squash &amp; Stretch</em> mode it controls uniform scale of the tentacle in all directions.</p>
+</dd>
+<dt>IK Start (Extra) <span class="guilabel">Optional</span></dt><dd><p>Extra start controls, optional and hidden by default. Switchable parents default to the <em>IK Start</em> control.
+The scale of the control may optionally affect the thickness of the chain via the radius of the curve point.</p>
+</dd>
+<dt>IK Middle</dt><dd><p>Controls for the middle of the curve. The switchable parents default to <em>Master</em>, but may be set to
+<em>IK Start</em> or <em>IK End</em> controls.
+The scale of the control may optionally affect the thickness of the chain via the radius of the curve point.</p>
+</dd>
+<dt>IK End (Extra) <span class="guilabel">Optional</span></dt><dd><p>Extra end controls, optional and hidden by default. Switchable parents default to the <em>IK End</em> control.
+The scale of the control may optionally affect the thickness of the chain via the radius of the curve point.</p>
+<p>The <em>Direct Tip Control</em> mode adds one more extra end control next to the middle ones that cannot be hidden.</p>
+</dd>
+<dt>IK End</dt><dd><p>Controls the last control point of the curve, and is one of the potential parents for the other chain controls.</p>
+<p>In the <em>Direct Tip Control</em> mode also directly controls the last bone of the chain.</p>
+</dd>
+<dt>IK End Twist <span class="guilabel">Optional</span></dt><dd><p>This control is visually attached to the last bone of the chain, and must use Euler rotation.
+* <em>Stretch To Fit</em>: it controls the twist of the tip of the tentacle, interpolated to nothing at the base.
+* <em>Manual Squash &amp; Stretch</em>: it also controls the scaling of the tip of the tentacle.
+* <em>Direct Tip Control</em>: the control does not exist.</p>
+</dd>
+<dt>FK Chain <span class="guilabel">Optional</span></dt><dd><p>If enabled, the rig has an alternative fully FK control chain.</p>
+</dd>
+</dl>
+<p>The properties panel has the following features:</p>
+<figure class="align-right">
+<a class="reference internal image-reference" href="../../../_images/addons_rigging_rigify_rig-features_spline-properties.png"><img alt="../../../_images/addons_rigging_rigify_rig-features_spline-properties.png" src="../../../_images/addons_rigging_rigify_rig-features_spline-properties.png" style="width: 200px;" /></a>
+</figure>
+<dl>
+<dt>Start/End Controls <span class="guilabel">Optional</span></dt><dd><p>If extra controls exist, this property controls how many of them are visible and active.</p>
+<p>When a control is disabled, it is snapped to a position extremely close to the corresponding end control point,
+thus effectively neutralizing its effect. Thus, changing the setting during an animation can cause jumps.</p>
+<p>The plus and minus buttons can help with maintaining a continuous transition in an animation by keyframing the
+change in the property value with Constant interpolation, and also snapping and keyframing the control itself
+to its ‘hidden’ position.</p>
+</dd>
+<dt>End Twist Estimate <span class="guilabel">Optional</span></dt><dd><p>In the <em>Direct Tip Control</em> mode the twist at the end of the tentacle is deduced from the free form orientation
+of the tip control, rather than using a separate twist control with constrained Euler rotation. However, for
+technical reasons, that can only give values within the 180 degrees range of neutral.</p>
+<p>A long tentacle can accept more twist than 180 degrees, so a workaround is necessary. This property allows
+specifying an approximate estimate of the twist value (effectively shifting the neutral position), and the
+rig then applies the automatic correction within 180 degrees of this value.</p>
+</dd>
+<dt>IK-FK, IK&lt;-&gt;FK Snapping <span class="guilabel">Optional</span></dt><dd><p>If the FK controls are enabled, these provide standard IK-FK switching and snapping.</p>
+<p>However, unlike other limbs, for this rig automatic IK to FK snapping can only be approximate and requires
+manual tuning. For this reason, buttons for baking the snapping over a range of keyframes are not provided.</p>
+</dd>
+<dt>Parent Switch</dt><dd><p>Switches the parent of the selected IK control.</p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="spine-head-tail">
+<h2>Spine, Head &amp; Tail<a class="headerlink" href="#spine-head-tail" title="Link to this heading"></a></h2>
+<figure class="align-right">
+<a class="reference internal image-reference" href="../../../_images/addons_rigging_rigify_rig-features_spine-controls.png"><img alt="../../../_images/addons_rigging_rigify_rig-features_spine-controls.png" src="../../../_images/addons_rigging_rigify_rig-features_spine-controls.png" style="width: 200px;" /></a>
+</figure>
+<section id="spine">
+<h3>Spine<a class="headerlink" href="#spine" title="Link to this heading"></a></h3>
+<p>The <a class="reference internal" href="rig_types/spines.html#rigify-rigs-spines-basic-spine"><span class="std std-ref">spine</span></a> sub-rig provides a cube shaped torso control with
+switchable parent, and bent circle shaped hip and chest controls subordinate to it. For low level deformation
+tweak controls are provided.</p>
+<p>The torso control can optionally be accompanied with a custom pivot control. The rig can also optionally
+provide a full set of FK controls that are subordinate to the normal simplified ones, but above tweaks.</p>
+<p>The rig properties panel for the spine controls usually includes options for the head and/or tail as well.</p>
+<figure class="align-right">
+<a class="reference internal image-reference" href="../../../_images/addons_rigging_rigify_rig-features_head-controls.png"><img alt="../../../_images/addons_rigging_rigify_rig-features_head-controls.png" src="../../../_images/addons_rigging_rigify_rig-features_head-controls.png" style="width: 200px;" /></a>
+</figure>
+</section>
+<section id="head">
+<h3>Head<a class="headerlink" href="#head" title="Link to this heading"></a></h3>
+<p>The <a class="reference internal" href="rig_types/spines.html#rigify-rigs-spines-super-head"><span class="std std-ref">head</span></a> sub-rig attaches to the end of the spine, and provides
+rotational controls for the head and neck, as well as tweaks for fine control of the neck.</p>
+<p>If the neck is three or more bones long, an additonal tweak-like translational
+neck bend control is provided (the widget looks like a circle with arrows).</p>
+<p>The properties panel contains the following options:</p>
+<dl>
+<dt>Neck Follow <span class="guilabel">Slider</span></dt><dd><figure class="align-right">
+<a class="reference internal image-reference" href="../../../_images/addons_rigging_rigify_rig-features_head-properties.png"><img alt="../../../_images/addons_rigging_rigify_rig-features_head-properties.png" src="../../../_images/addons_rigging_rigify_rig-features_head-properties.png" style="width: 200px;" /></a>
+</figure>
+<p>This slider controls the rotations isolation for the neck bones.
+The neck will follow the orientation of the Torso when set to 0, and the Chest when set to 1.</p>
+</dd>
+<dt>Head Follow <span class="guilabel">Slider</span></dt><dd><figure class="align-right">
+<a class="reference internal image-reference" href="../../../_images/addons_rigging_rigify_rig-features_tail-controls.png"><img alt="../../../_images/addons_rigging_rigify_rig-features_tail-controls.png" src="../../../_images/addons_rigging_rigify_rig-features_tail-controls.png" style="width: 200px;" /></a>
+</figure>
+<p>This slider controls the rotations isolation for the head.
+The head will follow the orientation of the Torso when set to 0, and the Chest when set to 1.</p>
+</dd>
+</dl>
+</section>
+<section id="tail">
+<h3>Tail<a class="headerlink" href="#tail" title="Link to this heading"></a></h3>
+<p>The <a class="reference internal" href="rig_types/spines.html#rigify-rigs-spines-basic-tail"><span class="std std-ref">tail</span></a> sub-rig attaches to the start of the spine, and provides
+FK controls for the tail, as well as a master control that replicates its local rotation around certain axes
+to all individual bones.</p>
+<p>The properties panel contains the following options:</p>
+<dl class="simple">
+<dt>Tail Follow <span class="guilabel">Slider</span></dt><dd><p>This slider controls the rotations isolation for the tail.
+The tail will follow the orientation of the Torso when set to 0, and the Hips when set to 1.</p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="face">
+<h2>Face<a class="headerlink" href="#face" title="Link to this heading"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This describes the new-style modular face produced by the Upgrade Face operator button.</p>
+</div>
+<section id="basic-concepts">
+<h3>Basic Concepts<a class="headerlink" href="#basic-concepts" title="Link to this heading"></a></h3>
+<section id="skin-bone-chains">
+<h4>Skin Bone Chains<a class="headerlink" href="#skin-bone-chains" title="Link to this heading"></a></h4>
+<figure class="align-right">
+<a class="reference internal image-reference" href="../../../_images/addons_rigging_rigify_rig-features_face-chains.png"><img alt="../../../_images/addons_rigging_rigify_rig-features_face-chains.png" src="../../../_images/addons_rigging_rigify_rig-features_face-chains.png" style="width: 300px;" /></a>
+</figure>
+<p>The foundation of the Rigify face is a network of Bendy Bone <a class="reference internal" href="rig_types/skin.html#rigify-rigs-skin-basic-chain"><span class="std std-ref">chains</span></a> with controls
+placed at every bone end. These controls affect all bones that meet at that specific point.</p>
+<p>When the controls are merely translated, the B-Bone chains retain the normal automatic bezier handle behavior.
+Local rotation and/or scaling of the controls are applied on top of that.</p>
+<p>In case of <a class="reference internal" href="rig_types/skin.html#rigify-rigs-skin-stretchy-chain"><span class="std std-ref">certain chains</span></a>, the transformation of the end and/or middle
+controls is interpolated to other controls located between them. In such cases the controls often have different
+colors and/or shapes.</p>
+<p>Additionally, certain controls have <a class="reference internal" href="rig_types/skin.html#rigify-rigs-skin-glue"><span class="std std-ref">arbitrary constraints</span></a> that partially copy
+transformation from nearby control points.</p>
+</section>
+<section id="specialized-controllers">
+<h4>Specialized Controllers<a class="headerlink" href="#specialized-controllers" title="Link to this heading"></a></h4>
+<p>Certain areas of the face, like eyes or mouth, have additional specialized controllers that apply custom behavior
+on top of the chains and their controllers within the relevant area.</p>
+</section>
+</section>
+<section id="eyes">
+<h3>Eyes<a class="headerlink" href="#eyes" title="Link to this heading"></a></h3>
+<figure class="align-right">
+<a class="reference internal image-reference" href="../../../_images/addons_rigging_rigify_rig-features_eye-controls.png"><img alt="../../../_images/addons_rigging_rigify_rig-features_eye-controls.png" src="../../../_images/addons_rigging_rigify_rig-features_eye-controls.png" style="width: 300px;" /></a>
+</figure>
+<p>The <a class="reference internal" href="rig_types/face.html#rigify-rigs-face-skin-eye"><span class="std std-ref">eyes</span></a> have the following controls in addition to the eyelid chains:</p>
+<dl class="simple">
+<dt>Master</dt><dd><p>This large circular control can be used to transform the whole eye as one unit.</p>
+</dd>
+<dt>Common Target</dt><dd><p>This large control enveloping all individual eye targets has a switchable parent and can
+be used to specify the point that the eyes should look at.</p>
+</dd>
+<dt>Eye Target</dt><dd><p>These small circle controls within the common target control specify the point targeted by each
+individual eye. Their local scale can also be used to affect the iris or pupil of the eye,
+depending on how it was weight painted.</p>
+</dd>
+</dl>
+<p>The rig properties panel contains the following options:</p>
+<figure class="align-right">
+<a class="reference internal image-reference" href="../../../_images/addons_rigging_rigify_rig-features_eye-properties.png"><img alt="../../../_images/addons_rigging_rigify_rig-features_eye-properties.png" src="../../../_images/addons_rigging_rigify_rig-features_eye-properties.png" style="width: 200px;" /></a>
+</figure>
+<dl class="simple">
+<dt>Eyelids Follow <span class="guilabel">Slider</span></dt><dd><p>Controls how much the rotation of the eyeball affects the eyelids. Depending on the sub-rig generation
+options, this slider can be split to separately control the horizontal and vertical directions.</p>
+</dd>
+<dt>Eyelids Attached <span class="guilabel">Slider</span> <span class="guilabel">Optional</span></dt><dd><p>If enabled in the sub-rig generation options, this slider can be used to disable the mechanism that
+forces the eyelids to conform to the sphere of the eye.</p>
+</dd>
+<dt>Parent <span class="guilabel">Parent Switch</span></dt><dd><p>Selects the parent for the common target control.</p>
+</dd>
+</dl>
+</section>
+<section id="mouth">
+<h3>Mouth<a class="headerlink" href="#mouth" title="Link to this heading"></a></h3>
+<figure class="align-right">
+<a class="reference internal image-reference" href="../../../_images/addons_rigging_rigify_rig-features_mouth-controls.png"><img alt="../../../_images/addons_rigging_rigify_rig-features_mouth-controls.png" src="../../../_images/addons_rigging_rigify_rig-features_mouth-controls.png" style="width: 300px;" /></a>
+</figure>
+<p>The <a class="reference internal" href="rig_types/face.html#rigify-rigs-face-skin-jaw"><span class="std std-ref">mouth</span></a> has the following controls:</p>
+<dl class="simple">
+<dt>Jaw Master</dt><dd><p>Controls rotation of the jaw, directly affecting the main jaw deform bone, as well
+as chains fully belonging to the jaw. Chains forming the lip loop(s) are adjusted to
+open the mouth as the jaw rotates or moves.</p>
+</dd>
+<dt>Mouth Master</dt><dd><p>This control uniformly transforms the lips without moving the jaw.</p>
+</dd>
+</dl>
+<p>The rig properties panel contains the following options:</p>
+<figure class="align-right">
+<a class="reference internal image-reference" href="../../../_images/addons_rigging_rigify_rig-features_mouth-properties.png"><img alt="../../../_images/addons_rigging_rigify_rig-features_mouth-properties.png" src="../../../_images/addons_rigging_rigify_rig-features_mouth-properties.png" style="width: 200px;" /></a>
+</figure>
+<dl class="simple">
+<dt>Mouth Lock <span class="guilabel">Slider</span></dt><dd><p>This slider can be changed from 0 to 1 in order to suppress opening of the mouth
+when the jaw rotates or moves.</p>
+</dd>
+</dl>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="bone_positioning.html" class="btn btn-neutral float-left" title="Bone Positioning Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="metarigs.html" class="btn btn-neutral float-right" title="Creating Meta-rigs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../../copyright.html">Copyright</a> : This page is licensed under a CC-BY-SA 4.0 Int. License.
+      <span class="lastupdated">Last updated on 12/17/2023.
+      </span></p>
+  </div>
+
+  
+<div class="footer-contribute">
+   <ul>
+      <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/addons/rigging/rigify/rig_features.rst"
+            class="fa fa-edit"> View Source</a>
+      </li>
+      <!-- <li>
+         <a href="https://projects.blender.org/blender/blender-manual/src/branch/main/manual/addons/rigging/rigify/rig_features.rst"
+            class="fa fa-edit"> Edit Page</a>
+      </li> -->
+      <li>
+         <a href="https://projects.blender.org/blender/documentation/issues/new?template=.gitea/issue_template/bug.yaml&field:body=%2A%2APage+Information%2A%2A%0D%0AFile%3A+%60manual%2Faddons/rigging/rigify/rig_features.rst%60%0D%0ABlender+Version%3A+%604.0%60%0D%0ADocumentation+Language%3A+%60en%60%0D%0A%5BPermanent+Link%5D%28https%3A%2F%2Fdocs.blender.org%2Fmanual%2Fen%2F4.0%2Faddons/rigging/rigify/rig_features.html%29%0D%0A%0D%0A%2A%2AShort+description+of+error%2A%2A%0D%0A%5BPlease+fill+out+a+short+description+of+the+error+here%5D%0D%0A"
+            class="fa fa-bug"> Report issue on this page</a>
+      </li>
+      <ul>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="document versions">
+	<ul id="versionwrap" role="presentation">
+		<li role="presentation">
+			<span id="version-popover" class="version-btn" tabindex="0" role="button" aria-label="versions selector"
+				aria-haspopup="true" aria-controls="version-vsnlist" aria-disabled="true">
+				4.0
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Versions</div>
+				<ul id="version-vsnlist" class="version-list" role="menu" aria-labelledby="version-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<li role="presentation">
+			<span id="lang-popover" class="version-btn" tabindex="0" role="button" aria-label="language selector"
+				aria-haspopup="true" aria-controls="version-langlist">
+				 en 
+			</span>
+			<div class="version-dialog" aria-hidden="true">
+				<div class="version-arrow" aria-hidden="true"></div>
+				<div class="version-title">Languages</div>
+				<ul id="version-langlist" class="version-list" role="menu" aria-labelledby="lang-popover"
+					aria-hidden="true">
+					<li role="presentation">Loading...</li>
+				</ul>
+			</div>
+		</li>
+		<template id="version-entry">
+			<li tabindex="-1" role="presentation"><a tabindex="-1" role="menuitem"></a></li>
+			<li class="selected" tabindex="-1" role="presentation"><span tabindex="-1" aria-current="page"></spanp></li>
+		</template>
+	</ul>
+<template id="version-warning">
+	<div class="admonition warning">
+		<p class="first admonition-title">Note</p>
+		<p class="last">
+			You are not using the most up to date version of the documentation.
+			<a href="#"></a> is the newest version.
+		</p>
+	</div>
+</template>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1418081-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1418081-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>
